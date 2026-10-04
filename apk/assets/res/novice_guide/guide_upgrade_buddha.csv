@@ -1,0 +1,4 @@
+text,pointType,pointX,pointY,bgPointX,bgPointY,type,direction,rangeX,rangeY,isNeedPause
+选中天将老张来升级！,1,-246,382,-200,-140,1,1,160,60,0
+只差一步啦，点击“升级”来使他变得更强吧！,1,375,95,-200,-140,1,0,85,30,0
+接下来再升级一下唐僧吧~！选择“唐僧”！,1,-510,140,-200,-20,1,0,40,60,0

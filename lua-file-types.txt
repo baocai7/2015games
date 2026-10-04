@@ -1,0 +1,360 @@
+doubi-original-source/source/game/app/scenes/LoginScene.lua:                                  Unicode text, UTF-8 text
+doubi-original-source/source/game/app/scenes/TeamScene.lua:                                   Unicode text, UTF-8 text
+doubi-original-source/source/game/app/scenes/WikiScene.lua:                                   Unicode text, UTF-8 text
+doubi-original-source/source/game/app/scenes/GameScene.lua:                                   Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/scenes/TinyLoadingScene.lua:                            Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/scenes/ShopScene1.lua:                                  Unicode text, UTF-8 text
+doubi-original-source/source/game/app/scenes/UpgradeScene.lua:                                Unicode text, UTF-8 text
+doubi-original-source/source/game/app/scenes/OpeningComicScene.lua:                           Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/scenes/GameSceneGroove.lua:                             Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/scenes/ShopScene.lua:                                   Unicode text, UTF-8 text
+doubi-original-source/source/game/app/scenes/LoadingScene.lua:                                Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/scenes/ChapterScene.lua:                                Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/scenes/TreasureScene.lua:                               Unicode text, UTF-8 text
+doubi-original-source/source/game/app/scenes/MainScene.lua:                                   Unicode text, UTF-8 text
+doubi-original-source/source/game/app/scenes/InfiniteModeEntrance.lua:                        Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/scenes/GameSceneInfinite.lua:                           Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/scenes/SummonScene.lua:                                 Unicode text, UTF-8 text
+doubi-original-source/source/game/app/layers/DiaryLayer.lua:                                  Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/BuddhaEvolution.lua:                             Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/UpgradeTowerLayer.lua:                           Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/SpinLayer.lua:                                   Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/AlertLackPeachLayer.lua:                         Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/TrialLayer.lua:                                  Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/WarResultLayer.lua:                              Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/UpgradeBuddhaLayer.lua:                          Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/ErrorCodeLayer.lua:                              Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/SkillItemLayer.lua:                              Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/ActivityStageLayer.lua:                          Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/AlertItemCastAniLayer.lua:                       Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/CommonResultLayer.lua:                           Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/SurveyLayer.lua:                                 Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/ChangeNameLayer.lua:                             Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/ShowSignAwardLayer.lua:                          Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/NoticeLayer.lua:                                 Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/StageTaskSubLayer.lua:                           Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/TreasurePieceInfoLayer.lua:                      Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/TeamSceneLayer.lua:                              Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/NewFellowLayer.lua:                              Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/SignLayer.lua:                                   Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/UpgradeMonsterLayer.lua:                         Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/ActivityCodeLayer.lua:                           Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/SummonLayer.lua:                                 Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/SetLayer.lua:                                    Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/ReliveLayer.lua:                                 Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/PaymentLayer.lua:                                Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/ShopIconDetailLayer.lua:                         Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/FirstRechargeLayer.lua:                          Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/AchievementLayer.lua:                            Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/SetAccountLayer.lua:                             Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/InfiniteModeResultLayer.lua:                     Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/ShopIconDetailLayer1.lua:                        Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/AlertAchievement.lua:                            Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/GuideStage8Layer.lua:                            Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/ChapterLayer.lua:                                Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/GuideStage3Layer.lua:                            Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/ChartLayer.lua:                                  Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/TreasureShowLayer.lua:                           Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/DiarytasklevelLayer.lua:                         Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/BuyEnergyLayer.lua:                              Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/CumulateRechargeLayer.lua:                       Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/ExchangeLayer.lua:                               Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/AlertSceneIconAniLayer.lua:                      Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/ForceUpdateLayer.lua:                            Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/ConnectionLayer.lua:                             Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/ServerMaintainLayer.lua:                         Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/BuyExpLayer.lua:                                 Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/UpgradeTangLayer.lua:                            Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/layers/AlertLackEXPLayer.lua:                           Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/customs/gamescene/SkillItemIcon.lua:                    Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/customs/gamescene/PauseLayer.lua:                       Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/customs/gamescene/FireBtn.lua:                          Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/customs/gamescene/UpgradeBtn.lua:                       Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/customs/gamescene/PauseBtn.lua:                         Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/customs/gamescene/TimerIcon.lua:                        Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/customs/gamescene/SpeedBtn.lua:                         Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/customs/gamescenegroove/CardIcon.lua:                   Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/customs/gamescenegroove/UpgradeBtn.lua:                 Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/customs/PaymentVerification.lua:                        Unicode text, UTF-8 text
+doubi-original-source/source/game/app/customs/AlertConnection.lua:                            Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/customs/AlertUpdate.lua:                                Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/utils/WSToast.lua:                                      ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/utils/DYUtils.lua:                                      ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/utils/CSVParser.lua:                                    Unicode text, UTF-8 text
+doubi-original-source/source/game/app/utils/PaymentInfo.lua:                                  Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/utils/WordsTool.lua:                                    Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/utils/NoviceGuide.lua:                                  Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/utils/GameManager.lua:                                  Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/utils/CloudData.lua:                                    Unicode text, UTF-8 text
+doubi-original-source/source/game/app/utils/GameDialogue.lua:                                 Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/utils/Clist.lua:                                        ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/utils/DataRetainer.lua:                                 Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/SignRewardModel.lua:                             Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/TreasurePieceModel.lua:                          Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/UpgradePropertyModel.lua:                        Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/MonsterPieceModel.lua:                           Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/TreasureModel.lua:                               Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/ShopGiftModel.lua:                               Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/StageModel.lua:                                  Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/PaymentModel.lua:                                Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/DailyTaskModel.lua:                              Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/GoodsModel.lua:                                  Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/AchievementModel.lua:                            Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/StageTaskSubModel.lua:                           Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/BuddhaModel.lua:                                 Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/MonsterWaveModel.lua:                            Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/InfiniteStageModel.lua:                          Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/InfiniteMonsterModel.lua:                        Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/SkillItemModel.lua:                              Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/TowerBuddhaModel.lua:                            Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/TowerMonsterModel.lua:                           Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/StageTaskModel.lua:                              Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/models/MonsterModel.lua:                                Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/PaymentIcon.lua:                                  Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/ActivityStageIcon.lua:                            Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/AchievementIcon.lua:                              Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/MailIcon.lua:                                     Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/TreasurePage.lua:                                 Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/BuddhaIcon.lua:                                   Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/DailyTaskIcon.lua:                                Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/UpgradeBuddhaIcon.lua:                            Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/StageIcon.lua:                                    Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/TeamIcon.lua:                                     Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/StageTaskSubIcon.lua:                             Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/ExchangeIcon.lua:                                 Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/ChapterIcon.lua:                                  Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/ChartIcon.lua:                                    Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/UpgradePropertyIcon.lua:                          Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/UnitIcon.lua:                                     Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/MonsterIcon.lua:                                  Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/StageTaskIcon.lua:                                Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/RoundListIcon.lua:                                Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/SceneIcon.lua:                                    Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/TreasurePieceIcon.lua:                            Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/DataLabelIcon.lua:                                Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/ShopIcon1.lua:                                    Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/ShopIcon.lua:                                     ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/icons/ServersBtn.lua:                                   Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getDailyTaskModel.lua:                        Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getTreasureModel.lua:                         Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getChapterLocationTable.lua:                  Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getStageModel.lua:                            Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getUpgradePropertyModel.lua:                  Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getStageTaskSubModel.lua:                     Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getSpiritCostBasic.lua:                       Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getPaymentModel.lua:                          Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getInfiniteStageModel.lua:                    Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getBuddhaModel.lua:                           Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getAchievementModel.lua:                      Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getBuddhaTableOnTeam.lua:                     ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getMonsterPieceModel.lua:                     Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getMonsterWaveModel.lua:                      Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getStageTaskModel.lua:                        Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/DataUtils.lua:                                ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getInfiniteMonsterModel.lua:                  Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getTowerBuddhaModel.lua:                      Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getMonsterModel.lua:                          Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getTreasurePieceModel.lua:                    Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/setNewBuddhaCloudData.lua:                    Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/saveLocalData.lua:                            Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getTowerMonsterModel.lua:                     Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/functions/getSkillItemModel.lua:                        Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/sprites/BattleTimer.lua:                                Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/sprites/Buddha.lua:                                     Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/sprites/SpiritCounter.lua:                              Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/sprites/TowerMonster.lua:                               Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/sprites/TowerBuddha.lua:                                Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/sprites/Monster.lua:                                    Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/communication/Protocol.lua:                             Unicode text, UTF-8 text
+doubi-original-source/source/game/app/communication/DTO.lua:                                  Unicode text, UTF-8 text
+doubi-original-source/source/game/app/communication/Const.lua:                                Unicode text, UTF-8 text
+doubi-original-source/source/game/app/communication/USocket.lua:                              Unicode text, UTF-8 text
+doubi-original-source/source/game/app/communication/ErrorCode.lua:                            Unicode text, UTF-8 text
+doubi-original-source/source/game/app/communication/DataLayer.lua:                            Unicode text, UTF-8 text
+doubi-original-source/source/game/app/profiles/chapter_location.lua:                          ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/shop_info.lua:                                 ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/fortune_wheel.lua:                             Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/treasure.lua:                                  Unicode text, UTF-8 text, with very long lines (389), with CRLF line terminators
+doubi-original-source/source/game/app/profiles/recharge.lua:                                  Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/d_monster_tower.lua:                           ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/task_daily.lua:                                Unicode text, UTF-8 text, with very long lines (323), with CRLF line terminators
+doubi-original-source/source/game/app/profiles/skill_item.lua:                                Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/shop_normal.lua:                               Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/d_stage.lua:                                   Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/strategy.lua:                                  ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/payment_ios.lua:                               Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/lose_tips.lua:                                 Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/goods_info.lua:                                Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/monster_wave.lua:                              ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/c_stage.lua:                                   Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/username.lua:                                  Unicode text, UTF-8 text, with very long lines (8405), with CRLF line terminators
+doubi-original-source/source/game/app/profiles/monster_infinite.lua:                          Unicode text, UTF-8 text, with very long lines (443), with CRLF line terminators
+doubi-original-source/source/game/app/profiles/shop.lua:                                      ASCII text, with very long lines (646), with CRLF line terminators
+doubi-original-source/source/game/app/profiles/task_stage/task_stage8.lua:                    Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/task_stage/task_stage7.lua:                    Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/task_stage/task_stage6.lua:                    Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/task_stage/task_stage4.lua:                    Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/task_stage/task_stage5.lua:                    Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/task_stage/task_stage1.lua:                    Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/task_stage/task_stage.lua:                     ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/task_stage/task_stage2.lua:                    Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/task_stage/task_stage3.lua:                    Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/c_monster_tower.lua:                           ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/payment.lua:                                   Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/shop_exp.lua:                                  ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/spirit_cost_basic.lua:                         ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/achievement.lua:                               Unicode text, UTF-8 text, with very long lines (510), with CRLF line terminators
+doubi-original-source/source/game/app/profiles/buddha.lua:                                    Unicode text, UTF-8 text, with very long lines (974), with CRLF line terminators
+doubi-original-source/source/game/app/profiles/shuffle.lua:                                   ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/gift.lua:                                      ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/monster_piece.lua:                             Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/stage_infinite.lua:                            ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/itempool_info.lua:                             ASCII text, with very long lines (339), with CRLF line terminators
+doubi-original-source/source/game/app/profiles/shop_activity.lua:                             Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/stage.lua:                                     ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/strategy_infinite.lua:                         ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/upgrade_properties.lua:                        Unicode text, UTF-8 text, with very long lines (896), with CRLF line terminators
+doubi-original-source/source/game/app/profiles/monster_tower.lua:                             ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/buddha_exp_cost.lua:                           ASCII text, with very long lines (428), with CRLF line terminators
+doubi-original-source/source/game/app/profiles/treasure_piece.lua:                            Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/activity_stage.lua:                            ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/profiles/monster.lua:                                   Unicode text, UTF-8 text, with very long lines (609), with CRLF line terminators
+doubi-original-source/source/game/app/profiles/monster_piece_loot.lua:                        ASCII text, with CRLF line terminators
+doubi-original-source/source/game/app/MyApp.lua:                                              Unicode text, UTF-8 text
+doubi-original-source/source/game/app/kernel/DataModel.lua:                                   Unicode text, UTF-8 text
+doubi-original-source/source/game/app/kernel/GameEventType.lua:                               Unicode text, UTF-8 text
+doubi-original-source/source/game/app/kernel/GameEvent.lua:                                   ASCII text
+doubi-original-source/source/game/app/kernel/GameEventDispatcher.lua:                         ASCII text
+doubi-original-source/source/assets/src/main.lua:                                             Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/shortcodes.lua:                             Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/functions.lua:                              Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/global.lua:                                 Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/init.lua:                                   Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/crypto.lua:                                 Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/json.lua:                                   Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/platform/android.lua:                       Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/platform/mac.lua:                           Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/platform/ios.lua:                           Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/debug.lua:                                  Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cocos2dx/SpriteEx.lua:                      Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cocos2dx/Event.lua:                         Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cocos2dx/SceneEx.lua:                       Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cocos2dx/Cocos2dConstants.lua:              Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cocos2dx/StudioConstants.lua:               Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cocos2dx/NodeEx.lua:                        Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cocos2dx/OpenglConstants.lua:               Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cocos2dx/ActionEx.lua:                      Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cocos2dx/DrawNodeEx.lua:                    Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cocos2dx/Cocos2d.lua:                       Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/scheduler.lua:                              Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/display.lua:                                Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/luaj.lua:                                   Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/filter.lua:                                 Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/luaoc.lua:                                  Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/device.lua:                                 Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/audio.lua:                                  Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/transition.lua:                             Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/anysdkConst.lua:                            Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/ui/UISlider.lua:                         Unicode text, UTF-8 text
+doubi-original-source/source/assets/src/framework/cc/ui/UILoadingBar.lua:                     Unicode text, UTF-8 text
+doubi-original-source/source/assets/src/framework/cc/ui/init.lua:                             Unicode text, UTF-8 text
+doubi-original-source/source/assets/src/framework/cc/ui/UIListViewItem.lua:                   Unicode text, UTF-8 text
+doubi-original-source/source/assets/src/framework/cc/ui/UIInput.lua:                          Unicode text, UTF-8 text
+doubi-original-source/source/assets/src/framework/cc/ui/UIImage.lua:                          Unicode text, UTF-8 text
+doubi-original-source/source/assets/src/framework/cc/ui/UIStretch.lua:                        Unicode text, UTF-8 text
+doubi-original-source/source/assets/src/framework/cc/ui/UIBoxLayout.lua:                      Unicode text, UTF-8 text
+doubi-original-source/source/assets/src/framework/cc/ui/UIScrollView.lua:                     Unicode text, UTF-8 text
+doubi-original-source/source/assets/src/framework/cc/ui/UILayout.lua:                         Unicode text, UTF-8 text
+doubi-original-source/source/assets/src/framework/cc/ui/UIListView.lua:                       Unicode text, UTF-8 text
+doubi-original-source/source/assets/src/framework/cc/ui/UIPageViewItem.lua:                   Unicode text, UTF-8 text
+doubi-original-source/source/assets/src/framework/cc/ui/UIGroup.lua:                          Unicode text, UTF-8 text
+doubi-original-source/source/assets/src/framework/cc/ui/UICheckBoxButtonGroup.lua:            Unicode text, UTF-8 text
+doubi-original-source/source/assets/src/framework/cc/ui/UILabel.lua:                          Unicode text, UTF-8 text
+doubi-original-source/source/assets/src/framework/cc/ui/UICheckBoxButton.lua:                 Unicode text, UTF-8 text
+doubi-original-source/source/assets/src/framework/cc/ui/UIPushButton.lua:                     Unicode text, UTF-8 text
+doubi-original-source/source/assets/src/framework/cc/ui/UIButton.lua:                         Unicode text, UTF-8 text
+doubi-original-source/source/assets/src/framework/cc/ui/UIPageView.lua:                       Unicode text, UTF-8 text
+doubi-original-source/source/assets/src/framework/cc/init.lua:                                Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/uiloader/uiloader.lua:                   Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/uiloader/init.lua:                       Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/uiloader/CCSUILoader.lua:                Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/uiloader/UILoaderUtilitys.lua:           Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/uiloader/CCSSceneLoader.lua:             Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/net/init.lua:                            Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/net/SocketTCP.lua:                       Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/mvc/AppBase.lua:                         Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/mvc/init.lua:                            Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/mvc/ModelBase.lua:                       Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/EventProxy.lua:                          Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/Registry.lua:                            Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/utils/GameState.lua:                     Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/utils/init.lua:                          Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/utils/bit.lua:                           Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/utils/Localize.lua:                      Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/utils/ByteArray.lua:                     Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/utils/ByteArrayVarint.lua:               Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/utils/Timer.lua:                         Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/utils/Gettext.lua:                       Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/components/behavior/EventProtocol.lua:   Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/components/behavior/StateMachine.lua:    Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/components/ui/LayoutProtocol.lua:        Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/components/ui/BasicLayoutProtocol.lua:   Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/components/ui/DraggableProtocol.lua:     Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/components/Component.lua:                Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/GameObject.lua:                          Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cc/sdk/Store.lua:                           Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/ui.lua:                                     Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/network.lua:                                Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/cocos2dx.lua:                               Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/framework/deprecated/deprecated_functions.lua:        Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/config.lua:                                           Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/ui/experimentalUIConstants.lua:                 Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/ui/GuiConstants.lua:                            Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/ui/DeprecatedUIFunc.lua:                        Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/ui/DeprecatedUIEnum.lua:                        Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/init.lua:                                       Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocosbuilder/DeprecatedCocosBuilderClass.lua:   Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocosbuilder/CCBReaderLoad.lua:                 Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/extension/DeprecatedExtensionEnum.lua:          Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/extension/DeprecatedExtensionClass.lua:         Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/extension/DeprecatedExtensionFunc.lua:          Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/extension/ExtensionConstants.lua:               Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/spine/SpineConstants.lua:                       Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/network/DeprecatedNetworkEnum.lua:              Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/network/DeprecatedNetworkFunc.lua:              Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/network/DeprecatedNetworkClass.lua:             Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/network/NetworkConstants.lua:                   Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/controller/ControllerConstants.lua:             Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocos2d/extern.lua:                             Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocos2d/json.lua:                               Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocos2d/DeprecatedOpenglEnum.lua:               Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocos2d/Opengl.lua:                             Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocos2d/DeprecatedCocos2dEnum.lua:              Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocos2d/Cocos2dConstants.lua:                   Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocos2d/luaj.lua:                               Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocos2d/luaoc.lua:                              Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocos2d/OpenglConstants.lua:                    Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocos2d/DeprecatedCocos2dClass.lua:             Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocos2d/DrawPrimitives.lua:                     Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocos2d/DeprecatedCocos2dFunc.lua:              Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocos2d/bitExtend.lua:                          Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocos2d/Cocos2d.lua:                            Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocosdenshion/DeprecatedCocosDenshionFunc.lua:  Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocosdenshion/AudioEngine.lua:                  Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocosdenshion/DeprecatedCocosDenshionClass.lua: Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocostudio/DeprecatedCocoStudioFunc.lua:        Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocostudio/StudioConstants.lua:                 Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocostudio/DeprecatedCocoStudioClass.lua:       Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/cocos/cocostudio/CocoStudio.lua:                      Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/DataEye/DCAgent.lua:                                  Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/assets/src/DataEye/DCLevels.lua:                                 Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/assets/src/DataEye/DCEvent.lua:                                  Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/assets/src/DataEye/DCAccount.lua:                                Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/assets/src/DataEye/DCCoin.lua:                                   Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/assets/src/DataEye/DCItem.lua:                                   Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/assets/src/DataEye/DCConfigParams.lua:                           Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/assets/src/DataEye/DCCardsGame.lua:                              Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/assets/src/DataEye/DCTask.lua:                                   Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/assets/src/DataEye/DCVirtualCurrency.lua:                        Unicode text, UTF-8 text, with CRLF line terminators
+doubi-original-source/source/assets/src/anysdkConst.lua:                                      Lua bytecode, version 5.1
+doubi-original-source/source/assets/src/channelConfig.lua:                                    Unicode text, UTF-8 text

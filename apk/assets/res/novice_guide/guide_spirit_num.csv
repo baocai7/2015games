@@ -1,0 +1,2 @@
+text,pointType,pointX,pointY,bgPointX,bgPointY,type,direction,rangeX,rangeY,isNeedPause
+此处可以查看灵气上限和当前灵气值,4,0.85,0.91,240,150,1,1,64,41,0

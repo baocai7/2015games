@@ -1,0 +1,3 @@
+text,pointType,pointX,pointY,bgPointX,bgPointY,type,direction,rangeX,rangeY,isNeedPause
+每隔一定时间都可以获得免费召唤机会哦,1,-275,15,-40,0,0,0,60,40,0
+好了，别忘了去队伍界面让小胖上阵哦,1,0,261,-100,150,0,1,60,40,0

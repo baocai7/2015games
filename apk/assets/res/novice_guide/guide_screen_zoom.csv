@@ -1,0 +1,2 @@
+text,pointType,pointX,pointY,bgPointX,bgPointY,type,direction,rangeX,rangeY,isNeedPause
+随着双指的展开或收拢可伸缩屏幕,1,-100,360,-320,-50,3,0,60,40,0

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tree>
+  <directory name="SSJJ_7"/>
+  <directory name="ALIYUN_8"/>
+  <directory name="PJ_7"/>
+  <directory name="SG_7"/>
+  <directory name="SYB_7"/>
+  <directory name="TY_7"/>
+  <directory name="UC_8"/>
+  <file name="SSJJ_7.patch"/>
+  <file name="ALIYUN_8.patch"/>
+  <file name="PJ_7.patch"/>
+  <file name="SG_7.patch"/>
+  <file name="SYB_7.patch"/>
+  <file name="TY_7.patch"/>
+  <file name="UC_8.zip"/>
+  <directory name="common">
+    <directory name="conf"> 
+      <file name="tipsBackground.9.png"/>
+      <file name="tipsBackgroundSelected.9.png"/>
+      <file name="tips_button.9.png"/>
+      <file name="tips_button_press.9.png"/>
+      <file name="tipsCloseActive.png"/>
+      <file name="tipsClose.png"/>
+      <file name="loading_circle.png"/>
+      <file name="loading_bg.9.png"/>
+      <file name="loading_logo.png"/>
+      <directory name="widgetconf">
+        <file name="exDialog.json"/>
+   	<file name="exbannerDialog.json"/>
+    	<file name="exbbsDialog.json"/>
+    	<file name="extextDialog.json"/>
+        <file name="phoneLogin.json"/>
+        <file name="ucLogin.json"/>
+        <file name="updateGameDialog.json"/>
+        <file name="updateGameNewVersion.json"/>
+      </directory>
+    </directory>
+    <directory name="jars">
+      <file name="core.jar"/>
+      <file name="entry.xml"/>
+      <file name="lib.jar"/>
+      <file name="update.jar"/>
+    </directory>
+  </directory>
+</tree>
+

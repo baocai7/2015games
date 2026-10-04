@@ -1,0 +1,13 @@
+ID,type,price,peachNum,addedNum,dailyGet,validTime,isDouble,title,desc,picPath
+1,1,6,60,0,20,7,-1,立即获得60蟠桃,额外每天赠送30蟠桃(7天),recharge/peach.png
+2,1,30,300,0,30,-1,-1,立即获得300蟠桃,额外每天赠送30蟠桃,recharge/amounts_peach.png
+3,2,12,120,120,0,0,1,立即获得120蟠桃,(额外赠送120蟠桃),recharge/several_peach.png
+4,2,68,680,680,0,0,1,立即获得680蟠桃,(额外赠送680蟠桃),recharge/pile_peach.png
+5,2,198,1980,1980,0,0,1,立即获得1980蟠桃,(额外赠送1980蟠桃),recharge/pile_peach1.png
+6,2,388,3880,3880,0,0,1,立即获得3880蟠桃,(额外赠送3880蟠桃),recharge/box_peach.png
+7,3,6,60,0,0,0,0,立即获得60蟠桃,,recharge/peach.png
+8,3,30,300,30,0,0,0,立即获得300蟠桃,(额外赠送30蟠桃),recharge/amounts_peach.png
+9,3,12,120,0,0,0,0,立即获得120蟠桃,,recharge/several_peach.png
+10,3,68,680,128,0,0,0,立即获得680蟠桃,(额外赠送128蟠桃),recharge/pile_peach.png
+11,3,198,1980,888,0,0,0,立即获得1980蟠桃,(额外赠送888蟠桃),recharge/pile_peach1.png
+12,3,388,3880,1988,0,0,0,立即获得3880蟠桃,(额外赠送1988蟠桃),recharge/box_peach.png

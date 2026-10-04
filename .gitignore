@@ -1,0 +1,22 @@
+# macOS and editor metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.idea/
+.vscode/
+
+# Temporary reverse-engineering and build output
+tmp/
+build/
+dist/
+out/
+*.log
+*.tmp
+*.swp
+
+# Local tooling caches
+.pytest_cache/
+__pycache__/
+.ruby-version
+

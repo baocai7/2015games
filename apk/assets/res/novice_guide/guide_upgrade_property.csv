@@ -1,0 +1,3 @@
+text,pointType,pointX,pointY,bgPointX,bgPointY,type,direction,rangeX,rangeY,isNeedPause
+让我们来升级悟性，提高获得的经验吧！,1,-246,512,200,240,1,0,160,60,0
+点击“升级”吧,1,360,90,280,-85,1,0,85,30,0

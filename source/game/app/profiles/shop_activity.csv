@@ -1,0 +1,9 @@
+Id,goodsId,goodsName,picPath,goodsType,price
+1,104,千里眼,buddha_icon/buddha104.png,buddha,1000
+2,106,电力娘,buddha_icon/buddha106.png,buddha,2500
+3,0,蟠桃×50,sign/pantao.png,peach,100
+4,0,扫荡券×100,sign/saodang.png,sweep,600
+5,1,老君金丹×5,item/item3_big.png,item,300
+6,3,芭蕉扇×5,item/item2_big.png,item,200
+7,0,十万经验,sign/exp.png,exp,50
+8,0,一万精华石,summon_scene/essence_pic.png,essence,300

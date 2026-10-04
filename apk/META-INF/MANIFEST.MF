@@ -1,0 +1,6502 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_31 (Sun Microsystems Inc.)
+
+Name: assets/res/win_or_lose/first_reward.png
+SHA1-Digest: tmpCOO7W2f65zi901gOoOi53Cyw=
+
+Name: assets/res/armature/xiaodaomuguai/xiaodaomuguai0.png
+SHA1-Digest: ENUHVCMYqE8ksAW7JH+3Zjh5cjE=
+
+Name: assets/res/monster_piece_icon/quality2.png
+SHA1-Digest: 5RwUXrtDHD4usqNMP24DFkwtpQQ=
+
+Name: assets/res/sounds/sfx_energy_go.ogg
+SHA1-Digest: XBXrY7UwDy9l7i8UYj4xHAjCook=
+
+Name: assets/res/monster_piece_icon/piece7.png
+SHA1-Digest: sw32qsGfFKQDX/ammZFUMh3SUgY=
+
+Name: assets/res/recharge/tip.png
+SHA1-Digest: PtKpHvx+Df97dW9MN8+2gy6qaXA=
+
+Name: assets/res/wiki/q0.png
+SHA1-Digest: Ir+Q7hWzDMn8tp8r74ORzST6xNw=
+
+Name: assets/res/dialogue/tianjiang/tianjiang3.png
+SHA1-Digest: PZjzt4JF/rrk+MnYYmiI6cJmbFI=
+
+Name: assets/res/shop1/80.png
+SHA1-Digest: C4oYp4Gm44VbfMjUDSV1w1UNu6E=
+
+Name: assets/res/treasure/goto2.png
+SHA1-Digest: f9fH+Q4RU0hwu+TJm/Z6s+KCkDc=
+
+Name: assets/res/chapter/shop.png
+SHA1-Digest: NKrK2E808ZMAhDj1iHhs7nRp3oc=
+
+Name: assets/res/animation/shanxian.png
+SHA1-Digest: 8M+j2kV+FR6C7n4AP01fSEzA7+E=
+
+Name: assets/res/gamescene/bg_sky7.jpg
+SHA1-Digest: +6xDjuYPDd5z0sDWw4bUSV2J4EU=
+
+Name: assets/res/item/item1_h.png
+SHA1-Digest: +J880tcrD2KXVieUeFFlLge+EHA=
+
+Name: assets/res/opening_comic/comic4/comic412_tx.png
+SHA1-Digest: y1zNdiJ6ywFCHWnsaa1d8gtuKOg=
+
+Name: assets/res/shop1/saodang.png
+SHA1-Digest: HsyVFXepb08Jpi/7ebt0shDV2c0=
+
+Name: assets/ucgamesdk/ui/common/conf/widgetconf/updateGameDialog.json
+SHA1-Digest: vzkQgMYWtS3ouwB613SlT5KhDWY=
+
+Name: assets/res/armature/chijiao/chijiao.csb
+SHA1-Digest: qlOXwmdOEiDU1Mtup4dGtGg0vMM=
+
+Name: assets/res/chapter/energy_bar.png
+SHA1-Digest: +Ii4PFioBaPjAevX/CtTCxeG2Jo=
+
+Name: assets/res/monster/monster23.png
+SHA1-Digest: IPJewkQq+N/iWZO1tQVj8DlvOlo=
+
+Name: assets/res/sounds/sfx_tower_exploded.ogg
+SHA1-Digest: MNOYJIt0By4pnJpzGZkQVVddRwI=
+
+Name: assets/res/monster/monster52.png
+SHA1-Digest: Jvdj1fDDs5eZbYA3qUSWX4GMRvY=
+
+Name: assets/res/gamescene/distance.png
+SHA1-Digest: Ql7LmrES1dGZgzYWRQLFcYKbWNU=
+
+Name: assets/res/recharge/reward_frame.png
+SHA1-Digest: prGPfuN3uddYgjD6gCpVK5wJhE8=
+
+Name: assets/res/stage/name3.png
+SHA1-Digest: mvU+QKgcAaFRjFjhVdHRfGXhjso=
+
+Name: assets/res/opening_comic/comic4/comic43_tx.png
+SHA1-Digest: 6lVpfivxKGd2cdK4g4cYnP84dmY=
+
+Name: assets/res/treasure/title_treasure.png
+SHA1-Digest: KyL9GxU6+Ml5c/4+fTLJL2fMxw0=
+
+Name: assets/res/armature/xionghaizi/xionghaizi0.png
+SHA1-Digest: SxWKefCPivLmIgWa0u/rB7dEC6k=
+
+Name: assets/res/armature/dabajie/dabajie.csb
+SHA1-Digest: hEL5Evd2Cvkw6nqOlxBmdArRZiw=
+
+Name: assets/res/login_scene/registered1.png
+SHA1-Digest: t18Clnfek3iNjGKK30kUaQVWrcA=
+
+Name: assets/res/gamescene/back_h.png
+SHA1-Digest: cLr1UgRvHJHGHwHxppYyw5nd180=
+
+Name: assets/res/shop1/buy_normal_special.png
+SHA1-Digest: 1j7VLWI2mRsRb0FJF0Irpa5yfXE=
+
+Name: assets/src/cocos/ui/DeprecatedUIFunc.lua
+SHA1-Digest: JL7hh7OBL9xERhS57LEsdKvXxJ0=
+
+Name: assets/res/buddha_icon/buddha64.png
+SHA1-Digest: QEf7jeOcMj2wSmZOp0TL74McKy8=
+
+Name: assets/res/buddha/buddha11.png
+SHA1-Digest: 4gxC9RLebKS0z//nQmBRQ8wD3A0=
+
+Name: assets/res/monster_tower/9/door.png
+SHA1-Digest: hHwe/K7YGPiupsxOIAVchjq/gPM=
+
+Name: assets/res/upgrade/textdi.png
+SHA1-Digest: ve7dKF2wBUZchzrLw3cvcuMuCM8=
+
+Name: assets/res/novice_guide/guide_unlock_monster3.csv
+SHA1-Digest: Rzu5HGjYzSECahClL32/EFEEAmQ=
+
+Name: assets/res/login_scene/start_h.png
+SHA1-Digest: 62pVCfpSG9x1fKyY/bv9z4J+thI=
+
+Name: assets/res/tasks/achievement/achievement9.png
+SHA1-Digest: JQdI1yiGrAx19mh+guR1aA3NoXA=
+
+Name: assets/res/shop/key.png
+SHA1-Digest: LoVYr8tv3yma79RCBY0AZuSFGqI=
+
+Name: assets/res/sign/known_h.png
+SHA1-Digest: 5ExzBpWO7s78XAYGviFTkF7i67g=
+
+Name: assets/res/novice_guide/guide_select_chapter.csv
+SHA1-Digest: wPI+WOPHHA9lS4urFAwaVlyeUD8=
+
+Name: assets/res/monster_tower/2/door.png
+SHA1-Digest: yrBwysf+8egzsr5cFYHxCMsYGyg=
+
+Name: assets/res/shop1/business.png
+SHA1-Digest: luMnmSF0Tnp+5Rq3GOOm8X/FNT0=
+
+Name: assets/res/spin/pointer.png
+SHA1-Digest: xZwNSyZfEESLdDy57DEFFzcpqJw=
+
+Name: assets/res/buddha_tag/3.png
+SHA1-Digest: GqQG3pCxkuR5m3xG9r0p7hzP6ys=
+
+Name: assets/res/gamescene/bg_sky1.jpg
+SHA1-Digest: nyYK0Hzr98gXuw/QDTgqgdZojQ8=
+
+Name: assets/res/login_scene/login_qq.png
+SHA1-Digest: K88kCqkYac62G4qSVYQZmwrSR/A=
+
+Name: assets/res/shop1/gift3.png
+SHA1-Digest: EvILq4vNQVPavr6JgJEpUvmB2ZQ=
+
+Name: assets/res/spin/gain_h.png
+SHA1-Digest: rsY27UzQK36IAdgAOFGlkqDm794=
+
+Name: assets/res/buddha_icon/buddha20.png
+SHA1-Digest: kxsV2sknXfcMjRgyy8pCqF6nm2w=
+
+Name: assets/res/armature/xiongmao/xiongmao0.plist
+SHA1-Digest: KKV2RMsVwXSYrD2UBgygnySmBAE=
+
+Name: assets/res/login_scene/login_h.png
+SHA1-Digest: UO7MUZsRi3/yTzhI1Y5boBKFBgg=
+
+Name: assets/res/monster_piece_icon/piece14.png
+SHA1-Digest: nwQt9FW1vs6MCniMcrBlMGas8eQ=
+
+Name: assets/res/shop1/goods.png
+SHA1-Digest: 8hRkYBm5HEQriLHOmnnAxtkDZmw=
+
+Name: assets/res/armature/tower_armature2/tower_armature20.png
+SHA1-Digest: lgH1ZWHGSD4iOY6qpqN8CqpEZ4c=
+
+Name: assets/res/upgrade/tupo_h.png
+SHA1-Digest: cxIx+h10G4pld212G9UQsDPqiwE=
+
+Name: assets/res/sign/bajie.png
+SHA1-Digest: ufQkjhXAzzQJ9seBQioX8Xoz2Hk=
+
+Name: assets/res/gamescene/bar_hp_bg.png
+SHA1-Digest: QO0w4ZAE7exLr25j31PPwcR+rDk=
+
+Name: assets/res/item/laojunjindanshouji.png
+SHA1-Digest: vdYoOcQiWk38NGNa0k8nkFopFA8=
+
+Name: assets/res/new_fellow/bg.jpg
+SHA1-Digest: mao3nVOF0cavDgb6wr0355XEst0=
+
+Name: assets/res/shop1/85.png
+SHA1-Digest: /5KHXS7BTQuw9xaR1SDrcIfVy2Y=
+
+Name: assets/res/chapter/team.png
+SHA1-Digest: tw4t4hPYCo4/l0vjF/0xF8+ShgQ=
+
+Name: assets/res/shop1/shopdikuang.png
+SHA1-Digest: vr/rGj9w8CLE8gjqaMm0UpG9vR0=
+
+Name: assets/res/armature/zuanfengdawang/zuanfengdawang.csb
+SHA1-Digest: cSIlhtJQbvFYpSXRj5kghIfKCR8=
+
+Name: assets/src/framework/cc/uiloader/CCSUILoader.lua
+SHA1-Digest: wFnytT5D16OlZyPWUQbqkTrPXXY=
+
+Name: assets/res/chapter/lock_pic.png
+SHA1-Digest: ldjKwLOEPvxyOmsqqjwgrJgapfE=
+
+Name: assets/res/buddha/buddha70.png
+SHA1-Digest: 2u+ISwpa/MPcjJDjAojP0wCYxB4=
+
+Name: assets/res/shop/exp3.png
+SHA1-Digest: ovn2WIJckizNkLIF1h45EGg6Ofg=
+
+Name: assets/res/gamescene/upgrade.png
+SHA1-Digest: pIZy6OfUiDo2R4WWei/YQErM6RU=
+
+Name: assets/res/sounds/sfx_treasure_falling.ogg
+SHA1-Digest: E91ZbCftjWtpRgESsIaipqcnB34=
+
+Name: assets/res/monster_icon/monster111.png
+SHA1-Digest: Te6WObH0282VIDgXBVAT7NV8a8Q=
+
+Name: assets/ucgamesdk/config/uc_key.txt
+SHA1-Digest: RH67SH/t2vbIAhiSMDeSlIWjcaA=
+
+Name: assets/src/cocos/network/DeprecatedNetworkClass.lua
+SHA1-Digest: OXU4OnilzBxsnS1nR6wHPw1oAGQ=
+
+Name: assets/res/tasks/bar.png
+SHA1-Digest: PwmPs/7rxWmkAl4klu5PpSVjZMg=
+
+Name: assets/res/activity/inputk.png
+SHA1-Digest: gE6ybyxBwjdeUVe+RJfZY7sq+aA=
+
+Name: assets/res/treasure/treasure4_attrib_icon.png
+SHA1-Digest: Z053IFEAul8ruppdXnUeaJP9QFw=
+
+Name: assets/res/new_fellow/new_fellow2.plist
+SHA1-Digest: WQS2HsQlDstqckLX7srUGw66R+Y=
+
+Name: assets/res/buddha_icon/restrain2.png
+SHA1-Digest: NivFynrJxjVfQCoTktpHQvRtojI=
+
+Name: assets/res/monster/monster7.png
+SHA1-Digest: 8pr9awpGa8z8679J/gTnaSw1x6s=
+
+Name: assets/res/item/wanzifujihuo.plist
+SHA1-Digest: jW19bDc/aDHQQThollRbSjcq4tA=
+
+Name: assets/res/Diary/purple.png
+SHA1-Digest: zpY1GzN7QEhsxRAh71KlO+y/DHk=
+
+Name: assets/res/gamescene/bg_sky_d2.jpg
+SHA1-Digest: gdpMVGYVwrXJDAuIKtVpxiF21TM=
+
+Name: assets/res/gamescene/bg_middle9.png
+SHA1-Digest: teSJQWrQqGEUcOEv+238N5LQSug=
+
+Name: assets/res/armature/nverwang/nverwang0.plist
+SHA1-Digest: 9CEku65jxvIqOV0kxFVWkgdLiBM=
+
+Name: assets/res/tasks/daily_btn1.png
+SHA1-Digest: LZFOM3w60uWVkrdlJ9AjoLZrEAo=
+
+Name: assets/res/shop/peach_pic.png
+SHA1-Digest: T/ykOLGgbRDCm1LDuwuHCWB/OdU=
+
+Name: assets/res/propery_icon/spirit_max_tag.png
+SHA1-Digest: O+/Ea4A3a/z5rz9CCmd3TuhV0vQ=
+
+Name: assets/res/item/light.png
+SHA1-Digest: 6sPiqRaQCmNJF81bYujAODRLep8=
+
+Name: assets/res/activity_stage/circle.png
+SHA1-Digest: 010sZppHVopIFLWAHNSxOWV4U2w=
+
+Name: assets/res/armature/tudigong/tudigong.csb
+SHA1-Digest: W0fxLCyF86TfMa/Eq5NaUHJm5Yk=
+
+Name: assets/res/trial/up.png
+SHA1-Digest: Jg7vjWbzBWz0z/I78cs+RTcJAj8=
+
+Name: assets/res/Diary/several_stone.png
+SHA1-Digest: JlFuMpQoyQttgaKHiJdNsgq4nrI=
+
+Name: assets/res/buddha/buddha65.png
+SHA1-Digest: JVFD1c+u54+zn3OR20cexh9UwXs=
+
+Name: assets/res/item/item_name_2.png
+SHA1-Digest: /jHQCXyJwuEcmmT4oUpoEZ6Ge9I=
+
+Name: assets/res/shop1/oprice.png
+SHA1-Digest: oZlyEM94fhrUTXofs3b3wpzHEtM=
+
+Name: assets/res/shop/goods_h.png
+SHA1-Digest: qYewh/4cHVpiV6z3UhZdnIWC5Ko=
+
+Name: assets/res/buddha_icon/buddha16.png
+SHA1-Digest: CdaPFov5kA7jv11Taj1OrXlavgg=
+
+Name: assets/res/tasks/periodic_btn1.png
+SHA1-Digest: /njFpwbVYIFB8ax5oBnoWmMW1lc=
+
+Name: assets/res/novice_guide/new_function.png
+SHA1-Digest: Bccuzfuou5EkCPBXeZ1FljEvuOc=
+
+Name: assets/res/buddha_icon/buddha105.png
+SHA1-Digest: 3OT0kCYJCHw7PLhOzc/FLctUwfE=
+
+Name: assets/res/tiny_loading/role5.png
+SHA1-Digest: bMYn+lDHFWt9Xf+xgK7WS2IIbo0=
+
+Name: assets/res/opening_comic/comic5/comic51.png
+SHA1-Digest: MAiyvoInl5nc/UGUlHCi2NqJp2U=
+
+Name: assets/res/win_or_lose/first_guangdian.png
+SHA1-Digest: M0ZvVI0GKQmVjbpykr0MDum9ZhU=
+
+Name: assets/src/framework/cc/net/SocketTCP.lua
+SHA1-Digest: YaqKgbpiHCpsxpSm4fqBFSWXJj4=
+
+Name: assets/res/monster/monster111.png
+SHA1-Digest: 9g2Wur7tN52qPwtcKzpvbCXBHg4=
+
+Name: assets/res/armature/xiaojiu/xiaojiu0.png
+SHA1-Digest: zfswmLm8hy6BieTvnvsiVNqRbO0=
+
+Name: assets/res/monster/monster107.png
+SHA1-Digest: PjoBYt62L1MCUsBP3Jd/iyPLyk4=
+
+Name: assets/src/config.lua
+SHA1-Digest: ACEfVHtPC+ebXy3aixNW9TWbh0s=
+
+Name: assets/res/buddha/buddha18.png
+SHA1-Digest: JNEJZIBpHDlo3cXsVfMF8KIp2Hg=
+
+Name: assets/res/chart/bg.png
+SHA1-Digest: ZHL/E3WKRuRe4KlkWBCnP4uRQUY=
+
+Name: assets/res/sounds/bgm_battle1.ogg
+SHA1-Digest: S9xRXgmGb4E9orDFHXNUlKkXO1M=
+
+Name: assets/res/novice_guide/guide_team_scene.csv
+SHA1-Digest: tr870FHgE7Cw4ntSLWtwa9hS/Wk=
+
+Name: assets/res/activity_stage/icon2.png
+SHA1-Digest: NVL8Y5ygjGNGnyOwraOkqJfEcfI=
+
+Name: assets/res/settings/sfx1.png
+SHA1-Digest: zuQ5L3n49a08x26RC3X6PtpV7+A=
+
+Name: assets/res/novice_guide/guide_spirit_num.csv
+SHA1-Digest: y4GZ0rsUFeZUN69aI9OJuTrF6nk=
+
+Name: assets/res/connection/restart1.png
+SHA1-Digest: tB1deyuRCBuFcJF1h8GL3j8LXPA=
+
+Name: assets/res/monster/monster16.png
+SHA1-Digest: f0KcjonYQZU7RN6hQ70kSk0V4NA=
+
+Name: assets/res/monster_tower/11/bg.png
+SHA1-Digest: 14kbdy86qOyF8x+9ucbrAkU0wI0=
+
+Name: assets/res/recharge/several_peach.png
+SHA1-Digest: bICUdNPOJFfmm2I72kMVS04Bz3g=
+
+Name: assets/res/armature/tudigong/tudigong0.plist
+SHA1-Digest: 2+m7aFp0hjipzs/LNISQiR+QWis=
+
+Name: assets/res/tasks/stage/content4.png
+SHA1-Digest: F14z2mT71U6MpodLsixyUZ8tAhI=
+
+Name: assets/res/animation/wand_light_tx.plist
+SHA1-Digest: C8fvS6wGuaNH4ElW24J9xOBm7k8=
+
+Name: assets/res/buddha/buddha12.png
+SHA1-Digest: JS8hNx2bbuCIUpATZb8PNu8zK5g=
+
+Name: assets/res/sounds/sfx_touch_ti.ogg
+SHA1-Digest: C/8u203ohX26VEXuYe0T1fPEaY8=
+
+Name: assets/res/armature/xiaoleizhendan/xiaoleizhendan.csb
+SHA1-Digest: /la+jy+zaBeBGE2Mn4E64SCThB4=
+
+Name: assets/src/framework/device.lua
+SHA1-Digest: LC7hWUwUD8H1zCN4RjlE3fFDBRk=
+
+Name: assets/ucgamesdk/config/oriWhiteList.ini
+SHA1-Digest: dTh1QbR/dBQOsPQQjwPBvqwvJME=
+
+Name: assets/src/framework/ui.lua
+SHA1-Digest: hFvv0VS+zbYmpKy2z6GgrMA7ycU=
+
+Name: assets/res/treasure/treasure_tip2.png
+SHA1-Digest: SnI/yB5H9tNur3/LVTu5cYH5ygI=
+
+Name: assets/res/buddha/buddha107.png
+SHA1-Digest: mEHpT9Rne0FT6mVEEiQUC6Ik1ug=
+
+Name: assets/res/armature/baiyanmojun/baiyanmojun.csb
+SHA1-Digest: 4udKS778Xt760KMdwM0vO0iS0EQ=
+
+Name: assets/res/summon_scene/lable1.png
+SHA1-Digest: R4xymPO+8LonX57uohmqXJQcllU=
+
+Name: assets/res/armature/xiaojulingshen/xiaojulingshen0.plist
+SHA1-Digest: 1e7RfHmHJnq+nsoP9nLpjgQanMQ=
+
+Name: assets/res/monster/monster98.png
+SHA1-Digest: 6Wc+1MBMEBnzR48o3L1UOgqH+j4=
+
+Name: assets/res/upgrade/buddha_h.png
+SHA1-Digest: MxOxwXpYfuHBHa2s1+JQyNdmUd8=
+
+Name: assets/res/sounds/sfx_go_1.ogg
+SHA1-Digest: gd/YPY2ljGhf695fm3NoLAmbhPw=
+
+Name: assets/src/DataEye/DCAccount.lua
+SHA1-Digest: teKezgXPPjx9xijVzoXAZBtMIyk=
+
+Name: assets/res/login_scene/registered1_h.png
+SHA1-Digest: JexYA7mp13+fwQT7+pM6QexznB4=
+
+Name: assets/res/recharge/cumulate5.png
+SHA1-Digest: PsQuvWuKGF155VFm3qtY0WwrOyE=
+
+Name: assets/res/new_fellow/intro.png
+SHA1-Digest: UThCKPggq9mxVQ3HzH+RENqYjjk=
+
+Name: assets/res/buddha_icon/buddha85.png
+SHA1-Digest: PLY912z1TaPDjdUuYQVDRT/u72Y=
+
+Name: assets/res/buddha/buddha15.png
+SHA1-Digest: pi3L9/1kwd3oJz1CFwVKBWVlb/Q=
+
+Name: assets/res/item/laojunjindanshouji.plist
+SHA1-Digest: MWCtitS8vmidMw01c1nHVkFtdrU=
+
+Name: assets/src/DataEye/DCCardsGame.lua
+SHA1-Digest: fEAzfIFMpcu3VKMEtpHwX71banA=
+
+Name: assets/res/win_or_lose/first_xx.png
+SHA1-Digest: GBEoz005OT7oZj2OBp2vl4xvy28=
+
+Name: assets/res/activity_stage/btn_exchange.png
+SHA1-Digest: M4C0T2WyxKZydm96/BW7/nnxpZE=
+
+Name: assets/res/monster/monster10.png
+SHA1-Digest: IyrjRPl/PKqX6l1nELrFG3nb5I0=
+
+Name: assets/res/opening_comic/comic6/comic64_tx.plist
+SHA1-Digest: tqcq16MH4b5BaMVqe2q5ZQb2TIE=
+
+Name: assets/ucgamesdk/ui/SYB_7.patch
+SHA1-Digest: AvsisR48My+QjU7zSy6qTFhg8tI=
+
+Name: assets/src/cocos/ui/DeprecatedUIEnum.lua
+SHA1-Digest: /5j8J+dyWCUhIjNNhFl8JlIlyvs=
+
+Name: assets/res/win_or_lose/lose_tip.png
+SHA1-Digest: YoP2wKadjbbIjDt1hhYMkXicx+U=
+
+Name: assets/res/sounds/attack_monste96.ogg
+SHA1-Digest: IGgEjyh+iABfQG+qx+NYQWDqo4Y=
+
+Name: assets/res/tasks/achievement/achievement4_h.png
+SHA1-Digest: vTDtnWXnCcTkRQ3TBTQgaCdoUX8=
+
+Name: assets/res/opening_comic/comic1/comic11.png
+SHA1-Digest: A2AXMP7QMHRAcLmBPdHoPfVjrCo=
+
+Name: assets/res/opening_comic/comic4/comic42_tx.png
+SHA1-Digest: CNaV2O8LhDVbNiiWa1PodN/NM6A=
+
+Name: assets/res/wiki/buddha1.png
+SHA1-Digest: 8UXIc47JLOkCLlxQA1EQqqW9HtQ=
+
+Name: assets/res/stage/sweep5_h.png
+SHA1-Digest: 51Iscy9cJ9rE/fDZS6SEPsgt5ko=
+
+Name: assets/res/novice_guide/finger.png
+SHA1-Digest: u15+5q2BkRfyTAF5xwm5htWxPSI=
+
+Name: assets/res/armature/langren/langren0.png
+SHA1-Digest: UgYUCLbHZur86r9JsLAGATH6U+k=
+
+Name: assets/res/monster_piece_icon/piece1.png
+SHA1-Digest: X19v8atopCh/N85yYDsYZgetL1E=
+
+Name: assets/res/team/head_h.png
+SHA1-Digest: elyP2ryvyeOVN58tsfdpus7XOT8=
+
+Name: assets/res/Diary/normal_icon.png
+SHA1-Digest: NkEmxogE4u2Dk3B/MEwwaDlvmEc=
+
+Name: assets/res/novice_guide/guide_upgrade_property.csv
+SHA1-Digest: PnvsQBDMMQB4pz+OGjj9RgFwa7s=
+
+Name: assets/res/opening_comic/comic6/comic64.png
+SHA1-Digest: lJf5tGVlYl2RzKdVn3fOIMirwtU=
+
+Name: assets/res/upgrade/upgradebg.png
+SHA1-Digest: uEFYNqbMiyhymlhviQeTwx1q/+U=
+
+Name: assets/res/connection/bg.png
+SHA1-Digest: gojubroEd0L4KZV7ZMlgj9uZrK4=
+
+Name: assets/res/gamescene/bagua1.png
+SHA1-Digest: T2p1N3VKAiOdgoaLicmyDr8BraM=
+
+Name: assets/res/tasks/achievement/achievement10_h.png
+SHA1-Digest: vC+/TdF0LVhi+5EDU405O4Jr/tI=
+
+Name: assets/res/server_maintain/bg.png
+SHA1-Digest: 0F0O8PsR1Go/RhiVqr++KB+/7ak=
+
+Name: assets/res/wiki/bg.png
+SHA1-Digest: PF9BsV470jlYhhgK2eHK1UZqk8A=
+
+Name: assets/res/treasure/alert/from.png
+SHA1-Digest: fsZBhudAipYJnq4zgJCl3jrLJvg=
+
+Name: assets/res/animation/shandiantexiao3/shandiantexiao30.png
+SHA1-Digest: Z6h7hwZkvrU2/iHZ7v4irRUt/AM=
+
+Name: assets/res/monster_tower/3/door.png
+SHA1-Digest: v0EZGTMkG7SQRu8cJEQbeb16f9o=
+
+Name: assets/res/win_or_lose/rankings.png
+SHA1-Digest: Ut8UfM/3pg9DKgTRluVyPTn1V40=
+
+Name: assets/res/buddha/buddha90.png
+SHA1-Digest: YGBOtkuu7FBRNIX34oA9fV+4iAc=
+
+Name: assets/src/DataEye/DCCoin.lua
+SHA1-Digest: /dGmpdAPYfCnmNDIy3tO3nyeyZQ=
+
+Name: assets/res/monster_icon/monster114.png
+SHA1-Digest: mT2sYMQ3FbBoxkp4ZOCQacOvTB4=
+
+Name: assets/res/loading/tangseng.png
+SHA1-Digest: tIg3//9PiLEzCCukfKPcyDJpCj4=
+
+Name: assets/res/sounds/comic/sound_comic21.ogg
+SHA1-Digest: H2O14Uov87oQ2xUaZzXDd3ov1yk=
+
+Name: assets/res/dialogue/tangseng/tangseng3.png
+SHA1-Digest: foGZnPpUYKhZLEX+/xlz53cIdxQ=
+
+Name: assets/res/animation/first.png
+SHA1-Digest: JVY6T+l4XU92gFD3JhZ+j6DORmU=
+
+Name: assets/res/monster/monster11.png
+SHA1-Digest: e+mHAs9B2OorKWIJiirl8/0KkIc=
+
+Name: assets/res/item/item4_big.png
+SHA1-Digest: euSJTb82FuUlmv51JB8DZzYJans=
+
+Name: assets/res/common_ui/bar_bg.png
+SHA1-Digest: YzWql5DQYHwI8aZu2IKOnqgPsAk=
+
+Name: assets/res/sounds/comic/sound_comic12.ogg
+SHA1-Digest: dHnCEuPrQovykJySx2feAU7tHjA=
+
+Name: assets/res/gamescene/tower_center.png
+SHA1-Digest: TLx252gYcX1QST5JZJaLmSNpsrU=
+
+Name: assets/res/summon_scene/lock.png
+SHA1-Digest: r3irX3nd//MLbjGoHfqi8C22y5M=
+
+Name: assets/res/gamescene/bg8.png
+SHA1-Digest: 4RukdMicmeswNpv0DYqLeI7hK24=
+
+Name: assets/res/common_ui/bg_frame.png
+SHA1-Digest: x6OhYP3U0t+E6CS2x0Ai+xNB2fE=
+
+Name: assets/res/upgrade/q1.png
+SHA1-Digest: eCoUMhWqkVnous0TDTcr0LQg+a4=
+
+Name: assets/res/buddha_icon/buddha22.png
+SHA1-Digest: mYl7BJvlV25Lb4jETyRe4UiplEM=
+
+Name: assets/res/sounds/comic/sound_comic22_door.ogg
+SHA1-Digest: M0w4NJ91OMNoQcCUAYmwkE/m1S0=
+
+Name: assets/res/fonts/treasure_red_num.fnt
+SHA1-Digest: Nwp8SisE95IWQg2FnipdiJiLqAQ=
+
+Name: assets/res/armature/fennutudigong/fennutudigong0.plist
+SHA1-Digest: tmeckQCvlHACA/o0AcIOvaomVDk=
+
+Name: assets/res/item/item2_pic.png
+SHA1-Digest: FK0v+EEiK9MBcPYBDVOKpUD8ZWc=
+
+Name: assets/res/shop1/exp3.png
+SHA1-Digest: ovn2WIJckizNkLIF1h45EGg6Ofg=
+
+Name: assets/res/tasks/progress.png
+SHA1-Digest: YRA3liZ3lcb582SAPo8Fm4/4T/M=
+
+Name: assets/res/sign/signk.png
+SHA1-Digest: cgz/utVsb9aJQ5zJLcF1eMnHs9Q=
+
+Name: assets/ucgamesdk/ui/common/conf/widgetconf/exbannerDialog.json
+SHA1-Digest: RT0mP5hMXSlupI9RTIvE6T9Z6Bc=
+
+Name: assets/res/animation/upgrade_spirit.png
+SHA1-Digest: zGrBuPDNXlvXNbSGVDzQh6KnzG8=
+
+Name: assets/res/buddha/buddha24.png
+SHA1-Digest: BnkuTsqUVpImpbWxenyOpynDbfo=
+
+Name: assets/res/monster_piece_icon/piece31.png
+SHA1-Digest: W+l5L43LX2ulnT2+rb4g5ZK+VxI=
+
+Name: assets/res/monster_icon/monster108.png
+SHA1-Digest: 98KBZjxdpj8GMI++6hL20KbAUQ8=
+
+Name: assets/res/login_scene/label_login.png
+SHA1-Digest: t1qcPFKk4xIYxHH0OwtksIv6zVE=
+
+Name: assets/res/server_maintain/new.png
+SHA1-Digest: HY+Z/pLhdAV5/W13R4zimfdnJb8=
+
+Name: assets/res/settings/change.png
+SHA1-Digest: e2AtrhQ2k7iy6zr7gCvL7LOITh8=
+
+Name: assets/res/monster_piece_icon/piece6.png
+SHA1-Digest: LvJuF5KWP9JzSNHgXleETWxs4JA=
+
+Name: assets/res/recharge/recharge_h.png
+SHA1-Digest: 2QyRHo59ymusbaMoIR0MN1CcUCs=
+
+Name: assets/res/shop1/shopprice.png
+SHA1-Digest: iQafgFiepGSqN8hEBeUIrF+A62M=
+
+Name: assets/ucgamesdk/ui/common/conf/widgetconf/ucLogin.json
+SHA1-Digest: bsrvYmh5uAkKIvZNjyl2eQpTzgo=
+
+Name: assets/res/shop1/buy_normal.png
+SHA1-Digest: 6GSo+SpNl3MldV+g1ko5YzYYyrU=
+
+Name: assets/res/login_scene/start.png
+SHA1-Digest: hLqocLik8MAV0uXjaaGdXZCRSNI=
+
+Name: assets/res/monster_piece_icon/piece32.png
+SHA1-Digest: 20xjszD5CojGvUbl89CCETpPq4I=
+
+Name: assets/res/trial/fight_h.png
+SHA1-Digest: TrF5WmOsABmmFKOCtZHTJG1L/Lw=
+
+Name: res/drawable-ldpi/icon.png
+SHA1-Digest: 84TjtEPoauaW2kyJXrkgIBnbX8U=
+
+Name: assets/res/treasure/goto1.png
+SHA1-Digest: MsVyUWcz5czaz3MC0dF+VwidQ+U=
+
+Name: assets/res/tasks/achievement_btn1.png
+SHA1-Digest: ouicdCMdjzr+a3tFW7kr0KIxIgE=
+
+Name: assets/res/armature/guangjiaochijiaodaxian/guangjiaochijiaodaxia
+ n0.plist
+SHA1-Digest: 3y2N7b2q37BbiQxwL/6bBvuJBlY=
+
+Name: assets/res/animation/upgrade_spirit.plist
+SHA1-Digest: Q88QkfOg6rTeH5Hvaov6F4gSUZ0=
+
+Name: assets/res/sounds/comic/sound_comic46.ogg
+SHA1-Digest: E/Mv2W3l9dRKww6VgM4xz00tSjE=
+
+Name: assets/res/buddha/buddha2.png
+SHA1-Digest: DRHOZxYElhTYjg5fD3QZory367M=
+
+Name: assets/res/common_ui/uibg.jpg
+SHA1-Digest: aGnpJ5kRslM1yt8hrsrjf+lMGDI=
+
+Name: assets/res/activity_stage/rule.png
+SHA1-Digest: 53Sv8te791zUyGeK++yveOySA3o=
+
+Name: assets/res/sounds/attack_buddha16.ogg
+SHA1-Digest: iUUt8d1G4FHP4i8Mr80ToFXWThE=
+
+Name: assets/res/gamescene/bar_hp_boss.png
+SHA1-Digest: jCcRNYlBHvXrG4oPkakNXUd2i9E=
+
+Name: assets/res/gamescene/bar_green.png
+SHA1-Digest: 9YyUOH7ltGIAQzqdmL9dBCFoTEY=
+
+Name: assets/res/spin/5.png
+SHA1-Digest: LbIrSLVDhB+quw2b08pFbpNh5w8=
+
+Name: assets/res/buddha_icon/buddha90.png
+SHA1-Digest: hKR3StqK+hIZaR0wusmzxnMSY6g=
+
+Name: assets/res/shop/business_h.png
+SHA1-Digest: Emb45kMHy9Rp46hP6Sv7L8I08Uk=
+
+Name: assets/res/buddha/buddha86.png
+SHA1-Digest: 5/OuAvzQX1L/CEoVqDjTjfwIIyA=
+
+Name: assets/res/server_maintain/next_msg1.png
+SHA1-Digest: djkHC+zBm1c5bIOjur4C+d4gtzk=
+
+Name: assets/res/buddha/buddha100.png
+SHA1-Digest: 3Tl8hxbQftd8vDevCK9lqw2TaSE=
+
+Name: assets/res/spin/9.png
+SHA1-Digest: j9YQhi5jUF1PdBuAV5pRkHQvhLM=
+
+Name: assets/res/monster_piece_icon/piece2.png
+SHA1-Digest: w7GAtfyfXh1edu9rkLfrzPDW4Do=
+
+Name: assets/res/common_ui/known.png
+SHA1-Digest: 5weMyPu9J9nFxMcGpOK6jKj+v1U=
+
+Name: assets/src/framework/cocos2dx/SceneEx.lua
+SHA1-Digest: gsEx7XISRNQyOs7mt8DWGfcb2S0=
+
+Name: assets/res/upgrade/attackdi.png
+SHA1-Digest: BJmm4bhTtBlDpQ8osER+rG2YmMA=
+
+Name: assets/res/buddha/buddha83.png
+SHA1-Digest: c/kh+eCTm7NSp0eecMitA3IB/wY=
+
+Name: assets/src/framework/display.lua
+SHA1-Digest: 5zunNPsNCZSwJuRK2gA5yc0XAOs=
+
+Name: assets/res/sign/shadow.png
+SHA1-Digest: M9vc+4ly5Pm7m2TYidZpZHQkwCM=
+
+Name: assets/res/sounds/sfx_advanced.ogg
+SHA1-Digest: R8F0pzUuKA+nEYGMZbMR6ZnQsmU=
+
+Name: assets/res/sounds/attack_monster18.ogg
+SHA1-Digest: GXcHbkf9cJGnX8T1O/alt7zVS1Q=
+
+Name: assets/res/animation/shandiantexiao1/shandiantexiao1.csb
+SHA1-Digest: UM7WYecW+31zvEOZUdpFwKfw5S4=
+
+Name: assets/res/animation/splash.png
+SHA1-Digest: 8hKbSCzfPQadsbLZCcLPtKtNHkk=
+
+Name: assets/res/new_fellow/5.png
+SHA1-Digest: c4f1y6KFjNJTxF3yfpFEEN4Ny8A=
+
+Name: assets/res/chapter/stage_icon1.png
+SHA1-Digest: ycWvphw+kT39D2ricubB/TuGcFk=
+
+Name: assets/res/armature/xiabing/xiabing0.png
+SHA1-Digest: QgRoQSVm8hUFpBnNm1MHI0KuD4U=
+
+Name: assets/res/sounds/comic/sound_comic6.ogg
+SHA1-Digest: vl/KPFTElnKEC4EZ2svdK73fWko=
+
+Name: assets/res/summon_scene/alert_frame.png
+SHA1-Digest: YfLopN8Hq5E2yK1ZfcOtYrawvjs=
+
+Name: assets/src/cocos/ui/experimentalUIConstants.lua
+SHA1-Digest: mTUpyFNceuviMK1ERajxdegH2JM=
+
+Name: assets/res/opening_comic/comic4/comic46_tx.png
+SHA1-Digest: xCP/GAZm9OUp2vL0ikuang+rdFM=
+
+Name: assets/res/animation/maintain_ani.png
+SHA1-Digest: EtlATlkBqBA3zbaGW/wT1GrWyXs=
+
+Name: assets/res/sounds/sfx_attack_slash.ogg
+SHA1-Digest: I2YxhCrtF5//pME2jQjMc1MCbfk=
+
+Name: assets/res/monster_icon/monster102.png
+SHA1-Digest: gBU6dblx/obIoB7n4rY4wLWNJJU=
+
+Name: assets/res/animation/mirrfire.png
+SHA1-Digest: zXD0qai/EDpHSinYEOfWHm55Ns8=
+
+Name: assets/res/sounds/comic/sound_comic7.ogg
+SHA1-Digest: Q2RuTaPPig746zXW35omdFeeX0U=
+
+Name: assets/res/summon_scene/btn_single1.png
+SHA1-Digest: MJobDYEjToGFhtqAoMtLbv3Yks0=
+
+Name: assets/res/new_fellow/cloud.png
+SHA1-Digest: ekUGyktoANLGjmLIDhWdi6neSbg=
+
+Name: assets/res/sounds/sfx_touch.ogg
+SHA1-Digest: LhrLEiQzCCNlshwPj5U02pERk/Y=
+
+Name: res/drawable-xhdpi/icon.png
+SHA1-Digest: jCIeyF6VBKvoKmKhIvPllH10/Z8=
+
+Name: assets/src/cocos/cocos2d/json.lua
+SHA1-Digest: x0aAam7ftSWALVmlbjS2y0lRE/M=
+
+Name: assets/res/sounds/attack_buddhaxt.ogg
+SHA1-Digest: 6KESSiqXbvCwzTZZzkWXSUKb078=
+
+Name: assets/res/gamescene/bg5.png
+SHA1-Digest: 3Ue7+HQao4f0O34qjUldWN6lZHQ=
+
+Name: assets/res/upgrade/tower/small_tower3.png
+SHA1-Digest: 5F/OO6gABuxiEpkMz3lUhi5JbTo=
+
+Name: assets/res/buddha_icon/buddha70.png
+SHA1-Digest: G7feYaKL6l6aJIpBBmhWKLlUdxE=
+
+Name: assets/res/buddha/buddha67.png
+SHA1-Digest: /hUUAsm/8fk7nYaQQgxNqrM+dUw=
+
+Name: assets/res/animation/shengli_xingxing.plist
+SHA1-Digest: nuVIZ9846H8XHhaUlhpF5HHxFEs=
+
+Name: assets/res/upgrade/grade.png
+SHA1-Digest: /S7Gl231d+854Hp3mkIU6xqbsyA=
+
+Name: assets/res/armature/langren/langren.csb
+SHA1-Digest: Kp5Ri9A0/3rhuNkr8TKdXn7kVt0=
+
+Name: assets/res/win_or_lose/exp_reward.png
+SHA1-Digest: 4HeyA8Dtzt9b5xeVL6ptyhpUhCk=
+
+Name: assets/res/chapter/stage_icon5.png
+SHA1-Digest: axKgRa8x/phgCpVS+gkmL8I0OMY=
+
+Name: assets/res/loading/halo.png
+SHA1-Digest: pl57OBjf5HIijUZ87uQjxXdUwl0=
+
+Name: assets/res/armature/xiaojiu/xiaojiu0.plist
+SHA1-Digest: GRpU0Kmdg3pO+z6VaZKdDhM3ksM=
+
+Name: assets/res/opening_comic/comic4/comic48_tx.plist
+SHA1-Digest: 2uOgKxVzIdl5E8CcwhdSaLQzOmM=
+
+Name: assets/src/framework/cc/ui/UIBoxLayout.lua
+SHA1-Digest: 7miv1qmDBj5F7n51ImygORrj/ug=
+
+Name: assets/res/monster/monster3.png
+SHA1-Digest: uAdLeFD94UXuKUddHKH9sou+lss=
+
+Name: assets/res/recharge/price_frame.png
+SHA1-Digest: Bapcr0uk5yKpOlFt17SEhTrVAPg=
+
+Name: assets/res/sounds/comic/sound_comic65.ogg
+SHA1-Digest: n3ImXsz5tJ1SMmZYbvwJEZcbtVU=
+
+Name: assets/res/monster_icon/monster18.png
+SHA1-Digest: lGjCILoG8Uh2Ij27HwM03R07BIk=
+
+Name: assets/res/sounds/snd026.ogg
+SHA1-Digest: 78NS5GljuapXzj37eDZpIBMTUZg=
+
+Name: assets/res/settings/label_sfx.png
+SHA1-Digest: 6JkouBFNkrTGLu1WsxTjcvwKMBw=
+
+Name: assets/res/item/item_icon.png
+SHA1-Digest: gbF3HCqc0K83LxquRCwQ7qo+UkY=
+
+Name: assets/res/summon_scene/huang_pic.png
+SHA1-Digest: 3CfXJ2wTunpxKW/0HibXyJWgIIA=
+
+Name: assets/res/upgrade/zhaohuan_h.png
+SHA1-Digest: 9ObR8wJo6QiQemKQ/+IHTCvWbZ8=
+
+Name: assets/res/item/item5_h.png
+SHA1-Digest: Yn6xz/Th4x8hMlZojMBQY/P1TCo=
+
+Name: assets/res/item/item4_h.png
+SHA1-Digest: sGEJ3Ba7cQHLX1I2cr8SJN9a+dk=
+
+Name: assets/res/sounds/attack_monster14.ogg
+SHA1-Digest: 2Z+K8Z/mQuRRYw/nLyKfnIhvFr0=
+
+Name: assets/src/framework/platform/android.lua
+SHA1-Digest: aJdEv0dZWHvAXCR+wn127J+41n8=
+
+Name: assets/res/item/item_name_1.png
+SHA1-Digest: qR2JWCe5TNoFx6m/Q0WMs+F6gew=
+
+Name: assets/res/gamescene/level.png
+SHA1-Digest: GSoIAZwkf9ROHbsYD9Z9SQHe7kM=
+
+Name: assets/res/stage/stage_bg.png
+SHA1-Digest: CsVBpeh7Wj8Lms3u+lzZa4xPdok=
+
+Name: assets/res/animation/tower_boom.png
+SHA1-Digest: 576W9Qjpdhg+TFJU1/D/aOLAQO0=
+
+Name: assets/res/monster_icon/monster23.png
+SHA1-Digest: 2pJyA6xsjRl5W7T3GMfTrNY+IQc=
+
+Name: assets/src/framework/cc/init.lua
+SHA1-Digest: gsK9OcaaGjv16Xlz5ZaBoxnUSXE=
+
+Name: assets/res/sounds/comic/sound_comic41.ogg
+SHA1-Digest: 4aH2ibeqIlrY9b4BgNSvE8c0Ymk=
+
+Name: assets/res/monster/monster102.png
+SHA1-Digest: xSqGEU/p9/smsoCgdorcFuoQyNI=
+
+Name: assets/res/monster_piece_icon/piece20.png
+SHA1-Digest: HDcpMwZMGSKfjfjAeO4cCbFj8bg=
+
+Name: assets/res/novice_guide/guide_unlock_monster1.csv
+SHA1-Digest: q2etq7yvX5+wdu7bClg+7+A4cY8=
+
+Name: assets/res/new_fellow/new_fellow1.plist
+SHA1-Digest: yv5z44UgW01vxF3gchutOCtxWJY=
+
+Name: assets/res/stage/stage_selected.png
+SHA1-Digest: 0I1o9kRpitBmfQQ/Ct4tns+NNNg=
+
+Name: assets/res/opening_comic/comic4/comic47_tx.plist
+SHA1-Digest: 9xHf9b21Knm8gBMe6jafyL5987U=
+
+Name: assets/res/gamescenegroove/frame3.png
+SHA1-Digest: aAzDSPP3Gqie5hLOW5yrFQoQ5LQ=
+
+Name: assets/res/tasks/description.png
+SHA1-Digest: 9RfjJTfoFS35IY3UDC5Mh1lBSkk=
+
+Name: assets/res/chart/line.png
+SHA1-Digest: TXmVXE7K5An4J9rWuCVUHpIpbVY=
+
+Name: assets/res/login_scene/server_item_h.png
+SHA1-Digest: nDXfQJ5nb9iDyqCNeLRVKMxMFyA=
+
+Name: assets/res/team/team.png
+SHA1-Digest: deN9INL9c8D1E/4J837iZBc5sEE=
+
+Name: assets/res/monster_piece_icon/piece11.png
+SHA1-Digest: 3d3wpnIlic+Gmb+WOOLHHU68qdw=
+
+Name: assets/res/buddha/buddha110.png
+SHA1-Digest: w4eyEviZgwMWn0ay9l7aK07XQMw=
+
+Name: assets/src/framework/cc/components/behavior/EventProtocol.lua
+SHA1-Digest: pEgr8YNClHiN6NqFkfeUR5St7Gs=
+
+Name: assets/res/upgrade/tower/small_tower1_h.png
+SHA1-Digest: 3/3fVb75JWqTGXBTY0uKusLSkXY=
+
+Name: assets/res/item/baowutexiaoxuanzhuan.plist
+SHA1-Digest: zxpyrGzaduXQL8g3Oj26xYPTgrU=
+
+Name: assets/res/summon_scene/hong_pic.png
+SHA1-Digest: P1+yGlQl7hHuCflrM+CPRi8N850=
+
+Name: assets/res/buddha_icon/buddha91.png
+SHA1-Digest: e033QBdOX4+Vgp76CzEFP6v7RF8=
+
+Name: assets/src/framework/cc/GameObject.lua
+SHA1-Digest: dJo7F1FDEsl3kkFge3jLd47MiLI=
+
+Name: assets/res/game_infinite/game_start.png
+SHA1-Digest: Hgvu5XtzjOuV+OBcdgM1dYhWMZM=
+
+Name: assets/res/buddha_icon/buddha23.png
+SHA1-Digest: g/7iG8I1HEfiGfdt/N7prvEYoZg=
+
+Name: assets/res/item/item_name_5.png
+SHA1-Digest: YrCcPBoOvz4vn/0NAGEEFc0N1Fk=
+
+Name: assets/res/armature/jiutianxuannv/jiutianxuannv.csb
+SHA1-Digest: Ta/aLqsw+IMMRBfjO2oZb9oBv04=
+
+Name: assets/res/armature/xiaoleizhendan/xiaoleizhendan0.png
+SHA1-Digest: xnXpTBry5FNaFOfikcAUzBPgjKQ=
+
+Name: assets/res/Diary/exp.png
+SHA1-Digest: e2VSOTXSvLQ/Uranl6fcTW6ihOg=
+
+Name: assets/res/opening_comic/comic6/comic64_tip.png
+SHA1-Digest: 3N0logjhkKdbtDX9o9Q2E0UXcy0=
+
+Name: assets/res/item/frame_bg.png
+SHA1-Digest: DzYZ03uMafbkU+L/M4r/yQdy2ZI=
+
+Name: assets/res/sounds/attack_buddha85.ogg
+SHA1-Digest: Bnza/sPRfEvNgqXgfQ2M21u/CEg=
+
+Name: assets/res/gamescene/gray_mirror.png
+SHA1-Digest: 5qVfSLe+ZE59KWrnNmj2ibeNc3E=
+
+Name: assets/res/notice/eg.png
+SHA1-Digest: NyPOM/MGBfo3U67F1gp+3HvFW3Y=
+
+Name: assets/res/treasure/treasure6_pic.png
+SHA1-Digest: hNnCzhjg2HNjbtEFJKV4vZl8DEw=
+
+Name: assets/res/armature/dianliniang/dianliniang0.png
+SHA1-Digest: cCzVOKzEkD0Im4E89CR887zvXsY=
+
+Name: assets/src/DataEye/DCAgent.lua
+SHA1-Digest: Qt65bQvvToPhSR/B8FyNH38mchU=
+
+Name: assets/res/tasks/achievement/achievement8_h.png
+SHA1-Digest: ep3IXss1ZHxlqGe1idcPg72KbDs=
+
+Name: assets/res/armature/qiangdao/qiangdao.csb
+SHA1-Digest: dBUS1BYhJHJCWqeOnPC6+I/RnsY=
+
+Name: assets/res/opening_comic/comic4/comic42_first.png
+SHA1-Digest: Jdhr8hv0kReKn9izU9mN8HOfxaM=
+
+Name: assets/res/sounds/bgm_battle0.ogg
+SHA1-Digest: LK0Nvga8LLVFwnrJJunHOKcsswU=
+
+Name: assets/res/armature/qingdaofu/qingdaofu0.png
+SHA1-Digest: +IH81spu7Tl2io1xDuaTojmvqEQ=
+
+Name: assets/res/animation/upgrade_tx.png
+SHA1-Digest: +Wq4pJ/ez7tBlN1Vh7X1fekEncE=
+
+Name: assets/res/shop1/soldout.png
+SHA1-Digest: bDnGuT9k6ug5u0p41PR7NIZFcgM=
+
+Name: assets/res/sounds/bgm_opening.ogg
+SHA1-Digest: X7x1T3PJlysN5MwHsB8+c1M3n5U=
+
+Name: assets/res/login_scene/tip1.png
+SHA1-Digest: H/2DpyFv6I2x4GubEkaIKkJT6mA=
+
+Name: assets/res/buddha_icon/buddha8.png
+SHA1-Digest: vMO43PIkuLQViooUjulGD4VJcYc=
+
+Name: assets/res/tiny_loading/role4.png
+SHA1-Digest: rErbfRUq+aQNheP2sLrfIlZqIvM=
+
+Name: assets/res/monster_icon/monster22.png
+SHA1-Digest: 14hRKBMyjuoFv6BuUKq5N8TzpzI=
+
+Name: assets/res/common_ui/buy_h.png
+SHA1-Digest: clnAzmEYu5FXl0xOaQP2EAjeXpU=
+
+Name: assets/res/novice_guide/guide_upgrade_tower1.csv
+SHA1-Digest: z1xzGOmHvq1bRXE9y6Hai8l+a3I=
+
+Name: assets/res/recharge/reward_h.png
+SHA1-Digest: ZXIKcGRZwXuFrDxBvhV/mr2XnXM=
+
+Name: assets/res/gamescene/bar_type2.png
+SHA1-Digest: xTr5jlEw74ulWfmDOwwUtAS+v94=
+
+Name: assets/res/treasure/q3.png
+SHA1-Digest: C4YIsw2UnbYmApZkmPRQ9RgEVOg=
+
+Name: assets/res/opening_comic/comic4/comic45_tip.png
+SHA1-Digest: 4nReZa54H5rw3QAuIkha7mmeEY4=
+
+Name: assets/res/tiny_loading/hint2.png
+SHA1-Digest: p5+Fh8T8AZaUcmIPpP41WLqWKTw=
+
+Name: assets/res/treasure/treasure6_attrib_des.png
+SHA1-Digest: y01DdF7gNjJu/Co4cdCnC9GCcSg=
+
+Name: assets/res/buddha/buddha25.png
+SHA1-Digest: tgJiBzzya3IKGN8sY/TkQsxaZUg=
+
+Name: assets/res/login_scene/change_account_h.png
+SHA1-Digest: ybPzqXa930eud0HX/Wcqw+jZaIE=
+
+Name: assets/res/monster/monster116.png
+SHA1-Digest: qtU4FZkvndn06WZazcHiGidcA64=
+
+Name: assets/res/buddha_tag/6.png
+SHA1-Digest: ftv/gtaNc3BbT8EgATsWfrXbbLA=
+
+Name: assets/res/gamescene/pause.png
+SHA1-Digest: RsaL0FQR7FmfVpIyomXoggYrtZ4=
+
+Name: assets/res/buddha_icon/restrain_icon3.png
+SHA1-Digest: dPrX3hF25YUlU0SRrQ/i1FEe40Y=
+
+Name: assets/res/monster_tower/1/bg.png
+SHA1-Digest: 4eYxSXUi+kDyExjHM7gAEsseLbI=
+
+Name: assets/res/new_fellow/new_fellow3.plist
+SHA1-Digest: hxXhxbCwDMPwrYGuH+1gGAH9/p4=
+
+Name: assets/res/buddha_icon/buddha30.png
+SHA1-Digest: WL6fqzXSfF7NCqMonYAxnLdhbUc=
+
+Name: assets/res/monster/monster21.png
+SHA1-Digest: PmGod2Pr5UhdZTa4eEFFVv6CARk=
+
+Name: assets/res/animation/circle_tx.plist
+SHA1-Digest: zzMs0kjOGC+KL11/EXsSxfwwlxc=
+
+Name: assets/res/opening_comic/comic6/comic65.png
+SHA1-Digest: 6T7tK6+Pd54eJIN8ZkXPrhPH850=
+
+Name: assets/res/novice_guide/guide_item1.csv
+SHA1-Digest: WORz2HrwhRkQQJbbYSOzUPYKhbg=
+
+Name: assets/res/buddha/buddha75.png
+SHA1-Digest: IyH5pkX8ss53DnprU+Ej9MzARPA=
+
+Name: assets/res/monster/monster109.png
+SHA1-Digest: nvlVH0Kw98sLo5rle48KcdTj+Eg=
+
+Name: assets/res/chapter/stage_icon8.png
+SHA1-Digest: VHhXfCNew9rV0HAeGs5g0KYdqeM=
+
+Name: assets/res/armature/baiyanmojun/baiyanmojun0.png
+SHA1-Digest: 7v9LPqVfDElHwwXo3L5TGUhu/1Q=
+
+Name: assets/res/armature/maodaoren/maodaoren0.png
+SHA1-Digest: cEnThuWZZay+yXq/UZRvI3Rte4A=
+
+Name: assets/res/sounds/bgm_battle2.ogg
+SHA1-Digest: RKS9WyeiNvY/gO+u8o5wBYN/3xg=
+
+Name: assets/res/monster_icon/monster53.png
+SHA1-Digest: OHSQEYT5CIxmrdmu9LHr20YSiG8=
+
+Name: assets/res/sounds/sfx_attack_punch.ogg
+SHA1-Digest: RNTQ8NTm1fwTfRvT8acnnsMDTCA=
+
+Name: assets/res/gamescene/bg6.png
+SHA1-Digest: f9PHWwxKX0M6HG6f6PooSDfkDbI=
+
+Name: assets/res/item/use1.png
+SHA1-Digest: MDK1QML4rFkRv0WbdooBBXdEITQ=
+
+Name: assets/src/DataEye/DCEvent.lua
+SHA1-Digest: 33INPOlX8kNkc7AyN9l3/x7lD5s=
+
+Name: assets/res/buddha_icon/buddha71.png
+SHA1-Digest: uHYPa5cJ3qnO5UGv48SMVlE5CV4=
+
+Name: assets/res/treasure/icon8.png
+SHA1-Digest: TvXTZyx7BApR8S5ZbMHdaavLTFk=
+
+Name: assets/res/tasks/achievement_btn.png
+SHA1-Digest: Y8CHktdFIE8bxhXW9QvFBUNnJIY=
+
+Name: assets/res/armature/xiaoxiangzi/xiaoxiangzi0.png
+SHA1-Digest: sNkmpyTJU6WgdciB8RGI9PpG5oE=
+
+Name: assets/res/buddha/buddha10.png
+SHA1-Digest: HBKfAhyxC6wdnlUWUQWCqWK4ffI=
+
+Name: assets/res/animation/game_win/shenglidonghau0.png
+SHA1-Digest: 3C2pRfqACJ6sRAYy298RF3MgyuE=
+
+Name: assets/res/armature/honghaier/honghaier.csb
+SHA1-Digest: mmVQ/Q1AjegyP4tFQNoPvBVs244=
+
+Name: assets/res/armature/qiangdao/qiangdao0.plist
+SHA1-Digest: GZcoFuimDGl0/mIX12irTJA1/jI=
+
+Name: assets/res/buddha_icon/buddha65.png
+SHA1-Digest: 5C6WFjfz9aIJksLHS0kiZnjEOfg=
+
+Name: assets/res/item/item6.png
+SHA1-Digest: 1IVk7YPWeCanC42Bs/JgZuit7zA=
+
+Name: assets/res/stage/stage_normal.png
+SHA1-Digest: lMgLpf1Ykc0S7HmGcDNZB2GCW1g=
+
+Name: assets/res/shop/flush.png
+SHA1-Digest: 8+cqMFowArO3oZ6iX3rrlBhVu0k=
+
+Name: assets/res/armature/muma/muma0.plist
+SHA1-Digest: oSplPoFu//Am3byWjkj42NeMjXo=
+
+Name: assets/res/shop/gift3.png
+SHA1-Digest: EvILq4vNQVPavr6JgJEpUvmB2ZQ=
+
+Name: assets/res/upgrade/q6.png
+SHA1-Digest: CEP1gf/vsQXO8UhoACiXyfxlJ2Y=
+
+Name: assets/res/gamescene/stageNum.png
+SHA1-Digest: UV9+zXGARpJXOZVtA+k22xrpHRg=
+
+Name: assets/res/new_fellow/new_fellow3.png
+SHA1-Digest: RrwKMbi5TnpLEg0Ru+JXV8mGSPI=
+
+Name: assets/res/armature/xiaozhongkui/xiaozhongkui.csb
+SHA1-Digest: PJHVvUyDGRHtWAbvJfBvEMr4mOE=
+
+Name: assets/res/sounds/attack_monster23.ogg
+SHA1-Digest: wELrsLEvheD5Q/r/GBKgYld9mXc=
+
+Name: assets/res/tiny_loading/hint5.png
+SHA1-Digest: 6kvtxs9MH+i1sCxwa2ur8h/hALU=
+
+Name: assets/res/item/item2_h.png
+SHA1-Digest: sFlxIalkFLVNQBUdgvlwbC6vU5w=
+
+Name: assets/src/framework/cc/ui/UIStretch.lua
+SHA1-Digest: Od00shqcq3+hscWHMaBgG3uPEhQ=
+
+Name: assets/res/tasks/progress_bar1.png
+SHA1-Digest: aWSJYv3hcMsd3J6s5cwlZCK959Y=
+
+Name: assets/res/loading/bg.jpg
+SHA1-Digest: 8XwwEVZ595HLdurAK7hpNa2Qwxs=
+
+Name: assets/res/upgrade/property_tip.png
+SHA1-Digest: Bd6fRh7yDd2iRs8tGwr13EbVSzU=
+
+Name: assets/res/sign/frame.png
+SHA1-Digest: Lj7PYqVrlFogV//zgmfjS+I5lqY=
+
+Name: assets/res/sounds/sfx_win.ogg
+SHA1-Digest: khdTRGMnjcgbSvLfPLnfhDCmEfI=
+
+Name: assets/res/gamescene/bar_hp_tower_m.png
+SHA1-Digest: sMUWFOodrs8bkkWGaR91o348iSc=
+
+Name: assets/res/chart/2.png
+SHA1-Digest: OVMp7gB15FV6Sqhnj91aNe84gZc=
+
+Name: assets/res/stage/sweep1.png
+SHA1-Digest: 4QcE74+vy3gTHA77Tf3zvzfKdqk=
+
+Name: assets/res/fonts/whiteNum.fnt
+SHA1-Digest: A6yn/vteY4j8faIJo2HVJrn1K3U=
+
+Name: assets/res/armature/xiaozhangtaizi/xiaozhangtaizi0.plist
+SHA1-Digest: o4+/XtUME11XY/Lpu6QyJaVZN1A=
+
+Name: assets/res/armature/datuzha/datuzha.csb
+SHA1-Digest: KkxCbj5gkHFoAsbV3ygUKO1QT88=
+
+Name: assets/res/animation/jinhua_tx.plist
+SHA1-Digest: BVfJIU1Jh7HlxrqbRZWAaDImHrk=
+
+Name: assets/res/gamescene/bg_sky8.jpg
+SHA1-Digest: 85Xtw8YKmsuHXsurw6tgIikUlFU=
+
+Name: assets/res/common_ui/toast3.png
+SHA1-Digest: GYCHeKZEOXXINV0ar/IBWv0AWiw=
+
+Name: assets/res/shop1/40.png
+SHA1-Digest: 67mFbSupRSz32SMKiDQmR+1a/bk=
+
+Name: assets/res/chapter/achievement.png
+SHA1-Digest: qDVUOpVzuGcrXzeGXyDuktOY/EA=
+
+Name: assets/res/novice_guide/guide_stage0_2.csv
+SHA1-Digest: oXdAREQqOreo8wTTiTrXBMmE5vQ=
+
+Name: assets/res/armature/dajulingshen/dajulingshen0.png
+SHA1-Digest: rUfllPdKiwAnV/EvVK5Fs+eyHuE=
+
+Name: assets/res/alert_exp/pic3.png
+SHA1-Digest: 7wRgVc9EcxQXoDIRYgIoHjil6l4=
+
+Name: assets/res/team/mid_h.png
+SHA1-Digest: Ye1ZZ7UZLzLFc/RC6k+WkDak4dk=
+
+Name: assets/res/stage/groove.png
+SHA1-Digest: OKcqOF1XvDh8mWBTeoGgNT5lXns=
+
+Name: assets/res/sounds/comic/sound_comic62.ogg
+SHA1-Digest: lEdwMzAQ1x4f1n0iLAV6VOTcyGM=
+
+Name: assets/res/animation/dadouyanwu.png
+SHA1-Digest: aMbgRAxEgHJ+6b5HvxVkCOzc0/8=
+
+Name: assets/res/chapter/cloud.png
+SHA1-Digest: eLTOXny7nTWmGAhktAAUJiMYlt0=
+
+Name: assets/res/monster_piece_icon/piece24.png
+SHA1-Digest: ONboB3OxHv4zmOAreO2Zi0X8ac0=
+
+Name: assets/res/server_maintain/last_msg.png
+SHA1-Digest: Q3Gdae3ZdRN4ieLeiV8LW3M4Nbw=
+
+Name: assets/res/monster_tower/13/door.png
+SHA1-Digest: LgAcXa+66yLURbzl/TvVKvG44/s=
+
+Name: assets/res/upgrade/gradebt.png
+SHA1-Digest: yqOXNIMsnfRMayCcuyqoDXs6egs=
+
+Name: assets/src/framework/cc/mvc/AppBase.lua
+SHA1-Digest: UHoqhTltrsZrLQXvuJE57f5H6n8=
+
+Name: assets/src/main.lua
+SHA1-Digest: zBsZ5jJ7xKqCaohGoqatpNufdj8=
+
+Name: assets/res/monster/monster108.png
+SHA1-Digest: DK+lLfTvnQA1EB66A7OykdslbxI=
+
+Name: assets/res/opening_comic/comic4/comic46_tip.png
+SHA1-Digest: 9oVlDfb1lt1sjbVocP+VYyBwim0=
+
+Name: assets/res/sounds/comic/sound_comic47.ogg
+SHA1-Digest: YMN63NjwFYSlBTZVHeqEUOwRnfY=
+
+Name: assets/res/gamescene/lingqi.png
+SHA1-Digest: wsvRFPcjqEvyUyQVyKI4w6HV15U=
+
+Name: assets/res/armature/fengtaizi/fengtaizi0.png
+SHA1-Digest: uAiR2rG1Y3OuoEPh/1bGBov5vsQ=
+
+Name: assets/res/buddha_icon/buddha19.png
+SHA1-Digest: 9FWKYCEVGhmUx1LRkqcH/ZgJdm4=
+
+Name: assets/res/buddha/buddha7.png
+SHA1-Digest: c3g9Z+Cx5jsE95mU0HmlhFDTujo=
+
+Name: assets/res/game_infinite/last_wave.png
+SHA1-Digest: WWX1SWyxknX2hzGY2wNHIDPJI9k=
+
+Name: assets/res/armature/longma/longma0.png
+SHA1-Digest: uPGhT66jgqBtu/4EG3lOYp3VKJg=
+
+Name: assets/res/login_scene/bounding.png
+SHA1-Digest: /EVS2v8YFF6wooPCXeYKGyTusmY=
+
+Name: assets/res/treasure/q2.png
+SHA1-Digest: Zwp6Qwf4qMA00iC+Xgf+O+QJNfc=
+
+Name: assets/src/cocos/cocostudio/DeprecatedCocoStudioFunc.lua
+SHA1-Digest: Jr0UJsr424wXpJO+UyusN4zYoAw=
+
+Name: assets/res/upgrade/details.png
+SHA1-Digest: rN/xwBirAms5kfZLN6pQxFVOMXo=
+
+Name: assets/ucgamesdk/ui/common/conf/loading_logo.png
+SHA1-Digest: iLmdl7nvYKbMAVMOyXyUDwnMKe8=
+
+Name: assets/res/tasks/achievement/achievement6_h.png
+SHA1-Digest: fcpVPdpb60e1gXi1bCvvN7hyCb0=
+
+Name: assets/res/sign/item.png
+SHA1-Digest: +gGHpJSc7ZnfOJuI7FhmuVX4/sM=
+
+Name: assets/res/gamescene/bg_middle3.png
+SHA1-Digest: H9H7ov2vGOhIvoCRNam2bg/0vV8=
+
+Name: assets/res/activity_stage/frame2.png
+SHA1-Digest: 0joYiidZcKEY6pHMyXU7rGJOews=
+
+Name: assets/res/opening_comic/comic3/comic31_tx2.plist
+SHA1-Digest: viubWgkpMvQ1/bqTDWwHAUcwzNc=
+
+Name: assets/res/armature/xiabing/xiabing.csb
+SHA1-Digest: aGRHwa2pmvxBSb6ENTYrXNYVwrw=
+
+Name: assets/res/new_fellow/share_h.png
+SHA1-Digest: yGbyEEmOz46VM8cRzSpRfqXug1Q=
+
+Name: assets/res/treasure/icon7.png
+SHA1-Digest: 3moyCpN+S7stgRJOoGUJZNJGndE=
+
+Name: assets/res/game_infinite/change_name.png
+SHA1-Digest: 2z0QZ76VOFaxFWe91hxfsn+R6UA=
+
+Name: assets/res/sounds/attack_buddhaxt1.ogg
+SHA1-Digest: AVF/phWw5DoyvzjgdBOJHmv2INw=
+
+Name: assets/res/survey/bg.png
+SHA1-Digest: LQcgns229zladtN2MbWrnBZS134=
+
+Name: assets/res/new_fellow/monkey.png
+SHA1-Digest: aymzObNCuS9R5NaBcqJ7bP+spiw=
+
+Name: assets/res/armature/keaishuguai/keaishuguai0.plist
+SHA1-Digest: C7JZy3BuNTbdHgJuW0fsGwxWEWA=
+
+Name: assets/res/chapter/activity.png
+SHA1-Digest: 0Vc1Hle8ItsJyksGvOqoPsFSCbQ=
+
+Name: assets/res/animation/jiesuo.png
+SHA1-Digest: zNJRj3YJUwgsqLou1q8sIqtkbcE=
+
+Name: assets/ucgamesdk/config/service_config.json
+SHA1-Digest: hfVSUupmnUtcW/0HuQDaypu9lNw=
+
+Name: assets/res/opening_comic/comic1/comic11_tx.png
+SHA1-Digest: 4ygJ/AcvpXzOnVK/tsABukWJcIU=
+
+Name: assets/res/animation/pointer_tx.png
+SHA1-Digest: 88k9Q1MIPeQSyMWPdZd1H2k/1lg=
+
+Name: assets/res/login_scene/quick_start_h.png
+SHA1-Digest: jm9BFqSILH35YsocJIi7c5sKdfg=
+
+Name: assets/res/opening_comic/comic1/comic13_pic1.png
+SHA1-Digest: dc9yshAYtTKNPGsCJqn6AjZPSgc=
+
+Name: assets/res/settings/setting.png
+SHA1-Digest: U7IsPqLcjbtcQF9+uK45pikOLQA=
+
+Name: assets/res/tasks/get_normal.png
+SHA1-Digest: IeOaeUflyQ3mh8MnZmZiIuNreWo=
+
+Name: assets/res/treasure/icon4.png
+SHA1-Digest: 79/mOvSP6dJhmNgwS8qww9i7knA=
+
+Name: assets/res/shop1/gift1.png
+SHA1-Digest: XuO6Tn41eRIfEdwFyd2I+kRgcwk=
+
+Name: assets/res/treasure/treasure3_attrib_icon.png
+SHA1-Digest: BHSG/fPDQDcgMEoYdLpnvLATtyY=
+
+Name: assets/res/item/name2.png
+SHA1-Digest: O2PHj9hGJ9PO3L9lR4NNxWEKQAM=
+
+Name: assets/res/tasks/achievement/achievement5.png
+SHA1-Digest: j/YwHBFU8drBkBbXCHq52sVWiZk=
+
+Name: assets/res/sounds/sfx_attack_magic_1.ogg
+SHA1-Digest: 3QOqSx43hXpY2FjCCNSd8HE+gNI=
+
+Name: assets/res/recharge/name_frame.png
+SHA1-Digest: s66Wq9XO031F45hSq8+GRlmFQuA=
+
+Name: assets/res/upgrade/blooddi.png
+SHA1-Digest: ZX2G+KlA5rnxd6pU35Hg9nT2Wn0=
+
+Name: assets/res/gamescene/bar_hp_tower_b1.png
+SHA1-Digest: TSGgd7foVsorxmjt9jbbUUilR0M=
+
+Name: assets/res/chapter/first_recharge.png
+SHA1-Digest: N3flyL9R6vNc96qonv8bsRGfsWw=
+
+Name: assets/res/tiny_loading/hint1.png
+SHA1-Digest: Pesw5qAZ3hRmo4XxWc4wS+SZpfI=
+
+Name: assets/res/login_scene/error.png
+SHA1-Digest: L2+yOuBJV/v+OuJ0HwYO4lNTFE4=
+
+Name: assets/res/novice_guide/guide_team1.csv
+SHA1-Digest: vFu49PnphmaMVD/4PWvu26zQARQ=
+
+Name: assets/res/tasks/achievement/achievement9_h.png
+SHA1-Digest: OxOy/cs1XAeYb3UPX7sGtGZY6M4=
+
+Name: assets/res/game_infinite/name_bg.png
+SHA1-Digest: ZI+h2Ukrb26e022XlwYwNfm5e1k=
+
+Name: assets/res/opening_comic/comic6/comic61_tip.png
+SHA1-Digest: TGWe9feOdPjFBJoXG94KA/8u/r0=
+
+Name: assets/res/buddha/buddha4.png
+SHA1-Digest: GdtzQWC25BtmpTu3X0V6AcIvLpc=
+
+Name: assets/res/novice_guide/guide_upgrade_tang2.csv
+SHA1-Digest: pwmipW8oApYxWr0YPCM8WaSl1f0=
+
+Name: assets/res/fonts/battle_blue_0.png
+SHA1-Digest: mZ1MlGoGrH+CneM9+gUHuSue1EA=
+
+Name: assets/res/armature/caonima/caonima0.png
+SHA1-Digest: rcTSVwQTKO8lSMFamOxgB6mzwNg=
+
+Name: assets/ucgamesdk/ui/SSJJ_7.patch
+SHA1-Digest: Lc90JkEu9JH8byyih48r1xK/RKk=
+
+Name: assets/res/sounds/bgm_chatting.ogg
+SHA1-Digest: coBlZ0VIwARAmOYbJULjSQ0Bdaw=
+
+Name: assets/res/activity_stage/frame3.png
+SHA1-Digest: NlodgK872/i+Mq1WBRCBUPbc37c=
+
+Name: assets/res/monster/monster103.png
+SHA1-Digest: dQhAt9/uwlQk8RL9KmdshTPKiwI=
+
+Name: assets/res/item/item3_big.png
+SHA1-Digest: XB2yYO6PLyjH6kgqWrdhbWPFtoM=
+
+Name: assets/res/settings/setting1.png
+SHA1-Digest: aTRnG4jIRkzaOLkq/VLk/dr5qsA=
+
+Name: assets/res/chapter/energy_bg.png
+SHA1-Digest: kCkZNrn/ITshMEyNpaqzUcOs39Y=
+
+Name: assets/ucgamesdk/config/sdkServer_service_config.json
+SHA1-Digest: S3amuk+T+Nt4eLZAFy7fkMHmDkk=
+
+Name: assets/res/animation/shandiantexiao2/shandiantexiaocon2.png
+SHA1-Digest: ichaiXj0LPxdsh7K1fgH6nUsrVY=
+
+Name: assets/res/novice_guide/guide_treasure_scene.csv
+SHA1-Digest: lSRnRODnfXabQsSh5nlev/Io6vc=
+
+Name: assets/res/gamescene/exit.png
+SHA1-Digest: /COfX/tq6fqQBSlGfTIn6uBEgK0=
+
+Name: assets/res/upgrade/tupo1.png
+SHA1-Digest: Dzm7YSYM2O5QwMCcM1vtafOxCjc=
+
+Name: assets/res/animation/zhong.pvr.ccz
+SHA1-Digest: wnpjxgcYeaHTRWuvmMTzoCa07V4=
+
+Name: assets/res/gamescene/bg_middle6.png
+SHA1-Digest: hSyl61Qog7B6PtuEkhlVnHYhEug=
+
+Name: assets/res/login_scene/change_account.png
+SHA1-Digest: 2qT29YYRemgv48nrr9g00YU9jFU=
+
+Name: assets/res/login_scene/lb_password_confirm.png
+SHA1-Digest: 9CWQOGIQK4gt9zBLO+eTQQFk3+Y=
+
+Name: assets/res/fonts/DFYuanW7-GB2312.ttf
+SHA1-Digest: 9RJgp/mTrt+CLGshB3KiydANF3E=
+
+Name: assets/res/server_maintain/append.png
+SHA1-Digest: UPqeVciOkqA9jtUIaYeodbZ5ky0=
+
+Name: assets/res/sign/miao.png
+SHA1-Digest: Ib9HsFXAdmJfs/tTcx7G5exoNno=
+
+Name: assets/res/monster_piece_icon/piece17.png
+SHA1-Digest: 4Em0/Q/481oYshx1JzR45bJ78jI=
+
+Name: assets/res/chapter/daily.png
+SHA1-Digest: HSUFAjD8h8Adcg9AKpZWKqLgrLw=
+
+Name: assets/res/shop/exp1.png
+SHA1-Digest: EOVQVuNphX3HZfHiX2NhhbhYWbU=
+
+Name: assets/res/fonts/battle_yellow.fnt
+SHA1-Digest: ohYgmL28zv9NGcaC2/KrDYdHETA=
+
+Name: assets/res/stage/start_normal.png
+SHA1-Digest: MfB77v2DgtA7mNgM/r1hK3824u8=
+
+Name: assets/res/opening_comic/comic3/comic31.png
+SHA1-Digest: jqPulTp/DhPbuJ6JkvIaOr4Prok=
+
+Name: assets/res/tasks/achievement/achievement2_h.png
+SHA1-Digest: EeanYW6woJ+NS6X0Cr66or9O1NY=
+
+Name: assets/res/dialogue/tianjiang/tianjiang1.png
+SHA1-Digest: PZjzt4JF/rrk+MnYYmiI6cJmbFI=
+
+Name: assets/res/common_ui/known_h.png
+SHA1-Digest: 5ExzBpWO7s78XAYGviFTkF7i67g=
+
+Name: assets/res/armature/xiaojulingshen/xiaojulingshen0.png
+SHA1-Digest: eUYVSY3XwRwYTj5mPS0OYSz4TTI=
+
+Name: assets/res/alert_exp/bg_frame.png
+SHA1-Digest: 17e/atmu1TOlFo0CkxaeBaWTbeU=
+
+Name: assets/ucgamesdk/config/init_rexproj_landscape.xml
+SHA1-Digest: 7V4EIF/nwUMNCiQrQUzDxAUkFes=
+
+Name: assets/res/tiny_loading/hint9.png
+SHA1-Digest: ooRhZK4GFyje0USgV2scRfO2VLw=
+
+Name: assets/res/monster/monster14.png
+SHA1-Digest: riDOv5uwHcrlFCpQIIdUl9ywhKg=
+
+Name: assets/res/sounds/comic/sound_comic31.ogg
+SHA1-Digest: fL9s7CPuxsDZm4LHZGqgCczOGQg=
+
+Name: assets/res/upgrade/wand/small_wand1.png
+SHA1-Digest: A2KXIRBsyAZOYkDNzc5sUImajzA=
+
+Name: assets/res/chapter/tower_pic_u.png
+SHA1-Digest: T0NuIjbld5+xVByAd7Vr/6EGqeA=
+
+Name: assets/frontia_plugin/plugin-deploy.key
+SHA1-Digest: Kj6YFKuydrsWF+Fx7VH5KtaYX5E=
+
+Name: assets/res/opening_comic/comic4/comic47_tip.png
+SHA1-Digest: lDjyfGkjX1DCt8RAS8J+7eguEQs=
+
+Name: assets/res/common_ui/toast2.png
+SHA1-Digest: 4JZ9hiSbAGVVPTCehMSyL8RJ/wA=
+
+Name: assets/res/armature/xiaodianmu/xiaodianmu0.plist
+SHA1-Digest: JDTVIAcMMRYyd52h9xzSqJqc7bs=
+
+Name: assets/res/server_maintain/mail_frame.png
+SHA1-Digest: /0reDwMtTQc2yJAAA+DF5uDjkdA=
+
+Name: assets/res/upgrade/unlock.png
+SHA1-Digest: DL1vIghAtjplgo4Di9YZ6A9xF1g=
+
+Name: assets/res/opening_comic/comic4/comic47.png
+SHA1-Digest: QujfC5uCOgO2kIBnNU7BMp3HsLI=
+
+Name: assets/res/chapter/summon.png
+SHA1-Digest: mIFRyzy5cbTlW+NssVLK/I53SDw=
+
+Name: assets/res/settings/about1.png
+SHA1-Digest: guk3Fw8SaYw6Tu+rNTalXIIO64M=
+
+Name: assets/res/stage/name6.png
+SHA1-Digest: 9tENZlV0x1OG+LUmsLhxw8j/2Ns=
+
+Name: assets/res/shop/gift1.png
+SHA1-Digest: XuO6Tn41eRIfEdwFyd2I+kRgcwk=
+
+Name: assets/ucgamesdk/ui/common/jars/core.jar
+SHA1-Digest: JlWmxupeQK1kbi7o9I/EhljRj0o=
+
+Name: assets/res/sign/sign.png
+SHA1-Digest: Hb5XeN4KjMuzrKGigeKsI01ztg8=
+
+Name: assets/src/cocos/controller/ControllerConstants.lua
+SHA1-Digest: ERqbErze2Ikkr0pZnhXvdaQUPgY=
+
+Name: assets/res/armature/datuzha/datuzha0.plist
+SHA1-Digest: xEbujqbbjm9GtdKilsxKHjr42BQ=
+
+Name: assets/res/item/wanzifujihuo.png
+SHA1-Digest: tVd3FhIMgxhQO5Iv9UM194uCflk=
+
+Name: assets/res/shop1/line.png
+SHA1-Digest: M+XRsCFGJh9ensuMbemwcDsJL2g=
+
+Name: assets/res/treasure/treasure4_attrib_des.png
+SHA1-Digest: p6EBmDXO4wMgJ2plM1hpNto7fDo=
+
+Name: assets/res/tasks/achievement/achievement1_h.png
+SHA1-Digest: lBdgs1RkIMRjuZupF7kjCnPxrn4=
+
+Name: assets/res/tasks/achievement/achievement3_h.png
+SHA1-Digest: 39uRHPftHyD3N2CNwPsr/GZCCK4=
+
+Name: assets/res/gamescene/bg_middle1.png
+SHA1-Digest: 8JtWhjnmv/2xsNUv6CW8JOggJBc=
+
+Name: assets/res/propery_icon/spirit_increase.png
+SHA1-Digest: +EOSp6B6lUwQlmxvys6ebk6Tn/Q=
+
+Name: assets/res/connection/retry.png
+SHA1-Digest: KAjE8ksERBchYuRBtsWIVfCkegU=
+
+Name: assets/res/trial/tip.png
+SHA1-Digest: V/16/cJZ4vbx6y0FUtKPmOsSpUg=
+
+Name: assets/res/armature/qingniujing/qingniujing0.plist
+SHA1-Digest: +dpS0+NKvmUeP1gzjS7lWK17lBM=
+
+Name: assets/res/sounds/attack_buddha61.ogg
+SHA1-Digest: yMq1wV/mvCqZ6V0fEVEKTF0Bj2M=
+
+Name: assets/res/item/item_appear.png
+SHA1-Digest: GGUYjYzA8IVcAJjahazeX3E+f18=
+
+Name: assets/res/armature/dajulingshen/dajulingshen0.plist
+SHA1-Digest: 6YShbNuGOaolsq2/WXoFoYevLrY=
+
+Name: assets/src/cocos/cocos2d/OpenglConstants.lua
+SHA1-Digest: 57bkI4pxuqwvCZK+w2JO5QApugM=
+
+Name: assets/res/buddha_icon/buddha80.png
+SHA1-Digest: bVKadMKrjRLITE9m7lj9OMz+HhA=
+
+Name: assets/res/buddha_tag/1.png
+SHA1-Digest: 98Mk0VGhmsDvOafViEpAXo3+iQ4=
+
+Name: assets/res/common_ui/tips.png
+SHA1-Digest: 65P9gWWjB5yN6LKeGKJyY+9Vb/g=
+
+Name: assets/res/opening_comic/comic3/comic31_tx1.plist
+SHA1-Digest: 02Umh20Bd/xxOHOMLPaLPSJ9XTg=
+
+Name: assets/res/tasks/progress_bar12.png
+SHA1-Digest: zOZcxvIhMZTXdKER+ePazYQ4q3A=
+
+Name: assets/res/common_ui/to_upgrade.png
+SHA1-Digest: GvaM8HXwyVToTm72NNmmmQIdmVk=
+
+Name: assets/res/opening_comic/comic4/comic43_first.png
+SHA1-Digest: cJOdVgL7qOX6pPIrbDLB7THkuCs=
+
+Name: assets/res/upgrade/pro_timer.png
+SHA1-Digest: DJW/UukhVokVZ0vf7qlC233yTPE=
+
+Name: assets/res/opening_comic/comic2/comic23_tx.png
+SHA1-Digest: yiDhqIeJYEj+AiWs1aVir7WM3vI=
+
+Name: assets/res/armature/heixiong/heixiong.csb
+SHA1-Digest: 7MtEN1ABgV5fSrpheFYjDlJBaNY=
+
+Name: assets/res/opening_comic/comic1/yezi_tx.png
+SHA1-Digest: OztwtDXVcfXpLyxGUFSDzGQlcEE=
+
+Name: assets/res/opening_comic/comic6/comic65_tip.png
+SHA1-Digest: tIvkHb13ZHFlcrzPsQMI6OvnY4s=
+
+Name: assets/res/shop1/shopdi.png
+SHA1-Digest: hAylulaHWtEv5QlhhYWpuHgI+Jg=
+
+Name: assets/res/opening_comic/comic4/comic49_tx.plist
+SHA1-Digest: 5M9njCLXCFWriB5eO8BIMm63XuE=
+
+Name: assets/res/team/head.png
+SHA1-Digest: JhH6CsFLqnOl6WEBYm/RaAGzaq4=
+
+Name: assets/src/framework/cc/net/init.lua
+SHA1-Digest: TOYaAiQCVO6obnDIEmYH5z/4SGI=
+
+Name: assets/res/fonts/bulefonts_0.png
+SHA1-Digest: m57+2H1VKHvHnKtCbAXTm2jq2Gc=
+
+Name: assets/res/treasure/treasure2_attrib_des.png
+SHA1-Digest: WJ+QAAcdXvu/sEW8N4jtc8nQWB8=
+
+Name: assets/res/armature/nverwang/nverwang0.png
+SHA1-Digest: miuawgvo5rvMxRn9aknbZfSXluo=
+
+Name: assets/src/framework/shortcodes.lua
+SHA1-Digest: 2qd21hLPMe4RcVYwj/ByhYJeIIA=
+
+Name: assets/res/opening_comic/comic2/comic23_pic1.png
+SHA1-Digest: kvMTd+JoKicuyUO9kmSwifegtcU=
+
+Name: assets/res/server_maintain/next_msg2.png
+SHA1-Digest: hZFV+pm97F6dxwm8+GEPM/ZSVJ8=
+
+Name: assets/res/treasure/treasure8_attrib_icon.png
+SHA1-Digest: icGydQCckGzjQeNaWj9/hnELavA=
+
+Name: assets/res/monster_icon/monster112.png
+SHA1-Digest: fUyAhREVwsjVeG5wSH4mhL/mq1I=
+
+Name: assets/res/animation/shengli_xingxing.png
+SHA1-Digest: msz2ss1+KAwpPoXfexnCu4MSdUE=
+
+Name: assets/res/upgrade/tip.png
+SHA1-Digest: in2C3KmFgqv6Q6OW8TtwCHCB6Qs=
+
+Name: assets/src/framework/cc/uiloader/uiloader.lua
+SHA1-Digest: d/W7fGr4lsd2vAFmY2oyx7n3tO8=
+
+Name: assets/res/shop/shopdi.png
+SHA1-Digest: VnYNJyS5txbWOqILqdE0WAmsuW0=
+
+Name: assets/res/item/wan.png
+SHA1-Digest: D3kOLsQIsFy1t8RKnfxgCQpoL0E=
+
+Name: assets/res/opening_comic/comic4/comic44_tx.plist
+SHA1-Digest: DKJDnwkV8hDbPnVP/aDDJfbmeIM=
+
+Name: assets/res/upgrade/grademax.png
+SHA1-Digest: yHtUGopG/1QCEAWhPuECp9ZbzMM=
+
+Name: assets/res/summon_scene/ball_tx.png
+SHA1-Digest: HTaW8y0etCTEtf79VnfxpqjJRiA=
+
+Name: assets/res/animation/dadouyanwu.plist
+SHA1-Digest: j5HTkqtUbAjc55YRufhSqMIRP/U=
+
+Name: assets/res/tiny_loading/role1.png
+SHA1-Digest: o2gKEDIhw1yiQsHt8qPQGq5MtTU=
+
+Name: assets/src/framework/network.lua
+SHA1-Digest: yzuRHsGbwyyDa3AFaG4Gh3Fb1UU=
+
+Name: assets/res/armature/guangjiaochijiaodaxian/guangjiaochijiaodaxia
+ n.csb
+SHA1-Digest: ak3aHkzrVrXKTa2D3usbk55a7ds=
+
+Name: assets/res/gamescenegroove/mirror.png
+SHA1-Digest: 4Y4KWanWGwqceneQNsoQVw7wlQY=
+
+Name: assets/res/monster_piece_icon/piece21.png
+SHA1-Digest: nlC1+oN/TSqd+ME5YH2gwM5ksX0=
+
+Name: assets/res/summon_scene/free_tip.png
+SHA1-Digest: 2L47uhq9mN+ks2BhGvOAP/uQpfA=
+
+Name: assets/ucgamesdk/images/loadrefresh.png
+SHA1-Digest: H1iXjufcg0D5e5ej0CNUfX7DbfY=
+
+Name: assets/res/shop1/title_shop.png
+SHA1-Digest: 8swP6Un/r4h2RTAlGw5DS8GcSSk=
+
+Name: assets/res/summon_scene/yanhua.plist
+SHA1-Digest: pcst+Ep+jHfaCIkfEm4sSmR8XNU=
+
+Name: assets/src/framework/cc/ui/init.lua
+SHA1-Digest: 4V92rBl1wd5RrY67jYOth/+qoe0=
+
+Name: assets/src/cocos/spine/SpineConstants.lua
+SHA1-Digest: EzXpgPgQljjDnFSwkKVyRdU4qto=
+
+Name: assets/res/upgrade/q5.png
+SHA1-Digest: GYej0Jye1z0e2HVLNNQpbsFVDPw=
+
+Name: assets/res/activity/activityBg.png
+SHA1-Digest: 6ahQ0Ro2UqAxtbVAuHXMbnNqqLo=
+
+Name: assets/res/buddha_icon/buddha79.png
+SHA1-Digest: Jpp+9fSLBx7e3hVvARG8/61KNr0=
+
+Name: assets/res/item/name1.png
+SHA1-Digest: DvsU8SBFngOP2HAxzvaG5r1en7c=
+
+Name: assets/res/activity/close.png
+SHA1-Digest: 3qKqz1L8aA41DzHs5ozS0d7ogmQ=
+
+Name: assets/res/opening_comic/comic3/tip1.png
+SHA1-Digest: c8hIpYDMdPkHmNgUaG0ULvPCBIo=
+
+Name: assets/src/framework/cc/uiloader/CCSSceneLoader.lua
+SHA1-Digest: 1xQC5xSH0M4x47zfHs5EdgkdxPo=
+
+Name: assets/res/tiny_loading/hint6.png
+SHA1-Digest: PDwgmil9FD0zl528T0XzBzUnR2A=
+
+Name: assets/res/item/item_name_6.png
+SHA1-Digest: l4BLjEgApdVMSnqHD2owYQmzKko=
+
+Name: assets/res/stage/energy_cost.png
+SHA1-Digest: j4EhuxmbD9PTx4SmNtaNToaczJI=
+
+Name: assets/res/armature/chijiao/chijiao0.png
+SHA1-Digest: ds5L+CECJUa4K6cW4U+hs1vmX8I=
+
+Name: assets/res/new_fellow/share.png
+SHA1-Digest: OF+xYoDrECYsX8bElRWM9g4Rycs=
+
+Name: assets/ucgamesdk/ui/common/conf/widgetconf/extextDialog.json
+SHA1-Digest: RT0mP5hMXSlupI9RTIvE6T9Z6Bc=
+
+Name: assets/res/spin/6.png
+SHA1-Digest: IuzPISwaUWGn9Gfzjc7K1OHN0vs=
+
+Name: assets/res/shop/needpeach.png
+SHA1-Digest: 7XE5wcWwEgCT5HCRV++P8Hzp4qM=
+
+Name: assets/res/opening_comic/comic2/comic22_tip.png
+SHA1-Digest: HX8F15M5YP3qatibdaYPKRZZO5o=
+
+Name: assets/ucgamesdk/images/exdialog_banner.png
+SHA1-Digest: 2vqj7FqeJN/9j8u++tHFJDC7Qys=
+
+Name: assets/res/game_infinite/bg.png
+SHA1-Digest: LIrDC+8/OHKU/8VApvej0Jr4Zfc=
+
+Name: assets/res/item/star.plist
+SHA1-Digest: EOQeLJCgDvtYw4xK44dU0Qwy+Cw=
+
+Name: assets/res/login_scene/label_bounding.png
+SHA1-Digest: C58kqzIUwgx+cWojmTumj2Ny4Bc=
+
+Name: assets/res/treasure/treasure4_name.png
+SHA1-Digest: ZeZm2rfaYeYui7CI6QbAy7+qluU=
+
+Name: assets/res/gamescene/bg_middle_d2.png
+SHA1-Digest: e99VsTMFDpMB6tn9HAttOO/c0Ek=
+
+Name: assets/res/summon_scene/btn_multiple.png
+SHA1-Digest: DOIEzs8z992b3ECVg2QV3sumWFo=
+
+Name: assets/res/spin/tip.png
+SHA1-Digest: vF5NO/GSPaLUm4m203z6wOpZB58=
+
+Name: assets/res/armature/xiaodou/xiaodou.csb
+SHA1-Digest: 4Bl4KPY6Fewzk7fXzSmPKh6DzP8=
+
+Name: assets/res/treasure/treasure6_name.png
+SHA1-Digest: OaWLv7bMQW5CwdB00O8ifwcPrR0=
+
+Name: assets/res/armature/qingdaofu/qingdaofu.csb
+SHA1-Digest: 5KCX3F4+l1Vpvl68igaZ7bcwZHc=
+
+Name: assets/res/shop1/exp2.png
+SHA1-Digest: WfsDvdWr9106HFSYgTGIRKZ0tyc=
+
+Name: assets/res/upgrade/buddha.png
+SHA1-Digest: kid3/7afZ88baEkZmBn+Y5WSfBI=
+
+Name: assets/res/tasks/achievement/achievement8.png
+SHA1-Digest: fx71GQ4vB4AUGy+XGCc42Tk+61M=
+
+Name: assets/res/chapter/notice.png
+SHA1-Digest: 3QBISpawbnJYN38UB73Q9vp2oJA=
+
+Name: assets/res/treasure/max1.png
+SHA1-Digest: +Yp6wSfi0ooPxwihxKg92AJo/as=
+
+Name: assets/res/monster_tower/13/bg.png
+SHA1-Digest: fFk1BLrwD5tizntjhmAgtwErrGI=
+
+Name: assets/res/opening_comic/comic6/comic62_tx.plist
+SHA1-Digest: PltUpgfzMywlm9AAXFcKaL7EZpk=
+
+Name: assets/res/gamescene/bg10.png
+SHA1-Digest: JkbDJ+5Hu/rvImxxqy/4UjUyI+4=
+
+Name: assets/src/framework/cocos2dx.lua
+SHA1-Digest: zTHDgXS6fIXKcbJgcQoCyCfwu1U=
+
+Name: assets/src/cocos/cocos2d/DrawPrimitives.lua
+SHA1-Digest: +fcgnyilztp7vnTTnogWECXEEQ4=
+
+Name: assets/res/gamescene/tower_enemy_2.png
+SHA1-Digest: g0G4empGEFBJWGm9PT9kyRNYTn0=
+
+Name: assets/ucgamesdk/ui/ALIYUN_8.patch
+SHA1-Digest: uYtR5gu1lFW2rxNpR4tyC5P7s2s=
+
+Name: assets/src/framework/cc/components/ui/DraggableProtocol.lua
+SHA1-Digest: AhUZlIAZKcnxThm49nBaMbpbsX0=
+
+Name: assets/res/monster_icon/monster107.png
+SHA1-Digest: ZjklpZqpsOb33YgDwvHYmgq1Qfg=
+
+Name: assets/res/opening_comic/comic1/yezi1.png
+SHA1-Digest: TV1nLqVOS+5rOSrJQNvg2uUqGnE=
+
+Name: assets/src/cocos/cocosdenshion/DeprecatedCocosDenshionClass.lua
+SHA1-Digest: NSDzcLvpwe3+u97k2v/ORo+ahdg=
+
+Name: assets/res/common_ui/left.png
+SHA1-Digest: nA9AU4vgz6RvUKtjO0NFbYGrDgg=
+
+Name: assets/res/update/right_now1.png
+SHA1-Digest: mWgpZhF5ooDGVHiwBNK0B9n+pLU=
+
+Name: assets/ucgamesdk/config/float_button.json
+SHA1-Digest: vl3boqORdSLclAHvFjXnqEJJD58=
+
+Name: assets/res/gamescene/back.png
+SHA1-Digest: WY6eQFekn+PSYKNUbcMSdg9PYKQ=
+
+Name: assets/res/login_scene/login.png
+SHA1-Digest: Pu5DLY+BKggT6HvT/zjzjF4rnys=
+
+Name: assets/res/armature/dazhongkui/dazhongkui0.plist
+SHA1-Digest: I1xc/D3F7Pm0FUwKP8HNCO/roMU=
+
+Name: assets/res/gamescene/share.png
+SHA1-Digest: fHzMKeiGnkJShGZpGQJxO4LuZFk=
+
+Name: assets/res/spin/special.png
+SHA1-Digest: vcLyBcmU29H5GEUh8uNdKkjsxgw=
+
+Name: assets/res/item/label_frame.png
+SHA1-Digest: menp8XBiHsnxJwY9jMyzw6mSvyA=
+
+Name: assets/res/animation/particleTexture.png
+SHA1-Digest: k0SWNoq9kJYTWzD1GEHrDdW4glg=
+
+Name: assets/res/armature/dazhangtaizi/dazhangtaizi0.plist
+SHA1-Digest: Z8dMDYsOMqRTdkKDzCRpCqrsMds=
+
+Name: assets/res/activity_stage/exchange.png
+SHA1-Digest: m7d79A+DzTYrpQ9tOCB2c25wBZo=
+
+Name: assets/res/opening_comic/comic4/comic41_tx.png
+SHA1-Digest: vjf+/AD+tsqH/dY/8lzUtqs6Nlo=
+
+Name: assets/res/armature/xiejiang/xiejiang.csb
+SHA1-Digest: KO5nEtRPBvacPn5lWHBeosJwLac=
+
+Name: assets/src/cocos/cocostudio/CocoStudio.lua
+SHA1-Digest: xJJU2E/D5bhlhpzBmdSJkIqgkNM=
+
+Name: assets/res/shop/promotion.png
+SHA1-Digest: XmENYuor8AfPNa6oHTd+cSyRdEM=
+
+Name: assets/src/cocos/network/DeprecatedNetworkEnum.lua
+SHA1-Digest: SIXQMoCp1Gw+SZEIP2EZZJAqJhY=
+
+Name: assets/res/gamescene/tower2.png
+SHA1-Digest: kzfLs19y8NVYRXaNFRGXdldMNkk=
+
+Name: assets/res/novice_guide/auto_guide2.png
+SHA1-Digest: 5hTTk/NahFYRhG3y4HxluzGJ/CA=
+
+Name: assets/res/buddha/buddha14.png
+SHA1-Digest: RTqdJj7xZIG1v9xoCA1pQjJfFgE=
+
+Name: assets/res/shop1/gift2.png
+SHA1-Digest: T4ARJn05CBRgkgsC/N+mhZV01y8=
+
+Name: assets/res/buddha_icon/restrain_icon1.png
+SHA1-Digest: 5hUU03ObbyFO+pZ7BAJnA1VV+U4=
+
+Name: assets/src/framework/functions.lua
+SHA1-Digest: ITTupwnzGK7MP/bwjWukOKgbk7Y=
+
+Name: assets/res/team/back.png
+SHA1-Digest: SA0W9ak/alvhWTQlQwUhG8eMPiQ=
+
+Name: assets/res/armature/zuanfengdawang/zuanfengdawang0.png
+SHA1-Digest: NW5fnFYRSYzYM5gJVHxC2Z58ZJQ=
+
+Name: assets/res/sounds/comic/sound_comic13.ogg
+SHA1-Digest: pMgNlXj0XFE9vcUk79rjI00KMsI=
+
+Name: assets/res/armature/benbo/benbo0.png
+SHA1-Digest: +7lejJlNKiPyFQR+qGo96oDIroU=
+
+Name: assets/res/treasure/q1.png
+SHA1-Digest: P12um+UDtGEar0yYu9OTE3vNs4A=
+
+Name: assets/res/monster_tower/7/bg.png
+SHA1-Digest: LowXu1e4Q35OOQHLOqYaESHi3BA=
+
+Name: assets/res/game_infinite/cell_frame.png
+SHA1-Digest: zShl1bylCxw2UL5BPpa8+wUn6fs=
+
+Name: assets/UCGameConfig.ini
+SHA1-Digest: mLe8evYyuYzuWZaVjiBNBV5P0dw=
+
+Name: assets/res/monster_icon/monster9.png
+SHA1-Digest: 3GYkRu0PxydVI52Nyyruso3qkyU=
+
+Name: assets/res/shop1/goods_h.png
+SHA1-Digest: qYewh/4cHVpiV6z3UhZdnIWC5Ko=
+
+Name: assets/res/common_ui/confirm.png
+SHA1-Digest: M5GjCPi3Hfz/aVpsvMzqA+HI94c=
+
+Name: assets/res/upgrade/tower_h.png
+SHA1-Digest: BPVQXINJo6UC7WWDxTNvPEDzNrg=
+
+Name: assets/ucgamesdk/res/apk.list
+SHA1-Digest: w0ZPRW2ZNbfhKOuLnPZke/4MA6w=
+
+Name: assets/src/DataEye/DCVirtualCurrency.lua
+SHA1-Digest: vG4N/PrXZwZs3oA9IMucIijimfw=
+
+Name: assets/res/item/star.png
+SHA1-Digest: dSqen71GDI0V/8AT1v7weN636kQ=
+
+Name: assets/res/chapter/treasure.png
+SHA1-Digest: fsU6xisFXOzj0s4ZT7oUjm1riRo=
+
+Name: res/drawable-hdpi/icon.png
+SHA1-Digest: pad4tSYqm/SrPFmBXBZk1RkFcp8=
+
+Name: assets/res/gamescene/bg_d3.png
+SHA1-Digest: 2A8zVhfnBS+fzM1blvulb9qR/c0=
+
+Name: assets/res/connection/loading.png
+SHA1-Digest: miVvGH3eQokN5Jd3zuweqhkx8s4=
+
+Name: assets/res/buddha/buddha13.png
+SHA1-Digest: oyz/8rQm6uYit89GBqbde73us3k=
+
+Name: assets/res/chapter/stage_icon2.png
+SHA1-Digest: 479sAAuCXuLGuvMsVyPsDqd1DL4=
+
+Name: assets/res/novice_guide/guide_lose1.csv
+SHA1-Digest: Ik4cxT6AxlhfdqHigKmP0WZh2GU=
+
+Name: assets/res/sounds/sfx_siwang2.ogg
+SHA1-Digest: 960daeU0DPMAyK7FE3wAO2lBm9A=
+
+Name: assets/res/gamescene/auto.png
+SHA1-Digest: mMRw87MdZqwN623851ko90eahkk=
+
+Name: assets/res/sounds/sfx_buddha_makeup.ogg
+SHA1-Digest: 8T+9tWMur2hhtFXu4qvV72ehISc=
+
+Name: assets/res/game_infinite/selected.png
+SHA1-Digest: pdjOGCIX2oAju4GPMc/P58PFgC4=
+
+Name: assets/res/opening_comic/comic3/comic31_tx1.png
+SHA1-Digest: /unhO2WxA+B5nppxxWu11tUXXko=
+
+Name: assets/res/loading/wukong.png
+SHA1-Digest: RDDw0ghU27DvxD7n8djY2MP+aFE=
+
+Name: assets/res/settings/bg_setting.png
+SHA1-Digest: L7acpS5QHLphi10gsr7nrgL7uUg=
+
+Name: assets/res/animation/game_win/shenglidonghau0.csb
+SHA1-Digest: b2m2Xnqg14hIuVZKqlaftFuShos=
+
+Name: assets/res/buddha_icon/buddha93.png
+SHA1-Digest: tyA7+LCQEYlvrP6t+wzdd6WKCiU=
+
+Name: assets/res/tasks/stage/content6.png
+SHA1-Digest: gkN/GuGGmD2u4ZLi9vY3y8bMTgU=
+
+Name: assets/res/gamescene/bar_type3.png
+SHA1-Digest: abb+iHeFZJw3pQ8lyXR02FTKDd4=
+
+Name: assets/res/shop1/nextflush.png
+SHA1-Digest: VjHw0wNC3Oci6Veb5+F6v48xkTI=
+
+Name: assets/src/framework/cc/Registry.lua
+SHA1-Digest: 6Wp7nceytl8ERNfjbsXKPfuvTWo=
+
+Name: assets/res/animation/daojuxuanfeng.plist
+SHA1-Digest: wp07LZoxv2vu5403bYetwf18cR8=
+
+Name: assets/res/login_scene/start_long1.png
+SHA1-Digest: Jk+V+HTE37egI5cQGAAHu21ENmE=
+
+Name: assets/res/chapter/stage_icon4.png
+SHA1-Digest: CpZt/Qb1MpjogAa0ZPa3c7wQd0A=
+
+Name: assets/res/sounds/attack_monster103.ogg
+SHA1-Digest: d04thH2nI3ECMAwQxOnxBgS5YA8=
+
+Name: assets/res/dialogue/tangseng/tangseng1.png
+SHA1-Digest: glxBtxZYo1dAcUui0UDmXUFxs+c=
+
+Name: assets/res/buddha_icon/buddha75.png
+SHA1-Digest: iSrsDaHdBOzi5gKNyn7kuG0BQjw=
+
+Name: assets/res/buddha/buddha66.png
+SHA1-Digest: atNUgpSlDEd8gOoP3B7ULyRmYkQ=
+
+Name: assets/res/item/item_appear.plist
+SHA1-Digest: a4o9JgLv6zHeVwkd6uu5lUmcpjI=
+
+Name: assets/src/framework/cc/ui/UIPageViewItem.lua
+SHA1-Digest: pKM75tTmNBFB48g9X8alx6naX4M=
+
+Name: assets/res/sounds/sfx_attack_stab.ogg
+SHA1-Digest: Mtp3GchX31XAJvHJai1a5kThKyw=
+
+Name: assets/res/buddha_icon/buddha87.png
+SHA1-Digest: xNIN7ZvYsRfMxa/UuOKhRtUnCoc=
+
+Name: assets/res/armature/nverwang/nverwang.csb
+SHA1-Digest: e21agFF/GRF/F1t/0l3f4+P71BA=
+
+Name: assets/res/buddha_icon/restrain_icon2.png
+SHA1-Digest: U/UF2iHo3E0tKLQXaPtD+JJHnns=
+
+Name: assets/res/tasks/stage_btn.png
+SHA1-Digest: DmtxKP8LXXc0jQaUcDZQd/7c0C0=
+
+Name: assets/res/activity_stage/bg_frame.png
+SHA1-Digest: 4Jn7bbgfOYYvB8Lk89zTIi0gAJo=
+
+Name: assets/res/monster_tower/6/halo.png
+SHA1-Digest: nuGcrMuWE9WdnzMCQCNAMOwHYFQ=
+
+Name: assets/ucgamesdk/images/loadline.png
+SHA1-Digest: XzCkgmrIBE/GV3JB344jRZyUXGM=
+
+Name: assets/res/stage/treasure_reward.png
+SHA1-Digest: o2FMfXxUga8SWIj39umhpCa1ef8=
+
+Name: assets/res/monster/monster113.png
+SHA1-Digest: onC8bd/WHqBCl103GkTnNYjlAJM=
+
+Name: assets/res/propery_icon/mirror_cd_tag.png
+SHA1-Digest: rB868sddt9tbCyxYIxbSIoi6R+w=
+
+Name: assets/res/shop1/90.png
+SHA1-Digest: AlBnuYYRmaRzhoD5hUhGgnC4tng=
+
+Name: assets/res/gamescene/treasure.png
+SHA1-Digest: WEFzrGXCfYq6Ykt0Htri7EHMhaI=
+
+Name: assets/res/upgrade/gradebt_h.png
+SHA1-Digest: QlcXqo+/a4JejDCY6sC8qVyVnAA=
+
+Name: AndroidManifest.xml
+SHA1-Digest: iAnB8gVCP/r/aI14yQy11kfTCuU=
+
+Name: assets/res/stage/elite.png
+SHA1-Digest: zpJt32rkClLcaEtMr6ddqjJc9Tw=
+
+Name: assets/res/opening_comic/comic3/tip2.png
+SHA1-Digest: whB+1/NoTK2qqYG+4SN5IQvZpSw=
+
+Name: assets/res/buddha/buddha28.png
+SHA1-Digest: YXnknCvzrT3raXQvw1jNZOW2Fhg=
+
+Name: assets/res/monster_piece_icon/piece35.png
+SHA1-Digest: lBDZudBKJwISUwHgItVbdv0AMRs=
+
+Name: assets/res/animation/lingqi.plist
+SHA1-Digest: JjdXaXJ2QitV6qJfv7odVSEpXRY=
+
+Name: assets/res/novice_guide/guide_swipe.csv
+SHA1-Digest: ZnWZ21wPHed4zwhQ6jMODR7FaB8=
+
+Name: assets/src/cocos/cocos2d/luaj.lua
+SHA1-Digest: dxLcPJKtShf8lVY9r4FVRKy/w+I=
+
+Name: assets/res/monster/monster13.png
+SHA1-Digest: d9MsdgO929+G/yg+5Tz0PKQX3mY=
+
+Name: assets/res/monster_tower/2/bg.png
+SHA1-Digest: VucElfigrd6KWmfcqnz1hIp9aYE=
+
+Name: assets/res/win_or_lose/piece_reward.png
+SHA1-Digest: NMmQ+ii8JHhZYM66IcartB1+ejY=
+
+Name: assets/res/armature/dianliniang/dianliniang0.plist
+SHA1-Digest: nBukrs9hq2PLpz1hXMlVi1xoO5o=
+
+Name: assets/res/armature/dianliniang/dianliniang.csb
+SHA1-Digest: p8Q6jZOgZDLUnyFDBVyqitHncRI=
+
+Name: assets/res/buddha_icon/buddha14.png
+SHA1-Digest: mhasPegOgEIJOXMZ5pXZa9tbJvM=
+
+Name: assets/res/armature/xiaozhangtaizi/xiaozhangtaizi.csb
+SHA1-Digest: +jIQystEB6widJnfttjm+Fpij4E=
+
+Name: assets/res/item/wanzifuxuanzhuan.plist
+SHA1-Digest: KabhE1iIxacwRao8E6aGtcRF6xk=
+
+Name: assets/res/monster_icon/monster25.png
+SHA1-Digest: H2QVxkyzWDuqy120JswFV2y2kqI=
+
+Name: assets/res/gamescene/box2.png
+SHA1-Digest: hxlx5qLHIakqA3RqEDneTwgVxR8=
+
+Name: assets/res/monster_icon/monster13.png
+SHA1-Digest: g7e6yp/0nSyfrs7KN4wqgnihEx8=
+
+Name: assets/res/armature/santaizi/santaizi0.plist
+SHA1-Digest: QeK0MKrhBnhM0vNhoL6EqpNS7Pw=
+
+Name: assets/res/trial/trail_icon.png
+SHA1-Digest: A+pejv3BObnpm/GmrimLs/2Sunw=
+
+Name: assets/res/login_scene/bounding_h.png
+SHA1-Digest: cI/h+aySvnEcnBVNtVGgNZpfc+Q=
+
+Name: assets/res/server_maintain/get1.png
+SHA1-Digest: j47ARWGRHhWPaXCsoUfv0qlY31A=
+
+Name: assets/res/armature/benbo/benbo.csb
+SHA1-Digest: m7DiyvVMDKC8nOKi03x8TLP1Axw=
+
+Name: assets/res/sounds/attack_buddhaxw.ogg
+SHA1-Digest: RXxeS109OflPyIjHJbfDFMasKNA=
+
+Name: assets/res/game_infinite/reward_pic.png
+SHA1-Digest: CzKcm1d7nJHj2so2fRXgogMd09E=
+
+Name: assets/res/gamescene/wand_light3.png
+SHA1-Digest: 6h9n90OMv+EUiclAQytNZM31ngc=
+
+Name: assets/res/notice/switch.png
+SHA1-Digest: 6ZuTs0KOMfc2l7/3I9uHICSy534=
+
+Name: assets/res/tasks/stage/get_award.png
+SHA1-Digest: hIH+zb3QaE3FiogfCBEE9ymzoIY=
+
+Name: assets/res/treasure/max2.png
+SHA1-Digest: W2R+NNJViiTurrv7yGYgXQgc3uo=
+
+Name: assets/res/tiny_loading/bg.jpg
+SHA1-Digest: CEWVM8ZedtlYBGxkhy6vWZ5PuxY=
+
+Name: assets/res/buddha/buddha91.png
+SHA1-Digest: G/rfVXOZ5fmU2tkvfLuLqpLHMoI=
+
+Name: assets/res/monster_icon/monster103.png
+SHA1-Digest: gT1oKNVjdRjm+1gDo+K+nPY5wZw=
+
+Name: assets/res/summon_scene/bg.jpg
+SHA1-Digest: MCTOaRkF+VaG8BXuIh6gkBAPyds=
+
+Name: assets/src/cocos/cocos2d/Cocos2dConstants.lua
+SHA1-Digest: fZFlV1tcmfeSv/uznODLyqkslW4=
+
+Name: assets/res/chapter/lottery.png
+SHA1-Digest: Ypl7AumxiS/nuf7j2uygt4X6f1w=
+
+Name: assets/res/wiki/frame_tp.png
+SHA1-Digest: I+Id3fPvLTmyONFfFTCnxzJHls4=
+
+Name: assets/res/opening_comic/comic6/comic65_pic1.png
+SHA1-Digest: iZZZFIyOAvi2GZ1+YSWta46LWfE=
+
+Name: assets/res/tiny_loading/hint11.png
+SHA1-Digest: 0RfVeRQcw+kQqJ7bmeaZfLwaG3M=
+
+Name: assets/res/upgrade/tupo.png
+SHA1-Digest: G/DPzaa64/cLHB+qhmBIO/pVpuI=
+
+Name: assets/res/sounds/comic/sound_comic63.ogg
+SHA1-Digest: +WXh8Dd+Q/TlFSmNeN9Eiyj/St0=
+
+Name: assets/res/animation/yanhua.plist
+SHA1-Digest: fGfDVTJP7lQYXVTgQHe4mXTYMvA=
+
+Name: assets/res/armature/tudigong/tudigong0.png
+SHA1-Digest: UFq5OTWxOPNRWMuWWx2pT1hoE2Y=
+
+Name: assets/res/monster_piece_icon/piece13.png
+SHA1-Digest: LDEfLoeIgYrJCkF193/XY3LQDnw=
+
+Name: assets/res/activity/get_h.png
+SHA1-Digest: SWcXM8XHIvUlEHas/pT1DPnS7AE=
+
+Name: assets/res/activity_stage/frame1.png
+SHA1-Digest: czN4YAwWHEX1CC9Xjy9+IEbu4+Y=
+
+Name: assets/res/item/item3.png
+SHA1-Digest: j4VKwbKAHdnAK0X4Sden6D/9FP4=
+
+Name: assets/ucgamesdk/ui/common/conf/tipsBackground.9.png
+SHA1-Digest: JN3IgSg9p0oJ/UJfzK2GM5XPBW8=
+
+Name: assets/res/buddha/buddha85.png
+SHA1-Digest: 46gqcVxCIMZ0v4G5Tmw4yWXGvcU=
+
+Name: assets/res/animation/wand_light_tx.png
+SHA1-Digest: gxFD1myWyNYquQ8ztv8gBu6VJo0=
+
+Name: assets/src/DataEye/DCLevels.lua
+SHA1-Digest: mq4pxKvMtlla3EsQcWyJ/4I1jmc=
+
+Name: assets/res/monster/monster18.png
+SHA1-Digest: uSE1ssQ10jyrXQMkLLojcQJVFes=
+
+Name: assets/res/team/bottom.png
+SHA1-Digest: jGkO616wv+ufjYMhDul9AqAzU8o=
+
+Name: assets/res/gamescene/spirit_icon.png
+SHA1-Digest: 3qWioUTW6V8F3ZiGEP3mmC4HsX8=
+
+Name: assets/res/monster_piece_icon/piece4.png
+SHA1-Digest: HlLHIiBphkQSR3ewCVWKfVzx5x8=
+
+Name: assets/res/monster_icon/monster5.png
+SHA1-Digest: 3TFPhxMA4P3+JA8PGA2xp75QQvg=
+
+Name: assets/res/stage/boss.png
+SHA1-Digest: mgaROBMqe3mKnHGENs3BuljILN0=
+
+Name: assets/res/notice/tick.png
+SHA1-Digest: qkD1GaVSDg0XvpEltiBPoEtav7g=
+
+Name: assets/res/sounds/attack_monster22.ogg
+SHA1-Digest: XUKXga/plDy0ZYZTgVJXHVpnPZg=
+
+Name: assets/res/Diary/activity_sunday.png
+SHA1-Digest: xaIckX5D6naYHW0WELdfM9G5QkQ=
+
+Name: assets/res/opening_comic/comic4/comic412_tip.png
+SHA1-Digest: K++gvLkWetzO+7xp50KbXaserBY=
+
+Name: assets/res/buddha/buddha103.png
+SHA1-Digest: RRJLkNppXVNKACz1rrEDmZFQpT0=
+
+Name: assets/res/buddha/buddha99.png
+SHA1-Digest: YPU/6H20jxj69yTTwrPwnE+hDug=
+
+Name: assets/res/settings/bg.png
+SHA1-Digest: xGhGraLyJh6cXviHuIshg9ecrGk=
+
+Name: assets/res/gamescenegroove/spirit2.png
+SHA1-Digest: tUtEfkBo143lsr6p1vT2Rk7+Nkc=
+
+Name: assets/res/novice_guide/guide_item2.csv
+SHA1-Digest: jpJQeeNfiEujNLU2JXU9i03pEXs=
+
+Name: assets/res/chapter/mail.png
+SHA1-Digest: XYU8V9eWKXjKDF//ULTVnMj0wRo=
+
+Name: assets/res/armature/guangjiaochijiaodaxian/guangjiaochijiaodaxia
+ n0.png
+SHA1-Digest: CRGcyZt76UVl38JfvCDs0KuO/c4=
+
+Name: assets/res/upgrade/gray.png
+SHA1-Digest: zJHNl6OgMlexeCKVroN2TOsroZI=
+
+Name: assets/res/common_ui/continue.png
+SHA1-Digest: v0jfXa8CZ8nLXs2IG56V3bb6mEA=
+
+Name: assets/res/game_infinite/wave_num.png
+SHA1-Digest: Yrk+56W7EEmb0mssgwQbtRwafHE=
+
+Name: assets/res/game_infinite/bg_frame.jpg
+SHA1-Digest: KZGAeNseYAbUjIyqdsr9TXKQeqg=
+
+Name: assets/res/monster_icon/monster8.png
+SHA1-Digest: +9Fj2kNbUsIeQ2h0N/yMdtge7SQ=
+
+Name: assets/res/buddha_icon/buddha61.png
+SHA1-Digest: UJ3jc+FDaF4s3puDmaKGPoaLZbE=
+
+Name: assets/res/gamescene/continue1.png
+SHA1-Digest: pn+jeHxMnODjxnbD2f7goVQYkcw=
+
+Name: assets/res/armature/datianjiang/datianjiang0.png
+SHA1-Digest: se1NTixDC5CKUo4HGW1gpYhOIJE=
+
+Name: assets/res/activity_stage/activity_coin.png
+SHA1-Digest: /QJslpncNFuxhGvs1Lb0p3la1JA=
+
+Name: assets/ucgamesdk/config/orient_change.ini
+SHA1-Digest: 9eei4XIRR4jyln/Tf5MIhzRJiw4=
+
+Name: assets/res/tiny_loading/hint10.png
+SHA1-Digest: aDGuIUpaZmYHxh/DtX+zagD2pPI=
+
+Name: assets/res/animation/shengli_guangdian.png
+SHA1-Digest: M/5sVKwXW0yHecI3SS5jRC6y7XI=
+
+Name: assets/res/notice/img/2.png
+SHA1-Digest: zuNk8TZwZQrRkHOtPhlbQDV8Na0=
+
+Name: assets/res/stage/stage_locked.png
+SHA1-Digest: NWoetOMSyBnw+7Tcgy0zocsHBXc=
+
+Name: assets/res/opening_comic/comic4/comic42_tx.plist
+SHA1-Digest: v7bgFVBsPcXXjcZEK5wfKI6Nqe8=
+
+Name: assets/res/sounds/attack_buddha92.ogg
+SHA1-Digest: l7hKuXDXcluC9NVaJiY8/rwJnFE=
+
+Name: assets/res/armature/honghaier/honghaier0.plist
+SHA1-Digest: l1TPS9DUQPVQJdG+rL/ZzsSUawc=
+
+Name: assets/res/dialogue/tianbing/tianbing2.png
+SHA1-Digest: rto5iVGgErNsehQrd0m76huksHc=
+
+Name: assets/res/animation/sweep_tx.png
+SHA1-Digest: XSf/8ivTkCq20Kqy3/a5N8e8O8A=
+
+Name: assets/res/upgrade/zhaohuan.png
+SHA1-Digest: eBC8I7hRWNs562Xy2bpzGBWl44k=
+
+Name: assets/res/recharge/cumulate1.png
+SHA1-Digest: h2FMCcQeg6K0ncUKbVwzbIJeJDs=
+
+Name: assets/res/armature/dashaseng/dashaseng0.png
+SHA1-Digest: mP3cTWyNqbJMaNXcdt1W5R7nzHk=
+
+Name: assets/res/activity_stage/title.png
+SHA1-Digest: jQ7dRvVRqH7VKW4bj7AEkNGo7eA=
+
+Name: assets/res/armature/baiyanmojun/baiyanmojun0.plist
+SHA1-Digest: C1ZkOvSEEWpKT5qf5Dmj6wZ00sk=
+
+Name: assets/res/buddha_icon/buddha18.png
+SHA1-Digest: goC6O0XUsnYPQugcjDQf/i00ln0=
+
+Name: assets/res/monster_tower/5/bg.png
+SHA1-Digest: CGtHhhxhJDDIFdK5uGvGOYcC3ZM=
+
+Name: assets/res/summon_scene/summon_peach.png
+SHA1-Digest: FC/xCEIcWUtWuBb27H5HvHG3iHQ=
+
+Name: assets/res/armature/chimeiwangliang/chimeiwangliang.csb
+SHA1-Digest: Yn/5QCwqcXki78Gy8o2c8IA96FI=
+
+Name: assets/res/armature/jiji/jiji0.png
+SHA1-Digest: sBG4q3/3CMMCcb0/FqO1yjXh3Ms=
+
+Name: assets/src/framework/luaoc.lua
+SHA1-Digest: XBzPILQrpKwm5Ujwv5NrHfKDV+o=
+
+Name: assets/res/summon_scene/huanghe_tx.plist
+SHA1-Digest: XT3+wxV8icXuvkHcN/wbCCtnE78=
+
+Name: assets/res/novice_guide/guide_upgrade_tang1.csv
+SHA1-Digest: sPoW9CFyPCVkMC6eKymd9cc0Gcw=
+
+Name: assets/res/animation/daojuxuanfeng.pvr.ccz
+SHA1-Digest: mJV6864BYZ76fz4bLtJJ2XI7MCs=
+
+Name: assets/res/sounds/comic/sound_comic64_sha.ogg
+SHA1-Digest: g999VPSJRHtVtu/IgQyO8IKDbf8=
+
+Name: assets/res/buddha/buddha88.png
+SHA1-Digest: 1dd4cgOxusr3S1uwZgLA0HYuReU=
+
+Name: assets/res/upgrade/light.png
+SHA1-Digest: XsMvuKhTNzKX0TZXXjKtO8cgtws=
+
+Name: assets/res/new_fellow/new_fellow2.png
+SHA1-Digest: QlEM4dZAA7ShNJx5hFJbWUpLj3Q=
+
+Name: assets/res/armature/taiyizhenren/taiyizhenren.csb
+SHA1-Digest: RDwqRXPWbXEd30ARC2U5xDPsEQQ=
+
+Name: assets/res/monster_piece_icon/quality4.png
+SHA1-Digest: 3H0x09F6U7qjlrLbLKUJSLdhowc=
+
+Name: assets/res/treasure/icon5.png
+SHA1-Digest: 0QgqwBvff+L8Pw8eDEhk07T9c3o=
+
+Name: assets/res/buddha_icon/buddha2.png
+SHA1-Digest: 3G5MuquhYnZ6hKW1GJMTTpB6Xqw=
+
+Name: assets/res/armature/jiuwei/jiuwei0.plist
+SHA1-Digest: rTS60QHwBV8vonhXsevH7KZ7yt0=
+
+Name: assets/res/win_or_lose/exit.png
+SHA1-Digest: FYk67LUPX1Sz8W1IAXWW814K8O4=
+
+Name: assets/res/summon_scene/ball.png
+SHA1-Digest: QAlsKwhjyFeIY6OBlSof44QGXnY=
+
+Name: assets/res/sounds/attack_monster98.ogg
+SHA1-Digest: M+Oanwe08q6fmNasVrQjdb290Ok=
+
+Name: assets/res/tasks/stage/content3.png
+SHA1-Digest: AJ/RSshKTb+93ajCLbX1nBXBo9s=
+
+Name: assets/res/monster_piece_icon/piece16.png
+SHA1-Digest: eo8i8sSrY0Opd3ycIJGrVZ+0BXY=
+
+Name: assets/res/opening_comic/comic4/comic46.png
+SHA1-Digest: WT+HXNNCQynms14L1obN0Lcv/wg=
+
+Name: assets/res/shop1/tips.png
+SHA1-Digest: 37BZrWnvjI2hK6iUEB0iluOEg0g=
+
+Name: assets/res/animation/shandiantexiao2/shandiantexiao20.plist
+SHA1-Digest: cmsoULThVAw+EfkyRUNRXKxkRjI=
+
+Name: assets/res/animation/lingqi.png
+SHA1-Digest: UCrkwLGDtq3OB3SaICm5zqEhmTs=
+
+Name: assets/res/upgrade/upgradedi2.png
+SHA1-Digest: qozkHFiRY97EW9mosoi5cEeNzZA=
+
+Name: assets/res/buddha/buddha3.png
+SHA1-Digest: g9YF2bWpslpvKgTYXDWFkponqXE=
+
+Name: assets/src/cocos/cocostudio/StudioConstants.lua
+SHA1-Digest: RshOU5e6fdHb1kMGDBuYth/wMik=
+
+Name: assets/src/framework/cocos2dx/Cocos2d.lua
+SHA1-Digest: hBm8/0QTeRKnQ71sq5Ad2tjX0ts=
+
+Name: assets/res/propery_icon/xueliang.png
+SHA1-Digest: qsh1Mxb7+b8XCxy9B+cGrfQxxF0=
+
+Name: assets/res/item/name6.png
+SHA1-Digest: cG1wiBQ+gV6ZlQflxLBTxsL7Zhs=
+
+Name: assets/res/armature/caonima/caonima0.plist
+SHA1-Digest: m6JZJO6uqLCv0QDudpQWOR6q+pk=
+
+Name: assets/res/login_scene/login_wechat1.png
+SHA1-Digest: W0jElamaklZFg+liZjie4vLqzvY=
+
+Name: assets/res/upgrade/grademaxed.png
+SHA1-Digest: 7Yhms2VMPilJ9XeGl5mNcJPlGkU=
+
+Name: assets/res/connection/restart.png
+SHA1-Digest: R2IfZTv7UrOhDwgenRat6OoJNBw=
+
+Name: assets/res/login_scene/input_frame.png
+SHA1-Digest: aOKLZaWa1a9M38CFL+ZcjHZ8u4k=
+
+Name: assets/res/settings/wiki2.png
+SHA1-Digest: 7aCBTWU3ImY4ELPQLzTLZ+esFJ8=
+
+Name: assets/res/animation/shandiantexiao1/shandiantexiao10.png
+SHA1-Digest: cgIx+h40efT3UcZEu68EKh29zXA=
+
+Name: assets/res/armature/xiaoqianliyan/xiaoqianliyan0.png
+SHA1-Digest: TOSGVawO6wDgriPSZxfB0eI4O94=
+
+Name: assets/res/login_scene/frame.png
+SHA1-Digest: mY1CZUUMmiaFPFOzcwjbH/qk6ks=
+
+Name: assets/res/sign/bajie_h.png
+SHA1-Digest: sax/9brBxnonrnR+dujUYE4ToHc=
+
+Name: assets/res/monster_piece_icon/piece12.png
+SHA1-Digest: QTZ4zbic6Umsfcu0LQly+LHnXb0=
+
+Name: assets/res/monster_tower/9/bg.png
+SHA1-Digest: gBTr5pnRY7RTiPUyCpfB4gnxHSU=
+
+Name: assets/res/connection/loading_bg.png
+SHA1-Digest: VqN1JQWEy51/K6N/4b25dL4hX+g=
+
+Name: assets/res/opening_comic/comic1/yezi_tx.plist
+SHA1-Digest: zitZDRbYmIkTIyftq3xZYoTgps4=
+
+Name: assets/src/cocos/extension/DeprecatedExtensionFunc.lua
+SHA1-Digest: s+OZlUhaJEaiVth0dVf9LdeDJ+g=
+
+Name: assets/res/update/download.png
+SHA1-Digest: wVLr00SceODu0z4+BdTle5hcc+Q=
+
+Name: assets/ucgamesdk/ui/common/conf/tips_button.9.png
+SHA1-Digest: bV3ZE+kqgpLaaNJN2YPsYh70y24=
+
+Name: assets/res/monster_tower/3/bg.png
+SHA1-Digest: QyoiuI6FrT7/nkNou1uH64+bE0E=
+
+Name: assets/res/sounds/comic/sound_comic45.ogg
+SHA1-Digest: jTBBXmNLXPWtwP2W/BtIrcfP9kg=
+
+Name: assets/res/monster_icon/monster106.png
+SHA1-Digest: AU/+do6UcVBoCRN5zYwPFXDYhJ0=
+
+Name: assets/res/stage/name2.png
+SHA1-Digest: 5yUgHKADMZh1TfkdyQv+zxIIxok=
+
+Name: assets/res/armature/mumaguai/mumaguai.csb
+SHA1-Digest: nL/R3Afu06ssizZ2gRVHBW4V3fw=
+
+Name: assets/res/armature/fengtaizi/fengtaizi.csb
+SHA1-Digest: sZC+FGDoApsZk9jjzvaVCGBhWWQ=
+
+Name: assets/res/common/logo_ios.png
+SHA1-Digest: /+uxTUFfCTcgWM1Tgt2K9CdTDQk=
+
+Name: assets/res/login_scene/gray_bg.png
+SHA1-Digest: 0zsTJMGG4YPajTvgGSu4jtVdgoI=
+
+Name: assets/res/sign/sign_h.png
+SHA1-Digest: h6cVDahO5zSaYDqsvW2JVqs1pe4=
+
+Name: assets/res/login_scene/login_wechat.png
+SHA1-Digest: Y3nJUKc0Ax7gPe1grlg55CR08wo=
+
+Name: assets/res/opening_comic/comic5/comic51_tx.png
+SHA1-Digest: KQTLc4zCROcubUzqIVNwG3a9PS0=
+
+Name: assets/res/animation/siwanglinghun.png
+SHA1-Digest: GSOPT1TmDzLzxQpXV42Kqdi4k2s=
+
+Name: assets/src/cocos/network/NetworkConstants.lua
+SHA1-Digest: MuxyydhayasXCgRPeIQa5yi/7RY=
+
+Name: assets/ucgamesdk/config/services.xml
+SHA1-Digest: tOMg+Jci6gWOlxOjqwM55RWkPSs=
+
+Name: assets/res/recharge/peach.png
+SHA1-Digest: zkjdvrq0j8ykPXUnW48ujfsz2eM=
+
+Name: assets/res/activity_stage/price_frame.png
+SHA1-Digest: gDCL3qXH7+SqG2AE4cT89sYjWl0=
+
+Name: assets/res/monster_piece_icon/piece33.png
+SHA1-Digest: 2cg4yCyqXC/pZd+q4XANOr06rgw=
+
+Name: lib/armeabi/libbdpush_V2_2.so
+SHA1-Digest: Se+KKSNFFs8mYtPK72+mIuQ/MAY=
+
+Name: assets/res/armature/tower_armature1/tower_armature10.plist
+SHA1-Digest: +x/O2kOSRlJJtW3zvQiswa93vMQ=
+
+Name: assets/res/shop1/exp_mall_h.png
+SHA1-Digest: 5SBGJgHkuVG+ooPqU0BfpcbHlv0=
+
+Name: assets/src/framework/cc/utils/ByteArrayVarint.lua
+SHA1-Digest: OFLdifAIhCat2C6yGewjbSB3OmQ=
+
+Name: assets/res/fonts/yellowNum.fnt
+SHA1-Digest: jblDrNV6aLmzkjtzFh9Mxd6G9Hg=
+
+Name: assets/res/tasks/achievement/achievement4.png
+SHA1-Digest: NHWwjabvzPTCrPtxcOU17Xnohp0=
+
+Name: assets/res/gamescene/sc1.png
+SHA1-Digest: zlovpA/AfXPzaw/WmwuE+zgKNCM=
+
+Name: assets/res/buddha/buddha64.png
+SHA1-Digest: 5Dk5dEFj4HcRLB/IPmvFEZ37qes=
+
+Name: assets/src/framework/cocos2dx/StudioConstants.lua
+SHA1-Digest: CACcZnQpjs9mPAgV6ulmtWxfbxk=
+
+Name: assets/res/server_maintain/title.png
+SHA1-Digest: LxfqbrJfFwIEDi/JbGAFBRtBKpM=
+
+Name: assets/res/team/teambg.png
+SHA1-Digest: jXiGnWUvm3xVtAn/H/BQxfKg6O8=
+
+Name: assets/res/stage/exp.png
+SHA1-Digest: ebGtXrYxpSSfALe2J+wXjAbXQRU=
+
+Name: assets/res/gamescene/continue.png
+SHA1-Digest: syJTP9KzZPK+ZOLFi04zuIoO49I=
+
+Name: assets/res/gamescenegroove/upgrade.png
+SHA1-Digest: tdkK9ld1dPXMzAgWioLHqL+9eC4=
+
+Name: assets/res/novice_guide/arrow.png
+SHA1-Digest: GTMJBRQezrOtvDsg8ypfhqAY+4Q=
+
+Name: assets/res/shop/title_shop.png
+SHA1-Digest: 8swP6Un/r4h2RTAlGw5DS8GcSSk=
+
+Name: assets/res/common_ui/to_upgrade1.png
+SHA1-Digest: r7ayJDNmwRPjRvIhC7pzOCW7hwg=
+
+Name: assets/res/common_ui/touiconlock.png
+SHA1-Digest: UzzrNRqu0/699fmvtDdKgPGf+xs=
+
+Name: assets/res/animation/bird.png
+SHA1-Digest: 5OcqPXfpbnMsvmXQSLxs1fidOns=
+
+Name: assets/res/opening_comic/comic4/comic45.png
+SHA1-Digest: jXKaBHw0ogjD8ZsnyfMP6FE0SDY=
+
+Name: assets/res/buddha_icon/buddha108.png
+SHA1-Digest: tmvaXmGNGpzPiTfqMjokfkEl6xw=
+
+Name: assets/res/upgrade/tang_h.png
+SHA1-Digest: KtfUK+g9kWFg2j/uFIMy/P6U3t8=
+
+Name: assets/res/shop/business.png
+SHA1-Digest: JLO1oEshhh7mcNXR/uNlAjBO+Jk=
+
+Name: assets/res/game_infinite/bg_sky.png
+SHA1-Digest: I933m67y/0Ym/eZQ+MMFW7WnwsI=
+
+Name: assets/res/armature/caonima/caonima.csb
+SHA1-Digest: GhWBuWCwri4gO7Yl7DLWgIVKOpY=
+
+Name: assets/src/framework/cc/ui/UIPushButton.lua
+SHA1-Digest: ehJiZEAcOLFpcPzGp4Sf45/L4zk=
+
+Name: assets/res/shop1/promotion.png
+SHA1-Digest: XmENYuor8AfPNa6oHTd+cSyRdEM=
+
+Name: assets/res/opening_comic/comic3/tip4.png
+SHA1-Digest: nmlDsaov9W3+/aw77wsqxcN6KJ8=
+
+Name: assets/res/shop/nextflush.png
+SHA1-Digest: VjHw0wNC3Oci6Veb5+F6v48xkTI=
+
+Name: assets/res/summon_scene/btn_multiple1.png
+SHA1-Digest: aQs7Ynz+vIzj70tmCcz9y0HtZpA=
+
+Name: assets/res/recharge/cumulate4.png
+SHA1-Digest: B211UpFAp5qU8amFr7s73Yck0OM=
+
+Name: assets/res/armature/tower_armature3/tower_armature3.csb
+SHA1-Digest: ivp5NCTw6hsUMkphVmkDTNIeV9I=
+
+Name: assets/res/armature/tuzi/tuzi0.png
+SHA1-Digest: up/Wt3jMP1DLvT/6YqHmnppgcrE=
+
+Name: assets/res/novice_guide/guide_treasure2.csv
+SHA1-Digest: HH/5cJ+zezhdMg1uU238pwoa/YA=
+
+Name: assets/res/armature/xiejiang/xiejiang0.png
+SHA1-Digest: OtNlhIEtumuf9H35gojJZLUZHIM=
+
+Name: assets/res/monster_icon/monster19.png
+SHA1-Digest: 1Ah84lv8hP5Lu6NLZIQpVUcnBtk=
+
+Name: assets/res/recharge/cumulate0.png
+SHA1-Digest: eUwcALhv9tNo8xkUYttU9gLZuuI=
+
+Name: assets/res/buddha/buddha94.png
+SHA1-Digest: Mer3AcwInN0g1n2LjtNxUqaGYco=
+
+Name: assets/res/gamescenegroove/frame5.png
+SHA1-Digest: gurQDO7C+na8fBrnarRQ1OyBieQ=
+
+Name: assets/res/monster_piece_icon/piece30.png
+SHA1-Digest: 7uZ1tp6miWxuIBdoPL3HFquadHk=
+
+Name: assets/res/item/item_pic1.png
+SHA1-Digest: a6NjUgajnoY1kIaKR56JeIexoZU=
+
+Name: assets/res/sounds/attack_monster25.ogg
+SHA1-Digest: 04BWeuBBXjMExV7wHmFxEntbEpI=
+
+Name: assets/res/chapter/halo.png
+SHA1-Digest: D/qy9wjCBf39IDcHQylgNh0QAc0=
+
+Name: assets/res/login_scene/tip2.png
+SHA1-Digest: hoU0o1rxKcmBbG1bSvkOMmcwWJI=
+
+Name: assets/res/opening_comic/comic1/comic13_tx.plist
+SHA1-Digest: cifHYN0nGVtao6O1oeRwkOr/bz0=
+
+Name: assets/res/new_fellow/4.png
+SHA1-Digest: FEbY/cUhi98lbn5fcDnrTxjeURg=
+
+Name: assets/res/recharge/alert_pic.png
+SHA1-Digest: km8a7uTohIvUVDEu4bwryCTyTvw=
+
+Name: assets/res/shop1/peach_pic.png
+SHA1-Digest: T/ykOLGgbRDCm1LDuwuHCWB/OdU=
+
+Name: assets/res/armature/tuzi/tuzi.csb
+SHA1-Digest: 8QIDSZX7nsW3pjh8+NHY8s1viHY=
+
+Name: assets/res/opening_comic/comic4/comic41.png
+SHA1-Digest: 5qLYjER5YGv5sJS0UxqXmvPPtvc=
+
+Name: assets/res/monster_icon/monster15.png
+SHA1-Digest: O4turJRz31VpCJbhnbGd73UAWCc=
+
+Name: assets/res/animation/jinhua_tx.png
+SHA1-Digest: eov72Q75FQuTrljltWwDC22mmGo=
+
+Name: assets/res/login_scene/login_bg.jpg
+SHA1-Digest: AYj135djnLmVQEzaNw5FKFmj8rA=
+
+Name: assets/res/upgrade/wand/small_wand3_h.png
+SHA1-Digest: AjADYDG1BXMV3XaX1zA3827XCkY=
+
+Name: assets/src/framework/cc/ui/UILabel.lua
+SHA1-Digest: vsJrhw1FvLfmfMRIFCuiBmnhFg4=
+
+Name: assets/res/gamescene/bg_middle_d1.png
+SHA1-Digest: mLdNyIlv/NO1KDIassrufykuglM=
+
+Name: assets/res/armature/xiaotuzha/xiaotuzha0.png
+SHA1-Digest: tSA5wuU1RSEzsacXNSLdSycuZuQ=
+
+Name: assets/res/monster_icon/monster4.png
+SHA1-Digest: iouyTIWAl4o857SkexzmayhEV0A=
+
+Name: assets/res/upgrade/jinhua.png
+SHA1-Digest: s2WIgf4UzBNzXIISicrT+ZR3V4Q=
+
+Name: assets/res/armature/xiaotianjiang/xiaotianjiang.csb
+SHA1-Digest: Z+O6kgDLcJMudrM9uECTQ282RqM=
+
+Name: assets/res/upgrade/lingqi.png
+SHA1-Digest: qG/ER2SLcY5JS1YZbKfxGpzXxcg=
+
+Name: assets/res/buddha_icon/buddha27.png
+SHA1-Digest: sYBDHOhIQApGDcfzLP+WnA6/Am0=
+
+Name: assets/res/item/item_appear1.png
+SHA1-Digest: cGnSzrUzICilymuzgEavk3ccs44=
+
+Name: assets/res/armature/dadou/dadou0.plist
+SHA1-Digest: ftg/qGe9kCM0+buwVo4yBdH+MZc=
+
+Name: assets/res/recharge/double.png
+SHA1-Digest: jdSf52Nj9DvHbvGUUv4p+o6isxE=
+
+Name: assets/res/buddha_icon/buddha94.png
+SHA1-Digest: yeuNoLKsuFQxqYxqqAXghYuBuaI=
+
+Name: assets/res/opening_comic/comic2/comic22_tx.plist
+SHA1-Digest: 9CtY3jwQ8b5m0Ds2UMz7TmLZVrU=
+
+Name: assets/res/treasure/alert/piece1.png
+SHA1-Digest: mqBryAiTeL9rnr663P454if4Dbk=
+
+Name: assets/res/dialogue/next.png
+SHA1-Digest: TVpYfNeH5i9tiN9LcnVRsumkIGA=
+
+Name: assets/res/monster/monster53.png
+SHA1-Digest: 3XLwB6b6RbGnCSlHsNTWwnSYKHg=
+
+Name: assets/res/buddha_icon/buddha88.png
+SHA1-Digest: 4gzBb9ii1f+mgDL5lavw4CA160Y=
+
+Name: assets/res/upgrade/tang/small_tang3.png
+SHA1-Digest: h+mmyildjtuAh51bbB8cZyBYzuw=
+
+Name: assets/res/activity/close_h.png
+SHA1-Digest: q4XkErp1DHGmGRS8IsQFa/spLHw=
+
+Name: assets/res/summon_scene/honghe_tx.plist
+SHA1-Digest: 6PnVk5RiCfLzOdSXpXVi1z8UXAc=
+
+Name: assets/res/tasks/achievement/achievement2.png
+SHA1-Digest: uq+1ZHjuSa8K/9uk2O4itUiAq1c=
+
+Name: assets/res/novice_guide/guide_bg.png
+SHA1-Digest: z/+zVSsHSyFlRJet/yxFCJDdolw=
+
+Name: assets/res/opening_comic/comic6/comic63_tip.png
+SHA1-Digest: vzEkBE+zz88BUP1DVrCcI2RWDR4=
+
+Name: assets/res/server_maintain/get.png
+SHA1-Digest: IA6ZnN49ZvHFiWFLHjpFV2gafQU=
+
+Name: assets/res/chart/rule.png
+SHA1-Digest: 49Ea7yU6S3EKCgUlNZJnZeoc1N0=
+
+Name: assets/res/armature/xiaozhangtaizi/xiaozhangtaizi0.png
+SHA1-Digest: pAZ6kIEspFLf9wE2eB8Njjg4KLc=
+
+Name: assets/src/framework/cc/ui/UILoadingBar.lua
+SHA1-Digest: kPFcETJy9ShuxJ0jOoMgX8yW7K8=
+
+Name: assets/res/animation/wand_tx.png
+SHA1-Digest: dcu3iFyKpggK1lb/Y9qTmu/Ufxo=
+
+Name: assets/res/sounds/bgm_theme.ogg
+SHA1-Digest: QNV362JhtlOXhCDaXYiZSCDvHyQ=
+
+Name: assets/res/new_fellow/note.plist
+SHA1-Digest: HWLLUcRKOZzarwpBYb2i1KUxFk8=
+
+Name: assets/src/framework/anysdkConst.lua
+SHA1-Digest: XphS3X9HTZ54GwT3JFN6P1gy8RE=
+
+Name: assets/res/monster_tower/6/front.png
+SHA1-Digest: t4RG4lgIR6EMPzxg9EIcQkPkO0I=
+
+Name: assets/res/activity_stage/selected.png
+SHA1-Digest: SvEqljte3NMJjlWJ3FHUYT8lFtU=
+
+Name: assets/res/sounds/attack_monster17.ogg
+SHA1-Digest: xQgyaVgwcM2wyR5IHk4Rq7rTq6k=
+
+Name: assets/res/monster_icon/monster17.png
+SHA1-Digest: MwZ5oPrq3gD/JWR4pWrtGsZR4d0=
+
+Name: assets/src/framework/cc/utils/Localize.lua
+SHA1-Digest: 4iPEm7KbyPAOzw2DU3a60msqSRY=
+
+Name: assets/res/sounds/comic/sound_comic32.ogg
+SHA1-Digest: gKraYUqXUTdv1iNIbaoIoYtYxVY=
+
+Name: assets/res/upgrade/cancall.png
+SHA1-Digest: QtqRlBz60a29GYLeB1/EUgbSRM0=
+
+Name: assets/res/alert_exp/pic2.png
+SHA1-Digest: 8xVRxAGIV955kd0JqOAWN7T4vhk=
+
+Name: assets/res/monster_tower/4/door.png
+SHA1-Digest: Csn5//wp8N+Pfn5MCGko32eD3tE=
+
+Name: assets/res/animation/baoji.png
+SHA1-Digest: l6OeUZS5J0iL+CmLY3NpBM3EMgQ=
+
+Name: assets/res/recharge/bg.png
+SHA1-Digest: IcjXp/FSfh95nBHVuMTZ74QsLr8=
+
+Name: assets/res/monster_piece_icon/piece25.png
+SHA1-Digest: +YYK2Xp3m4H7qhsIml10irkATlQ=
+
+Name: assets/res/buddha_icon/buddha9.png
+SHA1-Digest: 5Na24AoV1TuDugrzKRtVmRJxGoI=
+
+Name: assets/res/buddha/buddha26.png
+SHA1-Digest: QdGAO4CFYNZGvWz8GwmeY0EDV24=
+
+Name: assets/res/monster_piece_icon/piece38.png
+SHA1-Digest: gJ/s3BcW0BFBA6xvim2o9h5RaJA=
+
+Name: assets/res/upgrade/lockq.png
+SHA1-Digest: V61qscTrrzvUHa0WmtbfqFMi0vU=
+
+Name: assets/res/buddha/buddha105.png
+SHA1-Digest: SOrXocdPCU47xFbgQYN2AUBeINo=
+
+Name: assets/res/armature/tower_armature3/tower_armature30.plist
+SHA1-Digest: 2bG89ltCIEJpA0OQAsmSYCwZZTk=
+
+Name: assets/res/buddha/buddha68.png
+SHA1-Digest: tA0KXZrWVgMbIrarFORnPFbYsys=
+
+Name: assets/res/sign/renshen.png
+SHA1-Digest: Sm+QYe5COwoUt0/2VeikjtapjaY=
+
+Name: assets/res/armature/xiaoqianliyan/xiaoqianliyan0.plist
+SHA1-Digest: K3YAXzhNVFzlBC0E8OFi0WsK5Dk=
+
+Name: assets/res/update/next_time.png
+SHA1-Digest: paw78XmT8f5E2YfJCW+STXZ87Yo=
+
+Name: assets/res/buddha/buddha19.png
+SHA1-Digest: jQhZ1VlABBtVLd8RQqp/1l6dbKU=
+
+Name: assets/res/armature/baijingjing/baijingjing.csb
+SHA1-Digest: CXd18Q2aYrR86tV6gD7bC9QwzAM=
+
+Name: assets/res/monster_piece_icon/piece34.png
+SHA1-Digest: ae7riX3IsGzhFA8mP+YbsKoLslE=
+
+Name: assets/res/shop1/exp_pic.png
+SHA1-Digest: m/OS864cyo6Orw9QnrTZU4/PQN4=
+
+Name: assets/res/buddha/buddha23.png
+SHA1-Digest: Ltp2V/wx0LWLZxDDdGfYbqHtSq0=
+
+Name: assets/res/sign/energy.png
+SHA1-Digest: Ex3mflgmMMfeRRObLJoATwTMup0=
+
+Name: assets/res/tiny_loading/role2.png
+SHA1-Digest: l4bxPCXU1DNTNlcbpS1yME2XExo=
+
+Name: assets/res/animation/circle_tx.pvr.ccz
+SHA1-Digest: XQh38q6qZU/eKX64utGqa6guNuo=
+
+Name: assets/res/chart/lv.png
+SHA1-Digest: 6+QnEMXSxVDjJhz/xgoH4TAshvU=
+
+Name: assets/res/monster/monster114.png
+SHA1-Digest: v9EeHy8MOXzzzkFGOcqlctZGw68=
+
+Name: assets/res/gamescene/bg_middle7.png
+SHA1-Digest: aZe6O1dVZXbM2UInwjAfaZ4Y9W0=
+
+Name: assets/res/novice_guide/guide_lose2.csv
+SHA1-Digest: brgEZXAEYwoPlKyOG8AqD8ZM4UQ=
+
+Name: assets/src/framework/cc/ui/UIPageView.lua
+SHA1-Digest: nUzgCNT57HQAnQmmzQKlOs3dIuM=
+
+Name: assets/res/gamescene/bar_bg_type3.png
+SHA1-Digest: SV28P42cHULGhXsPKU7jkpJ0Lpw=
+
+Name: assets/res/chapter/giftbg.png
+SHA1-Digest: 1xBo4kIOS3gNEz2qWhQyIYXBvb0=
+
+Name: assets/res/armature/taierzhenren/taierzhenren.csb
+SHA1-Digest: 8gf3CcnKz91aRXqYsV7vS7gDg+w=
+
+Name: assets/res/common_ui/confirm_h.png
+SHA1-Digest: UcM/TozEW11QOEOAsQ2li3nRhn0=
+
+Name: assets/res/summon_scene/cost_lb2.png
+SHA1-Digest: ZY/+fa6yXPyvkkB2RjVW1/W1wlc=
+
+Name: assets/res/armature/heixiong/heixiong0.png
+SHA1-Digest: 2JLxmsTWCg5GqF1gFFmV0XyohEo=
+
+Name: assets/res/armature/baijingjing/baijingjing0.png
+SHA1-Digest: vxxLErOYe4WoPNL6bKeWcPBusRk=
+
+Name: assets/src/DataEye/DCConfigParams.lua
+SHA1-Digest: DzaXmxdT+hCVi+8qbv0m48muyH0=
+
+Name: assets/src/framework/cc/ui/UICheckBoxButton.lua
+SHA1-Digest: qa3607VXFIq0oiY8GrZ7LOoVVfI=
+
+Name: assets/res/gamescene/win.png
+SHA1-Digest: puvyPJyMYj+Kln6ehDii22XzUWw=
+
+Name: assets/res/monster_icon/monster1.png
+SHA1-Digest: KaJr/f6eJasIN8fnOID3XGztOzM=
+
+Name: assets/res/chapter/upgrade.png
+SHA1-Digest: qvVp8T9qaj/tdy/5b5J/5USFXgA=
+
+Name: assets/res/sounds/attack_buddha80.ogg
+SHA1-Digest: p1B3e9yZIUgVCj5lq8OWf0aU6K8=
+
+Name: assets/res/gamescene/retry.png
+SHA1-Digest: 7p7C+e4ZChxByX4fNlipAMetsr8=
+
+Name: assets/res/common_ui/exp_bg.png
+SHA1-Digest: c7cdC8n32e2xvaM8n6CG5yIwnTs=
+
+Name: assets/res/monster/monster8.png
+SHA1-Digest: 5mn7ZkeyW7VvccrI79LsyaykANc=
+
+Name: assets/res/common_ui/touicon.png
+SHA1-Digest: gwzHC9kaXs/Q/qepUkdNN4YnzIU=
+
+Name: assets/res/armature/keaishuguai/keaishuguai.csb
+SHA1-Digest: BYBt2NfXfh6ZblTc7B+EgCdXltI=
+
+Name: assets/res/shop1/60.png
+SHA1-Digest: KTKI//BER+N5KhB0DwxNgJVtqAY=
+
+Name: assets/res/armature/zuanfengdawang/zuanfengdawang0.plist
+SHA1-Digest: Q0SEntDUyFL8yRHUIbKxeNEHqsI=
+
+Name: assets/res/buddha_icon/buddha109.png
+SHA1-Digest: 9LL2x9s5ZPYl5Dk9k2evdSCU5kc=
+
+Name: assets/res/armature/tunvlang/tunvlang.csb
+SHA1-Digest: PC9Kr1MznPdsWyZ3iBUmP8HCWJs=
+
+Name: assets/res/gamescene/bagua2.png
+SHA1-Digest: LIh1mrefZc5ZalisBpSFooeNNlk=
+
+Name: assets/res/animation/shandiantexiao2/shandiantexiao2.csb
+SHA1-Digest: ZCZE8n04hxJceCHRvSUi3OgQF9U=
+
+Name: assets/res/stage/exp_reward.png
+SHA1-Digest: UjbNRL4UyfSH75AFOTn7kxhQDkM=
+
+Name: assets/res/buddha_tag/0.png
+SHA1-Digest: gI3t1PBkyRH5g9m7UGCulm2K2sI=
+
+Name: assets/res/treasure/alert/describe.png
+SHA1-Digest: qtQchy6a4WUXhs8C56UE85+IorY=
+
+Name: assets/res/sounds/attack_buddha86.ogg
+SHA1-Digest: oXs/4mRl2edOG+lDJ2npfYo8CFE=
+
+Name: assets/src/cocos/cocos2d/DeprecatedCocos2dEnum.lua
+SHA1-Digest: wEkILNnKw125+6NISoJdEQPQwVU=
+
+Name: assets/res/sounds/sfx_go.ogg
+SHA1-Digest: fupklrNQnojcC8DJ5aXfMhwASZw=
+
+Name: assets/src/DataEye/DCItem.lua
+SHA1-Digest: MAXzD2/OpU+gc546/Pk3TXYOYFA=
+
+Name: assets/res/gamescene/bar_bg_tower_m.png
+SHA1-Digest: h6lmRJn4lf5vi0ZgRlX5C/j7n00=
+
+Name: assets/res/opening_comic/comic3/comic31_tx2.png
+SHA1-Digest: AlrchsT2pyWOBnRKdKnkHVPlscs=
+
+Name: assets/res/team/bottom_lock.png
+SHA1-Digest: 0706NRdfZgB/+T2b9s45FHFjjm0=
+
+Name: assets/res/game_infinite/change_name1.png
+SHA1-Digest: gu4WK6CLunIHJqQLHO5fD62aHGI=
+
+Name: assets/src/framework/cc/ui/UIButton.lua
+SHA1-Digest: d2Qdf3iZQC/nfmGPnDNnEACde+g=
+
+Name: assets/res/chapter/lock_pic_h.png
+SHA1-Digest: mh/xUMQGKxhd2ocnH7BVHIDXAWs=
+
+Name: assets/res/armature/xiaodaomuguai/xiaodaomuguai.csb
+SHA1-Digest: um8sVp8VilT2eizYtc8K3AnEqAg=
+
+Name: assets/res/gamescene/tower3.png
+SHA1-Digest: Udjq22JR+zklv1XXB3r25sRCP70=
+
+Name: assets/res/spin/x.png
+SHA1-Digest: oE3c0VgHmOzRVCsWeKBsJRAASN8=
+
+Name: assets/res/item/item4.png
+SHA1-Digest: xQNl1P7y+Iu5QZySiNiwRMsl2fE=
+
+Name: assets/res/settings/back2.png
+SHA1-Digest: R+XGw+Oi8c7OZxxOjbMxTaSFOoQ=
+
+Name: assets/res/tasks/reward.png
+SHA1-Digest: Qbh4NHVPNGXCgn8xYTX0SXxKjc0=
+
+Name: assets/res/chapter/recharge.png
+SHA1-Digest: 9vdTi58aI7z1L+/evALMtUWVLiU=
+
+Name: assets/res/armature/daleizhenzi/daleizhenzi0.plist
+SHA1-Digest: eGEPSOmbUlnMtYFJVqJC5xN64G0=
+
+Name: assets/res/summon_scene/zhuanhua.plist
+SHA1-Digest: XbWb67sTEzkiibz/GQ1tI0SXR6E=
+
+Name: assets/res/monster_tower/6/back.png
+SHA1-Digest: 82b0etT8AkyE/R7H8dljEH96rq0=
+
+Name: assets/src/framework/cc/ui/UIListView.lua
+SHA1-Digest: iJ/HqqH3GCiASvFhMisM6ct70CQ=
+
+Name: assets/src/framework/cc/EventProxy.lua
+SHA1-Digest: d5XN6xZJy/CPwoUjovC4VnDihDs=
+
+Name: assets/res/gamescene/bar_bg_type1.png
+SHA1-Digest: PNqQVacxksVYDIGbEKNPbIBTM/w=
+
+Name: assets/res/win_or_lose/first_win.png
+SHA1-Digest: NFZMU5OOQhP+wqvYXVaJ1lcnWKo=
+
+Name: assets/res/propery_icon/spirit_grow_speed_tag.png
+SHA1-Digest: okvWRNv0cgNTtEdGye0u5jPJ7a0=
+
+Name: assets/res/win_or_lose/bg_frame.png
+SHA1-Digest: ZMpvM4fXQWtBqF9UIjXc32EB6+U=
+
+Name: assets/res/buddha_icon/buddha104.png
+SHA1-Digest: ke21xl8LjVOO+b37vWkt5FbL8mg=
+
+Name: assets/res/shop1/shopprice1.png
+SHA1-Digest: l2JRPa8XAa9gwiUzh6QVpcklWKo=
+
+Name: assets/frontia_plugin/plugin-deploy.jar
+SHA1-Digest: fjKTIWJjq5Z8pumjxVuliUROPec=
+
+Name: assets/res/dialogue/name_frame.png
+SHA1-Digest: JUU8dVG2fTiB0oTL5atonLCnrsk=
+
+Name: assets/res/team/all.png
+SHA1-Digest: WiQesRj4wpN66Ocn2Iz7cdTS+aM=
+
+Name: assets/res/novice_guide/guide_daily.csv
+SHA1-Digest: SYXn41SBXa2kthsU/lR1+9I1rp8=
+
+Name: assets/res/common/logo.png
+SHA1-Digest: imGnrKq6LjMHhuA401cz8nliCV4=
+
+Name: assets/res/gamescene/quality_3.png
+SHA1-Digest: 1RjnmAsob5rVksK9hx/ieJC8x34=
+
+Name: assets/res/armature/change/change0.plist
+SHA1-Digest: 2hJgND6rTYW/PTqu6rGbHtpSYgo=
+
+Name: assets/res/buddha/buddha32.png
+SHA1-Digest: N78Xi0Ys9g2P+RiyA66XZQoOnGw=
+
+Name: assets/res/server_maintain/old.png
+SHA1-Digest: rOzeD5LgYEVp47niUx2BBYI5sGc=
+
+Name: assets/res/gamescene/bg_sky3.jpg
+SHA1-Digest: fjJdSwLI7xvcBC2Y4IGP8P6KbtU=
+
+Name: assets/res/opening_comic/comic5/comic51_tip.png
+SHA1-Digest: AT4Zqe5UBgaMqWzUpekEbF7Q17E=
+
+Name: assets/res/armature/miaoxinren2/miaoxinren20.png
+SHA1-Digest: aoSl0Y5FK8rGekt+Bn00IKckNWs=
+
+Name: assets/res/armature/tuzi/tuzi0.plist
+SHA1-Digest: 5xX+DvrRS0B9tf+vBeRlv5kS4q4=
+
+Name: assets/res/opening_comic/comic1/comic12_tx.plist
+SHA1-Digest: 3JuWwgHRHcgNSZdUfO3LZXksKwY=
+
+Name: assets/res/novice_guide/card1.png
+SHA1-Digest: RBSX6Gyo0VQC1w3Ab7kc1e1spKw=
+
+Name: assets/res/sounds/comic/sound_comic1.ogg
+SHA1-Digest: O0vqYNH/QK5kT96qVZ2iyKlTsf4=
+
+Name: assets/res/upgrade/tang/small_tang2_h.png
+SHA1-Digest: wCE7xM1POQ5nM9VcwHNGYj9NviU=
+
+Name: assets/src/framework/cc/utils/GameState.lua
+SHA1-Digest: vL4/ubQbPISbk1/SXOE+14BGFtU=
+
+Name: assets/res/trial/trail_icon.plist
+SHA1-Digest: lvIWDGscr/xpFDK1QVStyR7i19Q=
+
+Name: assets/res/sounds/bgm_theme_day.ogg
+SHA1-Digest: dME8BZkuxJ05TUpvanHFxWjZBsE=
+
+Name: assets/src/framework/cc/uiloader/init.lua
+SHA1-Digest: G3NkVXfGEEiWs+4/OhYn6ym8Ddk=
+
+Name: assets/res/chapter/mark.png
+SHA1-Digest: xS1ra2vPcOPBiezK9R+8L2nnipg=
+
+Name: assets/res/buddha/buddha8.png
+SHA1-Digest: tU38xQZLy+ik3+NdOqUm5C6uKfI=
+
+Name: assets/res/novice_guide/guide_unlock_monster2.csv
+SHA1-Digest: MoNJy//vq9bcNLdAK9dYYsyjGe0=
+
+Name: assets/res/gamescene/bg_sky6.jpg
+SHA1-Digest: d0EeuPdnCj6XKinpQpPUTn5cCF0=
+
+Name: assets/res/Diary/activity_even.png
+SHA1-Digest: JxC7yKk0Qo6HtgMacFErKNN3cmw=
+
+Name: assets/res/notice/1.png
+SHA1-Digest: UCtPtqDEipUZb3xERN7TxwZSJ/c=
+
+Name: assets/res/settings/user_center1.png
+SHA1-Digest: 4pNl/yU36gU+dj+on1mJ2oZi3Fc=
+
+Name: assets/res/Diary/stone.png
+SHA1-Digest: rIFbK7js7TLWwPxSj2E3mBNE/4E=
+
+Name: assets/res/gamescene/bar_hp_bg_elite.png
+SHA1-Digest: jrrJ84LyobBqrIqOQfucC/121Gg=
+
+Name: assets/res/treasure/treasure5_name.png
+SHA1-Digest: X26Tq8YRows1UbhF8GZsfhrDNZw=
+
+Name: assets/res/armature/datianjiang/datianjiang.csb
+SHA1-Digest: 3dL/sQ6l5qJr3/1Au+05TtoGxOQ=
+
+Name: assets/res/shop1/needexp.png
+SHA1-Digest: qH0Aox/A17XL1QiufRbxhIcBTOI=
+
+Name: assets/res/common/ball.png
+SHA1-Digest: NP0OW9dDLrnLtfE3Btuo5mmgJ3E=
+
+Name: assets/res/armature/xiejiang/xiejiang0.plist
+SHA1-Digest: AjRv1Fd6lAmRs0oJpdcan8yCUKI=
+
+Name: assets/res/item/item6_h.png
+SHA1-Digest: B2wAh78LogoWUuV2KRiU4eoI/NI=
+
+Name: assets/res/monster_piece_icon/piece22.png
+SHA1-Digest: r0+sIBg6q4Wtwx2uooGz3wOIN44=
+
+Name: assets/res/treasure/treasure_frame.png
+SHA1-Digest: jVZl99Xy3Z1JHlcO9TCKqmlph6g=
+
+Name: assets/res/monster_tower/14/door.png
+SHA1-Digest: 1JEDqF9PaCU+ZWiZLt9YvkRpGBA=
+
+Name: assets/res/armature/dazhangtaizi/dazhangtaizi.csb
+SHA1-Digest: bHsX3jnJUvy2RwGGHOUWKrx5Amw=
+
+Name: assets/res/tasks/bg.png
+SHA1-Digest: LHbFngktoCWrX5jalvc5asA+Iz4=
+
+Name: assets/res/activity_stage/btn_start.png
+SHA1-Digest: e+cHkGVhpGdQa8l/8nHnSmrcwBI=
+
+Name: assets/res/novice_guide/guide_spirit.csv
+SHA1-Digest: bci8FerK6xqoQbwCa93y49ZFr6M=
+
+Name: assets/ucgamesdk/config/strings.xml
+SHA1-Digest: u71/pp172Bj8x6AawH3FvKvM+fA=
+
+Name: assets/res/fonts/battle_purple_0.png
+SHA1-Digest: o48FktIY1SSqKrbFvRYm2rcNfYw=
+
+Name: assets/res/armature/niumowang/niumowang.csb
+SHA1-Digest: gz/kKP/RorSXVA+AAek0oO+gc4s=
+
+Name: assets/src/cocos/cocosbuilder/DeprecatedCocosBuilderClass.lua
+SHA1-Digest: w6A8QPsuZJNeT37KOyG6EYC8qbI=
+
+Name: assets/res/win_or_lose/alert.png
+SHA1-Digest: W5p3xyGT+pQzIcFXCs6o/hLxa7g=
+
+Name: assets/res/tiny_loading/hint14.png
+SHA1-Digest: xSxU/aMDzbzXG0sKApWZW94lWko=
+
+Name: assets/res/upgrade/tang/small_tang2.png
+SHA1-Digest: bJH7XQVfT4xQPYROYXgdRXULrM4=
+
+Name: assets/res/armature/xiaoshaseng/xiaoshaseng0.plist
+SHA1-Digest: NRjD2VldAhht3Y9/ezZCt7Aw9es=
+
+Name: assets/res/tasks/achievement/achievement7_h.png
+SHA1-Digest: eavQwhm8VgpmqNDFkG4KM1g4FB8=
+
+Name: assets/res/monster_icon/monster51.png
+SHA1-Digest: GSjCIgmK3eSJRtMuKjv/f/lp50I=
+
+Name: assets/res/opening_comic/comic2/comic21_tip.png
+SHA1-Digest: 0P98vJcoWuHA/E57V0SBANvT1Nk=
+
+Name: assets/src/cocos/cocosdenshion/DeprecatedCocosDenshionFunc.lua
+SHA1-Digest: AFu61zP5nGk54bVoMsI8Ng29LOU=
+
+Name: assets/ucgamesdk/octopus_sdk.apk
+SHA1-Digest: o1OU0dPDIh+N8mnNkIoPTZ6yols=
+
+Name: assets/res/common_ui/tou.png
+SHA1-Digest: eCoUMhWqkVnous0TDTcr0LQg+a4=
+
+Name: assets/res/upgrade/tower/tower3.png
+SHA1-Digest: uYJO+84ce6oRnk7uYYBffac3qss=
+
+Name: assets/res/gamescene/bg_sky2.jpg
+SHA1-Digest: DIkH6FAR43HelEfHCRFVeCZCkMs=
+
+Name: assets/res/armature/langren/langren0.plist
+SHA1-Digest: I/xvLMRmD6vooQjIvNzL7IuELqc=
+
+Name: assets/res/chapter/map02.jpg
+SHA1-Digest: n6nMqraRNUUPZcwgHta5ZOXbuK0=
+
+Name: assets/res/armature/xiaodou/xiaodou0.plist
+SHA1-Digest: eWkfiDV+IBMXIc408fBFcLrx+A4=
+
+Name: assets/res/sign/reward_pic.png
+SHA1-Digest: LaAC8pBW/iMDPXVpMqzgbkZa0Tg=
+
+Name: assets/res/gamescene/bg_middle5.png
+SHA1-Digest: gh7lvKdbyvyRlm8bMQTQm+H0Qg8=
+
+Name: assets/res/spin/disk.png
+SHA1-Digest: rVBGb5eE+z4DIfrZ5EiYbU/qtlU=
+
+Name: assets/res/game_infinite/tips.png
+SHA1-Digest: qWomYD+YUnV1C27Cherq7TNMWLI=
+
+Name: assets/res/server_maintain/frame1.png
+SHA1-Digest: QuNOdEpd9JXirIMyRQLBwtmEP44=
+
+Name: assets/src/framework/cc/components/behavior/StateMachine.lua
+SHA1-Digest: VKA8iJ3fWyVmKNjJ3BTqmOSI1lE=
+
+Name: assets/res/update/bg.png
+SHA1-Digest: byqDeKZl0ckQRb1IaUaaG7130J4=
+
+Name: assets/res/common_ui/common_bg.png
+SHA1-Digest: D8ltgOOSYkMEN4i4tmxNAjDhNBU=
+
+Name: assets/res/armature/xiabing/xiabing0.plist
+SHA1-Digest: UAj04eWaQ9qPJ23rYidhWUR5C60=
+
+Name: assets/res/sounds/attack_monster16.ogg
+SHA1-Digest: 6ETmW68l5sksH+KWp9IZps97heU=
+
+Name: assets/res/treasure/alert/piece0.png
+SHA1-Digest: 54UsxdjKpPqiRJoKfd69Oj5xr7g=
+
+Name: assets/res/sounds/attack_monster104.ogg
+SHA1-Digest: QDNVNR1aF2jPLXVCBOFxPk/rrE4=
+
+Name: assets/src/framework/cc/ui/UICheckBoxButtonGroup.lua
+SHA1-Digest: bYDduzbZ4EADh+4JQkMPv/Zc2mU=
+
+Name: assets/res/buddha_icon/buddha4.png
+SHA1-Digest: trnJ8T5dVl5vgOWVhgvtBry/zbA=
+
+Name: assets/res/Diary/alert_frame.png
+SHA1-Digest: YfLopN8Hq5E2yK1ZfcOtYrawvjs=
+
+Name: assets/res/animation/wofangsiwangyan.png
+SHA1-Digest: 1WWQVWCUt3Ua9Uo8hEAmq9immwg=
+
+Name: assets/res/treasure/up.png
+SHA1-Digest: +1Z/wWadHWybxhcKB6vJKyuXtgo=
+
+Name: assets/res/armature/keaishuguai/keaishuguai0.png
+SHA1-Digest: g4VDFBKn9CiCDrLYiPpiDxBlLs0=
+
+Name: assets/res/buddha_icon/buddha7.png
+SHA1-Digest: tLVg9DXmIM8yWM26mEUAKKzvAtM=
+
+Name: assets/res/gamescene/bar_type1.png
+SHA1-Digest: gV/94c0AsyTbX5MuZtAyvB6SIcQ=
+
+Name: assets/res/wiki/title.png
+SHA1-Digest: Y+jHJ39WjsmO+Y36llSU7I3XpTc=
+
+Name: assets/ucgamesdk/ui/common/jars/entry.xml
+SHA1-Digest: gIoUzrhB9wkJ+qFVCvzvvVVSNHw=
+
+Name: assets/res/gamescenegroove/frame.png
+SHA1-Digest: L5/cNNB0CMJOTSji1uQ/FHX8oao=
+
+Name: assets/res/monster_icon/monster6.png
+SHA1-Digest: 4H5ENr4tP5+zbWkfOxLiXVIuUCk=
+
+Name: assets/res/Diary/piece.png
+SHA1-Digest: 6ixYZyv7Br0mByUB831OTvKQG1Q=
+
+Name: assets/res/gamescenegroove/frame4.png
+SHA1-Digest: cEtA7LHk4QO1Bd5ktFGGLZ6NiH4=
+
+Name: assets/ucgamesdk/ui/common/conf/tipsCloseActive.png
+SHA1-Digest: 9213qifa3dtaDE4betINsc05j+g=
+
+Name: assets/src/framework/global.lua
+SHA1-Digest: RziWtQVdDjo2w6K5AttK05LPyN0=
+
+Name: assets/res/win_or_lose/restart2.png
+SHA1-Digest: KpwF9vVmpuezExv52f4rDAMBVnc=
+
+Name: assets/res/connection/error_bg.png
+SHA1-Digest: pvjBsnE+ghXOiUo1iAGQoMVoo+0=
+
+Name: assets/res/treasure/alert/piece3.png
+SHA1-Digest: 6QAtKBeGLFhZUZEjv71uEDIYC64=
+
+Name: assets/res/dialogue/tangseng/tangseng2.png
+SHA1-Digest: rLSwMxDg1loi/lQrls8ykpGoKnY=
+
+Name: assets/res/monster_piece_icon/piece28.png
+SHA1-Digest: DN0AGaEoobQ6hsvmMK+uyy36XKE=
+
+Name: assets/res/sounds/attack_buddha95.ogg
+SHA1-Digest: daJ9EdEqzrqkorH3CGWIPy+D7+A=
+
+Name: assets/ucgamesdk/ui/common/conf/loading_bg.9.png
+SHA1-Digest: hSlj7YjYb76BBj1kv3v4dG9bIEo=
+
+Name: assets/src/cocos/init.lua
+SHA1-Digest: Dwy+3XwJYO92iqrxZxHBI19XfP0=
+
+Name: assets/res/upgrade/q3.png
+SHA1-Digest: +8cvCKU/4IdvTo/nw2w3mvRBQmw=
+
+Name: assets/res/buddha_icon/restrain3.png
+SHA1-Digest: rlXhUaAjzyCuFU2kS4MQL7/J6lo=
+
+Name: assets/res/monster/monster19.png
+SHA1-Digest: 5MGv+KxwgsFniJ4v3YHb3jr9dwI=
+
+Name: assets/res/sounds/comic/sound_comic43.ogg
+SHA1-Digest: gcA0Xx0zIZQt6TKOeog3Z8NqMv4=
+
+Name: assets/src/cocos/cocos2d/DeprecatedCocos2dFunc.lua
+SHA1-Digest: Znrv9fBS6Inl0jMCHh4/whUhBz4=
+
+Name: assets/res/tiny_loading/hint8.png
+SHA1-Digest: LeR6tizFahHWXkVpQYwCoRNZamY=
+
+Name: assets/res/common_ui/bar.png
+SHA1-Digest: rW8X5shyoGtQHn1i6AQ/pgQkhFA=
+
+Name: assets/res/monster_icon/monster110.png
+SHA1-Digest: D8o66yVnMgCvREAlVIcTe/DqpCE=
+
+Name: assets/res/buddha/buddha17.png
+SHA1-Digest: pnga+AetrtaWlV089eiwkvlDUbU=
+
+Name: assets/res/gamescene/gift.png
+SHA1-Digest: wEm9pcDbNPd7jKgWTcnB8bDvsAs=
+
+Name: assets/res/item/item2_name.png
+SHA1-Digest: gqcqNCE7q6fmNUpR+6ZK565+gLo=
+
+Name: assets/res/win_or_lose/relive.png
+SHA1-Digest: szwQz4cvxA74d+ajzlXZj8/U1YQ=
+
+Name: assets/res/monster/monster5.png
+SHA1-Digest: Li3N7eMlUMKfST8LArnfGhNBWd0=
+
+Name: assets/src/framework/cocos2dx/DrawNodeEx.lua
+SHA1-Digest: rd7r3kYhadaeYVKjTAeJRVUd7MI=
+
+Name: assets/res/win_or_lose/first_blink.png
+SHA1-Digest: Hxt6PFoo43m2woDfgqq769pngns=
+
+Name: assets/res/login_scene/registered2_h.png
+SHA1-Digest: oke0aKyNmAVrXQ74neFqTBEsxxk=
+
+Name: assets/ucgamesdk/config/bottom_menu.json
+SHA1-Digest: VlSvtufsPgfhN3/RbxzKpPTm4oA=
+
+Name: assets/res/upgrade/grademax_h.png
+SHA1-Digest: K06+OmqNbuzH+kQFPH3fYAeBwcQ=
+
+Name: assets/res/animation/sweep_tx.plist
+SHA1-Digest: 54yqFymv+8AGF13W2lDsHl9CF18=
+
+Name: assets/res/monster_piece_icon/piece10.png
+SHA1-Digest: VqEWC6lEcUs5Qgx6SgJ0hntFeYI=
+
+Name: assets/res/gamescene/bg1.png
+SHA1-Digest: KiXsxysJVIsutXxkubptsbAiSnY=
+
+Name: assets/res/opening_comic/comic3/qingjin1.png
+SHA1-Digest: d92v3pKepo3WYhZRec0vtYTBfv4=
+
+Name: assets/res/opening_comic/comic4/comic411_tx.png
+SHA1-Digest: yexpvon5wSaqh37ePGbTp9mqJHE=
+
+Name: assets/res/chapter/bg_frame.png
+SHA1-Digest: 0ch9S2qJfCR2oCJnNy8gBkt/WOg=
+
+Name: assets/ucgamesdk/config/uc_systemConfig.json
+SHA1-Digest: vYsZtmL8SUBcJMz95wgB5/SJCu4=
+
+Name: assets/res/monster_tower/8/front.png
+SHA1-Digest: QWHmjJNssgbXQOeXUz/B/56GrFw=
+
+Name: assets/res/opening_comic/bg_frame.png
+SHA1-Digest: ICcmUB4dRHQQ+KS/XL+ElgfDWi0=
+
+Name: assets/res/propery_icon/cd_decrease.png
+SHA1-Digest: 5J2rfURtGAbSvs5afU+6MYbF1QA=
+
+Name: assets/res/item/item1.png
+SHA1-Digest: f52Iz5FnVCuLrl8+bB2TIDbe9Y0=
+
+Name: assets/res/spin/10.png
+SHA1-Digest: +g233ciNt8W0AXYfx/wiRHYKv0s=
+
+Name: assets/res/buddha_icon/buddha62.png
+SHA1-Digest: 6q+a2S4ftmFDpW4OLq+6jWnz504=
+
+Name: assets/res/win_or_lose/halo.png
+SHA1-Digest: PLhirjSylIqvjaWfshDwhkCcnLI=
+
+Name: assets/res/monster_icon/monster21.png
+SHA1-Digest: NpWsN/4BvcZc4UhydpwLZYstXI8=
+
+Name: assets/res/sounds/comic/sound_comic23.ogg
+SHA1-Digest: 9WXlS+84VkGUiMXFcKlIC1u3feY=
+
+Name: assets/res/sign/known.png
+SHA1-Digest: 5weMyPu9J9nFxMcGpOK6jKj+v1U=
+
+Name: assets/res/upgrade/tang/tang1.png
+SHA1-Digest: /NSmtJYAz1uE5o90BKT2JMX9KgY=
+
+Name: assets/res/summon_scene/huang_tx.plist
+SHA1-Digest: r3uffjjX4NYoRQ8F20rbmW+j5Vw=
+
+Name: assets/res/upgrade/wand/wand2.png
+SHA1-Digest: UoSKdB6irSbgat8d7G7fhqiK5nk=
+
+Name: assets/res/novice_guide/guide_achievement.csv
+SHA1-Digest: zRblyYwfsUFB0HDQzqc109Um6VM=
+
+Name: assets/res/item/label.png
+SHA1-Digest: rSALaHSxM0maS0C7wfzwM4Kz/mU=
+
+Name: assets/res/sounds/sfx_attack_magic.ogg
+SHA1-Digest: QmP1qd5FRiDBUqLD1OQMc6k93TE=
+
+Name: assets/res/opening_comic/comic2/comic21.png
+SHA1-Digest: U6luGX4JNvVxJota4nkAyoCTVMM=
+
+Name: assets/res/upgrade/pantao.png
+SHA1-Digest: POQz5JnIlztOzNHckoQwmw0NTm4=
+
+Name: assets/src/cocos/cocostudio/DeprecatedCocoStudioClass.lua
+SHA1-Digest: e0f5UrS8NWy5Cn/epUbmsG2AaEs=
+
+Name: assets/res/settings/back1.png
+SHA1-Digest: D3UfvnLntziV0+NbUnlQdPJM5AM=
+
+Name: assets/res/tasks/get_selected.png
+SHA1-Digest: YR9AHPQOpdIKm4waVLEIiNiEfrU=
+
+Name: assets/res/treasure/treasure7_name.png
+SHA1-Digest: 7BTVwU7KxXWl9n1cqiL4qmLiOL0=
+
+Name: assets/res/sounds/sfx_buddha_cooldown.ogg
+SHA1-Digest: byjehsv45sKXUZhDDIZVgx/J+Os=
+
+Name: assets/res/stage/name8.png
+SHA1-Digest: uiLBXkGm+l7auRKIOE/uXoVGyzs=
+
+Name: assets/res/gamescene/fire.png
+SHA1-Digest: 1j0zS39XZZsVmhc0kHCOq74zYVY=
+
+Name: assets/res/spin/7.png
+SHA1-Digest: h6i5PH5H7kFxizPcS/BE8TAb4+k=
+
+Name: assets/res/buddha/buddha6.png
+SHA1-Digest: INvhehKkTCcYN5b3dpzfoQXvHHI=
+
+Name: assets/res/novice_guide/guide_summon2.csv
+SHA1-Digest: 8V7zp1IGqaCIeIzxB8bdkXA2AQY=
+
+Name: assets/src/framework/cocos2dx/NodeEx.lua
+SHA1-Digest: F+Zw7x7wGzmDonRhfPUEebOxlsE=
+
+Name: assets/res/opening_comic/comic4/comic43_tx.plist
+SHA1-Digest: i21rX3xMt9umsMc+XzsWqRlMakw=
+
+Name: assets/res/common_ui/toast1.png
+SHA1-Digest: diJKudvkRqCpNGv885DFy7vgn3o=
+
+Name: assets/res/new_fellow/note.png
+SHA1-Digest: qJ6DobixB8M5HDRaVoo3eOmjiIU=
+
+Name: assets/res/team/back_h.png
+SHA1-Digest: r+SLREGMsMpdfJWqPgGkPomaFYU=
+
+Name: assets/res/Diary/gray_even.png
+SHA1-Digest: fGporbFpxNLkZt4cUEsZz1VbKBs=
+
+Name: assets/res/spin/start.png
+SHA1-Digest: 7Tb1JDWUtBkMnzZJbdF9lRwhFvQ=
+
+Name: assets/res/armature/dazhongkui/dazhongkui0.png
+SHA1-Digest: YEeOkmyTqmPz9UsUpdCShsEWCfo=
+
+Name: assets/res/common_ui/blank.png
+SHA1-Digest: nZwNqU3Qvj8xt8CsPTVkjHz/CHU=
+
+Name: assets/res/stage/sweep1_h.png
+SHA1-Digest: KSkLOgJMP6WwcOZ2JWfFUwP4X0M=
+
+Name: assets/res/sounds/sfx_lq_upgrade.ogg
+SHA1-Digest: IAYJOs6D4qQu9ZIW/xQAhP9bfAc=
+
+Name: assets/res/activity_stage/icon3.png
+SHA1-Digest: bEN/oNwU2hinL6HmLythIUB1lcs=
+
+Name: assets/res/buddha/buddha27.png
+SHA1-Digest: NVsUsC6I1jkT5jROe/bF8h2UksY=
+
+Name: assets/res/monster_icon/monster97.png
+SHA1-Digest: zVdOSE3KAgu7yVQ7AkRlH6shY44=
+
+Name: assets/src/framework/scheduler.lua
+SHA1-Digest: x0Z2S+EXi7yA1MNKvSEVLKopILA=
+
+Name: assets/res/upgrade/wand/small_wand2.png
+SHA1-Digest: Yj6hy80N3Zijb2xONLoPn0LsrBo=
+
+Name: assets/res/buddha/buddha61.png
+SHA1-Digest: KQO2XP3iBIWM+M0IG1r5TSpfQuI=
+
+Name: assets/res/win_or_lose/relive1.png
+SHA1-Digest: hY0oqHwH+hfU08jZO+j0zVmO6QY=
+
+Name: assets/src/framework/cc/ui/UIImage.lua
+SHA1-Digest: BsnKSmvGYvNMPgh0xaPPhVNhzi0=
+
+Name: assets/res/sign/saodang.png
+SHA1-Digest: 8EqZzwKeWkDV3ybwMWOu5bDhjQ0=
+
+Name: assets/res/item/treasure.png
+SHA1-Digest: gHj2jlbp3W0bzqtupm+x3Q/crQQ=
+
+Name: assets/res/novice_guide/guide_upgrade_buddha.csv
+SHA1-Digest: KkZfeK8KnkKzFB+BA6NxhrjUekI=
+
+Name: assets/src/cocos/ui/GuiConstants.lua
+SHA1-Digest: pfZ+hiCyr7wtopXOnfbCICtOuZY=
+
+Name: assets/res/opening_comic/comic6/comic61.png
+SHA1-Digest: 3y5epYkcN/IZgsb0d3ii4PqyM2o=
+
+Name: assets/res/opening_comic/comic4/comic410.png
+SHA1-Digest: +GeoZkG+YYMMey/7yj+MYSdsnRc=
+
+Name: assets/res/upgrade/wand/wand1.png
+SHA1-Digest: VJx0hHX9gT0kYPlgMlPFhbEQULw=
+
+Name: assets/res/upgrade/pro_bg.png
+SHA1-Digest: UHD4TmRZCi1+Oz3SG8WpooAy3qs=
+
+Name: assets/res/summon_scene/lable2.png
+SHA1-Digest: AxSyJH7zzpiHZhFV4lmJMsUnEjg=
+
+Name: assets/res/tasks/get_enabled.png
+SHA1-Digest: sMS75VNQChXZtaeYdsjBeJP26gg=
+
+Name: assets/res/opening_comic/comic1/comic11_tx.plist
+SHA1-Digest: Px/96DZcin/LANXx1wCqpP8kU2k=
+
+Name: assets/res/chart/1.png
+SHA1-Digest: RK/Xz1CuPGAo5u+OdYCCzcDULe0=
+
+Name: assets/res/item/new_item.png
+SHA1-Digest: DTKDgqpofly4TDbEoMx1iQR/QQo=
+
+Name: assets/res/treasure/treasure5_attrib_des.png
+SHA1-Digest: OTcwnftWj+LZC2r+xD064ZZtfMI=
+
+Name: assets/res/gamescene/bar_hp_buddha.png
+SHA1-Digest: y/mS2sXCPpb54RHNPDOcLhWtHxk=
+
+Name: assets/res/login_scene/start_long.png
+SHA1-Digest: DYhTaZQfb71XRb6Ov5h6NZ/qhH4=
+
+Name: assets/src/framework/debug.lua
+SHA1-Digest: 5sPLx7c5j2rNBeJFzYBsz1hlNlc=
+
+Name: assets/res/stage/sweep1_u.png
+SHA1-Digest: rL0G2wOMRo5gHqxZE+1YWqoXeAM=
+
+Name: assets/res/upgrade/upgradedescbg.png
+SHA1-Digest: YUiDSvzrCRTjz2uJzD5qU8R3drs=
+
+Name: assets/res/monster_icon/monster116.png
+SHA1-Digest: dq1PZJodLSuSAwZFYEJ+nmMxyL0=
+
+Name: assets/res/dialogue/drama_treasure.csv
+SHA1-Digest: IVzYtEsPqxG9wwd7VFdKz4T7zBA=
+
+Name: assets/res/buddha/buddha89.png
+SHA1-Digest: x7LEowRRVkg7ikEznzkKaWybf5w=
+
+Name: assets/res/armature/santaizi/santaizi0.png
+SHA1-Digest: wnALA4Aa4SMGESGLLtC08ndWKKU=
+
+Name: assets/res/sounds/sfx_failed.ogg
+SHA1-Digest: 3ufZJQ8O0T+wuzK8FbhjADoygFo=
+
+Name: assets/res/monster/monster25.png
+SHA1-Digest: Xq0gpveTokWTGrWgjx5R2ec/ZAQ=
+
+Name: assets/res/summon_scene/huang_tx.png
+SHA1-Digest: BsOYZk7c9UM8jvIiit5vljZRWaE=
+
+Name: assets/res/monster_piece_icon/piece15.png
+SHA1-Digest: npwr/tcUeusTfipCYhtIoKBXx7c=
+
+Name: assets/res/opening_comic/comic4/comic45_tx.plist
+SHA1-Digest: pZexDnbJ9DwDw/+sk7T0m1dFcLs=
+
+Name: assets/res/gamescene/mirror.png
+SHA1-Digest: bNmn/onOObEj8VMP/nKlTStPSFM=
+
+Name: assets/res/buddha_icon/buddha67.png
+SHA1-Digest: 7M1AKR2GpUqE39EpOgeSZkOUiSg=
+
+Name: assets/src/framework/cc/ui/UILayout.lua
+SHA1-Digest: bmMKIV6V2u1XOx8xUihX62l6S5g=
+
+Name: assets/res/chapter/stage_icon7.png
+SHA1-Digest: IUztDccq49F7GjolnAX4/0w6dO8=
+
+Name: assets/res/Diary/awful_icon.png
+SHA1-Digest: NL3G5b1fGm6QolS+/E7bGNC3GrM=
+
+Name: assets/res/buddha_icon/buddha13.png
+SHA1-Digest: RYdynfLwKLMHrwgGoyLFBwKwwq4=
+
+Name: assets/res/activity_stage/energy_cost.png
+SHA1-Digest: MDxHzrrk1P8QoGz/blUj3EC45iU=
+
+Name: assets/res/buddha_icon/buddha83.png
+SHA1-Digest: 6AXQDZrxaAUYDOEPAsodT83cvz8=
+
+Name: assets/res/armature/tower_armature1/tower_armature10.png
+SHA1-Digest: q9PRuccG7XUE2TG/6RPdUb4IsMw=
+
+Name: assets/res/buddha_icon/buddha74.png
+SHA1-Digest: y9VaXit1op17HYZNMeaXChWlX10=
+
+Name: assets/res/item/add.png
+SHA1-Digest: Hk8oplo5pP91ujmc9eI3TSrEY2k=
+
+Name: assets/res/novice_guide/guide_infinite_mode.csv
+SHA1-Digest: Q7B2i1Edmk9lR4/COkQw2Re3/YU=
+
+Name: assets/res/opening_comic/comic2/comic23_tx.plist
+SHA1-Digest: PP4cD/8r6+XsR4ey13IK9SgOTR4=
+
+Name: assets/res/propery_icon/comic71.png
+SHA1-Digest: CU/Z/qd2I11EZPxDontFjk8OgD8=
+
+Name: assets/src/framework/cc/utils/bit.lua
+SHA1-Digest: EfMqPEwTaHSIjaHYtpvh9i0ed+c=
+
+Name: assets/res/armature/xiaoshaseng/xiaoshaseng0.png
+SHA1-Digest: xQmzeWN0I/7g11XY0ASidRp2if8=
+
+Name: assets/res/sign/saodang_h.png
+SHA1-Digest: tjtY4XvG8puE2wHbru0qbfZag9o=
+
+Name: assets/res/shop/tips.png
+SHA1-Digest: 37BZrWnvjI2hK6iUEB0iluOEg0g=
+
+Name: assets/res/gamescene/gray_upgrade_spirit.png
+SHA1-Digest: OQGQBmVmypSqvd+Gp9utq/tPri8=
+
+Name: assets/res/upgrade/upgradebg1.png
+SHA1-Digest: cEKNKifw4oRac3AzvMClUKYFeW0=
+
+Name: assets/res/gamescene/bg_sky4.jpg
+SHA1-Digest: HhwWMrYziH5CH1HqOjNP62jnsuo=
+
+Name: assets/res/buddha_icon/buddha102.png
+SHA1-Digest: dvPF8QQG+mnvOQ6UaJTRjRPoDTA=
+
+Name: assets/res/animation/treasure_tx.png
+SHA1-Digest: qkwZhc8zlUhqnWoaIowSZSYPksQ=
+
+Name: assets/ucgamesdk/so/libsdk_bspatch.so
+SHA1-Digest: iQ10MWP5r5yAEgmLbhhYF9ZQLi8=
+
+Name: assets/res/sign/item_h.png
+SHA1-Digest: jzqHcBNDvWJq8soHOnnm5X7j9XA=
+
+Name: assets/res/armature/dadou/dadou0.png
+SHA1-Digest: ECHf3pOodiDbndN9vkDRSwDKmB0=
+
+Name: assets/res/win_or_lose/rankings1.png
+SHA1-Digest: 8/dgyGiS+sWWXdvYENN+GjS8kWI=
+
+Name: assets/res/novice_guide/guide_make_buddha.csv
+SHA1-Digest: oxIPo9V7TbuqVzJstSGzL1Fgrrk=
+
+Name: assets/res/sign/pantao.png
+SHA1-Digest: FGAWuSyKLh4EY5J/g8XP07JsBk8=
+
+Name: assets/res/gamescene/tower1.png
+SHA1-Digest: Nh+j33eXCHilIP/5QiF+HuEZ4ok=
+
+Name: assets/res/gamescene/exp.png
+SHA1-Digest: ebGtXrYxpSSfALe2J+wXjAbXQRU=
+
+Name: assets/res/animation/xingxing.png
+SHA1-Digest: b1HBR9tCscIrmCPs4FaUE+GnzGQ=
+
+Name: assets/res/armature/jinyu/jinyu.csb
+SHA1-Digest: GwRVkWvWpDqbzq72GCL5Uea8aqo=
+
+Name: assets/res/buddha_tag/4.png
+SHA1-Digest: jYYG4zU/wVrriYot/YJj5SDvfJc=
+
+Name: assets/res/armature/maodaoren/maodaoren.csb
+SHA1-Digest: v9euUdb2+Q3p/LBcI7gmWwmKBzM=
+
+Name: assets/res/shop1/key.png
+SHA1-Digest: LoVYr8tv3yma79RCBY0AZuSFGqI=
+
+Name: assets/res/monster_piece_icon/quality0.png
+SHA1-Digest: yUTmSFw5DpJsdRpJL8OHN9zbU0I=
+
+Name: assets/res/armature/xiongmao/xiongmao0.png
+SHA1-Digest: kydRdplaOmWdHTaXB6guswkb6nU=
+
+Name: assets/res/monster/monster24.png
+SHA1-Digest: v5b0RtIpLbMBQulzHwCBXDoHOtI=
+
+Name: assets/res/sounds/comic/sound_comic64.ogg
+SHA1-Digest: VRRM9DN9Ah1rDTCfRpUH2YVr9c8=
+
+Name: assets/res/login_scene/server_tip_h.png
+SHA1-Digest: du5zWExwC5M74ELEbbn1nhRkF1s=
+
+Name: assets/res/treasure/treasure7_attrib_icon.png
+SHA1-Digest: LCuaHL9F6Wb1vR7dikuedI2mTC8=
+
+Name: assets/res/gamescene/bar_hp_tower_b2.png
+SHA1-Digest: W04OLnC93JsxKpvhxf42ZJ888nM=
+
+Name: assets/res/common_ui/close.png
+SHA1-Digest: xdtwycKANBADq5wFipguJRlQPfs=
+
+Name: assets/res/item/item3_h.png
+SHA1-Digest: zO33ySRY4vP3DTJr301xuQ3G57I=
+
+Name: assets/res/sign/renshen_h.png
+SHA1-Digest: Q0WRUuxiChRXrXzXP+WomKqsASM=
+
+Name: assets/res/sounds/attack_monster20.ogg
+SHA1-Digest: /6ioNE+Ihq9b4/3M1dUK0fMUDeM=
+
+Name: assets/res/upgrade/zhaohuan1.png
+SHA1-Digest: RdJgoZijv4mRxC//DoWq0I8RKlQ=
+
+Name: assets/res/buddha/buddha84.png
+SHA1-Digest: rgH0ap98eAHklmHmj+yLphmvgpU=
+
+Name: assets/res/tiny_loading/hint13.png
+SHA1-Digest: sK3bSp0F0dVoaUxQYPd53veLqS8=
+
+Name: assets/res/buddha_icon/buddha24.png
+SHA1-Digest: IDSHDnp0/pLtZvSzlKd53tgKbL8=
+
+Name: assets/res/treasure/treasure8_attrib_des.png
+SHA1-Digest: rMzyoOGn7swLTFINAQMWiCAEimM=
+
+Name: assets/res/gamescene/bar_hp_bg_boss.png
+SHA1-Digest: WfY0fb3fu5RDNxIFVS3WpmcvnLA=
+
+Name: assets/res/opening_comic/comic4/comic412_tx.plist
+SHA1-Digest: VpY0D+YOFx7cpTvzNXQo4HteHIk=
+
+Name: assets/res/monster_icon/monster3.png
+SHA1-Digest: KB1olenydaf6ZQvGim62MBcqv8E=
+
+Name: assets/res/shop1/exp1.png
+SHA1-Digest: EOVQVuNphX3HZfHiX2NhhbhYWbU=
+
+Name: assets/res/novice_guide/guide_screen_zoom.csv
+SHA1-Digest: i8ECl/QRbDcVvendILcVfhaac68=
+
+Name: assets/res/monster_icon/monster104.png
+SHA1-Digest: 9lpkQL4JxDIGfNh0WryS9JwM6+o=
+
+Name: assets/res/animation/siwanglinghun.plist
+SHA1-Digest: vjYkQKZRxid+draQz879NoVwqqU=
+
+Name: assets/ucgamesdk/config/display_mode.config
+SHA1-Digest: Xm+61gmv0Y1qHBHFdZlpHZ9FlWE=
+
+Name: assets/res/fonts/battle_yellow_0.png
+SHA1-Digest: +vbzeMbgwnZkPkxcNCEWzUhdDOw=
+
+Name: assets/res/recharge/cell_frame.png
+SHA1-Digest: tqsSx58bUIIQfkjLFq1YdCEHb7Y=
+
+Name: assets/ucgamesdk/so/so.list
+SHA1-Digest: r6mzJ0/H57zXTPOmWBAixQSHzcY=
+
+Name: assets/res/new_fellow/3.png
+SHA1-Digest: VS/pzxDLHb8zUXLPXQXh/PV9MNk=
+
+Name: assets/res/login_scene/version.png
+SHA1-Digest: QXjezsYTIzK4PkbHPwbz3mBxHCM=
+
+Name: assets/res/settings/bgm1.png
+SHA1-Digest: oIKh83YjkTFna5KrBFc66ETgTrc=
+
+Name: assets/res/sign/exp.png
+SHA1-Digest: e2VSOTXSvLQ/Uranl6fcTW6ihOg=
+
+Name: assets/src/cocos/network/DeprecatedNetworkFunc.lua
+SHA1-Digest: R6ThNC9rONkPRPXRxb3C/7Vsipo=
+
+Name: assets/res/stage/name7.png
+SHA1-Digest: EAznSbFNQscoC4DlaIc5bL0/zH8=
+
+Name: assets/res/animation/shandiantexiao1/shandiantexiaocon1.png
+SHA1-Digest: xvnjIbdFRmH7iS08EYx54cuu9XM=
+
+Name: assets/res/armature/muma/muma0.png
+SHA1-Digest: M0crQiY844WcKZCnOX24XtcDkxc=
+
+Name: assets/res/buddha_icon/buddha11.png
+SHA1-Digest: UWillXfsnElaIFFRxAXFdNB0w9M=
+
+Name: assets/res/gamescene/bg_d2.png
+SHA1-Digest: tyFL9NNteVQVolIoAcBgIXcfY+M=
+
+Name: assets/res/fonts/greenNum.fnt
+SHA1-Digest: 6vl76BmRxBRLQRykYjSYeEogowY=
+
+Name: assets/res/monster_tower/8/halo.png
+SHA1-Digest: FlS/kpUdOM64Xu0YjAXjZf2/zUA=
+
+Name: assets/res/monster_tower/11/door.png
+SHA1-Digest: r0mCgWNjcbFrJQ+Fe7xiUf3yFig=
+
+Name: assets/res/opening_comic/comic1/comic12_pic1.png
+SHA1-Digest: QmwROjfNDwg9NmbRc+KKRP7NTE0=
+
+Name: assets/res/game_infinite/dice.png
+SHA1-Digest: pmYGDzC2kY9TK/L5DVGQrl8CbYA=
+
+Name: assets/res/armature/chimeiwangliang/chimeiwangliang0.png
+SHA1-Digest: gazl7DaObaT5J4nqxVIzhfxXCo0=
+
+Name: assets/res/armature/xiaodianmu/xiaodianmu.csb
+SHA1-Digest: 7yYoVmT7ILGl0VxSkCLCU84S6Hk=
+
+Name: assets/res/new_fellow/bg_name.png
+SHA1-Digest: tuD04erTacM2CeTMY1M7kc+8n/Q=
+
+Name: assets/res/shop1/flush_h.png
+SHA1-Digest: md57FOJ9MexkzVOsqiQd/DBVDcQ=
+
+Name: assets/res/fonts/battle_red_0.png
+SHA1-Digest: T2wQQ2KgUrOSxOz4XI0DAhrsaeo=
+
+Name: assets/res/login_scene/lb_password.png
+SHA1-Digest: gEiC+gbyYEoU2J619fUH0q6nFRo=
+
+Name: assets/res/novice_guide/guide_upgrade_tower2.csv
+SHA1-Digest: J6j+lV2Sgc7mV3KQd5/lnZ4WMeU=
+
+Name: assets/res/summon_scene/summon_label.png
+SHA1-Digest: jK0bCwnbgi1QiWdYEjuREFBkO5s=
+
+Name: assets/res/buddha/buddha16.png
+SHA1-Digest: gsM2SMef66X8cqhU6iEUeOmWa/Q=
+
+Name: assets/res/monster_piece_icon/piece36.png
+SHA1-Digest: ibyd3xxPSfIjeoHwHx9TmDdm7Ow=
+
+Name: assets/res/common_ui/peach_bg.png
+SHA1-Digest: yeh92e+bfo0jkffCgHlbq0IdKlE=
+
+Name: assets/res/sounds/attack_buddha6.ogg
+SHA1-Digest: 8hsnohHrjsL3DiH/usmBcp5rbx8=
+
+Name: assets/res/dialogue/tianbing/tianbing1.png
+SHA1-Digest: ThRvVC+fZHKzLW0aRd4aZbvvSJk=
+
+Name: assets/res/sounds/comic/sound_comic44.ogg
+SHA1-Digest: M3d0yJ2WEpLlnaFT16JI3DNwO2M=
+
+Name: assets/res/settings/code.png
+SHA1-Digest: bRMXwD4A837MRmMzpi2Hkfip1r4=
+
+Name: assets/res/upgrade/update_bg.png
+SHA1-Digest: 72UwETcEsX5PSTqe/WM6qCW7shI=
+
+Name: assets/res/treasure/treasure8_name.png
+SHA1-Digest: B5pmjTUIk3gsINWDxamtWJqIpps=
+
+Name: assets/res/monster/monster112.png
+SHA1-Digest: DGjZerrR1UxU8R+eKs9JtoOrszs=
+
+Name: assets/res/update/right_now.png
+SHA1-Digest: dmMjoyR2lh7AuO2iDVfivGt7tVU=
+
+Name: assets/res/sounds/attack_buddha12.ogg
+SHA1-Digest: vDyTIxTkH7JpTmy/iQuG8Ou59ao=
+
+Name: assets/res/armature/xiaojiu/xiaojiu.csb
+SHA1-Digest: tGh3nJXx2OCSC96M2qO6W6qddQA=
+
+Name: assets/res/armature/jiutianxuannv/jiutianxuannv0.png
+SHA1-Digest: uMvxqSdRJEYvvHgufJqWElfjz6I=
+
+Name: assets/ucgamesdk/config/business_setting.json
+SHA1-Digest: os3tp5bezSYujUFZu66aHoIF3ck=
+
+Name: assets/res/gamescenegroove/frame1.png
+SHA1-Digest: L5/cNNB0CMJOTSji1uQ/FHX8oao=
+
+Name: assets/res/sign/signed.png
+SHA1-Digest: i5nTH5xoDfzdr5H71g2ITg1OM0Q=
+
+Name: assets/res/spin/3.png
+SHA1-Digest: Huu8P2ajP569PTvofaL8u+27zcg=
+
+Name: assets/res/chapter/bird1.png
+SHA1-Digest: 0Lyk7m1bYDr5HKvVFe/ciDIokOI=
+
+Name: assets/res/armature/xiaoxiangzi/xiaoxiangzi0.plist
+SHA1-Digest: YBfsVPov6az0UFinRF+pxQAnq6Q=
+
+Name: assets/res/opening_comic/comic2/comic22.png
+SHA1-Digest: VeOqKOZZhjmZ+r4x6lCbbQ2T63o=
+
+Name: assets/res/novice_guide/guide_stage0_1.csv
+SHA1-Digest: Sai8U+iCTPLwaSfddCcTzvkTGe4=
+
+Name: assets/res/sounds/sfx_siwang1.ogg
+SHA1-Digest: ETWVOiBPm4S4fUWR/jj8+Yu/8x8=
+
+Name: assets/res/sounds/sfx_upgrade.ogg
+SHA1-Digest: TtnJ1Htmiwq2HOYYM4wToSMq42c=
+
+Name: assets/res/armature/xiaodaomuguai/xiaodaomuguai0.plist
+SHA1-Digest: wqIA1v620EZ5H8utDzm2KFX5nRQ=
+
+Name: assets/src/framework/cc/ui/UIScrollView.lua
+SHA1-Digest: uBE4i4fluxnM+UxZmH2xDxU22ys=
+
+Name: assets/res/stage/cycles.png
+SHA1-Digest: a/fKMxQiHb82a/Ar5g0Se8yxuA0=
+
+Name: assets/res/armature/tower_armature1/tower_armature1.csb
+SHA1-Digest: 7yeVrAxi+YpOGa69dyIMFiNnvmA=
+
+Name: assets/res/gamescene/bg_middle8.png
+SHA1-Digest: DhrH1ydiGhkCBQAQ8NsG9tDL8Rg=
+
+Name: assets/res/opening_comic/comic6/comic62_tx.png
+SHA1-Digest: EpU2e3D9UrTcEVViWh0DmNTcJpQ=
+
+Name: assets/res/propery_icon/attack_tag.png
+SHA1-Digest: 9reZKtynu8DUB6fYIa05fpG2iJE=
+
+Name: assets/src/framework/platform/mac.lua
+SHA1-Digest: wjrQ4M+HsOloxd+9Gph+P1n9mMo=
+
+Name: assets/res/novice_guide/guide_achievement_open.csv
+SHA1-Digest: 5C195F2Yh+DZ7kayoFjtQooP55A=
+
+Name: assets/res/armature/xiongmao/xiongmao.csb
+SHA1-Digest: iIiJ5R22Kn/zvtz1Qs0SIjdad78=
+
+Name: assets/res/animation/jiesuo.plist
+SHA1-Digest: 1crlG8ua0Fs0uw8WSkY8P4xsQ+Y=
+
+Name: assets/res/shop/goods.png
+SHA1-Digest: 8hRkYBm5HEQriLHOmnnAxtkDZmw=
+
+Name: assets/src/game.bin
+SHA1-Digest: EafhvXdHwNB9qGro9YgheP/Zfjs=
+
+Name: assets/res/opening_comic/comic6/comic63_tx.png
+SHA1-Digest: wnouFYjHG1r39ELa0FX8Ij3Dsqg=
+
+Name: assets/res/fonts/battle_purple.fnt
+SHA1-Digest: tKA7vVwajkRGjjemW94moanS/JU=
+
+Name: assets/res/monster_piece_icon/piece19.png
+SHA1-Digest: hX5h3TPcXzjjeDdTXKBvcJFgggw=
+
+Name: assets/res/gamescene/bg_middle2.png
+SHA1-Digest: qeJmyacBJpNBy7r2ZKYwX8Fog0s=
+
+Name: assets/res/monster_icon/monster113.png
+SHA1-Digest: eldGMAgsIsfQzgrAki/goFHBGlE=
+
+Name: assets/res/game_infinite/rankings.png
+SHA1-Digest: anJ25W1Bya1A0bNWRCCwv7zmVKs=
+
+Name: assets/res/tasks/achievement/achievement1.png
+SHA1-Digest: qa1kL3LaiTfBbzpW2e8pk866qzQ=
+
+Name: assets/src/framework/audio.lua
+SHA1-Digest: rKgReWYcW8hGJJFpJ2yAkh2IKAM=
+
+Name: assets/res/gamescene/bg_pause.png
+SHA1-Digest: q9MWsc8usl+ENxj54ciRuRrHBgI=
+
+Name: assets/res/fonts/treasure_red_num_0.png
+SHA1-Digest: 55ihcHWD/COGKMMs6QOYR999h2I=
+
+Name: assets/res/item/baowutexiaoxuanzhuan.png
+SHA1-Digest: 3ruhPrb7eX3w0RZVRCvtHrwyfdg=
+
+Name: assets/res/gamescene/bg_sky_c1.jpg
+SHA1-Digest: xmmBg4VZS5E7wBAJlGwsdhc4RNI=
+
+Name: assets/res/sounds/comic/sound_comic42.ogg
+SHA1-Digest: +VwOt7b6zxWY6Z/k5AdlVAKflyk=
+
+Name: assets/res/treasure/treasure1_attrib_icon.png
+SHA1-Digest: 8DILa94wuxblU2LZXceEOpZUhlk=
+
+Name: assets/res/monster/monster115.png
+SHA1-Digest: Sq0wOoY+kw03diuvjD5Yj6r5r4o=
+
+Name: assets/res/item/item4_name.png
+SHA1-Digest: Hq9nD5IFmhuqxge7dUaodGHvLgA=
+
+Name: assets/res/buddha/buddha74.png
+SHA1-Digest: iKWeS+lIOYA+NOM95RvXRPAnpBw=
+
+Name: assets/res/summon_scene/hong_tx.plist
+SHA1-Digest: gDkEkf+qXH7GFjbY/HxNMV5ut2g=
+
+Name: assets/res/buddha_tag/2.png
+SHA1-Digest: ZJOXtf0QO4yg2Ne9gjwpT5vY/NI=
+
+Name: assets/res/login_scene/bounding_account.png
+SHA1-Digest: 74X1D3ZdgkLAmZHB/WzyIQpzOG0=
+
+Name: assets/res/sounds/attack_buddha93.ogg
+SHA1-Digest: hPKRJULq+5NiWAUOu3xlv7NPZZ4=
+
+Name: assets/res/opening_comic/comic6/comic65_tx.plist
+SHA1-Digest: VAmx6CISXYA40NmzWQY7+8uOK8c=
+
+Name: assets/res/new_fellow/1.png
+SHA1-Digest: LS/Eb/QISOkW4sd9+o0TKWTGbG4=
+
+Name: assets/res/sign/pantao_h.png
+SHA1-Digest: RNLe+0fuR1wz7Ko/DmZqwzmfoLk=
+
+Name: assets/res/tasks/stage/content7.png
+SHA1-Digest: N74QOSczw8sKqHxp6ji/rdSoGno=
+
+Name: assets/res/win_or_lose/exit1.png
+SHA1-Digest: JKXjrX2gmiQqs8qO57kU0QptDdU=
+
+Name: assets/res/shop1/cprice.png
+SHA1-Digest: QuTATWCXCM1q0a/LdC+K5LjCijo=
+
+Name: assets/res/sounds/attack_buddha94.ogg
+SHA1-Digest: 3wkFi7ykcOEHi29H8FIEJSlcVIs=
+
+Name: assets/res/new_fellow/new_fellow1.png
+SHA1-Digest: N5D9qvvI/QPzB5WiFj9+kT2AedA=
+
+Name: assets/res/shop/shopprice.png
+SHA1-Digest: OthwO5kqC7/YxijFWzRY1bHz7tE=
+
+Name: assets/res/buddha/buddha9.png
+SHA1-Digest: NS12MH+TjgU+Nq0fk9ogBW5+BtE=
+
+Name: assets/res/gamescene/cost.png
+SHA1-Digest: Iv4LHi2cxKoCgHNLBSVCLPnMoeo=
+
+Name: assets/res/sounds/attack_buddha11.ogg
+SHA1-Digest: O2RCGo21zF7cshoqO6Q9TTIfjC0=
+
+Name: assets/res/item/lock.png
+SHA1-Digest: 9U4YvK0WP8nXaAKjrvCyG9HLvsw=
+
+Name: assets/res/wiki/monster1.png
+SHA1-Digest: Vx3GCXj3YLks4SPpQGh0Ysf5a9c=
+
+Name: assets/res/spin/start_u.png
+SHA1-Digest: YjQesCHOA6RdF7tt7XmeGDGUdOU=
+
+Name: assets/res/armature/daleizhenzi/daleizhenzi.csb
+SHA1-Digest: g3X0FHIkwr2HefFy2CxJ2AIAjDo=
+
+Name: assets/src/framework/transition.lua
+SHA1-Digest: b5gdERPSAWHV9sIKoqcY6n3aYOs=
+
+Name: assets/res/upgrade/tower.png
+SHA1-Digest: zjn6QPryqXQ3WsEXg71yy+onRLk=
+
+Name: assets/res/gamescene/speed2.png
+SHA1-Digest: BYS5chzPPsfxOrno14gagVPkkDw=
+
+Name: assets/res/monster_icon/monster7.png
+SHA1-Digest: xmek5tBUJIf1W/JzyzBgBvLH+Yw=
+
+Name: assets/res/buddha_icon/buddha68.png
+SHA1-Digest: mPn8aPipaCbDiQf0R4KuCT+1lcg=
+
+Name: assets/res/armature/miaoxinren2/miaoxinren2.csb
+SHA1-Digest: 9F498graAoACc/V4wyR0XT3rc+A=
+
+Name: assets/res/animation/wand_tx.plist
+SHA1-Digest: G4qWlEx7k/Orld5+4/VrkYEdG2Y=
+
+Name: assets/res/monster_tower/10/door.png
+SHA1-Digest: b1Hbv9/jjhPKwi5aSAg7tFjFc+A=
+
+Name: assets/res/novice_guide/auto_guide1.png
+SHA1-Digest: 2emFQVUZKh+b/plls91ToONwoRg=
+
+Name: assets/res/game_infinite/game_start1.png
+SHA1-Digest: Xwhl4PAU+M8fBM9NujrqT8VxKbs=
+
+Name: assets/res/buddha_icon/buddha103.png
+SHA1-Digest: rKxb1H/AZ4Gc4eMmQjyeRj2q+kw=
+
+Name: assets/res/chapter/tower_pic.png
+SHA1-Digest: JVlv1yrYYmXmSpbYkn61AhfsKeU=
+
+Name: assets/res/armature/dashaseng/dashaseng.csb
+SHA1-Digest: I8Am8UDSSZRqV+yIweVLoKVJnO4=
+
+Name: assets/res/common_ui/buy.png
+SHA1-Digest: rwmuyi91ESK9vMRKJILRVE3CS9I=
+
+Name: assets/res/sign/miao_h.png
+SHA1-Digest: PZy6+fIwAVZOtnKjvCbfVobBz44=
+
+Name: assets/res/shop1/70.png
+SHA1-Digest: y0Cbx4EA35yKSwWLXCN3rFHDxWQ=
+
+Name: assets/res/armature/jiji/jiji0.plist
+SHA1-Digest: qpDNF2DH0Sj1Mr9IyTgadxCAJNs=
+
+Name: assets/res/shop1/flush.png
+SHA1-Digest: 8+cqMFowArO3oZ6iX3rrlBhVu0k=
+
+Name: assets/res/gamescene/quality_2.png
+SHA1-Digest: PpixtmZFZ3HNbFzN/RJ/YDdhlss=
+
+Name: assets/res/novice_guide/guide_summon_scene.csv
+SHA1-Digest: KmqLIWepKF4zxV+duA+7+ThuBTk=
+
+Name: assets/res/treasure/treasure8_pic.png
+SHA1-Digest: mcpx7U7VvRmWCjOztZdd0F5MrYw=
+
+Name: assets/res/upgrade/tang/small_tang1_h.png
+SHA1-Digest: +83qOPRqCtJ1YHGAE1gGyG0C/nU=
+
+Name: assets/res/upgrade/tang.png
+SHA1-Digest: wlMKkPFSV4yqN9G0oX1UHCmJfOk=
+
+Name: assets/res/recharge/amounts_peach.png
+SHA1-Digest: m0qmmI2o/ZENqaEx2F3MptiesFw=
+
+Name: assets/res/armature/chijiao/chijiao0.plist
+SHA1-Digest: rKz4tDLFiDgihQkmmipKWoBgcyU=
+
+Name: assets/res/shop1/shopkuang.png
+SHA1-Digest: ugjkTggmYwf/F+kTgT5l1NysfAM=
+
+Name: assets/res/buddha/buddha62.png
+SHA1-Digest: OHP9fi6h10HwtI8H0oMqOnqq9jQ=
+
+Name: assets/res/tasks/achievement/achievement6.png
+SHA1-Digest: RDY1WK9zPYn5J6lmgoecH72AVGY=
+
+Name: assets/res/common_ui/new.png
+SHA1-Digest: NaocQnd4Yi0AVK3X9GQzYLsFJ9U=
+
+Name: assets/res/opening_comic/comic2/blink1.png
+SHA1-Digest: Sne7u8Syeh71yHgSGYg0cmvlffg=
+
+Name: assets/res/armature/mumaguai/mumaguai0.plist
+SHA1-Digest: 4gNbgyj9MoiMefnyvmG57JU6MnE=
+
+Name: assets/res/armature/jiutianxuannv/jiutianxuannv0.plist
+SHA1-Digest: Pr/yKBqMcJ7mR3d+DR/2hcq0pJM=
+
+Name: assets/res/trial/icon.png
+SHA1-Digest: 0KamIWADwlmAZqh8Mne5vK6mppM=
+
+Name: assets/src/framework/cc/components/ui/LayoutProtocol.lua
+SHA1-Digest: ebrEGH5nIDyHcAmN9G8AN/CmmxU=
+
+Name: assets/res/sounds/attack_buddha64.ogg
+SHA1-Digest: gNALt5mEpJbrXoPQM4z3v+QKvEE=
+
+Name: assets/res/recharge/cumulate3.png
+SHA1-Digest: BGkHEXzqQyp4pLUbGnxBM8zGTzM=
+
+Name: assets/res/login_scene/bounding_account_h.png
+SHA1-Digest: Wm/ZmXFeqxMhaqYs1k6K+4pOIvM=
+
+Name: assets/ucgamesdk/images/uc_delete.png
+SHA1-Digest: Y9jB0XWrZRRovi00MX6ZPUpMo0I=
+
+Name: assets/res/armature/xiaodianmu/xiaodianmu0.png
+SHA1-Digest: YxEUubt12nIrciAijaSSQPPTgxw=
+
+Name: assets/src/cocos/extension/DeprecatedExtensionClass.lua
+SHA1-Digest: hOvQ/bbRQPd+fwBrsmRl5a8VRGI=
+
+Name: assets/res/common_ui/upgradelock.png
+SHA1-Digest: r5FIvAjJgS4Eu1EvZ6NlyOpG98o=
+
+Name: assets/res/armature/miaoxinren2/miaoxinren20.plist
+SHA1-Digest: qmK6qa2jYEJonAtNxo1lcUST9Nw=
+
+Name: assets/res/treasure/treasure7_attrib_des.png
+SHA1-Digest: kBnipwFuT20lSnjEEoUqs6A2/js=
+
+Name: assets/res/recharge/pile_peach1.png
+SHA1-Digest: A+ExKuyKDXNNxR4/+x2hCZNc+DE=
+
+Name: assets/ucgamesdk/ui/common/conf/tips_button_press.9.png
+SHA1-Digest: +v1FPr05XAB3LI9eI7JttfwXZzQ=
+
+Name: assets/ucgamesdk/images/uc_agreetick.png
+SHA1-Digest: 9YH0fODYVqtxoerg4Sb2OdV5VUk=
+
+Name: assets/src/framework/cc/ui/UIListViewItem.lua
+SHA1-Digest: +nvTjNOPZlEbuE4djmewVMoJFjQ=
+
+Name: assets/res/Diary/blue.png
+SHA1-Digest: +8cvCKU/4IdvTo/nw2w3mvRBQmw=
+
+Name: assets/res/item/laojunjindan-lizi.plist
+SHA1-Digest: h65vMyHEsdrJw157fyhVwkOGZgA=
+
+Name: assets/res/monster_icon/monster105.png
+SHA1-Digest: tTJSP+uFv2ycJkFtn7QXGjCs4u8=
+
+Name: assets/res/login_scene/input_frame1.png
+SHA1-Digest: Zlr3vWyyTtGxhZdPR+to3IIoB5s=
+
+Name: assets/res/treasure/label1.png
+SHA1-Digest: sNfeH8XAcnWQC6aeKyqTV6JSFo8=
+
+Name: assets/src/framework/json.lua
+SHA1-Digest: 5mHtah26jKamZJUZE4ScC1v0nJ4=
+
+Name: assets/res/gamescene/bg_sky10.jpg
+SHA1-Digest: YUWfHXoeChZA3M6UrPHJp8iDJRg=
+
+Name: assets/res/animation/upgrade_tx.plist
+SHA1-Digest: dFszAcKkADrW36+gerpXx7m2pRU=
+
+Name: assets/res/armature/tunvlang/tunvlang0.plist
+SHA1-Digest: Uc6pw+ToSfHTpIJll1aCs0pvM9U=
+
+Name: assets/res/shop1/65.png
+SHA1-Digest: d0Sry6IrBtY2aX+KsYs13mBq5Ng=
+
+Name: assets/res/opening_comic/comic4/comic412.png
+SHA1-Digest: IAVBKlxG+fCxN3wqZ5aDMPpC6/g=
+
+Name: assets/res/dialogue/tianbing/tianbing3.png
+SHA1-Digest: dllPOym6cGiN47wYTMigd5bhDuA=
+
+Name: assets/res/armature/xiaodou/xiaodou0.png
+SHA1-Digest: 9MC4r1snNWqZaJVDZ0xG1A9DmcU=
+
+Name: assets/res/novice_guide/circle.png
+SHA1-Digest: JgJFnVDPFUbNhr3qXvjEHClxjQg=
+
+Name: assets/res/shop/flush_h.png
+SHA1-Digest: md57FOJ9MexkzVOsqiQd/DBVDcQ=
+
+Name: assets/res/treasure/label2.png
+SHA1-Digest: eSPBcAVwX2gZLN0Zkd2SQtHCizA=
+
+Name: assets/res/treasure/treasure2_attrib_icon.png
+SHA1-Digest: dquvTQkBDDBLemDrIw6aDdROKQM=
+
+Name: assets/res/game_infinite/time_frame.png
+SHA1-Digest: MBrhT1iwAhIoQoayumfUzn8mtEw=
+
+Name: assets/res/item/exchange_h.png
+SHA1-Digest: DLrOVTAEjYdHIQuMGvbqNC3LqjI=
+
+Name: assets/res/monster_piece_icon/piece23.png
+SHA1-Digest: Jfm/gdGbH3Uwe5Jq9XLDPtNHcck=
+
+Name: assets/res/item/gray.png
+SHA1-Digest: wlZ1Z3gBssp+u/mGkS9LpYFJqeM=
+
+Name: assets/res/monster_icon/monster10.png
+SHA1-Digest: SYga3Xpx9hKVX9XV/KwiZQfcAzc=
+
+Name: assets/res/win_or_lose/lose_pic.png
+SHA1-Digest: WWPysGH/WKPuvkYiTiZVrfj+7Fc=
+
+Name: assets/res/animation/xingxing.plist
+SHA1-Digest: 56R7E02BQTUF7TcchnGiomXvh8k=
+
+Name: assets/res/upgrade/monster_h.png
+SHA1-Digest: bx/a0eRts5bZo1LClxjveov/vuA=
+
+Name: assets/res/buddha_icon/buddha89.png
+SHA1-Digest: HNtcfsIIdfRW1wlu3Kd2pG++ZP8=
+
+Name: assets/res/connection/timeout_bg.png
+SHA1-Digest: A4ts1RMLn4zrhsh/SmWh6ris0Jc=
+
+Name: assets/res/monster_tower/12/bg.png
+SHA1-Digest: hYbkCV2hrg/FTtkhaTNVCKCl9sM=
+
+Name: assets/res/upgrade/unlock_h.png
+SHA1-Digest: rfmvI0qK1m9QS1A7ioFX7ubTG4A=
+
+Name: assets/res/gamescene/bar_bg.png
+SHA1-Digest: ysMuTRJsVakkILcWxYnuwbkNslc=
+
+Name: assets/res/armature/daqianliyan/daqianliyan.csb
+SHA1-Digest: SDwmek8PRO2AT6xsbgblSTwtxeU=
+
+Name: assets/res/alert_exp/pic1.png
+SHA1-Digest: 2E9Gh5v1pFhcEH9q7asBGdBVV1w=
+
+Name: assets/res/animation/shandiantexiao2/shandiantexiao20.png
+SHA1-Digest: 4w9hJAPQsQaSGsOfhTzKCtCtbiY=
+
+Name: assets/res/tasks/cell_frame.png
+SHA1-Digest: IlZKAxO3RQEXFU4onwht2Zh5y7I=
+
+Name: assets/res/buddha_icon/restrain1.png
+SHA1-Digest: Tb798nTLrIR1U5GvFO06InhYu/I=
+
+Name: assets/res/armature/xionghaizi/xionghaizi0.plist
+SHA1-Digest: 2uzrkX5TkCo0nInzahMFm331X5Q=
+
+Name: assets/res/opening_comic/comic4/comic411_tip.png
+SHA1-Digest: SHLyqsET1AyVgciM/v/0vlmiNGQ=
+
+Name: assets/src/framework/cc/mvc/init.lua
+SHA1-Digest: UtaQJuTu6SLA3BxTWmTvDJkTJwQ=
+
+Name: assets/res/settings/bg_about.png
+SHA1-Digest: SrKaeL7pL/vmle3ycT4Ddf0xuAA=
+
+Name: assets/res/buddha_icon/buddha100.png
+SHA1-Digest: 9acVLbSymE1FquLmy6/LxUQGiFk=
+
+Name: assets/res/buddha_icon/buddha29.png
+SHA1-Digest: IbNK1j02GxQ24jhKHtROIBEafj0=
+
+Name: assets/res/opening_comic/comic4/comic48.png
+SHA1-Digest: zWl4SD8TZBBDRykRWXOKGlFvYdU=
+
+Name: assets/src/framework/cc/ui/UIGroup.lua
+SHA1-Digest: sxw5uQepRc5YqgQ8PVOhvVL8PqM=
+
+Name: assets/res/monster_piece_icon/piece29.png
+SHA1-Digest: b2WbRsFVoo0OWjgV7CYQoEzhx2M=
+
+Name: assets/res/treasure/q0.png
+SHA1-Digest: V8PKKgCHY9wJ7aVvvFKIQqfp/mo=
+
+Name: assets/res/treasure/treasure_tip1.png
+SHA1-Digest: aXN8ojt4Kw4OSKBWxa9R5y0Tm3E=
+
+Name: assets/res/item/item5_big.png
+SHA1-Digest: QC+kTnFWSG4r+rHjNqrktOcWyrM=
+
+Name: assets/res/armature/niumowang/niumowang0.plist
+SHA1-Digest: PXSu+4/uzOmw+gjq9nq+gVNFY28=
+
+Name: assets/res/treasure/treasure1_pic.png
+SHA1-Digest: s/NUGLSR7qZA6MdWmxpxw45JRrg=
+
+Name: assets/res/fonts/yellowNum_0.png
+SHA1-Digest: tUSwYSlXd46KkT5QvXrNq346tRQ=
+
+Name: assets/res/armature/qingwa/qingwa.csb
+SHA1-Digest: AIihU2ec5L9PpLNGL6rygwff1iY=
+
+Name: assets/res/monster_piece_icon/piece26.png
+SHA1-Digest: ewU4eouFumtSP/Eix6xmv72+MlM=
+
+Name: assets/res/spin/frame.png
+SHA1-Digest: MbXe8LHpv4UPr9fTrtRK4xhMgWU=
+
+Name: assets/res/armature/jinyu/jinyu0.plist
+SHA1-Digest: mMHtRs5olbP1SFE0u9SdabPu6kw=
+
+Name: assets/res/armature/mumaguai/mumaguai0.png
+SHA1-Digest: Qn7NmOZkPBdbOiYeKAkI3AciMis=
+
+Name: assets/res/upgrade/q2.png
+SHA1-Digest: g++Wasd3exdX1xCiokWGkv8Rwwg=
+
+Name: assets/res/stage/sweep5.png
+SHA1-Digest: f2Ouixs/pLB17A2EbfgR+19QHSw=
+
+Name: assets/res/settings/stripe.png
+SHA1-Digest: t2RGrj2KMS7OT9+2cXhPG/JrLqQ=
+
+Name: assets/res/spin/circle.png
+SHA1-Digest: Uvdx4RePAJMNG9YAneikl/kCu9w=
+
+Name: assets/src/framework/filter.lua
+SHA1-Digest: IN+rfnr/j6FifDrbncOw68QxpZc=
+
+Name: assets/res/gamescene/iconshadow.png
+SHA1-Digest: tQu9DI05rVDHK0ezQEPgMwjykpA=
+
+Name: assets/res/buddha/buddha106.png
+SHA1-Digest: oHW/ElNnn601MKAKjOVVkq3lBg4=
+
+Name: assets/res/win_or_lose/to_upgrade2.png
+SHA1-Digest: G44yKZ4I2HTaUArk7rM4W0lgfcU=
+
+Name: assets/res/opening_comic/comic6/comic63_tx.plist
+SHA1-Digest: w8Ji+sxF1HNIUJT76uN/yh4R6a4=
+
+Name: assets/res/monster_icon/monster12.png
+SHA1-Digest: H1kkkUhZiXiTIix81gZMBeJc9gY=
+
+Name: assets/res/opening_comic/comic4/comic42.png
+SHA1-Digest: pJFYe05kon6G1sB5jaPM4Ydh+XQ=
+
+Name: assets/res/monster/monster4.png
+SHA1-Digest: YaymNrM+cmA52Dl+nqIIeqWVxTM=
+
+Name: assets/res/buddha/buddha87.png
+SHA1-Digest: pqh7nwFZzk4sNKxRUehmQt0SHF0=
+
+Name: assets/res/opening_comic/comic1/comic13_tx.png
+SHA1-Digest: ek5VtC/cmpnYlNMuATgPfrBWvn8=
+
+Name: assets/res/buddha_icon/buddha92.png
+SHA1-Digest: eDz+rsfWOAIi+WU81OxYMUF3A24=
+
+Name: assets/res/opening_comic/comic4/comic411_tx.plist
+SHA1-Digest: BRcpAW568u2HOrFIVi8Yzu8irrQ=
+
+Name: assets/res/treasure/icon6.png
+SHA1-Digest: /r0AqT527XrEJgx2TCXunrHODT4=
+
+Name: assets/res/armature/taierzhenren/taierzhenren0.png
+SHA1-Digest: tsO04EchgOsJ1Q+kzDYz6uOuc34=
+
+Name: assets/res/spin/disk1.png
+SHA1-Digest: JDJfzEmdAv5I/5pwwF3yhd8Dx/o=
+
+Name: assets/res/item/use.png
+SHA1-Digest: YqsUf71x8rS+zNkscPevYZ+KaRc=
+
+Name: assets/res/chapter/activegifttextdi.png
+SHA1-Digest: 8stWpTAU3l7zTBdP4+vLVUyg0fY=
+
+Name: assets/res/animation/difangsiwangyan.plist
+SHA1-Digest: prlNrDVdZxQ4QiKz/Os8grHnQ+c=
+
+Name: assets/res/game_infinite/bg_middle.png
+SHA1-Digest: GxFK7HOrnlVmJ9HI6pAdfDwk/wU=
+
+Name: assets/res/connection/retry1.png
+SHA1-Digest: TlLuIsUlGrGUn87nNuCR48Drcqo=
+
+Name: assets/src/cocos/cocos2d/extern.lua
+SHA1-Digest: mOMQ0OBdE0qevo/4LoeKSWUiO+Q=
+
+Name: assets/res/buddha_icon/buddha86.png
+SHA1-Digest: bp4v3E+h+Aren7Sl60dYqsAm4+c=
+
+Name: assets/res/monster_icon/monster101.png
+SHA1-Digest: tcumGl+k4DJ6JQhsb0IRqzMK+WI=
+
+Name: assets/res/buddha/buddha5.png
+SHA1-Digest: xISL3/yCko8leek1vxwJGETijHs=
+
+Name: assets/res/tasks/completed.png
+SHA1-Digest: YFcSksOIequ391n79k6rurfJeuw=
+
+Name: assets/res/login_scene/server_tip.png
+SHA1-Digest: n2W/wQdzJgov+QNT7btoheHJRB0=
+
+Name: assets/res/novice_guide/guide_game_start.csv
+SHA1-Digest: CEQjnA2jRBrr4v63FjKp61QEHE0=
+
+Name: assets/res/gamescene/bg4.png
+SHA1-Digest: AIi+CRomvgx/ga3iOXB63Kzy3Wk=
+
+Name: assets/res/buddha_icon/buddha111.png
+SHA1-Digest: NaD+c3PqJ/ALuj+GM87UKZlE2tg=
+
+Name: assets/res/upgrade/wand/small_wand2_h.png
+SHA1-Digest: cI8ZIHgbqkm95bMM7JONcnxaYzg=
+
+Name: assets/res/tiny_loading/hint12.png
+SHA1-Digest: D5u6GaiKJFNhLpoVYRPhxGdVQAk=
+
+Name: assets/res/armature/qingwa/qingwa0.plist
+SHA1-Digest: YpYKhwtaUoaWe/KOo7qB0emeBIk=
+
+Name: assets/res/monster_tower/13/door2.png
+SHA1-Digest: 02nbGIFQdFPpmqJuWHyQSZydiPg=
+
+Name: assets/res/game_infinite/wave_frame.png
+SHA1-Digest: MPq7AOfXHplKh+XNnvQGJ7KQu6Y=
+
+Name: assets/res/opening_comic/comic4/comic410_tx.plist
+SHA1-Digest: fa3OC2eZwPoEuARGC4w6EKCxtMo=
+
+Name: assets/src/framework/cocos2dx/ActionEx.lua
+SHA1-Digest: Et+9DPeympTgemLfyyC/Q4t4G3A=
+
+Name: assets/res/gamescene/retry_h.png
+SHA1-Digest: vEXZSvxTo2tUlklA5FOUsj3Eqvs=
+
+Name: assets/res/novice_guide/guide_team2.csv
+SHA1-Digest: qSzP/rYBFboq7dT3tone93AGnuk=
+
+Name: assets/res/stage/name1.png
+SHA1-Digest: kNesXRrGAvqTFM7XPZr3PteV7e0=
+
+Name: assets/res/upgrade/gradedbt.png
+SHA1-Digest: tny2Eh0P3QBOmapEdouuVoPpTJs=
+
+Name: assets/res/tiny_loading/hint3.png
+SHA1-Digest: HrQwDXJnKgMR78kHYB42a4t/W+4=
+
+Name: assets/res/fonts/battle_red.fnt
+SHA1-Digest: 8R9MeSM5AhNDU9hMVa4CofTrkCY=
+
+Name: assets/res/animation/tower_boom.plist
+SHA1-Digest: GA9vs4MnOrNjb5sO2vzCU8/4ug0=
+
+Name: assets/res/item/item1_pic.png
+SHA1-Digest: aJA11qVYnVS3inGJ21RzUZwySZM=
+
+Name: assets/res/armature/xiaobajie/xiaobajie.csb
+SHA1-Digest: C7/sCRFyVZ01DFq4aTg+ApiLGz4=
+
+Name: assets/src/framework/cc/uiloader/UILoaderUtilitys.lua
+SHA1-Digest: Sbz4EEWE8Fid11F5Sn0+g7qzR/0=
+
+Name: assets/res/monster/monster100.png
+SHA1-Digest: imyhLMX42akd5PpDqt6kmMAWxuA=
+
+Name: assets/res/tasks/stage/content2.png
+SHA1-Digest: Bd7c2OMzfBs4k/bb8+Rceukki88=
+
+Name: assets/res/opening_comic/comic7/comic71.png
+SHA1-Digest: CU/Z/qd2I11EZPxDontFjk8OgD8=
+
+Name: assets/res/wiki/monster.png
+SHA1-Digest: MwamevDFCwlZ6cMXYc3n1/xC9dY=
+
+Name: assets/res/gamescene/pause1.png
+SHA1-Digest: 53kCNl93w1dTb9cOXDz3LWngppE=
+
+Name: assets/res/gamescene/spirit.png
+SHA1-Digest: kfxDMTw0emUj3H26Skyi3qQpZ1c=
+
+Name: assets/res/buddha_icon/buddha5.png
+SHA1-Digest: h0z5ph5ljmOb9+l5XAeQ9rKAgUg=
+
+Name: assets/res/Diary/activity_odd.png
+SHA1-Digest: 0+yhUSAJzLrjYT2DVCZYAclPWR0=
+
+Name: assets/res/armature/niumowang/niumowang0.png
+SHA1-Digest: ZMWmVBb33AH9qjlVVvoEyG6U58Q=
+
+Name: assets/res/armature/xiaoqianliyan/xiaoqianliyan.csb
+SHA1-Digest: 02yarAzKrw/7QwT3JTNdDj9W4iQ=
+
+Name: assets/res/sounds/attack_buddha65.ogg
+SHA1-Digest: uygpA3gF4QvRGGfYHhU7W5U6nKM=
+
+Name: assets/res/shop/shopprice1.png
+SHA1-Digest: drsgibbGe76wfFbSLbtvSiza1x8=
+
+Name: assets/res/armature/fengtaizi/fengtaizi0.plist
+SHA1-Digest: eO3B7oBgHwCuD4Tg95GRkeydvXs=
+
+Name: assets/res/summon_scene/zhuanhua.png
+SHA1-Digest: hi4v4bzFrjQE++/Ym4EwosMATHM=
+
+Name: assets/res/common_ui/tips@2x.png
+SHA1-Digest: 4sIOW8Yk7JKy8VLx4kCvAO2aSjQ=
+
+Name: assets/res/tasks/achievement/achievement7.png
+SHA1-Digest: ykzu4Dyr7JxO5hHVzlIYuQ1xibo=
+
+Name: assets/res/animation/shengli_guangdian.plist
+SHA1-Digest: ATVhBUMI03DVfXVVxnUbaCo/p5w=
+
+Name: assets/res/monster/monster110.png
+SHA1-Digest: bzS1nOv+ynEy7HD1W8F75tvZgng=
+
+Name: assets/src/cocos/cocos2d/luaoc.lua
+SHA1-Digest: G59xoprXYi83RLe069PGrPsH24k=
+
+Name: assets/res/sounds/sfx_item_treasureget.ogg
+SHA1-Digest: Vcf4fcYJLRi9sUxv4PvoTutyKIo=
+
+Name: assets/res/gamescene/level_max.png
+SHA1-Digest: vtkvOCsyVB48xWv6ks2PeTmdtfc=
+
+Name: assets/res/game_infinite/rankings1.png
+SHA1-Digest: AcXw/1TjOlwXhImjpwydiu/1SFI=
+
+Name: assets/res/item/item2_big.png
+SHA1-Digest: PgQCGjj7H9MosxELYkMZ8dSZyrw=
+
+Name: assets/res/item/item5.png
+SHA1-Digest: nG7bK07iOVqzzRh1IIDFJViUDik=
+
+Name: assets/res/settings/code1.png
+SHA1-Digest: t8KYQ87cDCdkucqP3sWC/FPyYv8=
+
+Name: assets/res/Diary/bg.png
+SHA1-Digest: tnO5uzQc+hFqVZRJ/W+MuJkE/jU=
+
+Name: assets/ucgamesdk/config/init_rexproj.xml
+SHA1-Digest: 7V4EIF/nwUMNCiQrQUzDxAUkFes=
+
+Name: assets/res/opening_comic/comic3/chandou1.png
+SHA1-Digest: TjO6k99sVE6ftQGugF8i2gptbBU=
+
+Name: assets/res/buddha_icon/buddha106.png
+SHA1-Digest: dK6rJ7WR1260AzgZ31yquZ0tHxY=
+
+Name: assets/res/new_fellow/2.png
+SHA1-Digest: 6MKxrVW8Ce5IZDZrCEdKjSDT16s=
+
+Name: assets/res/buddha/buddha72.png
+SHA1-Digest: ms1BqesOOeyLA7RpK9gtfu6k2Wg=
+
+Name: assets/res/stage/monster_reward.png
+SHA1-Digest: PcufdyecCmm2PbkyDymC3hBaLEw=
+
+Name: assets/res/armature/dajulingshen/dajulingshen.csb
+SHA1-Digest: efZWWf+DUfXtW8xcDsnJozEIHlU=
+
+Name: assets/res/notice/img/1.png
+SHA1-Digest: NyPOM/MGBfo3U67F1gp+3HvFW3Y=
+
+Name: assets/src/framework/cocos2dx/Cocos2dConstants.lua
+SHA1-Digest: urSGlPHb463dhooPAQW94Cnm2As=
+
+Name: assets/res/buddha_icon/buddha26.png
+SHA1-Digest: qdalXnKDvoFSFG6M98vDKQMMio8=
+
+Name: assets/res/stage/name4.png
+SHA1-Digest: JOzXH/E+SAQVk9u28UV5QnNCUAQ=
+
+Name: assets/res/animation/wofangsiwangyan.plist
+SHA1-Digest: 4BUSThf57TOflm+Da7ZqAtT2JAg=
+
+Name: assets/res/summon_scene/essence_pic.png
+SHA1-Digest: NUdXK0WV16wqWiA5Am02Ip2Ckh0=
+
+Name: assets/src/cocos/extension/ExtensionConstants.lua
+SHA1-Digest: OcKsPZ2NiL+BuYRQaplfc+gcRK4=
+
+Name: assets/res/animation/zhong.plist
+SHA1-Digest: g/a2sw4z8WI3/RUgwZ7eBH7hw24=
+
+Name: assets/res/gamescene/wand_light1.png
+SHA1-Digest: TRBxXl/GWe66TNqd+Eo1ZnQEJuw=
+
+Name: assets/res/monster/monster96.png
+SHA1-Digest: 6Wc+1MBMEBnzR48o3L1UOgqH+j4=
+
+Name: assets/res/trial/bg.png
+SHA1-Digest: td2K/G3iSpdCVZ3FnRfSEysqViA=
+
+Name: assets/res/buddha/buddha111.png
+SHA1-Digest: NxuoPRlNLvnCODrzbKCVyNvYSe4=
+
+Name: assets/res/shop1/price.png
+SHA1-Digest: YYQi5BP7a7JEl+0rNR84jgCMpZY=
+
+Name: assets/res/summon_scene/gray.png
+SHA1-Digest: VrDc8bqMcK6s+GYujl1zMI4df7g=
+
+Name: assets/res/buddha/buddha22.png
+SHA1-Digest: IRT3151Mao+KA1yibbT4o5x2bmU=
+
+Name: assets/res/server_maintain/last_msg2.png
+SHA1-Digest: /4B2pxYZjLJrCqzsP4+taOE+ZKE=
+
+Name: assets/res/monster_icon/monster11.png
+SHA1-Digest: yMORu8vxf+lFs5LOYH/OVMYSRrA=
+
+Name: assets/res/tasks/daily_btn.png
+SHA1-Digest: zexX5DQtUh1n0QbHadXgX1m4qWM=
+
+Name: assets/res/summon_scene/ball_tx.plist
+SHA1-Digest: 1t+Ghmi5zupKVmXRwX6dwk0ENyk=
+
+Name: assets/ucgamesdk/ui/common/jars/update.jar
+SHA1-Digest: HCK0hUD3U+3pem35+FbKwgFOzjY=
+
+Name: assets/res/gamescene/lost.png
+SHA1-Digest: ajZoQThw7tMEVe7vU3E3yxhgxkY=
+
+Name: assets/res/gamescene/bar_hp_monster.png
+SHA1-Digest: x28o0DHYfDjjFEPMJlqTboVGFeM=
+
+Name: assets/res/common_ui/right.png
+SHA1-Digest: PR3SEinjCbyPEgxAPvun9S3cnJw=
+
+Name: assets/ucgamesdk/ui/UC_8.zip
+SHA1-Digest: FzyW8dzf1WJBrRs+UaFJ7V+SKLo=
+
+Name: assets/res/game_infinite/tang_pic.png
+SHA1-Digest: JtgHVjlku1Y1kVU0xN40PyM88wk=
+
+Name: assets/res/monster_tower/5/door.png
+SHA1-Digest: huLPRTjX9sdHx0f69Ff9JT9NVuY=
+
+Name: assets/res/propery_icon/exp_increase.png
+SHA1-Digest: HLPNbq7vb+AapNOzLthKsUc/1BI=
+
+Name: assets/res/opening_comic/comic4/comic411.png
+SHA1-Digest: UFN4mc2tPUynnFYAMiXHwJFt/cA=
+
+Name: assets/res/upgrade/monster.png
+SHA1-Digest: /IPpqZ5LF2e1ZShnZKaKE0s6nfM=
+
+Name: assets/res/tasks/stage/content8.png
+SHA1-Digest: jyf6tDLtLD4MFJzhHIm6mq0rMZo=
+
+Name: assets/res/tasks/stage/content0.png
+SHA1-Digest: VTTmTvbjcs91Uxkxr+tDJCewilc=
+
+Name: assets/ucgamesdk/config/qqLoginWlist.ini
+SHA1-Digest: d3kJEUDKOkszDHQ1UHOnbLGIu4Q=
+
+Name: assets/src/framework/cc/utils/Gettext.lua
+SHA1-Digest: DpvcbCp19KDTqhYxuiA/E0C9RM4=
+
+Name: assets/res/dialogue/tianjiang/tianjiang2.png
+SHA1-Digest: PZjzt4JF/rrk+MnYYmiI6cJmbFI=
+
+Name: assets/res/sounds/sfx_item_wind.ogg
+SHA1-Digest: zdZSmBNhkKBIoHNIGgxra0Y1gRc=
+
+Name: assets/res/armature/taiyizhenren/taiyizhenren0.plist
+SHA1-Digest: +09ktBE7xDhetaxXAKrB8eJvhgE=
+
+Name: assets/src/framework/cocos2dx/OpenglConstants.lua
+SHA1-Digest: 3hx63o/KDq/PJ4dQnF3PgHHdIiI=
+
+Name: assets/res/armature/dazhangtaizi/dazhangtaizi0.png
+SHA1-Digest: 6TkIVVXeghAZrvqN6M6SEcWFkCI=
+
+Name: assets/res/team/tip.png
+SHA1-Digest: zAWUQke5jAdiruwOj8/fWXDFUE0=
+
+Name: assets/res/loading/bajie.png
+SHA1-Digest: 9b05/nILx9vLHbL9zaGf83XVdEc=
+
+Name: assets/res/fonts/red.fnt
+SHA1-Digest: UTdyItgPVH0MxRpP7ixyB1GP4GU=
+
+Name: assets/res/buddha_icon/buddha99.png
+SHA1-Digest: 0PCjlCaP+B0Jz2mhi9ogMl+2p3w=
+
+Name: assets/res/treasure/treasure5_pic.png
+SHA1-Digest: cxZn+ehePtc8YLFTl4x7EKbmONs=
+
+Name: assets/res/item/item1_name.png
+SHA1-Digest: pNnsmlmBFrNEZrfPSDttRqRn6kA=
+
+Name: assets/res/novice_guide/guide_challenge.csv
+SHA1-Digest: 2S9Hp+GN/b+TFHmAoaq/l/yxq10=
+
+Name: assets/res/item/red_point2.png
+SHA1-Digest: tIjtGuW4Zy9LaU5+Q81h7n20YlQ=
+
+Name: assets/res/sounds/sfx_gun_cooldown.ogg
+SHA1-Digest: sGt2G1FRsBgRcZQT/dy62c+w5Fk=
+
+Name: assets/res/armature/xiaozhongkui/xiaozhongkui0.png
+SHA1-Digest: j6FP/1qQ+Nu0EOeeYjUXzh36220=
+
+Name: assets/res/armature/hunshimowang/hunshimowang0.plist
+SHA1-Digest: ykAB4CL41sPem7SI0cuQSAO684E=
+
+Name: assets/src/framework/cc/ui/UIInput.lua
+SHA1-Digest: 3S8Xx5SmwdHf1+0H9eeiG0e08gg=
+
+Name: assets/res/team/mid.png
+SHA1-Digest: JkvYIlON1Y1qyAEq86LRqyRiUlM=
+
+Name: assets/res/dialogue/drama_upgrade.csv
+SHA1-Digest: u2iNV9ONT6RemS4TJPGcNrpm4Gk=
+
+Name: assets/res/tasks/stage_btn1.png
+SHA1-Digest: /njFpwbVYIFB8ax5oBnoWmMW1lc=
+
+Name: assets/res/gamescene/bar_bg_tower_b.png
+SHA1-Digest: AO4o5J3ao+o3i9klIK3UHMzn7Mc=
+
+Name: assets/res/treasure/treasure4_pic.png
+SHA1-Digest: b5Ed+Excf4lCClMMkWVeLkv8wiM=
+
+Name: assets/res/upgrade/tower/small_tower2_h.png
+SHA1-Digest: fRPrjdBE9iedcY9HgebzPX9jmJs=
+
+Name: assets/res/animation/splash.plist
+SHA1-Digest: 7jc599plsdsumkHl+xtxX94Aou8=
+
+Name: assets/res/login_scene/quick_start.png
+SHA1-Digest: RJNDKEsxPuUuMaZY7bEbR7AdA1Q=
+
+Name: assets/res/upgrade/wand/small_wand1_h.png
+SHA1-Digest: 3AWGJcmFExB5jsNVLaOVqoP9PaE=
+
+Name: assets/res/chapter/set.png
+SHA1-Digest: swMcBV15SFdsia6DrM5Z4mDmVxo=
+
+Name: assets/res/animation/treasure_tx.plist
+SHA1-Digest: XJlrwtWzjnFQ4szrQrWCWkLaTN4=
+
+Name: assets/res/game_infinite/unknown.png
+SHA1-Digest: JewIciUKye7aOIcscBAfBfa4i10=
+
+Name: assets/res/common_ui/red_point.png
+SHA1-Digest: KisYmvmuF47aLWXhftPs72RxbFE=
+
+Name: assets/res/buddha/buddha102.png
+SHA1-Digest: RDedBdqkdYt5/5VQOUZeiqySn9Q=
+
+Name: assets/res/animation/shengli_zouguang.png
+SHA1-Digest: I7OmyLy3evKLxEIpCz3fnoLSpFo=
+
+Name: assets/res/buddha_icon/buddha6.png
+SHA1-Digest: jBczg9cuJCyEIqmZkvrLccIcbp0=
+
+Name: assets/res/dialogue/tangseng/tangseng4.png
+SHA1-Digest: YYg9z7qfF3OLKIgY3N36mX4u4Kg=
+
+Name: assets/res/gamescene/bagua3.png
+SHA1-Digest: FkV5Euozuh+h9rRE8GbOVD/Fzog=
+
+Name: assets/res/buddha/buddha73.png
+SHA1-Digest: ZGTix3yrt/twd//2HrB/vDwIBbI=
+
+Name: assets/res/armature/honghaier/honghaier0.png
+SHA1-Digest: xFQDD4CXCZEQElspHdOYw9hF5wk=
+
+Name: assets/src/framework/cc/utils/Timer.lua
+SHA1-Digest: dUQ9LWD3dKdf/3SE6iF9qBC2irs=
+
+Name: assets/res/opening_comic/comic1/comic12_tip.png
+SHA1-Digest: +KrpDh2lPYguo+qy+DpquQJ2PvA=
+
+Name: assets/res/Diary/hard_icon.png
+SHA1-Digest: uSX7b2OefK99a/J88g174Xsarms=
+
+Name: assets/src/framework/cc/components/Component.lua
+SHA1-Digest: fftq+uQnvsQeNF7KwjlflGJsBaA=
+
+Name: assets/res/buddha/buddha109.png
+SHA1-Digest: 6ejZhV+Rf0wbvHjp2UrXKoRyrOQ=
+
+Name: assets/res/armature/xionghaizi/xionghaizi.csb
+SHA1-Digest: EXiZSys2pxkn9dLk6+sgcSKyKs0=
+
+Name: assets/res/armature/haohaizi/haohaizi.csb
+SHA1-Digest: +bQmqTC2/4wU4rrP+xdD3e9D1ww=
+
+Name: assets/res/novice_guide/guide_fire.csv
+SHA1-Digest: m5IpKc6FCXoibIRvKqVeppA8stw=
+
+Name: assets/res/armature/haohaizi/haohaizi0.plist
+SHA1-Digest: y4yBWHeE02m7nETwp0QwqOwDLmU=
+
+Name: assets/res/opening_comic/comic4/comic46_pic1.png
+SHA1-Digest: MThgpRZni26sdyNrIwMl31Bz9u0=
+
+Name: assets/res/opening_comic/comic1/comic12_tx.png
+SHA1-Digest: VVp/1Xs0k89Ia2K2GmDXZUyc2VI=
+
+Name: assets/res/buddha_icon/buddha73.png
+SHA1-Digest: NkPQ4+YrdWaOeUwRLKK5Va6OVlE=
+
+Name: assets/res/treasure/frame_tp.png
+SHA1-Digest: QMHBMbsQF18G3pPr42du5z9Jo1w=
+
+Name: assets/res/novice_guide/card2.png
+SHA1-Digest: F6Llmi5GWdci5aOZldfnikUc2VU=
+
+Name: assets/res/gamescene/bg_sky_d3.jpg
+SHA1-Digest: A8wBOaK4fcGnIE3+Z+G023rSD6s=
+
+Name: assets/res/login_scene/correct.png
+SHA1-Digest: 77O5qvVB08mLmEb0Si9iz87k3Lw=
+
+Name: assets/res/upgrade/tower/tower1.png
+SHA1-Digest: hkP2c8I9vQPLbcjDW/SzkrbKOZo=
+
+Name: assets/res/gamescene/bg7.png
+SHA1-Digest: uHSaJ0EpxyHLvRF1p6tZxeOj8L0=
+
+Name: assets/res/sounds/attack_monster75.ogg
+SHA1-Digest: h4CbwySd/RS4KqeQ9uTvJ3a2cJ8=
+
+Name: assets/res/opening_comic/comic4/comic411_pic1.png
+SHA1-Digest: 4webYY2ln5YDuvxVKyXTrwVEEsE=
+
+Name: assets/src/framework/luaj.lua
+SHA1-Digest: 6CSOxkucEBMfP8lEtB/0yv5rmt0=
+
+Name: assets/src/DataEye/DCTask.lua
+SHA1-Digest: dSUe5e4BjHG/kZXNWKEp/JhfyZk=
+
+Name: assets/res/upgrade/tang/tang3.png
+SHA1-Digest: DUGncL6F2a5kq4aoPPZOnqvuaEA=
+
+Name: assets/res/monster/monster1.png
+SHA1-Digest: i+SARg8XP8ItuInzWt9W3C1q28Y=
+
+Name: assets/res/treasure/alert/bg_frame.png
+SHA1-Digest: rHwsDz/2Hg4pw54j94B8jOT+E9A=
+
+Name: assets/res/recharge/reward.png
+SHA1-Digest: GxfWWRsTUFd+h9HgkK0ORbvhMBk=
+
+Name: assets/res/tasks/achievement/achievement10.png
+SHA1-Digest: sVL4ihuhwnwuTlGv3fPAX8+k+bI=
+
+Name: assets/res/Diary/gray_sunday.png
+SHA1-Digest: 78rtcPhPYWUoOk4f/T4KyHYTYXM=
+
+Name: assets/res/armature/qingwa/qingwa0.png
+SHA1-Digest: 1gnxB/Cf+NQu7FCxytRerKwqVYc=
+
+Name: assets/res/treasure/treasure0_pic.png
+SHA1-Digest: 3Az/AleEr1W4EY4WrP/cWH0Sm3w=
+
+Name: assets/res/item/equal.png
+SHA1-Digest: lEUHy7A+WCWccED64TAIoefisbY=
+
+Name: assets/res/tasks/completed1.png
+SHA1-Digest: zCNV/Xb3Q8PrwwYVzqWWuKXPElU=
+
+Name: assets/res/game_infinite/pedestal.png
+SHA1-Digest: y5oyzLY70LVnBDoeVIIhzy89GsY=
+
+Name: assets/res/monster_icon/monster96.png
+SHA1-Digest: i8VHBBPevSt98Oqq6I3AH9cSiBg=
+
+Name: assets/src/cocos/cocosdenshion/AudioEngine.lua
+SHA1-Digest: MUT00tjbejVRzLay2FnDyJbQOPU=
+
+Name: assets/ucgamesdk/config/tb_ui_config.json
+SHA1-Digest: 4/J4Hje2jOw8t+sSfLCWwzftiFY=
+
+Name: assets/res/animation/maintain_ani.plist
+SHA1-Digest: Pe6sJaxAekrMzkuzcCxXguUDEIc=
+
+Name: assets/res/tasks/stage/content1.png
+SHA1-Digest: Le9O4fzKtGHOLNW/OexSaHJr8rM=
+
+Name: assets/res/monster_piece_icon/piece18.png
+SHA1-Digest: HkYvb2YcFHVPfrXAVl9Aj+gCLEM=
+
+Name: assets/res/buddha_icon/buddha66.png
+SHA1-Digest: plBwiDuq5cKpFJz/YkBq12o/S8s=
+
+Name: assets/res/sounds/sfx_touch_shu.ogg
+SHA1-Digest: kcOuE8YVatJC7kAcaq2E6vJy1SM=
+
+Name: assets/ucgamesdk/ui/list.xml
+SHA1-Digest: IFDDy6uOoMU6tV+K10wNo/O1EKI=
+
+Name: assets/res/armature/longma/longma0.plist
+SHA1-Digest: /4egI3ltDoU5dKsWJnthxT+Yc7w=
+
+Name: assets/res/buddha/buddha20.png
+SHA1-Digest: vvSGq8YQ4wk5JXg5Uwyo9HyYvbo=
+
+Name: assets/res/trial/gray.png
+SHA1-Digest: Z/jZ15RRWh5W++sgw7ca7gsCW3g=
+
+Name: assets/res/opening_comic/comic4/comic46_tx.plist
+SHA1-Digest: yMC7ii1eU3uAEom9NqDPwYlg9F0=
+
+Name: assets/src/framework/deprecated/deprecated_functions.lua
+SHA1-Digest: ILdFVVNXZagfBwc4ccg4wsuru/A=
+
+Name: assets/res/chapter/map01.jpg
+SHA1-Digest: vnfSVUTAUBelxyrSUnhIBzvdLvM=
+
+Name: assets/res/upgrade/upgradename.png
+SHA1-Digest: oGBkd+IUB6D2hrgrttLP8d82HVM=
+
+Name: assets/res/notice/title.png
+SHA1-Digest: uJe7pICbH2D7h0anWXoF7YyDfHU=
+
+Name: lib/armeabi/libcocos2dlua.so
+SHA1-Digest: tcdHwMbNIRNETcPOJpSUBXomgWw=
+
+Name: assets/src/cocos/cocos2d/Opengl.lua
+SHA1-Digest: OkxuoM+l0wx/cgwAPgXMdbLmvbc=
+
+Name: assets/res/stage/name5.png
+SHA1-Digest: D6or53nN0dmHpNATWNj/2HWgzeE=
+
+Name: assets/res/win_or_lose/continue.png
+SHA1-Digest: HfxDeRlKI7UlAgiPR9IoyTyH2P4=
+
+Name: assets/res/login_scene/role.png
+SHA1-Digest: gmItutUTwdrbjzV3Pzt0GNwZv2I=
+
+Name: assets/res/opening_comic/comic4/comic44_tx.png
+SHA1-Digest: sQopdMM+kZ4uGpbWT9odqVsiqss=
+
+Name: assets/res/sign/exp_h.png
+SHA1-Digest: Br+XH5o2jmzlyoI79QJyom5jc0U=
+
+Name: assets/res/upgrade/needexptext.png
+SHA1-Digest: h4xvZbfN3QrQ+g/KKOiQjO4uubg=
+
+Name: assets/res/gamescene/tower_enemy_0.png
+SHA1-Digest: 55UmO8ybJZ+vmqu18U5vqd6lA8w=
+
+Name: assets/res/buddha_icon/buddha32.png
+SHA1-Digest: taEzxhYBWYq62gJqEgqKq81cCj0=
+
+Name: assets/res/spin/4.png
+SHA1-Digest: eIgSABNFUjbPwYhYNZIYZplzXAE=
+
+Name: assets/res/monster/monster9.png
+SHA1-Digest: vwh1LIX6zc9TRlqZN1UAqZLopnE=
+
+Name: assets/res/gamescenegroove/spirit1.png
+SHA1-Digest: gedOAuBRBHh1Ev3vKvD2ru8zDIs=
+
+Name: assets/res/monster_icon/monster16.png
+SHA1-Digest: UdGXiDcfYw9YNBNa8jz7i7Ftccs=
+
+Name: assets/res/opening_comic/comic4/comic41_first.png
+SHA1-Digest: EZQpcrq3G9MgB5zXkpxxWrBXk8c=
+
+Name: assets/res/update/bar.png
+SHA1-Digest: 8B4R5Aw54qXXRl+9ocLENQB+jao=
+
+Name: assets/res/update/next_time1.png
+SHA1-Digest: V6fenVRS1CDd+9vh345jrX1XNdU=
+
+Name: assets/res/dialogue/dialogue_frame.png
+SHA1-Digest: 1Bjebicx4VdYhY3gzZ3TFwJpkpI=
+
+Name: assets/res/monster_piece_icon/piece27.png
+SHA1-Digest: Zm86CEY2fTW70l64HHEBlu69lSU=
+
+Name: assets/ucgamesdk/ui/common/conf/tipsBackgroundSelected.9.png
+SHA1-Digest: n8iqL0kiXB1LkBmYFq3vTFRWX4w=
+
+Name: assets/res/armature/jiji/jiji.csb
+SHA1-Digest: LRp6dnRkMf1Io3xr9dM1NHbO2nA=
+
+Name: assets/res/chapter/qiandao.png
+SHA1-Digest: mxaslNtBZjnmJ3lUcwVFZOIcn64=
+
+Name: assets/res/gamescene/bg_d1.png
+SHA1-Digest: eWt5CkCI9JGsqe7Fwr25h6D2Fhg=
+
+Name: assets/res/item/name5.png
+SHA1-Digest: Up/8ksxphiS4rZj/GZVeaL0YuvI=
+
+Name: assets/res/buddha_icon/buddha12.png
+SHA1-Digest: 4awytMilPJ1PJRBf8tDI6ngEmTM=
+
+Name: assets/res/monster/monster104.png
+SHA1-Digest: cQrl551KxDAG0nz0TiIXNL4dCBY=
+
+Name: assets/res/sounds/attack_buddhaxw1.ogg
+SHA1-Digest: 1/qtdGZhQCJLhwC47/Zly/M2u/k=
+
+Name: assets/res/buddha_icon/buddha84.png
+SHA1-Digest: Fd6lTizExG+FVSZ1lRBMyk1XfCM=
+
+Name: assets/res/gamescene/bar_bg_type2.png
+SHA1-Digest: p4ZlucjFTGaPg2/cu7hXk8sAXY0=
+
+Name: assets/ucgamesdk/ui/common/conf/widgetconf/exbbsDialog.json
+SHA1-Digest: RT0mP5hMXSlupI9RTIvE6T9Z6Bc=
+
+Name: assets/res/item/particle.png
+SHA1-Digest: 0uoQ7pmdfD/p2YlNGUe2M2SSU4o=
+
+Name: assets/res/recharge/cumulate2.png
+SHA1-Digest: i/HLwI31Cuam+5QiitPCXmtG870=
+
+Name: assets/res/monster_piece_icon/piece37.png
+SHA1-Digest: kL4y1uYjTb78wORB8E0u1q81rB8=
+
+Name: assets/res/opening_comic/comic4/comic43.png
+SHA1-Digest: 8Y+JB13m8o8rgyYqC/UqrhiqmUk=
+
+Name: assets/res/stage/sweep5_u.png
+SHA1-Digest: eRPukhJ0vEsADOp1kg91GJGz2oE=
+
+Name: assets/res/armature/dabajie/dabajie0.png
+SHA1-Digest: 03n4aq2FOp43l5zYkkQ1y1Mhj1E=
+
+Name: assets/res/activity_stage/btn_start1.png
+SHA1-Digest: SomfWeVIP3Ha1rK7n0jv/Rj0tYs=
+
+Name: assets/res/monster_icon/monster100.png
+SHA1-Digest: TwjCslslsCjR5Nq2Rcn30EXCRSw=
+
+Name: assets/res/armature/qingniujing/qingniujing0.png
+SHA1-Digest: SX3+E8ivMkwtgUkoIbYbo/gT9t8=
+
+Name: assets/res/novice_guide/guide_treasure1.csv
+SHA1-Digest: 7D4GsSkaK0JzymWQ2ycBoZ6Gg0g=
+
+Name: assets/res/upgrade/component_h.png
+SHA1-Digest: iWEG/ZbCHv0SzLWK8aT7JSRqbek=
+
+Name: assets/res/monster_icon/monster109.png
+SHA1-Digest: lxeVG7QLFU4pxx29jPR5jNBcBD0=
+
+Name: assets/res/buddha_icon/buddha25.png
+SHA1-Digest: CruQE7gI/AkdMGgZFH4Y6fpzD54=
+
+Name: assets/res/novice_guide/guide_summon1.csv
+SHA1-Digest: X3iChlzYLbWLhw/n884eKm/vzTE=
+
+Name: assets/src/cocos/cocos2d/DeprecatedCocos2dClass.lua
+SHA1-Digest: n/qbiBhef5NbJoWNtrTlXlaqBz4=
+
+Name: assets/res/armature/heixiong/heixiong0.plist
+SHA1-Digest: eYG+S2NTloVNqQEAwXza1NVvRgg=
+
+Name: assets/res/upgrade/tower/small_tower2.png
+SHA1-Digest: YXscdh3pbaw8Z+yAv/6asvgr5ms=
+
+Name: assets/res/alert_exp/pic4.png
+SHA1-Digest: tBY9Hj1MQZayehLZ6xK8foULt1Y=
+
+Name: assets/res/armature/xiaoshaseng/xiaoshaseng.csb
+SHA1-Digest: HG6bZqUweJ0pvJVg73e32RSvm8o=
+
+Name: assets/res/alert_exp/item_bg.png
+SHA1-Digest: szKSOHHTkHqfQsxYF2GxU7t7vyI=
+
+Name: assets/res/monster_icon/monster115.png
+SHA1-Digest: Q7BFacN7VRyIYsQ+Rqp84QKu7cA=
+
+Name: assets/res/monster/monster101.png
+SHA1-Digest: eqnB7Uj76jxD6qLO52zE5MKGOsE=
+
+Name: assets/res/sign/tips.png
+SHA1-Digest: JD6GrJ3W4WrvQcd9GZTaIr5DMdM=
+
+Name: assets/res/armature/xiaotuzha/xiaotuzha0.plist
+SHA1-Digest: LDup1j3FuTQsUm6RiFxND4IV+FU=
+
+Name: assets/res/shop/buy_selected_special.png
+SHA1-Digest: yP5hIjZUrejmFMbLJwv0DNrn7aA=
+
+Name: assets/src/framework/cc/utils/ByteArray.lua
+SHA1-Digest: TyqIybitUGUjhekTc6nb9byiy+c=
+
+Name: assets/res/trial/gray_icon.png
+SHA1-Digest: xnsex1H//a21eljsOQsp3b3w1po=
+
+Name: assets/res/upgrade/tang/tang2.png
+SHA1-Digest: FC1z7gwTqpVoJWcv+VSvpNX8jMQ=
+
+Name: assets/res/armature/qingdaofu/qingdaofu0.plist
+SHA1-Digest: Jr951zLJY/WxRlPn6ELcAtrZNpY=
+
+Name: assets/src/framework/cocos2dx/Event.lua
+SHA1-Digest: FhM4lJvGj+1L7GbGM16M+Fvdlbc=
+
+Name: assets/res/sounds/comic/sound_comic61.ogg
+SHA1-Digest: IXaO1TX7ViLg5t4owDVivfh3P1s=
+
+Name: assets/res/treasure/alert/piece2.png
+SHA1-Digest: zqfY7dNOPSPe831f3GmKrYenu3k=
+
+Name: assets/res/tasks/achievement/achievement5_h.png
+SHA1-Digest: wMSWM2DyDnLBaXkJCO71ov1JRfI=
+
+Name: assets/res/upgrade/tang/small_tang3_h.png
+SHA1-Digest: hreTY7SPfOew6ZZEGRt6AmQJzRc=
+
+Name: assets/res/opening_comic/comic4/comic44.png
+SHA1-Digest: nHB5kkdpdLlOcz3g/LfEls8XCiI=
+
+Name: assets/res/item/name4.png
+SHA1-Digest: iqOCLCYY7Uq7jT7Qwk2xT3juYZE=
+
+Name: assets/res/opening_comic/comic4/comic49_tip.png
+SHA1-Digest: acIs9OtENVhXNExP7E+ihCjCaYo=
+
+Name: assets/res/trial/fight.png
+SHA1-Digest: /N+rQdnle4YjZsp1CjSufKfCcmU=
+
+Name: assets/res/armature/taierzhenren/taierzhenren0.plist
+SHA1-Digest: noxdWF22h+LqS7pXy69s97LnOqs=
+
+Name: assets/res/sounds/attack_buddha24.ogg
+SHA1-Digest: 5gY34g+HhVtV8wkwNRUlPaijV3I=
+
+Name: assets/res/sounds/bgm_new_fellow.ogg
+SHA1-Digest: HKV4qptfk6dqbEi/Ahz9mnNEtpY=
+
+Name: assets/res/spin/last.png
+SHA1-Digest: HU39vUoY/whxtlP0fB/nzkLYJ7E=
+
+Name: assets/res/animation/kaibaoxiang.png
+SHA1-Digest: B9PBBIaa7cwTNfe/WkliYaZo10E=
+
+Name: assets/res/treasure/treasure3_pic.png
+SHA1-Digest: 1X5KHe0zL1xLHhuCHccvaL7b9cA=
+
+Name: assets/res/buddha/buddha29.png
+SHA1-Digest: /cA54cwC6PFulbAHuvviZN/IZuE=
+
+Name: assets/res/armature/daleizhenzi/daleizhenzi0.png
+SHA1-Digest: 7YJhfNpwtbPO58LMbrLYUZAz4xM=
+
+Name: assets/res/armature/fennutudigong/fennutudigong0.png
+SHA1-Digest: 1ppvOYwc/udrKv6ed0p5uM388kE=
+
+Name: assets/res/tasks/stage/bg_frame.png
+SHA1-Digest: mKgK3M/B7aOrX/rS1oZj2cpBJBw=
+
+Name: assets/res/sounds/comic/sound_comic48.ogg
+SHA1-Digest: 8O7RxPdiTgtvXkL+ulLHlXtGgew=
+
+Name: assets/res/animation/shengli_zouguang.plist
+SHA1-Digest: 6DY0KglySLshrnPdHdziNmkiUHE=
+
+Name: assets/res/buddha_icon/buddha107.png
+SHA1-Digest: CW683MoTW6EFnVcfHi9q+DMN/N8=
+
+Name: assets/res/armature/change/change.csb
+SHA1-Digest: e5V26R5nWiBKJUvWZrQglytiPqQ=
+
+Name: assets/res/armature/muma/muma.csb
+SHA1-Digest: Up3tEPxB9cu6JsdYzw3zJhq51sY=
+
+Name: assets/res/gamescene/wood.png
+SHA1-Digest: cbyCw5SuMW/4XL6xLlpFFp/+gU4=
+
+Name: assets/res/win_or_lose/to_upgrade1.png
+SHA1-Digest: YDERWPnbIDMpzAzbPnxmEDj8xMg=
+
+Name: assets/res/activity_stage/currency_pic1.png
+SHA1-Digest: 3q1PbV6ihnBB7z9bfz2eP8xozHM=
+
+Name: assets/res/monster/monster12.png
+SHA1-Digest: DNfWten/97yfoRI58xvpxOsNmfA=
+
+Name: assets/res/armature/tower_armature2/tower_armature2.csb
+SHA1-Digest: TSmeV5Db4q90z9FS6Xvwu9UEcEo=
+
+Name: assets/res/summon_scene/honghe_tx.png
+SHA1-Digest: RyzqYb9y8TmBrImJtDmIrh9lvSs=
+
+Name: assets/res/common_ui/skip.png
+SHA1-Digest: d+Qm0rrrV4tsFYPKHIszF4IBTh8=
+
+Name: assets/res/gamescene/bg9.png
+SHA1-Digest: 8VQ7zj0Di8SPevn9Xbcg7jBCOAo=
+
+Name: classes.dex
+SHA1-Digest: flz0qK+QhUZ+1H15DmIWftYTaj4=
+
+Name: assets/res/gamescene/bg_c1.png
+SHA1-Digest: 2A8zVhfnBS+fzM1blvulb9qR/c0=
+
+Name: assets/res/chapter/notice1.png
+SHA1-Digest: ZKKKxTuxyJbzuMHjIXlnDvtCHaQ=
+
+Name: assets/res/shop/exp_pic.png
+SHA1-Digest: m/OS864cyo6Orw9QnrTZU4/PQN4=
+
+Name: assets/res/summon_scene/cost_lb1.png
+SHA1-Digest: H16AtBI59uFPjhpW5zn3sC/H/2U=
+
+Name: assets/res/win_or_lose/sweep_lb.png
+SHA1-Digest: 19SRugA0/a+vOgBMBGYx8+T56Ig=
+
+Name: assets/res/opening_comic/comic1/comic12.png
+SHA1-Digest: 1gcP/o9mzMjHJT1YnVn9Fh9OMLA=
+
+Name: assets/res/opening_comic/comic6/comic64_tx.png
+SHA1-Digest: P/JIeHjq7H/ygS4HHjOWgxRbQNk=
+
+Name: assets/res/opening_comic/comic3/tip3.png
+SHA1-Digest: gIyXLnDB29K/XCmWKLQ/36/CQ8E=
+
+Name: assets/res/gamescene/upgrade_spirit.png
+SHA1-Digest: v7kGSiH3Lc1xMd3fO3lEkhylGYQ=
+
+Name: assets/res/server_maintain/next_msg.png
+SHA1-Digest: IG7+t1cAKZJ5LudMYzR9y0iLftc=
+
+Name: assets/src/anysdkConst.lua
+SHA1-Digest: UNjykDRjtWt/iSO5Yk4VJp8KiqI=
+
+Name: assets/res/chart/rule1.png
+SHA1-Digest: QNygrVYde1XxxSL69F+tTKxiNTY=
+
+Name: assets/res/armature/taiyizhenren/taiyizhenren0.png
+SHA1-Digest: HWuBIs63cyLrVONk4uU1zltZRTw=
+
+Name: assets/res/gamescene/tower_enemy_3.png
+SHA1-Digest: ZsFzTjuBuzhBZm38mJxpzqZeB5c=
+
+Name: assets/res/upgrade/tower/small_tower3_h.png
+SHA1-Digest: noTnEQCL6ZkJPdH8k0VXAmCxd/M=
+
+Name: assets/res/sounds/attack_buddha87.ogg
+SHA1-Digest: orfH+CT8rSzoMSiwO5Ipm47IXIs=
+
+Name: assets/res/buddha_icon/buddha1.png
+SHA1-Digest: AeJuSnPylQFICVsvGQ3WB4EhdEA=
+
+Name: assets/res/shop/gift2.png
+SHA1-Digest: T4ARJn05CBRgkgsC/N+mhZV01y8=
+
+Name: assets/res/upgrade/details1.png
+SHA1-Digest: uRb2Fv/HXvUbciV08X5Vpx7Ovds=
+
+Name: assets/res/chart/3.png
+SHA1-Digest: VzXsxnxHiXyjofOGqvXuLvBbh2I=
+
+Name: assets/res/buddha/buddha80.png
+SHA1-Digest: DxQOLTojA12x7rs3VzXe2KVhEVE=
+
+Name: assets/ucgamesdk/ui/common/conf/widgetconf/phoneLogin.json
+SHA1-Digest: T+YpxxErbG1UDXlBnM0aO/FLBF8=
+
+Name: assets/res/gamescene/wand_light2.png
+SHA1-Digest: PlRC5t2xUIsp0Vjehxm+r4Dvn+8=
+
+Name: assets/res/item/frame.png
+SHA1-Digest: NpYxpPOHyy9wTsv7hYhiHz+KiQk=
+
+Name: assets/res/shop/buy_normal_special.png
+SHA1-Digest: uAI3BodO7P52RP5JpUinUMQhCOg=
+
+Name: assets/res/shop/shopkuang.png
+SHA1-Digest: amckXFyJSM4tqngpdGB7aqmIt2A=
+
+Name: assets/res/login_scene/server_frame.png
+SHA1-Digest: S2q4aUDP4b59iPD8pSsL8ubbxsI=
+
+Name: assets/res/item/item1_big.png
+SHA1-Digest: M0vR9Orcg5ZiVM6RjEYu0sjKhWo=
+
+Name: assets/res/login_scene/warning.png
+SHA1-Digest: KQS9UcQgjwwz0jMKchJzhQjQy80=
+
+Name: assets/res/treasure/treasure_label1.png
+SHA1-Digest: GpS9w4puOfVv3dLmy8ZzJKWtqaM=
+
+Name: assets/res/win_or_lose/win_pic.png
+SHA1-Digest: neJ8PfYILzxeNA54ZyjD8Jyc+3A=
+
+Name: assets/res/upgrade/exp.png
+SHA1-Digest: ZiRbBaeLN7z/JqsdKoW2g1aroMI=
+
+Name: assets/res/fonts/red_0.png
+SHA1-Digest: eRVmZOlCWIE3LjzJk2Fi2QQzM/E=
+
+Name: assets/res/propery_icon/energy_increase.png
+SHA1-Digest: IxkTGzNV9cDm5Z1oyXU0AvgJPPc=
+
+Name: assets/res/buddha/buddha93.png
+SHA1-Digest: NfeF4ALuNmmndfv0m3dSHxqVZgM=
+
+Name: assets/src/framework/init.lua
+SHA1-Digest: 31WziMGQgPA9QnvtlgnXReD+eUw=
+
+Name: assets/res/item/red_point1.png
+SHA1-Digest: PiZfTau4bbRT5+fHkgawXs3mQiM=
+
+Name: assets/res/shop/saodang.png
+SHA1-Digest: HsyVFXepb08Jpi/7ebt0shDV2c0=
+
+Name: assets/res/tasks/stage/get_award1.png
+SHA1-Digest: DuqK1aM4W2jjIYooq+EgtR7uC84=
+
+Name: assets/src/cocos/cocosbuilder/CCBReaderLoad.lua
+SHA1-Digest: D0bk3Zl1zm/+Pb3Jh94EQdh6vqQ=
+
+Name: assets/res/monster/monster17.png
+SHA1-Digest: B+5/yFMavao7eSWzPreCxwX5G6Q=
+
+Name: assets/res/spin/gain.png
+SHA1-Digest: X/0X6/3EuBxng6wdrpdMcGUR6iY=
+
+Name: assets/res/monster_tower/4/bg.png
+SHA1-Digest: 1JEQ/VP1mscXXObR33EvmA0ykBk=
+
+Name: assets/res/buddha_icon/buddha31.png
+SHA1-Digest: ob4AcS25FoTRWb6Zo1X8SG7MRYk=
+
+Name: assets/res/armature/dazhongkui/dazhongkui.csb
+SHA1-Digest: KV4bYdKvKsMnINTJjHvhyRqoer8=
+
+Name: assets/res/monster_piece_icon/quality3.png
+SHA1-Digest: umMaKR0ey8TUsBsSj0/oMtFlCCI=
+
+Name: assets/res/sign/bg_frame.png
+SHA1-Digest: t2OaMjLiZTonl9RhbwrNmd+xPXs=
+
+Name: assets/res/item/exchange.png
+SHA1-Digest: MP2wDCL3Q5T1RBPtvH/64mEw2nQ=
+
+Name: assets/res/buddha/buddha1.png
+SHA1-Digest: N0v6d2ibLbZ1rJjw9voBiEwYgAU=
+
+Name: assets/res/settings/sfx0.png
+SHA1-Digest: Syjz6EOpPnvY6miPbTdP6Pu/LgA=
+
+Name: assets/src/cocos/extension/DeprecatedExtensionEnum.lua
+SHA1-Digest: RgIviike/XKRvkaXHAhg9yczbMs=
+
+Name: assets/res/armature/tower_armature2/tower_armature20.plist
+SHA1-Digest: bXXJuNXrmTwGuncC8lI0lXlNyEY=
+
+Name: assets/res/monster_tower/10/bg.png
+SHA1-Digest: v09dbxQDdVqBXSqEDfxEM57JPRs=
+
+Name: assets/ucgamesdk/config/float_menu.json
+SHA1-Digest: IB9TxbuuZrz3jqRd8Kik2ZMk008=
+
+Name: assets/res/team/fight.png
+SHA1-Digest: AnREgQIumjQLlM1vH/T3MVausI0=
+
+Name: assets/res/armature/dadou/dadou.csb
+SHA1-Digest: 4Z46fTfpreLT0qvRSDQb2Ick0x4=
+
+Name: assets/res/sounds/attack_monster24.ogg
+SHA1-Digest: 6+493vKeomzDRlAyV9mtzpiKE0k=
+
+Name: assets/src/framework/cc/ui/UISlider.lua
+SHA1-Digest: mu9v6mP1MAm1ZBoZ9gzsWPFAJ9A=
+
+Name: assets/res/sounds/comic/sound_comic5.ogg
+SHA1-Digest: 8Gf4mOiVX1CeNZ9hObEolMM46S0=
+
+Name: assets/res/opening_comic/comic4/comic410_tx.png
+SHA1-Digest: 3q9HBm8YM5kCxGlYMagAKzs1tGA=
+
+Name: assets/res/shop/exp_mall_h.png
+SHA1-Digest: 5SBGJgHkuVG+ooPqU0BfpcbHlv0=
+
+Name: assets/res/gamescene/bg_sky_d1.jpg
+SHA1-Digest: jnJthbgdrftdluhol7EVg8039Pw=
+
+Name: assets/res/sounds/sfx_niudan.ogg
+SHA1-Digest: YuzuJyEoxTVmTwz/RMjCjiMGAJw=
+
+Name: assets/res/new_fellow/title.png
+SHA1-Digest: b5VuwLW0oVhZNoffMnnMYSGZpTc=
+
+Name: assets/res/opening_comic/comic6/comic62.png
+SHA1-Digest: tSFYrpWJ373y1WXHztsBVLKmZL4=
+
+Name: assets/res/shop1/business_h.png
+SHA1-Digest: M1LGQqxEQfzuvd/+y8GJQbw3zpY=
+
+Name: assets/res/armature/dashaseng/dashaseng0.plist
+SHA1-Digest: Oun9doGLoJUgP84/4m6dfy27km0=
+
+Name: assets/res/chapter/survey.png
+SHA1-Digest: 84RDSj3KPSNKXVNZwloJfU+pwek=
+
+Name: assets/res/armature/xiaotianjiang/xiaotianjiang0.plist
+SHA1-Digest: /49xoZ8YHC76X3nLEANaPRG7IgM=
+
+Name: assets/res/login_scene/label_registered.png
+SHA1-Digest: wqgsebnnz1nYyYiyK5zRsqNoIwQ=
+
+Name: assets/res/buddha_icon/buddha17.png
+SHA1-Digest: Cjdr8qdQGy3mmZQdmlKwRmCgF3U=
+
+Name: assets/res/opening_comic/comic2/comic22_tx.png
+SHA1-Digest: PwkkblVDlxWf1M9PpOUof+p+gho=
+
+Name: assets/res/shop1/needpeach.png
+SHA1-Digest: 7XE5wcWwEgCT5HCRV++P8Hzp4qM=
+
+Name: assets/res/login_scene/server_selected.png
+SHA1-Digest: +4X5uQGh9sZ0QEfj84QdSfA+2b0=
+
+Name: assets/res/upgrade/component.png
+SHA1-Digest: jBL3UuP6nVFnb7Rdyuq0kvNvXik=
+
+Name: assets/res/treasure/treasure2_pic.png
+SHA1-Digest: fLczx/0mhUZsecH1Qt/NorB2OVg=
+
+Name: assets/res/dialogue/drama_tianjiang.csv
+SHA1-Digest: 89cixRhAkTsXsa4jQ5+9ETpe2uI=
+
+Name: assets/res/settings/bgm0.png
+SHA1-Digest: ROn0EXVUTgeSHoEq08kGL4uxyUg=
+
+Name: assets/res/fonts/bulefonts.fnt
+SHA1-Digest: irL0CXH7thO2kuiZx776Dsk9DcA=
+
+Name: assets/res/item/spirit.png
+SHA1-Digest: XB2yYO6PLyjH6kgqWrdhbWPFtoM=
+
+Name: assets/res/armature/change/change0.png
+SHA1-Digest: I0sU3oGZd5XX8Dwtjzn//5/BBxk=
+
+Name: assets/res/monster/monster106.png
+SHA1-Digest: eetK0hPJVCKM4z7/aLqy3lz7xA4=
+
+Name: assets/res/settings/label_bgm.png
+SHA1-Digest: FVHekE2HnlrNccE0ekSiX+lB7A4=
+
+Name: assets/res/treasure/treasure3_name.png
+SHA1-Digest: l1WEyN4bHgn8FidZypPpkNHJ2y4=
+
+Name: assets/res/shop1/75.png
+SHA1-Digest: es11GoEjwHptFdkxgPNTwbfogBM=
+
+Name: assets/ucgamesdk/config/operatorConfig.json
+SHA1-Digest: 42gqrjeIjoA+mt6Q8+X7cT9t+jo=
+
+Name: assets/res/treasure/piece_selected.png
+SHA1-Digest: Y7ma5Zo0+ixsIy7A9gyHv0+qrJk=
+
+Name: assets/res/treasure/icon2.png
+SHA1-Digest: fl1XvoO5zRqbGTGNAw/7So0qMo4=
+
+Name: assets/res/game_infinite/float.png
+SHA1-Digest: xj8pl6j2Ba5B80MyUIm3vEbxgz4=
+
+Name: assets/res/fonts/whiteNum_0.png
+SHA1-Digest: 6m+ZYlQxkU1V1blWBHrMD/Glpcs=
+
+Name: assets/ucgamesdk/images/loadcancel.png
+SHA1-Digest: hh2wFK19HzJeqnHmEUs+xpRxUXc=
+
+Name: assets/res/armature/xiaotianjiang/xiaotianjiang0.png
+SHA1-Digest: Qe3a7ZdcZheiBGsJNw3Hwih6Yn8=
+
+Name: assets/res/monster_tower/8/back.png
+SHA1-Digest: OKgsfuty01BK7pSaZjwMUIc0dxc=
+
+Name: assets/res/buddha/buddha71.png
+SHA1-Digest: 4lc0LqYShpbjLxWYxlEO5+a5IyQ=
+
+Name: assets/res/gamescene/bg_middle10.png
+SHA1-Digest: hVp3pgRu2WIbdeqCGGG3BorcnuU=
+
+Name: assets/res/survey/close.png
+SHA1-Digest: iKRotjfO2W5UjazIO5NCqRvRkDE=
+
+Name: assets/res/buddha_icon/buddha21.png
+SHA1-Digest: NivVKnvaoG1PygIAFpKjSlXUREY=
+
+Name: assets/res/sounds/attack_monster21.ogg
+SHA1-Digest: JMLDu+wEKJ9Z5t6vzrSpuK+rPxA=
+
+Name: assets/res/buddha_icon/buddha28.png
+SHA1-Digest: L7NGSIBlm8nzGDDvB/XfolQ/j4Y=
+
+Name: assets/res/armature/xiaojulingshen/xiaojulingshen.csb
+SHA1-Digest: lWEG3nw8aVM//ytcki9ttBlcIgM=
+
+Name: assets/res/item/item4_pic.png
+SHA1-Digest: /vWNuuaVBSjxMTALAzXJU4zb4Bk=
+
+Name: assets/res/sounds/bgm_theme_night.ogg
+SHA1-Digest: 84q9w1zY3ivu47TbbElhS88libA=
+
+Name: assets/res/opening_comic/comic4/comic48_tx.png
+SHA1-Digest: 5iZYX+E2cK48JPZcD79ZvpAmlcQ=
+
+Name: assets/res/win_or_lose/relive_bg.png
+SHA1-Digest: czuc1oQRB9spyn4cuf0sORdsqJ8=
+
+Name: assets/res/sounds/sfx_flash_exploed_bak.ogg
+SHA1-Digest: xCUVd4FrGcVNsjUmrOXYEBPLngo=
+
+Name: assets/ucgamesdk/ui/common/conf/tipsClose.png
+SHA1-Digest: 7rD2u5inhBrzlNWG4uHdzLARphw=
+
+Name: assets/res/recharge/box_peach.png
+SHA1-Digest: EGRNeOqaO0DZVX1abe66l0TA+kc=
+
+Name: assets/res/sounds/comic/sound_comic62_haojiao.ogg
+SHA1-Digest: HqJ/1R9t9yOR/2x2oxIUNS/8Fto=
+
+Name: assets/src/framework/platform/ios.lua
+SHA1-Digest: GP53MHWv7Jw1vqjZGy+x1LWZVhw=
+
+Name: assets/res/gamescenegroove/frame2.png
+SHA1-Digest: FeX01asxNbPILiPO8ZamxHNzL0o=
+
+Name: assets/res/server_maintain/last_msg1.png
+SHA1-Digest: P6uVUKWLDnxIljbDm6ou04V8tVc=
+
+Name: assets/res/opening_comic/tip2.png
+SHA1-Digest: F2ta/fw/hFB/OYN5xSv79FbBBw4=
+
+Name: assets/res/login_scene/registered2.png
+SHA1-Digest: 79yu1ft2BK9QaQ0HW70Hfot0q44=
+
+Name: assets/res/monster_piece_icon/quality1.png
+SHA1-Digest: pu8lDbgueqFFdkqic+D4h3xTjdc=
+
+Name: assets/res/item/item_sun_halo.png
+SHA1-Digest: 0KKNAkMRMz1thZkZMckgL4vMprA=
+
+Name: assets/res/novice_guide/guide_stage0_3.csv
+SHA1-Digest: fLc9LQ+q9hPYJ5qkBv27Htw0vi0=
+
+Name: assets/res/animation/mirrfire.plist
+SHA1-Digest: erghnLcxDYXEivBocXQBW8w/3Go=
+
+Name: assets/res/monster/monster105.png
+SHA1-Digest: jHGQLylu27CuEeuVbQGZoMahlZ8=
+
+Name: assets/res/monster_icon/monster24.png
+SHA1-Digest: lQizHOxuEj1WvHG3INzi0BfRtu0=
+
+Name: assets/res/monster_icon/monster2.png
+SHA1-Digest: 0phIm5YL1iKevA698YQN9BXjqTA=
+
+Name: assets/res/item/item_name_4.png
+SHA1-Digest: A7Y1FDI6HqBai+t6ma/gPp+KBdU=
+
+Name: assets/res/opening_comic/comic1/comic13.png
+SHA1-Digest: DaSHY7PmarNc0awuO+Mq54qHK6w=
+
+Name: assets/res/gamescene/box1.png
+SHA1-Digest: kODMbrF1mrKkAIwfWPNJPGh0kps=
+
+Name: assets/res/loading/bg1.png
+SHA1-Digest: cUppHvbTEAyUpZ0aFwJlAVBprts=
+
+Name: assets/res/buddha/buddha108.png
+SHA1-Digest: 6psdX3ySztd0mN4ccNCKsrlbWvQ=
+
+Name: assets/res/opening_comic/comic6/comic63.png
+SHA1-Digest: 3iKkh1C7O7b/bXpH0O8JP0BoCco=
+
+Name: assets/res/update/bar_bg.png
+SHA1-Digest: MogMpPliJbRjSFsR31ns3G9QU/8=
+
+Name: assets/res/sounds/attack_buddhawg.ogg
+SHA1-Digest: yye0PDW9Z3frLmbLdDhV/T4JFrQ=
+
+Name: assets/res/gamescene/lose.png
+SHA1-Digest: ajZoQThw7tMEVe7vU3E3yxhgxkY=
+
+Name: assets/res/item/name3.png
+SHA1-Digest: kl+vSfdA6p8V8Ye09NX1TAgzpnk=
+
+Name: assets/res/treasure/treasure_label2.png
+SHA1-Digest: gQX22rYZepx7jSWB6I9HAxHlOzo=
+
+Name: assets/res/monster_tower/7/door.png
+SHA1-Digest: joxTddc/pdwCAIvqcykiYKOfdOw=
+
+Name: assets/res/wiki/frame_tp_s.png
+SHA1-Digest: /NEgHg12+DNAR0f/tck9AclJSto=
+
+Name: assets/res/shop/exp_mall.png
+SHA1-Digest: IgE5VgFLpig+dreF0XmAwhMm7zw=
+
+Name: assets/res/item/item6_big.png
+SHA1-Digest: rEmk5mply44uiS401PWoTZMDA90=
+
+Name: assets/res/treasure/treasure5_attrib_icon.png
+SHA1-Digest: LCuaHL9F6Wb1vR7dikuedI2mTC8=
+
+Name: assets/res/gamescene/quality_1.png
+SHA1-Digest: q7tRs35+KfcB8ssE3hDZvAFqEBg=
+
+Name: assets/res/buddha/buddha31.png
+SHA1-Digest: 4h46Quyj7134WiZ3pPP9rrTmeL0=
+
+Name: assets/res/monster/monster22.png
+SHA1-Digest: XXrDyZY3BCEr3x855NFUdSiiJRk=
+
+Name: assets/res/armature/hunshimowang/hunshimowang0.png
+SHA1-Digest: 4HefjEbzZKb+CpJ0jLFMAUjt6po=
+
+Name: assets/res/settings/wiki1.png
+SHA1-Digest: DD3wU46QE+hfoOKCvTSSVmSKdYg=
+
+Name: assets/res/gamescene/bg2.png
+SHA1-Digest: e3cotGIAV2emWTjoHe5wq6zpZBg=
+
+Name: assets/res/sounds/comic/sound_comic3.ogg
+SHA1-Digest: WH35xoFPrMU4fNWB68Y5a1Tg1vg=
+
+Name: assets/res/common_ui/window_bg.png
+SHA1-Digest: ZE7sryIQ1gtp6piL/DyiuddPF0I=
+
+Name: assets/res/buddha_tag/5.png
+SHA1-Digest: y3ixWkQw3cUsGCI1wUbvjFeLWzk=
+
+Name: assets/res/animation/jiangli.plist
+SHA1-Digest: UatJveq5cSoa2bO50T7JUZyGILc=
+
+Name: assets/res/recharge/title.png
+SHA1-Digest: e0iLliMMOSC/vauxz18L9GZxaj8=
+
+Name: assets/ucgamesdk/config/sdk_info.txt
+SHA1-Digest: bLED/YAh/BH5go3c3WeaOfa0AbQ=
+
+Name: assets/res/tasks/table_bg.png
+SHA1-Digest: LHbFngktoCWrX5jalvc5asA+Iz4=
+
+Name: assets/res/buddha/buddha92.png
+SHA1-Digest: E9EWV0mAuKo6n3lTqgW9qNfXBOQ=
+
+Name: assets/res/armature/qiangdao/qiangdao0.png
+SHA1-Digest: fCAx7Dl0ZF2h1tK8bSPwqDyerMI=
+
+Name: assets/res/item/item_name_3.png
+SHA1-Digest: b4Wn9iZJTSJZKuETHdbqW5v/Wdg=
+
+Name: assets/res/opening_comic/comic4/comic48_tip.png
+SHA1-Digest: rwJ9yABX/Vb3jKYh/obaf0AVCN8=
+
+Name: assets/src/framework/cc/utils/init.lua
+SHA1-Digest: ZgU2V0HcvjPMuNm7XaqUvQpdbMg=
+
+Name: assets/res/team/assessment.png
+SHA1-Digest: tJLHy8wydrVMVWzzFeWoTIARm9I=
+
+Name: assets/res/stage/sweep_pic.png
+SHA1-Digest: Agmj6wxb3rINOaUkV2ZqZTLchfI=
+
+Name: assets/res/upgrade/wand/small_wand3.png
+SHA1-Digest: /JFM097co7QYAJXm3qP6v09LvlU=
+
+Name: assets/ucgamesdk/ui/TY_7.patch
+SHA1-Digest: s6tY1z/udYDr4o7AXydHa1lBk0Y=
+
+Name: res/drawable-mdpi/icon.png
+SHA1-Digest: yucvCpXrB5XD2r4yoILj0u0GPOY=
+
+Name: assets/res/buddha/buddha30.png
+SHA1-Digest: d7keljr40Kjf2pUYfdsF+a07kdY=
+
+Name: assets/res/common_ui/back_h.png
+SHA1-Digest: OCuIz6nrzYXJiLhkbh6ZHFH94nA=
+
+Name: assets/res/treasure/treasure6_attrib_icon.png
+SHA1-Digest: dfSLG29PeMW2Z9nNilDm83tAXAo=
+
+Name: assets/res/armature/jiuwei/jiuwei.csb
+SHA1-Digest: +SFAEE6Bicz6o07CKpxGSni0OF4=
+
+Name: assets/res/monster/monster2.png
+SHA1-Digest: qP3UPIf274OtR1Y/MxY11G+Gt3s=
+
+Name: assets/res/monster/monster20.png
+SHA1-Digest: 5jNHa9UBhJyyIb9ZXdY/J7VZ+oM=
+
+Name: assets/src/framework/cc/sdk/Store.lua
+SHA1-Digest: ETlNuLKJmUnIKuWAnXQvePxAZT8=
+
+Name: assets/res/loading/shaseng.png
+SHA1-Digest: z2UK+VbWZ1fDNp/P7adKI+nSTsI=
+
+Name: assets/res/recharge/pile_peach.png
+SHA1-Digest: j/C2ixP4MCduZNIwiJtOiL/yAJ0=
+
+Name: assets/res/tasks/progress_bar2.png
+SHA1-Digest: /yo9FAB84Qu73kHt7T5Gl1Xz+GY=
+
+Name: assets/res/buddha/buddha69.png
+SHA1-Digest: A3qhGz2hJ7BePvQ7JJBu88X051w=
+
+Name: assets/res/game_infinite/pedestal1.png
+SHA1-Digest: VKDD7eUBfURXjcdpqMYovl1YAXo=
+
+Name: assets/res/upgrade/zhaohuan2.png
+SHA1-Digest: jgaUOg558jV8nHm1r4f/aW5MT1U=
+
+Name: assets/res/gamescene/bg_middle_c1.png
+SHA1-Digest: /J7d4nIYAPWzmKPNHyOs8tNS3Jw=
+
+Name: assets/res/animation/jiangli.png
+SHA1-Digest: oIo/yRzvtrq58X+096/Qwu8oAac=
+
+Name: assets/res/animation/shandiantexiao3/shandiantexiao3.csb
+SHA1-Digest: b8SFq+rh56SHyvTvTxfEtgoJ1/U=
+
+Name: assets/res/armature/xiaoleizhendan/xiaoleizhendan0.plist
+SHA1-Digest: VO8m1jxgcWuPoPNUyIUaMYA5Qag=
+
+Name: assets/res/monster_icon/monster52.png
+SHA1-Digest: 0DvCzEctnG9FqoyGPeAVsk341us=
+
+Name: assets/res/buddha_icon/buddha69.png
+SHA1-Digest: nAr8GG+EDoWqcOeNmDsz2xX9qpw=
+
+Name: assets/res/spin/start_h.png
+SHA1-Digest: s+/LfGRYHdMUJ1f79k9dNa3bwkk=
+
+Name: assets/res/opening_comic/comic6/comic65_tx.png
+SHA1-Digest: beDjF3uNJ3ULD1Y+EJQCMpipqco=
+
+Name: assets/res/armature/datianjiang/datianjiang0.plist
+SHA1-Digest: I22AHuocjfNyCgyC+ddId7IKXzo=
+
+Name: assets/res/item/shield.png
+SHA1-Digest: cXZbVXHilb0nO8e8e/U6usXxK6U=
+
+Name: assets/res/monster/monster15.png
+SHA1-Digest: 5DPNMh+zqV+aC8H9iiBGTCu1j7A=
+
+Name: assets/res/buddha_icon/buddha3.png
+SHA1-Digest: j9FXc5uGUDOOai0KDhn8RIpBmBI=
+
+Name: assets/res/monster_icon/monster14.png
+SHA1-Digest: f9UetkGHHc9m9N939dS/nBo0usA=
+
+Name: assets/res/chapter/stage_icon6.png
+SHA1-Digest: 5rMVkxcL4n3mMc+S1UqbV9dcbdM=
+
+Name: assets/res/common_ui/close_h.png
+SHA1-Digest: lC7jbcUrb6u1Zfg0InwfqfwysUY=
+
+Name: assets/res/animation/shanxian.plist
+SHA1-Digest: Hd23JrcOTm7wMmKjyc/kqLd/+cU=
+
+Name: assets/res/win_or_lose/first_sweep.png
+SHA1-Digest: PbKSW+rfm2b1mkRDOSkYthZAjZg=
+
+Name: assets/res/armature/xiaozhongkui/xiaozhongkui0.plist
+SHA1-Digest: oF+yj63fj/5nEN/S3Wv1iQYhw5c=
+
+Name: assets/res/monster_piece_icon/piece5.png
+SHA1-Digest: qa+NXG/rQ0NRRewmnP3rSXXYvsk=
+
+Name: assets/res/summon_scene/huanghe_tx.png
+SHA1-Digest: cAyQE6H+P4Zq1dCg3FyZ4FZjJd4=
+
+Name: assets/res/activity_stage/btn_exchange1.png
+SHA1-Digest: Fxy1cPvr6XXyrhKZ7l8GWj3pxBc=
+
+Name: assets/res/animation/shandiantexiao3/shandiantexiao30.plist
+SHA1-Digest: 3ZnZpP7VDunYvyJb3p5B/n9mPFA=
+
+Name: assets/res/login_scene/server_item.png
+SHA1-Digest: DcUzRkM/4uYS7TFgQ9FlmMaY5yQ=
+
+Name: assets/res/shop/soldout.png
+SHA1-Digest: epG8Pyz8VEwQru5bipDoLTA9Fmc=
+
+Name: assets/res/opening_comic/comic4/comic41_tx.plist
+SHA1-Digest: ReV2xJgRggHQg3dHKZXILsT4FvE=
+
+Name: assets/src/channelConfig.lua
+SHA1-Digest: A7SnZqymVyYDXFyGdHml7ijzlNY=
+
+Name: assets/res/treasure/treasure3_attrib_des.png
+SHA1-Digest: wFcW2B1YNAGK7YoGRxmIG+hfgrA=
+
+Name: assets/res/gamescene/tower_enemy_1.png
+SHA1-Digest: /5S3Hj8CQR+F70uff0muBQi6qm4=
+
+Name: assets/res/chapter/stage_icon3.png
+SHA1-Digest: xQtPwbhtsU/9yzptkMMaOGKFduE=
+
+Name: assets/res/new_fellow/ground.png
+SHA1-Digest: aL2Aw6LB1u05rKniUg8Qv9lDhOw=
+
+Name: assets/res/tasks/progress_bar11.png
+SHA1-Digest: evEY5s83xRFafWjqjCTUKkAhNjc=
+
+Name: assets/src/framework/cc/mvc/ModelBase.lua
+SHA1-Digest: yKPv/wDEhD9C+wkj7xK3vHjb9FY=
+
+Name: assets/res/armature/xiaobajie/xiaobajie0.plist
+SHA1-Digest: joeX/3NFC7WA7pyCMC4NhaVbGb4=
+
+Name: assets/res/opening_comic/comic4/comic45_tx.png
+SHA1-Digest: 17mwi9K8Hpon5KKUnMrZaGLBiAk=
+
+Name: assets/res/treasure/treasure1_name.png
+SHA1-Digest: 5pezH3fwYr/25N6EYkd84F1+PI4=
+
+Name: assets/res/buddha_icon/buddha15.png
+SHA1-Digest: pcLDAt+i7u0B5JHRi3DOWTLmP8s=
+
+Name: assets/res/animation/difangsiwangyan.png
+SHA1-Digest: JWNND+nmPlGhrwvEkQtbS3L8AE8=
+
+Name: assets/res/activity_stage/icon1.png
+SHA1-Digest: CE58zlTki2fKNrkLU2TFKL6gZL4=
+
+Name: assets/res/opening_comic/comic4/comic410_tip.png
+SHA1-Digest: J4k+FuW3Z/eDIi8M4AyOUaapWEI=
+
+Name: assets/res/treasure/icon1.png
+SHA1-Digest: nnChAif7ipU2q6yDgNhxfg83q70=
+
+Name: assets/res/buddha_icon/buddha72.png
+SHA1-Digest: cBkJQP8HL6nhj3SvzuM5nrCD318=
+
+Name: assets/res/item/item_pic2.png
+SHA1-Digest: v+G888sUOKPr6G6nr/nSws2J+o8=
+
+Name: assets/res/treasure/icon3.png
+SHA1-Digest: gtVPNpHecXGHI7y2siRjZ80n1aw=
+
+Name: assets/res/stage/start_selected.png
+SHA1-Digest: o09MpyHNWQMGWOgT7nFFTUThYRQ=
+
+Name: assets/res/animation/shandiantexiao3/shandiantexiaocon3.png
+SHA1-Digest: B7RxtXfymb60qJ2lOX+kmeFRZf0=
+
+Name: assets/res/team/fightbg.png
+SHA1-Digest: WAeYKT9N5inI92BKzPPLFYAYU84=
+
+Name: assets/res/gamescene/bg_middle_d3.png
+SHA1-Digest: /J7d4nIYAPWzmKPNHyOs8tNS3Jw=
+
+Name: assets/res/armature/benbo/benbo0.plist
+SHA1-Digest: VVT/1UG9kzjPBGR4fYKZ6Svu2p0=
+
+Name: assets/res/common_ui/essence_bg.png
+SHA1-Digest: OSjkXeLCtj5ssEakqXDQb7+tF0k=
+
+Name: assets/res/common_ui/textbg.png
+SHA1-Digest: MhoHVeTZoK6qcjH8F5MCJFjBBu8=
+
+Name: assets/res/monster_piece_icon/piece9.png
+SHA1-Digest: 2DQ5I0GBfApCsTSiYFcpuFHLcic=
+
+Name: assets/src/cocos/cocos2d/DeprecatedOpenglEnum.lua
+SHA1-Digest: cSoEjyiYrGnYHL0FbIUAL0uxx1A=
+
+Name: assets/res/upgrade/essence.png
+SHA1-Digest: mwa6L0xXLBiC/JDmekNfqT3i9xo=
+
+Name: assets/res/team/fairframe.png
+SHA1-Digest: 9qUFrK+odoT7iXX97KMq7uDyrok=
+
+Name: assets/res/sounds/comic/sound_comic_bg.ogg
+SHA1-Digest: vBiNOUkmKhAOtUF3oT2ne+m+8uE=
+
+Name: assets/res/armature/tunvlang/tunvlang0.png
+SHA1-Digest: +AENjVWhTbeaPZcXc0afXoYXCHI=
+
+Name: assets/ucgamesdk/config/float_menu_params.json
+SHA1-Digest: jFKeZwl4JVOI0FSeHV54oqGxrvM=
+
+Name: assets/res/Diary/gray_odd.png
+SHA1-Digest: r/UA5/KrfpZZ8VqVu0WI/Enw1nA=
+
+Name: assets/res/propery_icon/length_tag.png
+SHA1-Digest: K7feCdyLgEg9nqjlFA/9EgFOCnc=
+
+Name: assets/res/sounds/attack_buddha88.ogg
+SHA1-Digest: /jGQjgb9h5EJj6Q4HV0b+F2HkjA=
+
+Name: assets/res/upgrade/maxlevel.png
+SHA1-Digest: px+R6r88zRKCe6h+KIESx6Vetdk=
+
+Name: assets/res/armature/baijingjing/baijingjing0.plist
+SHA1-Digest: jQFK+WN9ZBLWQqgD1sfqBDQS5NE=
+
+Name: assets/res/monster_tower/14/bg.png
+SHA1-Digest: dyDsh73Y0b0byrfhHq9jhrx9mxw=
+
+Name: assets/res/armature/jiuwei/jiuwei0.png
+SHA1-Digest: gmskHphgJZE1O/Lnsoe+pNUGTTk=
+
+Name: assets/res/gamescene/bg_sky9.jpg
+SHA1-Digest: 1GJf2idK7nF1w33cvRMW/KizTxE=
+
+Name: assets/res/monster/monster6.png
+SHA1-Digest: +6LzP3pYgmEuTy8NOIaCCpDL2JI=
+
+Name: assets/res/upgrade/tang/small_tang1.png
+SHA1-Digest: H42g3unVwzdN0S6OGm+xm9cwD3s=
+
+Name: assets/res/treasure/treasure7_pic.png
+SHA1-Digest: 2RNmREdU/lBskJh6FkWxNQZe4Ys=
+
+Name: assets/res/monster/monster51.png
+SHA1-Digest: yFGnZoaojY3EO1N1jWs4NH53yqo=
+
+Name: assets/res/armature/daqianliyan/daqianliyan0.png
+SHA1-Digest: amOAqwsTakZOfuVZ2Oh+ss0F8lE=
+
+Name: assets/res/buddha/buddha104.png
+SHA1-Digest: cUZKTEbUlE8PU1UmZ7hlAmxADO8=
+
+Name: assets/res/opening_comic/comic4/comic49.png
+SHA1-Digest: e8Dgg+lo32ELdPnve/htVqoLHF0=
+
+Name: assets/res/shop/exp2.png
+SHA1-Digest: WfsDvdWr9106HFSYgTGIRKZ0tyc=
+
+Name: assets/res/notice/2.png
+SHA1-Digest: mDReQume6JIhiNubThYCY4OYXsY=
+
+Name: assets/res/armature/datuzha/datuzha0.png
+SHA1-Digest: ZHqp54L29MKB9qwqnyQ0Io5yeaY=
+
+Name: assets/res/treasure/treasure1_attrib_des.png
+SHA1-Digest: a0luH/0yGvvq8o34HNdq+ooOrcs=
+
+Name: assets/res/armature/chimeiwangliang/chimeiwangliang0.plist
+SHA1-Digest: g2MM0a8hthBo7SERhzwAqjb9RV4=
+
+Name: assets/res/Diary/brown.png
+SHA1-Digest: GYej0Jye1z0e2HVLNNQpbsFVDPw=
+
+Name: assets/res/login_scene/lb_account.png
+SHA1-Digest: am+SnKVg5SAe9vYximgMnjWJdwk=
+
+Name: assets/res/fonts/battle_blue.fnt
+SHA1-Digest: N2mx1igMC/9i4uQczyEPUXv6rI0=
+
+Name: assets/res/armature/fennutudigong/fennutudigong.csb
+SHA1-Digest: zE8i8MH7yTgv9CRZFHeuocObuJQ=
+
+Name: assets/res/animation/baoji.plist
+SHA1-Digest: /rrT9yR5tUTmGIyDuEgfRnwOzFI=
+
+Name: assets/res/monster_piece_icon/piece8.png
+SHA1-Digest: YDP2cqnWSDce8dRHZixZbDdE8tc=
+
+Name: assets/res/win_or_lose/restart1.png
+SHA1-Digest: vS4cM0okJWFfrAI3Kx5gPDIEOfc=
+
+Name: assets/res/sounds/comic/sound_comic22.ogg
+SHA1-Digest: j3/+p4aUidQAVKcrk9FBmZGI3yQ=
+
+Name: assets/res/gamescene/purple.png
+SHA1-Digest: wj1e1q/rQN5o0jYtCy1nGDwG/Uk=
+
+Name: assets/res/armature/tower_armature3/tower_armature30.png
+SHA1-Digest: QU2WotT5n4V3QxSmrUphetDBQc4=
+
+Name: assets/res/buddha/buddha21.png
+SHA1-Digest: IUh53TnXLnU+yoXi/7aqLjY39LE=
+
+Name: assets/res/opening_comic/comic4/comic44_first.png
+SHA1-Digest: ZGeSrwx0PaitG88L60nK3RsBhaE=
+
+Name: assets/res/win_or_lose/exp.png
+SHA1-Digest: OVgKegoQr5zqe84SMGjXCOUnfHA=
+
+Name: assets/res/opening_comic/comic1/comic13_tip.png
+SHA1-Digest: wlfsJOxWQdfW2+gLPCHkzejHyh4=
+
+Name: assets/res/opening_comic/comic4/comic49_tx.png
+SHA1-Digest: kJK4m4kstr1oSYv+9AMyLD70n54=
+
+Name: assets/res/item/wanzifuxuanzhuan.png
+SHA1-Digest: JdihLFv9YA9+9PZlt0Gqn6nP7lc=
+
+Name: assets/res/treasure/goto3.png
+SHA1-Digest: 5I5ce8GkRmC823oBKavMHvpn+5E=
+
+Name: assets/res/stage/quality0.png
+SHA1-Digest: XtcPVIxf+GwXE54zOmiHVk8aqek=
+
+Name: assets/res/gamescene/bg_middle4.png
+SHA1-Digest: vhHZVYuzoKQCIrUH0QHcNYOu/xY=
+
+Name: assets/res/monster_icon/monster20.png
+SHA1-Digest: zQrmWUVpmfAg7PPOITpA1CWSgvc=
+
+Name: assets/res/opening_comic/comic5/comic51_tx.plist
+SHA1-Digest: /tkjPV1ysI5jicPW9GZNdax1SZ8=
+
+Name: assets/res/armature/qingniujing/qingniujing.csb
+SHA1-Digest: ri3uZfUCkQOlj3e4rp1f/+gKwE8=
+
+Name: assets/res/armature/jinyu/jinyu0.png
+SHA1-Digest: Ahx2g5LD+KhLbSTkFQhEtlbNfZk=
+
+Name: resources.arsc
+SHA1-Digest: FA/N4o8zgJC5KeBI4y9pcnVRgYg=
+
+Name: assets/ucgamesdk/config/statcost_filter.ini
+SHA1-Digest: 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+
+Name: assets/res/buddha_icon/buddha110.png
+SHA1-Digest: 0TUaDNWMGf/X6A+7KIHSFn28Y4s=
+
+Name: assets/res/animation/kaibaoxiang.plist
+SHA1-Digest: AhbEjTbFkmq2/nzuGqiuaKxraB8=
+
+Name: assets/res/recharge/recharge.png
+SHA1-Digest: 3AvWZocEZMPduv+yxKigGghURxs=
+
+Name: assets/res/upgrade/wand/wand3.png
+SHA1-Digest: RbIR0MtOfLVLCwdZYyZV/br66Q4=
+
+Name: assets/res/spin/1.png
+SHA1-Digest: rRoj8IlYs2Z2VHb66vGNKG07Pbs=
+
+Name: assets/res/summon_scene/btn_single.png
+SHA1-Digest: mtr8Wd0/RUBZRPCqloXKnrlBjzg=
+
+Name: assets/res/upgrade/tower/tower2.png
+SHA1-Digest: +rNsxQdrVg7ssgdDfORJ14XoeNY=
+
+Name: assets/res/spin/label.png
+SHA1-Digest: nQ/R1BNVDAik5jAGG39WwSdmdT0=
+
+Name: assets/ucgamesdk/images/uc_arrowbottom.png
+SHA1-Digest: LJkByrio+0rw3WYqrfPr/v8va8M=
+
+Name: assets/res/armature/xiaotuzha/xiaotuzha.csb
+SHA1-Digest: EKLAHkoya3sMO6JvfggG48igx0Q=
+
+Name: assets/ucgamesdk/ui/common/conf/widgetconf/exDialog.json
+SHA1-Digest: gq3+xfJkGas/5+2SDeLAdmiyYdY=
+
+Name: assets/res/common_ui/back.png
+SHA1-Digest: lG30VjI2ZHg15scuHHzP0F2URaM=
+
+Name: assets/res/sounds/comic/sound_comic11.ogg
+SHA1-Digest: ydiSGVWc3EjjT8UFWYs1eqg8aok=
+
+Name: assets/src/framework/crypto.lua
+SHA1-Digest: TUNhZmg9yW3SjT8a3IJNpZbrjhY=
+
+Name: assets/res/armature/maodaoren/maodaoren0.plist
+SHA1-Digest: g/DicHEpeXBaHZpxkxgUrJlDaiY=
+
+Name: assets/res/chapter/survey1.png
+SHA1-Digest: sFEeh0WlQkk1bH4ovNCrs+WQSjU=
+
+Name: assets/res/login_scene/login_qq1.png
+SHA1-Digest: NfQSHtasorkDfQakg6Pga+mfvQs=
+
+Name: assets/res/animation/game_win/shenglidonghau0.plist
+SHA1-Digest: +vvBqnyNoKjJUUWXqLKCqP1G3Uk=
+
+Name: assets/res/monster_piece_icon/piece39.png
+SHA1-Digest: iNQbaqfUm5utOEbRHf/zDoObyq8=
+
+Name: assets/res/upgrade/lighting.png
+SHA1-Digest: wIGJmqcawJqX0/lyyJTew++z2+k=
+
+Name: assets/res/item/item2.png
+SHA1-Digest: Q06Y5xLViEZfweUJr8qNFz3BKec=
+
+Name: assets/res/buddha/buddha79.png
+SHA1-Digest: v71uLwMh96JzCC8gPaR397BrAIg=
+
+Name: assets/res/novice_guide/guide_upgrade_scene.csv
+SHA1-Digest: e/Enx9GyTUB2e+3C3RWTVfGELjE=
+
+Name: assets/ucgamesdk/ui/common/conf/loading_circle.png
+SHA1-Digest: hIF1KrPKO3yUexaAbXzoGcMSaXM=
+
+Name: assets/res/chapter/activegift.png
+SHA1-Digest: bUz7IX/GFo4lVF/cx8k6ly7pDGs=
+
+Name: assets/res/tiny_loading/hint7.png
+SHA1-Digest: J7jLNeQbR2Bv64RSR6ndvrND1b0=
+
+Name: assets/res/activity/get.png
+SHA1-Digest: dNFnYDOSZBD6b/lfdc3K2tQWsfg=
+
+Name: assets/res/opening_comic/comic4/comic47_tx.png
+SHA1-Digest: teQ4cd34435PwmRMrChhnax+zLk=
+
+Name: assets/res/tasks/periodic_btn.png
+SHA1-Digest: DmtxKP8LXXc0jQaUcDZQd/7c0C0=
+
+Name: assets/res/wiki/buddha.png
+SHA1-Digest: Dtave1ezHtgi/N4mMsxRlwUkUtE=
+
+Name: assets/res/upgrade/q4.png
+SHA1-Digest: CUnYKQ3LhiA5PR4ONA1z/mOpsh4=
+
+Name: assets/res/shop/needexp.png
+SHA1-Digest: qH0Aox/A17XL1QiufRbxhIcBTOI=
+
+Name: assets/res/animation/shandiantexiao1/shandiantexiao10.plist
+SHA1-Digest: LkaV2qqU1FYQmNcabIjxVFUN47k=
+
+Name: assets/res/tiny_loading/role3.png
+SHA1-Digest: HZavB6O632+6c5im+CkoKduGaeU=
+
+Name: assets/res/opening_comic/tip1.png
+SHA1-Digest: QqZg8t4iI01V45OFePZoTQZ3AGM=
+
+Name: assets/res/gamescene/bg3.png
+SHA1-Digest: FSsUCF1EEFN042J9wR6zURD3vJc=
+
+Name: assets/res/settings/about.png
+SHA1-Digest: RFFxBbUuHlwcWTuEYDY7tPw0XHY=
+
+Name: assets/res/monster_tower/1/door.png
+SHA1-Digest: JO7ARd/YzFY2gf/1nXB+Bh0CDi4=
+
+Name: assets/res/sounds/sfx_flash_exploed.ogg
+SHA1-Digest: zuLuKi9u14igLKHQxqqSeUizEYc=
+
+Name: assets/res/gamescene/exit1.png
+SHA1-Digest: dwP44Qy3ItfHw+REdXlQw9IH+UQ=
+
+Name: assets/res/animation/pointer_tx.plist
+SHA1-Digest: ZebcVGB8JJU+X2NHT74lyBxITyc=
+
+Name: assets/res/server_maintain/get2.png
+SHA1-Digest: pT+BvQLwb0oHZzNepdkjnKsJLG8=
+
+Name: assets/res/summon_scene/hong_tx.png
+SHA1-Digest: Dq1Hpt+4UEQFajGptIfYExAnYko=
+
+Name: assets/res/animation/bird.plist
+SHA1-Digest: IOTohluDBGUsun2Xwgb2Dx+fk9M=
+
+Name: assets/res/tasks/achievement/achievement3.png
+SHA1-Digest: ++m0Re6YkdUcTHKHsuQPhfXRlSg=
+
+Name: assets/res/summon_scene/summon_exp.png
+SHA1-Digest: mjAMcWhY4PAVyNn+n4RjCT7x+h4=
+
+Name: assets/res/sounds/attack_buddhawg1.ogg
+SHA1-Digest: yPq6+pUgItYuiwZo95WF279TmTc=
+
+Name: assets/res/armature/xiaoxiangzi/xiaoxiangzi.csb
+SHA1-Digest: 9grGFXsGciJi3xlz/xsrhB90aDc=
+
+Name: assets/res/treasure/treasure2_name.png
+SHA1-Digest: 3MP7WH/UF4FV/PtKcocciN+0wDc=
+
+Name: assets/src/cocos/cocos2d/bitExtend.lua
+SHA1-Digest: rns2Bf/lFAXVeXNeOyyq13FDLpI=
+
+Name: assets/ucgamesdk/res/msg.apk
+SHA1-Digest: b8YQRQYG0ySzEtjFB5fMzAjA18I=
+
+Name: assets/res/gamescene/speed1.png
+SHA1-Digest: HRhO+SzHxBVJczH2UejzyywJALI=
+
+Name: assets/res/gamescene/timer.png
+SHA1-Digest: fC6tq/Ui9B6YUWtfB77D+TzLIEU=
+
+Name: assets/res/tasks/stage/content5.png
+SHA1-Digest: UoYfZJkxRHpUFPkpI2oPX6+wcpE=
+
+Name: assets/res/gamescene/light.png
+SHA1-Digest: UIttvTcpi5qZtI5RbtbMuq35VCE=
+
+Name: assets/res/dialogue/tianbingtianjiang1.png
+SHA1-Digest: iYAFg04Y8O+XCfDoWIqKkaeGfRA=
+
+Name: assets/res/spin/8.png
+SHA1-Digest: ZxsATjMqUX6JWwOe8AQ/GJdVqWE=
+
+Name: assets/res/sounds/attack_buddha23.ogg
+SHA1-Digest: 8dhUeQ+MKmU1ekEQAbvo1WjyKrc=
+
+Name: assets/res/shop1/exp_mall.png
+SHA1-Digest: IgE5VgFLpig+dreF0XmAwhMm7zw=
+
+Name: assets/ucgamesdk/ui/common/conf/widgetconf/updateGameNewVersion.
+ json
+SHA1-Digest: Tmld/biO7rdHlKLsD58Tou1muW0=
+
+Name: assets/res/spin/gain_gray.png
+SHA1-Digest: ZPEae7hZTzbKc4oy7+p8mZMl8kY=
+
+Name: assets/src/framework/cc/components/ui/BasicLayoutProtocol.lua
+SHA1-Digest: +q5+M160AX7awcruqLcmIjWdr70=
+
+Name: assets/res/team/all_h.png
+SHA1-Digest: /qdpVM3WRXYme62SGGUXrYcmR2c=
+
+Name: assets/res/opening_comic/comic1/comic11_pic1.png
+SHA1-Digest: PxS1VYLDnqwKFUDWHeL9WePCmFc=
+
+Name: assets/src/cocos/cocos2d/Cocos2d.lua
+SHA1-Digest: c1QOw+CaK4Y1VqsN7RU/jwYC2+E=
+
+Name: assets/res/monster_tower/13/door1.png
+SHA1-Digest: GwXtl2C54rH2NEwbpuw780tux0o=
+
+Name: assets/res/armature/hunshimowang/hunshimowang.csb
+SHA1-Digest: Q0OYg83YrL2Q7zSDjHcukyG55ws=
+
+Name: assets/res/login_scene/server_bg.png
+SHA1-Digest: RlvhA2kLN05TDQ3IsB12N5Z6Evk=
+
+Name: assets/res/armature/dabajie/dabajie0.plist
+SHA1-Digest: vU5FoMDul5jczSpyA11BnZ7MZDA=
+
+Name: assets/src/framework/cocos2dx/SpriteEx.lua
+SHA1-Digest: s2FDpI2sdj9U4O4zu7Y4CcO6Cas=
+
+Name: assets/res/buddha_icon/buddha10.png
+SHA1-Digest: Kw8Ve78OyajSBSYeuzjbgQY9nPQ=
+
+Name: assets/ucgamesdk/ui/SG_7.patch
+SHA1-Digest: xL0ty5MIdRInnMzmewducAs3ptk=
+
+Name: assets/res/gamescene/bg_sky5.jpg
+SHA1-Digest: kHcp/vSqZHzRP3WaqcDpsdIsCCY=
+
+Name: assets/res/armature/haohaizi/haohaizi0.png
+SHA1-Digest: srfLN9vEKAT4SeeakDi0fvxiTQA=
+
+Name: assets/res/armature/daqianliyan/daqianliyan0.plist
+SHA1-Digest: 12WAxpfPhu7wUJDLOEL0L96cCdg=
+
+Name: assets/res/game_infinite/num_frame.png
+SHA1-Digest: 0A5n9x0LgC4z1hidxlubocHbxAU=
+
+Name: assets/res/settings/user_center.png
+SHA1-Digest: Nt8DS/gefdxKE6TNoAfMUN5N9zg=
+
+Name: assets/res/fonts/greenNum_0.png
+SHA1-Digest: GMNxApJje9gslIMVuhKrH5//W6A=
+
+Name: assets/ucgamesdk/ui/common/jars/lib.jar
+SHA1-Digest: TL/zNZqKgqSS19R4YtlumlSVIRY=
+
+Name: assets/res/armature/xiaobajie/xiaobajie0.png
+SHA1-Digest: rpnEpBcyDcui5gq7tNvtpmW2MTE=
+
+Name: assets/res/tiny_loading/hint4.png
+SHA1-Digest: vmTFCCOBIVQYRghkFmPlnurA90A=
+
+Name: assets/res/armature/santaizi/santaizi.csb
+SHA1-Digest: BxYr8duJyyXRCNKvV6Xb14EwXnM=
+
+Name: assets/ucgamesdk/ui/PJ_7.patch
+SHA1-Digest: Axm/PlllZi5l/an6DpA6dMzhQL8=
+
+Name: assets/res/spin/2.png
+SHA1-Digest: Z7OdGv/X4HZLDa3psy7BiLmQIpk=
+
+Name: assets/res/monster_piece_icon/piece3.png
+SHA1-Digest: n16t5YkEKfqZbq6h5EiJfTOm2eU=
+
+Name: assets/res/upgrade/tower/small_tower1.png
+SHA1-Digest: 2p6K2/exdwYmBGrr24kJeXfA48U=
+
+Name: assets/res/armature/longma/longma.csb
+SHA1-Digest: u8SWiX44WwjPoX9Z0oNip5HsdLg=
+

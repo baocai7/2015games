@@ -1,0 +1,3 @@
+text,pointType,pointX,pointY,bgPointX,bgPointY,type,direction,rangeX,rangeY,isNeedPause
+提升一下宝塔的血量吧！,1,-240,135,0,-20,1,0,160,60,0
+点击“升级”吧,1,360,90,280,-85,1,0,85,50,0

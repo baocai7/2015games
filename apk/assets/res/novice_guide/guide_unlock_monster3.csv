@@ -1,0 +1,4 @@
+text,pointType,pointX,pointY,bgPointX,bgPointY,type,direction,rangeX,rangeY,isNeedPause
+选择“悍匪矬山雕”,1,-246,512,200,240,1,0,160,60,0
+点击“召唤”吧,1,380,100,280,-105,1,0,85,30,0
+可以去队伍界面让它上阵哦,1,0,261,320,240,0,1,60,40,0

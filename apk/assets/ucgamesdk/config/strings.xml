@@ -1,0 +1,70 @@
+<resources>
+
+    <string name="phone_quick_login">立即进入</string>
+    <string name="phone_quick_login_hint">发送短信完成验证，费用由运营商收取</string>
+    <string name="phone_title">手机登录</string>
+    <string name="phone_title_tips">(无需注册)</string>
+    <string name="tel_num">手机号</string>
+    <string name="dync_hints">动态密码</string>
+    <string name="get_dync_code">获取验证码</string>
+    
+    <string name="quick_reg">快速注册</string>
+    <string name="login">进入游戏</string>
+    <string name="uc_login">UC号登录</string>
+    <string name="other_login_types">其他登录方式：</string>
+    <string name="change_login_type">切换登录方式</string>
+    <string name="uc_login_hints">UC号\邮箱\绑定手机号</string>
+    <string name="forget_password">忘记密码?</string>
+    
+    <string name="old_account">已有账号登录</string>
+    <string name="onekey_reg">一键注册</string>
+    <string name="onekey_reg_sms">发送短信完成注册</string>
+    <string name="check_phone_fail">手机号验证失败</string>
+    <string name="checking_tel">正在验证手机号</string>
+    <string name="phone_default_err">手机验证失败</string>
+    <string name="error_tips_to_register">请用密码注册</string>
+    <string name="error_tips_to_phonelogin">请用验证码登录</string>
+    <string name="resend_sms">重新发送</string>
+    
+    
+    <!-- 注册界面 -->
+    <string name = "send_sms_register">发送短信注册</string>
+    
+    <string name="enter_game">进入游戏</string>
+    <string name="send_sms_tips">将用您的手机发送验证短信</string>
+    <!-- 密码注册 -->
+    <string name="registe_succ">注册成功</string>
+    <string name="registe_uc_name_hints">UC号:</string>
+     <string name="registe_uc_account_hints">账号:</string>
+    <string name="registe_uc_pw_hints">密码:</string>
+    <string name="registe_uc">注册UC号</string>
+    <string name="registe_uc_hints">仅需一步,即可完成！</string>
+    <string name="password_register">密码注册</string>
+    <string name="return_login">返回登录</string>
+    <string name="input_password">请输入密码</string>
+    <string name="complete_register">完成注册</string>
+    <string name="password_register_error">完成注册</string>
+    <string name="registe_license">注册即同意《UC服务条款》</string>
+    
+    <!-- 第三方渠道 -->
+    <string name="account_login">账号登录</string>
+    <string name="account">账号</string>
+    <string name="account_label">账号:</string>
+    <string name="phone_login">手机号登录</string>
+    <string name="account_register">账号注册</string>
+    <string name="account_registe_license">注册即同意《账号服务条款》</string>
+    
+    <string name="account_syb_title">手游吧账号登录</string>
+    <string name="account_syb">手游吧账号</string>
+    <string name="account_syb_registe_title">注册手游吧账号</string>
+    <string name="account_syb_registe_license">注册即同意《手游吧服务条款》</string>
+    
+    <string name="account_sg_hints">请输入搜狗账号</string>
+    <string name="account_sg_ac_hints">4-16位字符</string>
+    <string name="account_sg_pw_hints">6-16位字符</string>
+    <string name="account_sg_registe_license">注册即同意《搜狗服务协议》</string>
+    
+    <string name="account_pj_hints">请输入泡椒账号</string>
+        <string name="account_pj_ac_register_hints">6～15位</string>
+        <string name="account_pj_pw_register_hints">6～30位</string>
+</resources>

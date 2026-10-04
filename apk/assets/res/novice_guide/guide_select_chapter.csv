@@ -1,0 +1,2 @@
+text,pointType,pointX,pointY,bgPointX,bgPointY,type,direction,rangeX,rangeY,isNeedPause
+点击地图上的旗帜开始冒险吧！,1,-300,240,100,0,1,1,70,55,0

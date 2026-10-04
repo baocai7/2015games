@@ -1,0 +1,3 @@
+text,pointType,pointX,pointY,bgPointX,bgPointY,type,direction,rangeX,rangeY,isNeedPause
+是不是太难了？,1,375,665,100,150,0,0,120,50,0
+充点小钱爽一爽吧！,1,375,665,100,150,1,0,120,50,0
