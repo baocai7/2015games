@@ -1,4 +1,0 @@
-activityId,towerId,costType,costNum,rewardType,rewardNumMin,rewardNumMax,stageLimit,distance
-1,10001,energy,50,1,1,15,30,900
-2,10002,energy,100,1,15,50,60,900
-3,10003,energy,120,1,40,80,80,900
