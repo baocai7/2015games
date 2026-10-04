@@ -46,3 +46,11 @@ layer.
 - Outer Lua entry: `source/assets/src/main.lua`
 - Game entry: `source/game/app/MyApp.lua`
 - Original server configuration: `source/assets/src/channelConfig.lua`
+
+## Current repair work
+
+The `doubi-work-20261004` branch contains the separate current repair and
+compatibility materials under `current-work/`. It includes the two selected
+APK builds, the complete source tree with the current Lua overlay, patch
+scripts, local compatibility server, and validation artifacts. This baseline
+branch remains unchanged by that work.

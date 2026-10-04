@@ -1,0 +1,9 @@
+goodsId,goodsName,goodsType,Id,pic,desc,num,price
+1,人参果,renshen,,sign/renshen.png,一枚人参果，可立即回复100点体力的灵丹妙药,1,30
+2,扫荡券,sweep,,shop/saodang.png,扫荡关卡时必备的道具。,10,30
+3,老君金丹,item,1,item/item3_big.png,使用后灵气等立刻提升一级，还能全部补充满的神药！,5,200
+4,金刚盾,item,2,item/item1_big.png,场上兵种无敌20秒，一波带走的节奏！,5,150
+5,芭蕉扇,item,3,item/item2_big.png,把敌人全吹回老巢里去，说不定还能直接吹没了,5,100
+6,金钟罩,item,4,item/item4_big.png,给塔上个和当前最高血量一样厚的套套，安全第一,5,200
+7,万字符,item,5,item/item5_big.png,所有神仙冷却时间为0，随便招！不过召多了会失效哦！,5,250
+8,献宝令,item,6,item/item6_big.png,必出金色宝物碎片！不过前提是你要赢。不要乱用，用了以后输了能被笑一辈子！,5,250

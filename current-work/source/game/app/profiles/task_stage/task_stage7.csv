@@ -1,0 +1,9 @@
+taskID,stageNum,StaskType,param,description1,rewardType,rewardNum
+1,7,level_buddha3_num,3,将3个神仙升到18级,exp,40000
+2,7,level_tangseng_property_num,1,将1项唐僧的能力升到16级,exp,40000
+3,7,level_tower_property_num,1,将1项宝塔能力升到16级,exp,40000
+4,7,win_num,45,在第七章中取得45次胜利,exp,50000
+5,7,treasure_num,7,收集齐7套宝物的碎片,exp,80000
+6,7,capsule_exp_num,40,完成40次普通召唤,exp,50000
+7,7,challenge_num,7,通关第七个炼狱关卡,exp,100000
+8,7,defeat_boss,1,击败第七章第十关的BOSS金翅大鹏并取得胜利,exp,200000

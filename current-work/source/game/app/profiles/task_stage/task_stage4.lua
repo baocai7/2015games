@@ -1,0 +1,13 @@
+local M={
+ {"taskID","stageNum","StaskType","param","description1","rewardType","rewardNum",},
+ {"1","4","level_buddha_num","1","将1个神仙升到14级","exp","12000",},
+ {"2","4","level_tangseng3_property_num","3","将3个唐僧的能力升到10级","exp","12000",},
+ {"3","4","level_tower3_property_num","3","将3项宝塔能力升到10级","exp","12000",},
+ {"4","4","win_num","30","在第四章中取得30次胜利","exp","18000",},
+ {"5","4","treasure_num","4","收集4套宝物的碎片","exp","16000",},
+ {"6","4","capsule_peach_num","1","在高级召唤中消耗600蟠桃完成召唤十次","exp","12000",},
+ {"7","4","challenge_num","3","通关第三个炼狱关卡","exp","18000",},
+ {"8","4","defeat_boss","1","击败第四章第十关的BOSS铁扇公主并取得胜利","exp","50000",},
+ ["index"] = {["taskID"]=1,["stageNum"]=2,["StaskType"]=3,["param"]=4,["description1"]=5,["rewardType"]=6,["rewardNum"]=7,}
+}
+return M

@@ -1,0 +1,13 @@
+local M={
+ {"taskID","stageNum","StaskType","param","description1","rewardType","rewardNum",},
+ {"1","3","level_3buddha_num","3","将3个神仙升到10级","exp","8000",},
+ {"2","3","level_tangseng_property_num","1","将1项唐僧的能力升到8级","exp","8000",},
+ {"3","3","level_tower_property_num","1","将1项宝塔能力升到8级","exp","8000",},
+ {"4","3","win_num","25","在第三章中取得25次胜利","exp","10000",},
+ {"5","3","unlock_block","3","解锁队伍界面的全部兵种格子","exp","6000",},
+ {"6","3","treasure_num","3","收集齐3套宝物的碎片","exp","16000",},
+ {"7","3","challenge_num","2","通关第二个炼狱关卡","exp","13000",},
+ {"8","3","defeat_boss","1","击败第三章第十关的BOSS琵琶精并取得胜利","exp","31000",},
+ ["index"] = {["taskID"]=1,["stageNum"]=2,["StaskType"]=3,["param"]=4,["description1"]=5,["rewardType"]=6,["rewardNum"]=7,}
+}
+return M
