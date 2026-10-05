@@ -162,6 +162,15 @@ function TinyLoadingScene:loadArmatureAsync()
     local queuedPaths = {}
     local function queueArmature(path)
         if not queuedPaths[path] then
+            local exists = false
+            local checkOk = pcall(function()
+                exists = cc.FileUtils:getInstance():isFileExist(path)
+            end)
+            if not checkOk or not exists then
+                CompatTrace.log("armature-async", string.format("skip missing path=%s check_ok=%s fallback=static",
+                    tostring(path), tostring(checkOk)))
+                return
+            end
             queuedPaths[path] = true
             table.insert(armaturePaths, path)
         end
@@ -303,6 +312,16 @@ function TinyLoadingScene:loadArmatureAsyncInfinite()
     local queued = {}
     local function queue(path)
         if not queued[path] then
+            local exists = false
+            local checkOk = pcall(function()
+                exists = cc.FileUtils:getInstance():isFileExist(path)
+            end)
+            if not checkOk or not exists then
+                CompatTrace.log("armature-async-infinite", string.format(
+                    "skip missing path=%s check_ok=%s fallback=static",
+                    tostring(path), tostring(checkOk)))
+                return
+            end
             queued[path] = true
             table.insert(paths, path)
         end

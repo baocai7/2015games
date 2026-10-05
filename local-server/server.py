@@ -51,6 +51,9 @@ LOTTERY_REWARDS = (
     {"index": 6, "itemId": 2, "awardNum": 1},
 )
 
+SUMMON_EXP_POOL = tuple(range(1, 17))
+SUMMON_PEACH_POOL = tuple(range(17, 33))
+
 PAYMENT_PRODUCTS = {
     1: (1, 50),
     2: (30, 300),
@@ -548,20 +551,23 @@ class Handler(BaseHTTPRequestHandler):
             return
 
         if path in {"/lottery/exp/single", "/lottery/peach/single"}:
-            result = self.summon_one(player)
+            result = self.summon_one(player, advanced=path.startswith("/lottery/peach"))
             self.server.store.save(row, player)
-            audit("summon", uid=row["uid"], path=path, npc=result["npcId"], essence=result["essenceNum"])
+            audit("summon", uid=row["uid"], path=path, npc=result["npcId"],
+                  new=result["isNew"], essence=result["essenceNum"])
             self.success({"availableTime": now(), **result}, time=now())
             return
 
         if path in {"/lottery/exp/continue", "/lottery/peach/continue"}:
-            results = [self.summon_one(player) for _ in range(10)]
+            advanced = path.startswith("/lottery/peach")
+            results = [self.summon_one(player, advanced=advanced) for _ in range(10)]
             self.server.store.save(row, player)
             audit(
                 "summon_ten",
                 uid=row["uid"],
                 path=path,
                 npcs=",".join(str(item["npcId"]) for item in results),
+                new_count=sum(1 for item in results if item["isNew"]),
             )
             self.success({"npcs": results}, time=now())
             return
@@ -672,16 +678,20 @@ class Handler(BaseHTTPRequestHandler):
         self.success({}, time=now())
 
     @staticmethod
-    def summon_one(player: dict) -> dict:
-        # IDs 1-16 are the base summon roster and have bundled icons/data.
-        npc_id = secrets.choice(tuple(range(1, 17)))
+    def summon_one(player: dict, advanced: bool = False) -> dict:
+        pool = SUMMON_PEACH_POOL if advanced else SUMMON_EXP_POOL
+        owned_ids = {item.get("npcId") for item in player["npcList"]}
+        unowned = [npc_id for npc_id in pool if npc_id not in owned_ids]
+        # Prefer an unowned entry so a new account can actually discover the
+        # roster before duplicate draws are converted into essence stones.
+        npc_id = secrets.choice(unowned or list(pool))
         owned = next((item for item in player["npcList"] if item.get("npcId") == npc_id), None)
         if owned is not None:
-            return {"npcId": npc_id, "essenceNum": 10}
+            return {"npcId": npc_id, "essenceNum": 10, "isNew": False}
         player["npcList"].append(
             {"npcId": npc_id, "isActive": 1, "addlevel": 0, "level": 1, "status": 1}
         )
-        return {"npcId": npc_id, "essenceNum": 0}
+        return {"npcId": npc_id, "essenceNum": 0, "isNew": True}
 
     @staticmethod
     def to_int(value, default: int) -> int:

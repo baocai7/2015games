@@ -19,6 +19,7 @@ local WSToast             = import("utils.WSToast")
 local AlertLackEXPLayer   = import("layers.AlertLackEXPLayer")
 local AlertLackPeachLayer = import("layers.AlertLackPeachLayer")
 local AlertUpdate         = import("customs.AlertUpdate")
+local CompatTrace         = import("utils.CompatTrace")
 
 local SummonScene = {}
 SummonScene = class("SummonScene", function()
@@ -119,7 +120,7 @@ function SummonScene:initData_()
             self:startCountDown_(TIME_TYPE_EXP,self.nextFreeTimeExp_)
                 -- 蟠桃（先判断本地是否缺失兵种骨骼资源）
             local resDownLoaded = cc.UserDefault:getInstance():getBoolForKey("missed_armature_res_downloaded",false)
-            if resDownLoaded then
+            if resDownLoaded or CompatTrace.canUseSummonFallback() then
                 self:startCountDown_(TIME_TYPE_PEACH,self.nextFreeTimePeach_)
             end
 
@@ -219,7 +220,7 @@ function SummonScene:addSummonTypeUI_()
 
     -- 若缺失骨骼资源，则加上灰色遮罩，提示更新
     local resDownLoaded = cc.UserDefault:getInstance():getBoolForKey("missed_armature_res_downloaded",false)
-    if not resDownLoaded then
+    if not resDownLoaded and not CompatTrace.canUseSummonFallback() then
         self.peachFreeTimeLabel_:hide()
 
         local gray = display.newSprite("summon_scene/gray.png",
@@ -985,7 +986,7 @@ function SummonScene:onTouch(event,x,y)
             end
             -- 蟠桃
             local resDownLoaded = cc.UserDefault:getInstance():getBoolForKey("missed_armature_res_downloaded",false)
-            if resDownLoaded and touchInSprite2 then
+            if (resDownLoaded or CompatTrace.canUseSummonFallback()) and touchInSprite2 then
                 self:toPeachSummonLayer_()
             end
             -- if CloudData.STAGE_PROGRESS >= 25 and touchInSprite2 then

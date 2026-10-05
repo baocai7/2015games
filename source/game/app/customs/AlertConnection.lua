@@ -2916,6 +2916,7 @@ function AlertConnection:summonInit()
             print("err http 500")    return
         end
         --请求成功
+        CompatTrace.log("summon", "init response=" .. tostring(request:getResponseString()))
         print( request:getResponseString() )
         local jsonValue = json.decode(request:getResponseString())
         CloudData.TIME_SERVER = jsonValue.time
@@ -2965,6 +2966,7 @@ function AlertConnection:summonExp1()
             print("err http 500")    return
         end
         --请求成功
+        CompatTrace.log("summon", "exp single response=" .. tostring(request:getResponseString()))
         print( request:getResponseString() )
         local jsonTable = json.decode(request:getResponseString())
         --dump(jsonTable)
@@ -3010,6 +3012,7 @@ function AlertConnection:summonExp10()
             print("err http 500")    return
         end
         --请求成功
+        CompatTrace.log("summon", "exp ten response=" .. tostring(request:getResponseString()))
         print( request:getResponseString() )
         local jsonTable = json.decode(request:getResponseString())
         dump(jsonTable)
@@ -3049,6 +3052,7 @@ function AlertConnection:summonPeach1()
             print("err http 500")    return
         end
         --请求成功
+        CompatTrace.log("summon", "peach single response=" .. tostring(request:getResponseString()))
         print( request:getResponseString() )
         local jsonTable = json.decode(request:getResponseString())
         --dump(jsonTable)
@@ -3094,6 +3098,7 @@ function AlertConnection:summonPeach10()
             print("err http 500")    return
         end
         --请求成功
+        CompatTrace.log("summon", "peach ten response=" .. tostring(request:getResponseString()))
         print( request:getResponseString() )
         local jsonTable = json.decode(request:getResponseString())
         dump(jsonTable)

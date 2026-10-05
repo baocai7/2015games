@@ -129,6 +129,20 @@ class ServerTest(unittest.TestCase):
         denied = self.post("/stage/sweep", {**auth, "stageId": "0"})
         self.assertEqual(denied["errorCode"], 1001)
 
+    def test_summon_prefers_unowned_and_peach_uses_advanced_pool(self):
+        registered = self.post("/user/quickregister", {"channel": "255"})["data"]
+        login = self.post("/user/login", registered)["data"]
+        auth = {"uid": str(login["user"]["uid"]), "token": login["user"]["token"], "regionId": "1"}
+        first = self.post("/lottery/exp/single", auth)["data"]
+        self.assertTrue(first["isNew"])
+        self.assertEqual(first["essenceNum"], 0)
+        self.assertIn(first["npcId"], range(1, 17))
+        # The first advanced draw must come from the advanced pool, not turn
+        # into a duplicate of the basic starter roster.
+        advanced = self.post("/lottery/peach/single", auth)["data"]
+        self.assertTrue(advanced["isNew"])
+        self.assertIn(advanced["npcId"], range(17, 33))
+
 
 if __name__ == "__main__":
     unittest.main()

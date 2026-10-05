@@ -9,7 +9,6 @@ end
 function CompatTrace.log(tag, message)
     local line = string.format("[compat-trace][%s] %s", stringify(tag), stringify(message))
     print(line)
-    -- Keep a file copy so the trace can be pulled without a live logcat.
     pcall(function()
         local writable = cc.FileUtils:getInstance():getWritablePath()
         local file = io.open(writable .. "compat_trace.log", "ab")
@@ -37,9 +36,6 @@ function CompatTrace.resource(tag, path)
     CompatTrace.log(tag, string.format("path=%s exists=%s check_ok=%s", stringify(path), tostring(exists), tostring(ok)))
 end
 
--- Missing optional CSB files can still use the original static battle sprite.
--- Keep the normal download/registration path intact; this only tells callers
--- whether it is safe to continue without blocking the team screen.
 function CompatTrace.canUseActorFallback(model)
     if model == nil then
         CompatTrace.log("actor-fallback", "model=<nil>")
@@ -52,6 +48,19 @@ function CompatTrace.canUseActorFallback(model)
     CompatTrace.log("actor-fallback", string.format("npc=%s stand=%s exists=%s check_ok=%s",
         stringify(model.npcId_), stringify(path), tostring(exists), tostring(ok)))
     return ok and exists == true
+end
+
+function CompatTrace.canUseSummonFallback()
+    local paths = {"buddha/buddha1.png", "buddha_icon/buddha1.png"}
+    local ok, available = pcall(function()
+        for _, path in ipairs(paths) do
+            if not cc.FileUtils:getInstance():isFileExist(path) then return false end
+        end
+        return true
+    end)
+    CompatTrace.log("summon-resource", string.format("bundled_static_fallback=%s check_ok=%s",
+        tostring(available), tostring(ok)))
+    return ok and available == true
 end
 
 function CompatTrace.node(tag, node)
@@ -72,30 +81,22 @@ function CompatTrace.node(tag, node)
     return width > 0 and height > 0
 end
 
--- A few legacy Cocos Android builds report an async CSB as complete before
--- its armature data is available to Armature:create. Retry registration once
--- synchronously at the actor boundary; the original async loading remains
--- unchanged and is still the normal path.
 function CompatTrace.createArmature(name, path)
     CompatTrace.resource("actor-armature", path)
     local function create()
         local value = ccs.Armature:create(name)
         if value ~= nil and value.getAnimation ~= nil then
             local animation = value:getAnimation()
-            if animation ~= nil then
-                return value
-            end
+            if animation ~= nil then return value end
         end
         return nil
     end
-
     local ok, value = xpcall(create, debug.traceback)
     if ok and value ~= nil and CompatTrace.node("actor-armature", value) then
         CompatTrace.log("actor-armature", "created name=" .. stringify(name) .. " registration=async")
         return value
     end
     CompatTrace.log("actor-armature", "async registration produced no renderable node name=" .. stringify(name))
-
     local syncOk, syncValue = xpcall(function()
         ccs.ArmatureDataManager:getInstance():addArmatureFileInfo(path)
         return create()
@@ -110,26 +111,18 @@ function CompatTrace.createArmature(name, path)
 end
 
 function CompatTrace.install()
-    if CompatTrace.installed_ or not display or not display.addSpriteFrames then
-        return
-    end
+    if CompatTrace.installed_ or not display or not display.addSpriteFrames then return end
     CompatTrace.installed_ = true
     local original = display.addSpriteFrames
     display.addSpriteFrames = function(plist, texture)
         CompatTrace.resource("atlas", plist)
         CompatTrace.resource("atlas", texture)
-        local ok, err = xpcall(function()
-            -- Keep the engine's original atlas-loading implementation.
-            return original(plist, texture)
-        end, debug.traceback)
+        local ok, err = xpcall(function() return original(plist, texture) end, debug.traceback)
         if ok then
             CompatTrace.log("atlas", string.format("loaded plist=%s texture=%s", stringify(plist), stringify(texture)))
             return
         end
         CompatTrace.log("atlas", string.format("FAILED plist=%s texture=%s\n%s", stringify(plist), stringify(texture), stringify(err)))
-        -- Preserve the caller's control flow so a missing optional atlas can
-        -- reach its local compatibility fallback and leave a diagnostic in
-        -- the trace instead of aborting the entire scene constructor.
         return false
     end
 end
