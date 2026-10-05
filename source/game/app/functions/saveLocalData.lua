@@ -120,6 +120,10 @@ function DataUtils.restoreResourceSnapshot()
     CloudData.EXP = numberOrZero(payload.exp)
     CloudData.PEACH = numberOrZero(payload.peach)
     CloudData.ESSENCE = numberOrZero(payload.essence)
+    if GameManager ~= nil and GameManager.LOCAL_UNLIMITED_PEACH then
+        CloudData.PEACH = 999999999
+        CompatTrace.log("persistence", "local unlimited peach snapshot override")
+    end
     CloudData.ENERGY = numberOrZero(payload.energy)
     CloudData.MAX_ENERGY = numberOrZero(payload.maxEnergy)
     CloudData.STAGE_PROGRESS = numberOrZero(payload.stageProgress)
