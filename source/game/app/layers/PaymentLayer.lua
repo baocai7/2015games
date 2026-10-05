@@ -138,6 +138,12 @@ local NEW_PAY = {1,2,4,6,7,8} -- 新的计费点映射
 function PaymentLayer:touchListener(event)
 
     if "clicked" == event.name then
+        if tonumber(CloudData.PEACH) and tonumber(CloudData.PEACH) >= 100000000 then
+            self:closeCallBack_()
+            local toast = WSToast.new("蟠桃无限，无需充值")
+            display.getRunningScene():addChild(toast, 200)
+            return
+        end
         local column = math.ceil(event.point.x / 460)
         -- local idx = (event.itemPos - 1) * 2 + column              --充值id(1~8)
         local idx = (event.itemPos - 1) * 2 + column + 20            --新充值id(21~26),+20与id区分开
