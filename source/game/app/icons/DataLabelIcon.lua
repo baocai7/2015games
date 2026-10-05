@@ -162,7 +162,7 @@ function DataLabelIcon:touchLabelIcon_(labelType)
 
 	elseif self.type_ == DataLabelIcon.LABEL_TYPE_PEACH then
 		printf("LABEL_TYPE_PEACH")
-		if tonumber(CloudData.PEACH) and tonumber(CloudData.PEACH) >= 100000000 then
+		if GameManager.LOCAL_UNLIMITED_PEACH then
 			local toast = WSToast.new("蟠桃无限，无需充值")
 			currScene:addChild(toast, 100)
 			return

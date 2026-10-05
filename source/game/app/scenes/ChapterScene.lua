@@ -1054,7 +1054,7 @@ function ChapterScene:touchRightButton_(tag)
         self:addChild(firstRecharge,20)
 
     elseif tag == 2 then               --充值
-        if tonumber(CloudData.PEACH) and tonumber(CloudData.PEACH) >= 100000000 then
+        if GameManager.LOCAL_UNLIMITED_PEACH then
             local toast = WSToast.new("蟠桃无限，无需充值")
             self:addChild(toast, 100)
             return

@@ -1,6 +1,9 @@
 
 GameManager = {}
 
+-- Local compatibility build: bypass the legacy payment SDK for peaches.
+GameManager.LOCAL_UNLIMITED_PEACH = true
+
 -- 玩家当前选择关卡
 GameManager.STAGE_NUM = 0
 GameManager.STAGE_NUM_CHALLENGE = 0

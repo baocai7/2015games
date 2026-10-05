@@ -138,7 +138,7 @@ local NEW_PAY = {1,2,4,6,7,8} -- 新的计费点映射
 function PaymentLayer:touchListener(event)
 
     if "clicked" == event.name then
-        if tonumber(CloudData.PEACH) and tonumber(CloudData.PEACH) >= 100000000 then
+        if GameManager.LOCAL_UNLIMITED_PEACH then
             self:closeCallBack_()
             local toast = WSToast.new("蟠桃无限，无需充值")
             display.getRunningScene():addChild(toast, 200)
