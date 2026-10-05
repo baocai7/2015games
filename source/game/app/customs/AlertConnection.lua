@@ -126,6 +126,7 @@ CONNECTION_CREATE_PLAYER           = 118
 CONNECTION_UPDATE_TEAM             = 119
 
 local ErrorCodeLayer = import("layers.ErrorCodeLayer")
+local CompatTrace = import("utils.CompatTrace")
 
 local AlertConnection = {}
 AlertConnection =  class("AlertConnection", function()
@@ -478,19 +479,45 @@ end
 function MyCreateHttpRequest(onRequestFinish, url, method)
     -- 扩展回调处理
     local function myOnRequestFinish(event)
+        -- cocos reports progress callbacks for the same request; they are not
+        -- failures and must not pollute the compatibility trace.
+        if event.name == "progress" then
+            return
+        end
         local ok = (event.name == "completed")
         local request = event.request
         if not ok then
+            CompatTrace.log("http", string.format("request failed event=%s url=%s", tostring(event.name), tostring(url)))
             return
         end
-        local code = request:getResponseStatusCode()
+        local statusOk, code = pcall(function()
+            return request:getResponseStatusCode()
+        end)
+        if not statusOk then
+            CompatTrace.log("http", "status read failed url=" .. tostring(url))
+            return
+        end
         if code ~= 200 then
+            CompatTrace.log("http", string.format("unexpected status=%s method=%s url=%s", tostring(code), tostring(method), tostring(url)))
             return
         end
-        local jsonTable = json.decode(request:getResponseString())
+        local bodyOk, body = pcall(function()
+            return request:getResponseString()
+        end)
+        if not bodyOk or type(body) ~= "string" then
+            CompatTrace.log("http", "response body read failed url=" .. tostring(url))
+            return
+        end
+        local decodeOk, jsonTable = xpcall(function()
+            return json.decode(body)
+        end, debug.traceback)
+        if not decodeOk or type(jsonTable) ~= "table" then
+            CompatTrace.log("http", "invalid JSON url=" .. tostring(url) .. "\n" .. tostring(jsonTable))
+            return
+        end
         -- dump(jsonTable)
 
-        local errCode = jsonTable.errorCode
+        local errCode = tonumber(jsonTable.errorCode) or 0
         local errMsg  = jsonTable.errorMsg
 
         -- print("err code " .. errCode)
@@ -515,22 +542,37 @@ end
 
 --抽奖
 function AlertConnection:drawLottery()
+    CompatTrace.log("lottery", string.format("request start uid=%s region=%s url=http://%s/lottery/draw", tostring(CloudData.UID), tostring(CloudData.USER_SERVER_ID), tostring(GameManager.IP)))
     local function onRequestFinished(event)
         local ok = (event.name == "completed")
         local request = event.request
         if not ok then
+            CompatTrace.log("lottery", "request failed event=" .. tostring(event.name))
             print("connecting...")
             return
         end
         local code = request:getResponseStatusCode()
         if code ~= 200 then
+            CompatTrace.log("lottery", "unexpected status=" .. tostring(code))
             print("err http 500")
             return
         end
         --请求成功
         local response = request:getResponseString()
+        CompatTrace.log("lottery", "response=" .. tostring(response))
         local jsonTable = json.decode(response)
         dump(jsonTable)
+
+        if type(jsonTable) ~= "table" or type(jsonTable.data) ~= "table" then
+            CompatTrace.log("lottery", "invalid response shape; data table is missing")
+            return
+        end
+        if jsonTable.data.index == nil or jsonTable.data.critNum == nil or jsonTable.data.awardNum == nil then
+            CompatTrace.log("lottery", "invalid reward fields index=" .. tostring(jsonTable.data.index) ..
+                " crit=" .. tostring(jsonTable.data.critNum) .. " item=" .. tostring(jsonTable.data.itemId) ..
+                " num=" .. tostring(jsonTable.data.awardNum))
+            return
+        end
 
         --奖品id
         CloudData.AWARD_ID      = jsonTable.data.index
@@ -540,6 +582,8 @@ function AlertConnection:drawLottery()
         CloudData.AWARD_ITEM_ID = jsonTable.data.itemId
         --奖品数量
         CloudData.AWARD_NUM     = jsonTable.data.awardNum
+        CompatTrace.log("lottery", string.format("reward index=%s crit=%s item=%s num=%s",
+            tostring(CloudData.AWARD_ID), tostring(CloudData.CRIT_NUM), tostring(CloudData.AWARD_ITEM_ID), tostring(CloudData.AWARD_NUM)))
 
         self.isConnectionSucceed_ = true
     end
@@ -763,8 +807,10 @@ function AlertConnection:activityStageStart()
 
         if jsonTable.data ~= nil then
             CloudData.SKILL_ITEM_INFO = jsonTable.data.items
-            CloudData.EXP = jsonTable.data.exp
-            CloudData.PEACH = jsonTable.data.peach
+            if CloudData.PLAYER_DATA_READY ~= true then
+                CloudData.EXP = jsonTable.data.exp
+                CloudData.PEACH = jsonTable.data.peach
+            end
             CloudData.ENERGY = jsonTable.data.energy
             CloudData.TEMP_TOKEN = jsonTable.data.tempToken or "tempToken"
         end
@@ -1316,22 +1362,32 @@ end
 
 -- payment
 function AlertConnection:pay()
+    CompatTrace.log("payment", string.format("order request product=%s uid=%s url=http://%s/order/add",
+        tostring(self.productId_), tostring(CloudData.UID), tostring(GameManager.IP)))
     local function onRequestFinished(event)
         local ok = (event.name == "completed")
         local request = event.request
         if not ok then
+            CompatTrace.log("payment", "order request failed event=" .. tostring(event.name))
             print("connecting...")
             return
         end
         local code = request:getResponseStatusCode()
         if code ~= 200 then
+            CompatTrace.log("payment", "order unexpected status=" .. tostring(code))
             print("err http 500")
             return
         end
         --请求成功
         local response = request:getResponseString()
+        CompatTrace.log("payment", "order response=" .. tostring(response))
         local jsonTable = json.decode(response)
         dump(jsonTable)
+        if type(jsonTable) ~= "table" or type(jsonTable.data) ~= "table" or
+            jsonTable.data.amount == nil or jsonTable.data.peach == nil or jsonTable.data.orderId == nil then
+            CompatTrace.log("payment", "order response missing amount/peach/orderId; no payment marked successful")
+            return
+        end
         PaymentInfo.ID = self.productId_
         PaymentInfo.MONEY = jsonTable.data.amount
         PaymentInfo.PEACH = jsonTable.data.peach
@@ -2372,6 +2428,10 @@ function AlertConnection:pass()
             if jsonTable.data.monster.advanceNpcId ~= 0 then
                 CloudData.MONSTER_PIECE_INFO[jsonTable.data.monster.advanceNpcId] = CloudData.MONSTER_PIECE_INFO[jsonTable.data.monster.advanceNpcId] + jsonTable.data.monster.advanceNpcNum
             end
+
+            if DataUtils.markResourceMutation ~= nil then
+                DataUtils.markResourceMutation("stage-pass")
+            end
         end
 
         CloudData.DELTA_TIME = jsonTable.time - os.time()
@@ -2464,6 +2524,9 @@ function AlertConnection:sweep()
         if jsonTable.data.monster.advanceNpcId ~= 0 then
             CloudData.MONSTER_PIECE_INFO[jsonTable.data.monster.advanceNpcId] = CloudData.MONSTER_PIECE_INFO[jsonTable.data.monster.advanceNpcId] + jsonTable.data.monster.advanceNpcNum
         end
+        if DataUtils.markResourceMutation ~= nil then
+            DataUtils.markResourceMutation("stage-sweep")
+        end
         self.isConnectionSucceed_ = true
     end
 
@@ -2521,6 +2584,9 @@ function AlertConnection:sweep5()
         end
         if jsonTable.data.monster.advanceNpcId ~= 0 then
             CloudData.MONSTER_PIECE_INFO[jsonTable.data.monster.advanceNpcId] = CloudData.MONSTER_PIECE_INFO[jsonTable.data.monster.advanceNpcId] + jsonTable.data.monster.advanceNpcNum
+        end
+        if DataUtils.markResourceMutation ~= nil then
+            DataUtils.markResourceMutation("stage-sweep5")
         end
         self.isConnectionSucceed_ = true
     end
@@ -2624,6 +2690,10 @@ function AlertConnection:passStageDiary()
             CloudData.MONSTER_PIECE_INFO[jsonTable.data.piece.id] = CloudData.MONSTER_PIECE_INFO[jsonTable.data.piece.id] + jsonTable.data.piece.num
         end
 
+        if DataUtils.markResourceMutation ~= nil then
+            DataUtils.markResourceMutation("stage-diary")
+        end
+
         self.isConnectionSucceed_ = true
     end
 
@@ -2701,10 +2771,15 @@ function AlertConnection:costEnergy()
             CloudData.ENERGY = jsonTable.data.energy
         else
             CloudData.SKILL_ITEM_INFO = jsonTable.data.items
-            CloudData.EXP = jsonTable.data.exp
-            CloudData.PEACH = jsonTable.data.peach
+            if CloudData.PLAYER_DATA_READY ~= true then
+                CloudData.EXP = jsonTable.data.exp
+                CloudData.PEACH = jsonTable.data.peach
+            end
             CloudData.SWEEP = jsonTable.data.sweepNum
             CloudData.TEMP_TOKEN = jsonTable.data.tempToken or "tempToken"
+            if DataUtils.markResourceMutation ~= nil then
+                DataUtils.markResourceMutation("cost-energy")
+            end
         end
 
         self.isConnectionSucceed_ = true
@@ -2863,6 +2938,7 @@ function AlertConnection:summonExp1()
 
         local newNpcId = jsonTable.data.npcId
         local essenceNum = jsonTable.data.essenceNum
+        CompatTrace.log("summon", string.format("exp single npc=%s essence=%s", tostring(newNpcId), tostring(essenceNum)))
 
         CloudData.SUMMON_RESULT_NPCID_TABLE = {}
         CloudData.SUMMON_RESULT_ESSENCE_TABLE = {}
@@ -2906,6 +2982,7 @@ function AlertConnection:summonExp10()
             CloudData.SUMMON_RESULT_NPCID_TABLE[i] = newNpcId
             CloudData.SUMMON_RESULT_ESSENCE_TABLE[i] = essenceNum
         end
+        CompatTrace.log("summon", "exp ten npcs=" .. table.concat(CloudData.SUMMON_RESULT_NPCID_TABLE, ","))
 
         self.isConnectionSucceed_ = true
     end
@@ -2945,6 +3022,7 @@ function AlertConnection:summonPeach1()
 
         local newNpcId = jsonTable.data.npcId
         local essenceNum = jsonTable.data.essenceNum
+        CompatTrace.log("summon", string.format("peach single npc=%s essence=%s", tostring(newNpcId), tostring(essenceNum)))
 
         CloudData.SUMMON_RESULT_NPCID_TABLE = {}
         CloudData.SUMMON_RESULT_ESSENCE_TABLE = {}
@@ -2988,6 +3066,7 @@ function AlertConnection:summonPeach10()
             CloudData.SUMMON_RESULT_NPCID_TABLE[i] = newNpcId
             CloudData.SUMMON_RESULT_ESSENCE_TABLE[i] = essenceNum
         end
+        CompatTrace.log("summon", "peach ten npcs=" .. table.concat(CloudData.SUMMON_RESULT_NPCID_TABLE, ","))
 
         self.isConnectionSucceed_ = true
     end
@@ -3445,16 +3524,7 @@ function AlertConnection:checkUpdateInfo()
 --    local url = string.format("http://125.88.152.25/dbxy/update.html") --正式更新服 1.0.x
 --    local url = string.format("http://125.88.152.25/dbxy/update2.html") --测试更新服 
 --    local url = string.format("http://125.88.152.25/dbxy/update_1_1_x_inner.html") --测试更新服 1.1.x
-    local url = ""
-    if device.platform == "ios" then
-        url = string.format("http://125.88.152.25/dbxyios/update_1_1_x_ios.html")        -- ios正式服 1.1.x
-    else
-        if 6 == PaymentInfo.CHANNEL then       
-            url = string.format("http://125.88.152.25/dbxytencent/update_1_1_x.html")    -- 腾讯正式更新服 1.1.x
-        else
-            url = string.format("http://125.88.152.25/dbxy/update_1_1_x.html")           -- 安卓混服正式更新服 1.1.x
-        end
-    end
+    local url = string.format("http://%s/dbxy/update_1_1_x.html",GameManager.ACCOUNT_SERVER_IP)
     local request = network.createHTTPRequest(onRequestFinished, url, "GET")
     -- 开始请求。当请求完成时会调用 callback() 函数
     request:start()
@@ -4444,6 +4514,21 @@ function AlertConnection:parseLoginJsonToCloudData( jsondata )
         end
 
         --dump(CloudData.ACHIEVEMENT_INFO)
+        -- Restore the account-local resource snapshot after the server record
+        -- has been decoded. This keeps EXP/peach/essence stable when an old
+        -- or compatibility server returns its initial values on each login.
+        if DataUtils.restoreResourceSnapshot ~= nil then
+            DataUtils.restoreResourceSnapshot()
+        end
+        CloudData.PLAYER_DATA_READY = true
+        if DataUtils.saveResourceSnapshot ~= nil then
+            DataUtils.saveResourceSnapshot()
+        end
+        local npcCount = 0
+        for _ in pairs(CloudData.NPC_INFO or {}) do npcCount = npcCount + 1 end
+        CompatTrace.log("persistence", string.format("player data ready uid=%s exp=%s peach=%s essence=%s npc=%d",
+            tostring(CloudData.UID), tostring(CloudData.EXP), tostring(CloudData.PEACH),
+            tostring(CloudData.ESSENCE), npcCount))
     end
 end
 

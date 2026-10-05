@@ -7,6 +7,8 @@ local _spiritCostBasicColumn = nil
 
 function DataUtils.getSpiritCostBasic( levelProperty5 )
 
+    levelProperty5 = tonumber(levelProperty5) or 1
+
     --csv
     local spiritCostBasicInfo = DataRetainer.SPIRIT_COST_BASIC_INFO
 
@@ -20,5 +22,7 @@ function DataUtils.getSpiritCostBasic( levelProperty5 )
     --读出 levelProperty5 对应行的所有数据
     local basic = spiritCostBasicInfo:getData(_levelSpiritGrowSpeedRow,_spiritCostBasicColumn)
 
-    return tonumber(basic)
+    -- Some archived accounts do not contain the old cost table row.  Keep the
+    -- original first-level cost so the battle HUD can still be constructed.
+    return tonumber(basic) or 40
 end

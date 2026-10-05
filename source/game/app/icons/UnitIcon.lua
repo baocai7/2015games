@@ -65,10 +65,10 @@ function UnitIcon:ctor(buddhaModel)
 	--消耗灵气显示框
 	self.spiritFrame_ = display.newSprite("gamescene/spirit_icon.png",0,-40):addTo(self,2)
 	--制造该兵种所消耗灵气
-	self.spiritCostNum_ = tonumber(self.model_.costValue_)
+    self.spiritCostNum_ = tonumber(self.model_.costValue_) or 40
 	--灵气数值标签
 	self.spiritCostLabel_ = cc.ui.UILabel.new({
-        UILabelType = 2,text = string.format(self.spiritCostNum_),size = 24,color = display.COLOR_WHITE,font = GameManager.FONTNAME_TTF})
+        UILabelType = 2,text = string.format("%d", self.spiritCostNum_),size = 24,color = display.COLOR_WHITE,font = GameManager.FONTNAME_TTF})
         :align(display.CENTER,self.spiritFrame_:getContentSize().width * 0.6,self.spiritFrame_:getContentSize().height * 0.33)
         :addTo(self.spiritFrame_)
 
@@ -116,7 +116,7 @@ end
 
 function UnitIcon:updateSpirit()
 
-    local currentSpirit = GameManager.getCurrentSpirit()
+    local currentSpirit = tonumber(GameManager.getCurrentSpirit()) or 0
     if not self.isSpawnInCoolDown_ and currentSpirit >= self.spiritCostNum_ then
 		--冷却完成 and 有足够灵气制造兵种
 		self.shadow_:setVisible(false)
@@ -149,7 +149,7 @@ function UnitIcon:onPressed()
         
         --扣除灵气操作
 --        GameManager.CURRENT_SPIRIT = GameManager.CURRENT_SPIRIT - self.spiritCostNum_
-        local currentSpirit = GameManager.getCurrentSpirit()
+        local currentSpirit = tonumber(GameManager.getCurrentSpirit()) or 0
         currentSpirit = currentSpirit - self.spiritCostNum_
         GameManager.setCurrentSpirit(currentSpirit)
 
@@ -169,7 +169,7 @@ function UnitIcon:onPressed()
         self.progress_:setBarChangeRate(cc.p(1,0))
         self.progress_:setPercentage(0)
         -- todo 计算CD时间(后续导入公式计算)
-        local realCDTime = tonumber(self.model_.cdTime_)
+        local realCDTime = tonumber(self.model_.cdTime_) or 2
         if realCDTime < 2 then
             realCDTime = 2
         end

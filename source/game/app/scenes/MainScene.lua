@@ -45,6 +45,12 @@ end)
 
 function MainScene:ctor()
 
+    -- Keep resource changes durable across process termination. The scheduler
+    -- is global, so it continues after MainScene is replaced by gameplay UI.
+    if DataUtils.startResourcePersistence ~= nil then
+        DataUtils.startResourcePersistence()
+    end
+
     -- 统一使用mp3格式
     if(device.platform=="android") then
         GameManager.POSTFIX = "ogg"

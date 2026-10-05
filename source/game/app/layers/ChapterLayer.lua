@@ -59,7 +59,7 @@ function ChapterLayer:init(chapterNum)
 
 	--读取关卡进度
     self.chapterIconTag_             = chapterNum                                     --章节编号:(1-8)
-    self.stageProgress_              = CloudData.STAGE_PROGRESS                       --关卡进度:(0-80)
+    self.stageProgress_              = tonumber(CloudData.STAGE_PROGRESS) or 0       --关卡进度:(0-80)
     self.stageNumThisPage_           = self.stageProgress_ % 10                       --当前章节的第几个关卡:(0-9)
     self.stageNumThisPageUpperLimit_ = (self.chapterIconTag_ - 1) * 10 + 9            --当前章节关卡最大值
     local defaultStageNum_           = 0                                              
@@ -173,12 +173,9 @@ function ChapterLayer:init(chapterNum)
         :addTo(self.bg_,2)
     self.closeButton_:setScale(0.8)
 
-    --第一次到该界面引导点击出战按钮
-    if CloudData.STAGE_PROGRESS == 0 and not DataUtils.getGuideIsFirstPlayed("GUIDE_STEP_GAME_START") then
-        local guide = NoviceGuide.new(GUIDE_STEP_GAME_START)
-        self:addChild(guide,50)
-        DataUtils.setGuideIsFirstPlayed("GUIDE_STEP_GAME_START",true)
-    end    
+    -- Do not put the legacy first-stage guide above the start button here.
+    -- On the compatibility client that overlay can consume the tap while the
+    -- stage detail layer is still being initialized.
 end
 
 --添加小关卡按钮
@@ -190,10 +187,35 @@ function ChapterLayer:addStageIcon_()
             local stageIcon_ = StageIcon.new(1)
             stageIcon_:setPosition(self.bg_:getContentSize().width * (0.17 + 0.165 * (j - 1)),self.bg_:getContentSize().height * (1.03 - 0.26 * i))
             self.bg_:addChild(stageIcon_)
-            stageIcon_:addNodeEventListener(cc.NODE_TOUCH_EVENT, function(event)
-                return self:onTouch(event.name,event.x,event.y)
+            local stageIndex_ = #self.stageIcon_arr + 1
+            stageIcon_:addTouchListener(function(event)
+                -- Select from the actual visible sprite; do not rely on the
+                -- old parent-coordinate bounding-box calculation.
+                if event.name == "began" then
+                    local currentStage_ = (self.chapterIconTag_ - 1) * 10 + stageIndex_
+                    if currentStage_ <= self.stageProgress_ + 1 then
+                        print(string.format("[compat] select stage %d",currentStage_))
+                        self:touchStageIcon_(stageIndex_)
+                    end
+                end
+                return true
             end)
             table.insert(self.stageIcon_arr,stageIcon_) 
+
+            -- Use a transparent UI hit target for the first stage in local
+            -- compatibility mode.  The original nested sprite listener is
+            -- retained for normal channels and visual state updates.
+            if PaymentInfo.CHANNEL == 0 and self.chapterIconTag_ == 1 and stageIndex_ == 1 then
+                local compatStageButton = cc.ui.UIPushButton.new("common_ui/confirm.png")
+                    :align(display.CENTER,stageIcon_:getPositionX(),stageIcon_:getPositionY())
+                    :onButtonClicked(function()
+                        print("[compat] select stage 1 via button")
+                        self:touchStageIcon_(1)
+                    end)
+                    :scale(1.35)
+                    :addTo(self.bg_,5)
+                compatStageButton:setOpacity(0)
+            end
 
             --获取关卡model
             local stageModel = DataUtils.getStageModel(self.currentStage_)
@@ -348,6 +370,19 @@ end
 
 --出战回调
 function ChapterLayer:gameStartCallBack_()
+    -- A freshly created account has progress 0, while the original client
+    -- uses stage 0 as a sentinel for "no stage selected".  The old code then
+    -- deducted energy and TinyLoadingScene intentionally did nothing.  Make
+    -- the first playable stage explicit before any network request.
+    local selectedStage = tonumber(GameManager.STAGE_NUM) or 0
+    if selectedStage <= 0 then
+        local progress = tonumber(self.stageProgress_) or 0
+        selectedStage = math.max(1, (self.chapterIconTag_ - 1) * 10 + progress + 1)
+        GameManager.STAGE_NUM = selectedStage
+        self:touchStageIcon_(selectedStage - (self.chapterIconTag_ - 1) * 10)
+    end
+    self.energyCostNum_ = tonumber(self.energyCostNum_) or 5
+    print(string.format("[compat] start stage %d energy %d", selectedStage, self.energyCostNum_))
     --若本地没有骨骼动画,则提示去下载
     local resDownLoaded = cc.UserDefault:getInstance():getBoolForKey("missed_armature_res_downloaded",false)
     if not resDownLoaded and GameManager.STAGE_NUM >= 25 then
@@ -505,6 +540,7 @@ function ChapterLayer:onTouch(event,x,y)
             local stageIcon_ = self.stageIcon_arr[i]
             local currStageNum_ = (self.chapterIconTag_ - 1) * 10 + i;
             if cc.rectContainsPoint(stageIcon_:getMyBoundingBox(),beganPoint_) and (currStageNum_ <= self.stageProgress_ + 1) then
+                print(string.format("[compat] select stage %d",currStageNum_))
                 self:touchStageIcon_(i)
             end
         end

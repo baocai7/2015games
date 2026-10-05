@@ -128,7 +128,7 @@ function BattleTimer:makeMonster()
     end
 
     -- 获取兵种id
-    local monsterId = tonumber(self.curMonsterIdsTable_[self.indexInStrategy_])
+    local monsterId = tonumber(self.curMonsterIdsTable_[self.indexInStrategy_]) or 0
     print("monsterId : "..monsterId)
 
     -- 出兵

@@ -189,7 +189,7 @@ function GameScene:initData( mode )
         self.towerDistance_ = GameManager.TOWER_DISTANCE
     else
         local stageModel = DataUtils.getStageModel(GameManager.STAGE_NUM)
-        self.towerDistance_ = tonumber(stageModel.towerDistance_)
+        self.towerDistance_ = tonumber(stageModel.towerDistance_) or 1000
     end
     self.minZoomRatio_ = 2 - self.towerDistance_ / 1000
 
@@ -230,7 +230,7 @@ function GameScene:initTower( mode )
     self.towerBuddha_:setPosition(cc.p(x + self.towerDistance_,display.height * 0.22))
 
     -- 清场怪出场时间
-    self.cleanTime_ = tonumber(towerMonsterModel.cleanTime_)
+    self.cleanTime_ = tonumber(towerMonsterModel.cleanTime_) or 0
 
     -- 存储
     Game.TOWER_MONSTER = self.towerMonster_
@@ -555,7 +555,7 @@ function GameScene:update( dt )
     --检测滑动屏幕
     self:moveScreen()
 
-    local currentSpirit = GameManager.getCurrentSpirit()
+    local currentSpirit = tonumber(GameManager.getCurrentSpirit()) or 0
     --第一关引导:点击召唤天兵小王出场
     if GameManager.STAGE_NUM == 1 and currentSpirit >= 50 and not DataUtils.getGuideIsFirstPlayed("GUIDE_STEP_MAKE_BUDDHA") then
         local guide = NoviceGuide.new(GUIDE_STEP_MAKE_BUDDHA)

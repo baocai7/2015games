@@ -35,16 +35,17 @@ function DataUtils.getUpgradePropertyModel( id )
     local _idRow = upgradePropertyInfo:findIndexOfValueFromColumn(_idColumn, id.."")
     
     -- 读数值
-    local id = upgradePropertyInfo:getData(_idRow,_idColumn)
-    local cnName = upgradePropertyInfo:getData(_idRow,_cnNameColumn)
-    local icon = upgradePropertyInfo:getData(_idRow,_iconColumn)
-    local desc = upgradePropertyInfo:getData(_idRow,_descColumn)
-    local expCost = upgradePropertyInfo:getData(_idRow,_expCostColumn)
-    local param = upgradePropertyInfo:getData(_idRow,_paramColumn)
-    local paramInit = upgradePropertyInfo:getData(_idRow,_paramInitColumn)
-    local paramCurr = upgradePropertyInfo:getData(_idRow,_paramCurrColumn)
-    local paramNext = upgradePropertyInfo:getData(_idRow,_paramNextColumn)
-    local propertyType = upgradePropertyInfo:getData(_idRow,_propertyTypeColumn)
+    local datas = upgradePropertyInfo:getDatas(_idRow) or {}
+    local id = tonumber(datas[_idColumn]) or tonumber(id) or 0
+    local cnName = datas[_cnNameColumn]
+    local icon = datas[_iconColumn]
+    local desc = datas[_descColumn]
+    local expCost = tonumber(datas[_expCostColumn]) or 0
+    local param = tonumber(datas[_paramColumn]) or 10
+    local paramInit = tonumber(datas[_paramInitColumn]) or param
+    local paramCurr = tonumber(datas[_paramCurrColumn]) or param
+    local paramNext = tonumber(datas[_paramNextColumn]) or param
+    local propertyType = tonumber(datas[_propertyTypeColumn]) or 0
 
     --存入Model
     local upgradePropertyModel = UpgradePropertyModel.new()
@@ -65,7 +66,15 @@ function DataUtils.getUpgradePropertyModel( id )
 end
 
 function DataUtils.getPropertyLevel( id )
-    return CloudData.UPGRADE_PROPERTY_INFO[id]
+    -- The original upgrade table is one-based. Older local-server saves used
+    -- zero as an unset value, which makes level0Param lookup fail and causes
+    -- the spirit cap to fall back to 100. Treat an unset/invalid level as the
+    -- first real level while preserving all valid server values.
+    local level = tonumber(CloudData.UPGRADE_PROPERTY_INFO[id]) or 1
+    if level < 1 then
+        level = 1
+    end
+    return level
 end
 
 function DataUtils.setPropertyLevel( id, level)

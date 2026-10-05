@@ -2,6 +2,7 @@
 -- GameScene 中 右下角照妖镜发射按钮
 
 local FireBtn = {} 
+local CompatTrace = import("utils.CompatTrace")
 FireBtn = class("FireBtn", function()
     return display.newNode()
 end)
@@ -25,10 +26,10 @@ function FireBtn:init()
         end
     end)
 
-    --动画缓存
+    -- 动画缓存（原版构造时机和图集路径保留）
+    CompatTrace.log("ui", "FireBtn ctor: loading mirrfire atlas")
     display.addSpriteFrames("animation/mirrfire.plist", "animation/mirrfire.png")
-    
-    
+
     --
     local towerBuddhaModel = DataUtils.getTowerBuddhaModel()
     local level = towerBuddhaModel.wandPropertyLevelTotal_
@@ -47,13 +48,20 @@ function FireBtn:init()
     
     -- 闪电20组骨骼动画缓存
     self.tableShandian_ = {}
+    self.shandianCount_ = 20
     local armature = nil
     for i = 1,20 do
+        CompatTrace.resource("lightning-armature", string.format("animation/%s/%s.csb", armatureName, armatureName))
         armature = ccs.Armature:create(armatureName)
-        armature:setVisible(false)
-        armature:setPosition(Game.TOWER_BUDDHA:getPositionX() - 60 * (i-1) - 50, display.height * 0.22)
-        Game.BG1:addChild(armature)
-        self.tableShandian_[i] = armature
+        if armature ~= nil and armature.getAnimation ~= nil then
+            armature:setVisible(false)
+            armature:setPosition(Game.TOWER_BUDDHA:getPositionX() - 60 * (i-1) - 50, display.height * 0.22)
+            Game.BG1:addChild(armature)
+            self.tableShandian_[i] = armature
+        else
+            CompatTrace.log("lightning-armature", string.format("create FAILED name=%s index=%d", armatureName, i))
+            self.tableShandian_[i] = nil
+        end
     end
     
     --攻击距离标识
@@ -99,10 +107,12 @@ function FireBtn:cd()
     self.progressTimer_:setPercentage(0)
 
     local upgradePropertyModel = DataUtils.getUpgradePropertyModel(3)
+    local cooldownSeconds = tonumber(upgradePropertyModel.param_) or 10
+    if cooldownSeconds <= 0 then cooldownSeconds = 10 end
 
     local seq = transition.sequence({
         --cc.ProgressTo:create(10,100), --for test
-        cc.ProgressTo:create(upgradePropertyModel.param_,100),
+        cc.ProgressTo:create(cooldownSeconds,100),
         cc.CallFunc:create(function()
             self:readyForFire()
         end),
@@ -125,7 +135,7 @@ function FireBtn:readyForFire()
 		audio.playSound(string.format("sounds/sfx_gun_cooldown.%s",GameManager.POSTFIX))
 	end	
 	
-	local frames = display.newFrames("mirrfire%d.png", 1, 2)
+    local frames = display.newFrames("mirrfire%d.png", 1, 2)
     local animation = display.newAnimation(frames, 0.15)
     self.figureSprite_:setVisible(true)
     self.figureSprite_:playAnimationForever(animation)
@@ -178,12 +188,18 @@ function FireBtn:fire()
 end
 
 function FireBtn:shandian()
-    if self.shandianIndex_ < #self.tableShandian_ then
-		if GameManager.SOUND_SWITCH_ON then
-			audio.playSound(string.format("sounds/snd026.%s",GameManager.POSTFIX))
-		end
+    -- Do not use #tableShandian_ here: a failed armature creates holes in the
+    -- array, and Lua's length operator is undefined for sparse arrays.
+    if self.shandianIndex_ <= (self.shandianCount_ or 20) then
+        if GameManager.SOUND_SWITCH_ON then
+				audio.playSound(string.format("sounds/snd026.%s",GameManager.POSTFIX))
+			end
         local shandian = self.tableShandian_[self.shandianIndex_]
-        if ( shandian:getPositionX() < Game.TOWER_BUDDHA:getPositionX() - Game.TOWER_BUDDHA.model_.range_ ) then
+        local strikeX = Game.TOWER_BUDDHA:getPositionX() - 60 * (self.shandianIndex_ - 1) - 50
+        if shandian ~= nil and shandian.getAnimation ~= nil then
+            strikeX = shandian:getPositionX()
+        end
+        if (strikeX < Game.TOWER_BUDDHA:getPositionX() - Game.TOWER_BUDDHA.model_.range_) then
             self:stopAction(self.schedule_shandian_)
             --受伤结束
             for i,monster in pairs(Game.MONSTER_TABLE) do
@@ -191,19 +207,21 @@ function FireBtn:shandian()
             end
             return
 		end
-		shandian:setVisible(true)
-		shandian:getAnimation():playWithIndex(0)
+		if shandian ~= nil and shandian.getAnimation ~= nil then
+			shandian:setVisible(true)
+			shandian:getAnimation():playWithIndex(0)
+		end
         self.shandianIndex_ = self.shandianIndex_ + 1
         --受伤
         for i,monster in pairs(Game.MONSTER_TABLE) do
-            if monster:getPositionX() + 50 >= shandian:getPositionX() then
+			if monster:getPositionX() + 50 >= strikeX then
             	if not monster.isHurtedByShandian_ then
             	    --temp
                     monster:underAttack(Game.TOWER_BUDDHA.model_.attack_,true)
             	end
             end
         end
-	else
+    else
         self:stopAction(self.schedule_shandian_)
 	end
 end

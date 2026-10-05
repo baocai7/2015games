@@ -127,7 +127,7 @@ function DataUtils.getBuddhaModel( id,_towerBuddhaModel,treasureModel4,treasureM
     local _idRow = buddhaInfo:findIndexOfValueFromColumn(_npcIdColumn, id.."")
     
     -- 获取所在行的所有数据（PS:虽然data已经是复数形式了，加个s，只为标记）
-    local datas = buddhaInfo:getDatas(_idRow)
+    local datas = buddhaInfo:getDatas(_idRow) or {}
 
     --读出 id 对应行的所有数据
     local npcId = datas[_npcIdColumn] -- buddhaInfo:getData(_idRow,_npcIdColumn)
@@ -135,23 +135,24 @@ function DataUtils.getBuddhaModel( id,_towerBuddhaModel,treasureModel4,treasureM
     local icon = datas[_iconColumn] --buddhaInfo:getData(_idRow,_iconColumn)
     local defaultLevel = datas[_defaultLevelColumn] --buddhaInfo:getData(_idRow,_defaultLevelColumn)
     local maxLevel = datas[_maxLevelColumn] --buddhaInfo:getData(_idRow,_maxLevelColumn)
-    local costValue = datas[_costValueColumn] --buddhaInfo:getData(_idRow,_costValueColumn)
+    local costValue = tonumber(datas[_costValueColumn]) or 40 --buddhaInfo:getData(_idRow,_costValueColumn)
 
     -- 最短CD时间
-    local limitCDTime = datas[_limitCDTimeColumn]
+    local limitCDTime = tonumber(datas[_limitCDTimeColumn]) or 0
 
-    local cdTime = datas[_cdTimeColumn] --buddhaInfo:getData(_idRow,_cdTimeColumn)
+    local cdTime = tonumber(datas[_cdTimeColumn]) or 1 --buddhaInfo:getData(_idRow,_cdTimeColumn)
      -- 基础cd时间
     local basicCDTime = cdTime
     --宝物加成
     local treasureModel = treasureModel4 or DataUtils.getTreasureModel(4)
     local decreaseRate = 0
     if treasureModel.isTreasureEffective_ then
-        decreaseRate = treasureModel.effectIncreaseRate_ * 0.5
+        decreaseRate = tonumber(treasureModel.effectIncreaseRate_) or 0
+        decreaseRate = decreaseRate * 0.5
     end
     --升级唐僧属性加成
     local towerBuddhaModel = _towerBuddhaModel or DataUtils.getTowerBuddhaModel()
-    cdTime = tonumber(cdTime * (1 - towerBuddhaModel.cdTimeDecreaseParam_ * (1 + decreaseRate)))
+    cdTime = tonumber(cdTime * (1 - (tonumber(towerBuddhaModel.cdTimeDecreaseParam_) or 0) * (1 + decreaseRate))) or 1
 
     -- 兵种最短cd时间限制
     if cdTime < tonumber(limitCDTime) then
@@ -159,50 +160,50 @@ function DataUtils.getBuddhaModel( id,_towerBuddhaModel,treasureModel4,treasureM
     end
 
     local advancedGuardId = datas[_advancedGuardIdColumn] --buddhaInfo:getData(_idRow,_advancedGuardIdColumn)
-    local lifeParamK = datas[_lifeParamKColumn] --buddhaInfo:getData(_idRow,_lifeParamKColumn)
-    local lifeParamB = datas[_lifeParamBColumn] --buddhaInfo:getData(_idRow,_lifeParamBColumn)
-    local attackParamK = datas[_attackParamKColumn] --buddhaInfo:getData(_idRow,_attackParamKColumn)
-    local attackParamB = datas[_attackParamBColumn] --buddhaInfo:getData(_idRow,_attackParamBColumn)
+    local lifeParamK = tonumber(datas[_lifeParamKColumn]) or 0 --buddhaInfo:getData(_idRow,_lifeParamKColumn)
+    local lifeParamB = tonumber(datas[_lifeParamBColumn]) or 100 --buddhaInfo:getData(_idRow,_lifeParamBColumn)
+    local attackParamK = tonumber(datas[_attackParamKColumn]) or 0 --buddhaInfo:getData(_idRow,_attackParamKColumn)
+    local attackParamB = tonumber(datas[_attackParamBColumn]) or 10 --buddhaInfo:getData(_idRow,_attackParamBColumn)
 
-    local lifeParamKAdd = datas[_lifeParamKAddColumn] --buddhaInfo:getData(_idRow,_lifeParamKAddColumn)                    --newly added
-    local lifeParamBAdd = datas[_lifeParamBAddColumn] --buddhaInfo:getData(_idRow,_lifeParamBAddColumn)                    --newly added
-    local attackParamKAdd = datas[_attackParamKAddColumn] --buddhaInfo:getData(_idRow,_attackParamKAddColumn)                --newly added
-    local attackParamBAdd = datas[_attackParamBAddColumn] --buddhaInfo:getData(_idRow,_attackParamBAddColumn)                --newly added
+    local lifeParamKAdd = tonumber(datas[_lifeParamKAddColumn]) or 0 --buddhaInfo:getData(_idRow,_lifeParamKAddColumn)                    --newly added
+    local lifeParamBAdd = tonumber(datas[_lifeParamBAddColumn]) or 0 --buddhaInfo:getData(_idRow,_lifeParamBAddColumn)                    --newly added
+    local attackParamKAdd = tonumber(datas[_attackParamKAddColumn]) or 0 --buddhaInfo:getData(_idRow,_attackParamKAddColumn)                --newly added
+    local attackParamBAdd = tonumber(datas[_attackParamBAddColumn]) or 0 --buddhaInfo:getData(_idRow,_attackParamBAddColumn)                --newly added
 
     local essenceValue = datas[_essenceValueColumn] --buddhaInfo:getData(_idRow,_essenceValueColumn)
-    local essenceParamK = datas[_essenceParamKColumn] --buddhaInfo:getData(_idRow,_essenceParamKColumn)
-    local essenceParamB = datas[_essenceParamBColumn] --buddhaInfo:getData(_idRow,_essenceParamBColumn)
-    local restrainType = datas[_restraintypeColumn] --buddhaInfo:getData(_idRow,_restraintypeColumn)
+    local essenceParamK = tonumber(datas[_essenceParamKColumn]) or 0 --buddhaInfo:getData(_idRow,_essenceParamKColumn)
+    local essenceParamB = tonumber(datas[_essenceParamBColumn]) or 0 --buddhaInfo:getData(_idRow,_essenceParamBColumn)
+    local restrainType = tonumber(datas[_restraintypeColumn]) or 0 --buddhaInfo:getData(_idRow,_restraintypeColumn)
 
-    local attackFrequencyK = datas[_attackFrequencyKColumn] --buddhaInfo:getData(_idRow,_attackFrequencyKColumn)
-    local attackFrequencyB = datas[_attackFrequencyBColumn] --buddhaInfo:getData(_idRow,_attackFrequencyBColumn)
+    local attackFrequencyK = tonumber(datas[_attackFrequencyKColumn]) or 0 --buddhaInfo:getData(_idRow,_attackFrequencyKColumn)
+    local attackFrequencyB = tonumber(datas[_attackFrequencyBColumn]) or 1 --buddhaInfo:getData(_idRow,_attackFrequencyBColumn)
     --local runSpeedK = buddhaInfo:getData(_idRow,_runSpeedKColumn)
-    local runSpeed = datas[_runSpeedColumn] --buddhaInfo:getData(_idRow,_runSpeedColumn)
-    local attackDistance = datas[_attackDistanceColumn] --buddhaInfo:getData(_idRow,_attackDistanceColumn)
-    local adaptScale = datas[_zoomMultipleColumn] --buddhaInfo:getData(_idRow,_zoomMultipleColumn)
+    local runSpeed = tonumber(datas[_runSpeedColumn]) or 1 --buddhaInfo:getData(_idRow,_runSpeedColumn)
+    local attackDistance = tonumber(datas[_attackDistanceColumn]) or 100 --buddhaInfo:getData(_idRow,_attackDistanceColumn)
+    local adaptScale = tonumber(datas[_zoomMultipleColumn]) or 1 --buddhaInfo:getData(_idRow,_zoomMultipleColumn)
     local hasBulletAnim = datas[_hasBulletAnimColumn] --buddhaInfo:getData(_idRow,_hasBulletAnimColumn)
     local bulletAnimId = datas[_bulletAnimIdColumn] --buddhaInfo:getData(_idRow,_bulletAnimIdColumn)
-    local waitTime = datas[_waitTimeColumn] --buddhaInfo:getData(_idRow,_waitTimeColumn)
+    local waitTime = tonumber(datas[_waitTimeColumn]) or 0 --buddhaInfo:getData(_idRow,_waitTimeColumn)
     local isAreaDamage = datas[_isAreaDamageColumn] --buddhaInfo:getData(_idRow,_isAreaDamageColumn)
     local haveSpecialEffect = datas[_haveSpecialEffectColumn] --buddhaInfo:getData(_idRow,_haveSpecialEffectColumn)
     local effectId = datas[_effectIdColumn] --buddhaInfo:getData(_idRow,_effectIdColumn)
-    local backParam = datas[_backParamColumn] --buddhaInfo:getData(_idRow,_backParamColumn)
-    local backLength = datas[_backLengthColumn] --buddhaInfo:getData(_idRow,_backLengthColumn)
-    local upMove = datas[_upMoveColumn] --buddhaInfo:getData(_idRow,_upMoveColumn)
-    local summonPieceId = datas[_summonPieceIdColumn] --buddhaInfo:getData(_idRow,_summonPieceIdColumn)
-    local summonNum = datas[_summonNumColumn] --buddhaInfo:getData(_idRow,_summonNumColumn)
+    local backParam = tonumber(datas[_backParamColumn]) or 0.2 --buddhaInfo:getData(_idRow,_backParamColumn)
+    local backLength = tonumber(datas[_backLengthColumn]) or 0 --buddhaInfo:getData(_idRow,_backLengthColumn)
+    local upMove = tonumber(datas[_upMoveColumn]) or 0 --buddhaInfo:getData(_idRow,_upMoveColumn)
+    local summonPieceId = tonumber(datas[_summonPieceIdColumn]) or 0 --buddhaInfo:getData(_idRow,_summonPieceIdColumn)
+    local summonNum = tonumber(datas[_summonNumColumn]) or 0 --buddhaInfo:getData(_idRow,_summonNumColumn)
     local standFrame = datas[_standFrameColumn] --buddhaInfo:getData(_idRow,_standFrameColumn)
     local hurtFrame = datas[_hurtFrameColumn] --buddhaInfo:getData(_idRow,_hurtFrameColumn)
     local soundFile = datas[_soundFileColumn] --buddhaInfo:getData(_idRow,_soundFileColumn)
     local attackFrame = datas[_attackFrameColumn] --buddhaInfo:getData(_idRow,_attackFrameColumn)
     local npcDesc = datas[_npcDescColumn] --buddhaInfo:getData(_idRow,_npcDescColumn)
     local manualPriority = datas[_manualPriorityColumn] --buddhaInfo:getData(_idRow,_manualPriorityColumn)
-    local sizeInBattle = datas[_sizeInBattleColumn] --buddhaInfo:getData(_idRow,_sizeInBattleColumn)
-    local tag1 = datas[_tag1Column] --buddhaInfo:getData(_idRow,_tag1Column)
-    local tag2 = datas[_tag2Column] --buddhaInfo:getData(_idRow,_tag2Column)
-    local tag3 = datas[_tag3Column] --buddhaInfo:getData(_idRow,_tag3Column)
-    local attackTime = datas[_attackTimeColumn] --buddhaInfo:getData(_idRow,_attackTimeColumn)
-    local quality = datas[_qualityColumn] --buddhaInfo:getData(_idRow,_qualityColumn)
+    local sizeInBattle = tonumber(datas[_sizeInBattleColumn]) or 1 --buddhaInfo:getData(_idRow,_sizeInBattleColumn)
+    local tag1 = tonumber(datas[_tag1Column]) or 0 --buddhaInfo:getData(_idRow,_tag1Column)
+    local tag2 = tonumber(datas[_tag2Column]) or 0 --buddhaInfo:getData(_idRow,_tag2Column)
+    local tag3 = tonumber(datas[_tag3Column]) or 0 --buddhaInfo:getData(_idRow,_tag3Column)
+    local attackTime = tonumber(datas[_attackTimeColumn]) or 0 --buddhaInfo:getData(_idRow,_attackTimeColumn)
+    local quality = tonumber(datas[_qualityColumn]) or 0 --buddhaInfo:getData(_idRow,_qualityColumn)
     local isRebel = datas[_isRebelColumn] --buddhaInfo:getData(_idRow,_isRebelColumn)
     local balance = datas[_balanceColumn] --buddhaInfo:getData(_idRow,_balanceColumn)
 
@@ -268,15 +269,15 @@ function DataUtils.getBuddhaModel( id,_towerBuddhaModel,treasureModel4,treasureM
     buddhaModel.sizeInBattle_           = sizeInBattle
 
     --读CloudData
-    local npcInfoId                     = CloudData.NPC_INFO[id]
+    local npcInfoId                     = CloudData.NPC_INFO[id] or {level = 1, addlevel = 0, status = 1, isActive = 1}
     if(npcInfoId==nil) then
         local x = 1
     end
-    buddhaModel.level_                  = npcInfoId.level --CloudData.NPC_INFO[id].level
+    buddhaModel.level_                  = tonumber(npcInfoId.level) or 1 --CloudData.NPC_INFO[id].level
     if buddhaModel.level_ > 21 then
         buddhaModel.level_ = 1
     end
-    buddhaModel.addLevel_               = npcInfoId.addlevel --CloudData.NPC_INFO[id].addlevel
+    buddhaModel.addLevel_               = tonumber(npcInfoId.addlevel) or 0 --CloudData.NPC_INFO[id].addlevel
     buddhaModel.buddhaState_            = npcInfoId.status --CloudData.NPC_INFO[id].status
     buddhaModel.buddhaIsActive_         = npcInfoId.isActive --CloudData.NPC_INFO[id].isActive
 
@@ -286,11 +287,11 @@ function DataUtils.getBuddhaModel( id,_towerBuddhaModel,treasureModel4,treasureM
     --宝物加成
     local tm1 = treasureModel5 or DataUtils.getTreasureModel(5)
     if tm1.isTreasureEffective_ then
-        life = tonumber(life * (1 + tm1.effectIncreaseRate_ * 0.5))
+        life = tonumber(life * (1 + (tonumber(tm1.effectIncreaseRate_) or 0) * 0.5)) or life
     end
     local tm2 = treasureModel8 or DataUtils.getTreasureModel(8)
     if tm2.isTreasureEffective_ then
-        attack = tonumber(attack * (1 + tm2.effectIncreaseRate_ * 0.5))
+        attack = tonumber(attack * (1 + (tonumber(tm2.effectIncreaseRate_) or 0) * 0.5)) or attack
     end
 
     buddhaModel.life_   = life
@@ -300,8 +301,8 @@ function DataUtils.getBuddhaModel( id,_towerBuddhaModel,treasureModel4,treasureM
     if(id==101) then
         local x = 1
     end
-    local buddhaExp = DataRetainer.BUDDHA_EXP_COST_INFO:objectAtIndex(id)
-    buddhaModel.expCost_ = buddhaExp[string.format("level%dupgrade",buddhaModel.level_)]
+    local buddhaExp = DataRetainer.BUDDHA_EXP_COST_INFO:objectAtIndex(id) or {}
+    buddhaModel.expCost_ = tonumber(buddhaExp[string.format("level%dupgrade",buddhaModel.level_)]) or 0
 
     --计算消耗精华石 (公式:((N^2.5+50)*2+essenceParamB*N-2))
     --buddhaModel.essenceCost_            = tonumber(buddhaModel.addLevel_ * buddhaModel.essenceParamK_ + buddhaModel.essenceParamB_)
@@ -320,10 +321,7 @@ function DataUtils.getBuddhaModel( id,_towerBuddhaModel,treasureModel4,treasureM
         --存储妖怪兵种现有碎片
 --        buddhaModel.currPieceNum_ = currMonsterPieceNum
         
-        buddhaModel.currPieceNum_ = CloudData.MONSTER_PIECE_INFO[summonPieceId] 
-        if(buddhaModel.currPieceNum_ == nil) then
-            local y = 1
-        end
+        buddhaModel.currPieceNum_ = tonumber(CloudData.MONSTER_PIECE_INFO[summonPieceId]) or 0
 --        print("碎片:",buddhaModel.currPieceNum_)        
     end
 

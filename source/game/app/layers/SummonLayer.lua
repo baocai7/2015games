@@ -3,12 +3,37 @@
 --
 
 local NewFellowLayer   = import("layers.NewFellowLayer")
+local CompatTrace      = import("utils.CompatTrace")
 
 local SummonLayer = class("SummonLayer", function()
 	return display.newLayer()
 end)
 
+local function loadSummonModel(npcId)
+    local requested = tonumber(npcId) or 1
+    local ok, model = xpcall(function()
+        return DataUtils.getBuddhaModel(requested)
+    end, function(err)
+        return debug.traceback(tostring(err))
+    end)
+    if ok and model ~= nil then
+        CompatTrace.log("summon-ui", "model ok npc=" .. tostring(requested))
+        return model
+    end
+    CompatTrace.log("summon-ui", "model FAILED npc=" .. tostring(requested) .. " error=" .. tostring(model))
+    local fallbackOk, fallback = pcall(function()
+        return DataUtils.getBuddhaModel(1)
+    end)
+    if fallbackOk and fallback ~= nil then
+        CompatTrace.log("summon-ui", "model fallback npc=1 requested=" .. tostring(requested))
+        return fallback
+    end
+    return nil
+end
+
 function SummonLayer:ctor( type_,npcIdTable,essenceNumTable)
+	CompatTrace.log("summon-ui", string.format("ctor type=%s npcCount=%s essenceCount=%s",
+		tostring(type_), tostring(npcIdTable and #npcIdTable or 0), tostring(essenceNumTable and #essenceNumTable or 0)))
 
 	--添加遮罩层
 	display.newColorLayer(cc.c4b(0,0,0,150)):addTo(self,-1)
@@ -63,7 +88,12 @@ end
 --获取单抽的兵种信息
 function SummonLayer:generateSingleNpc_()
     local npcId = self.npcIdTable_[1]
-    local buddhaModel = DataUtils.getBuddhaModel(npcId)
+    local buddhaModel = loadSummonModel(npcId)
+    if buddhaModel == nil then
+        CompatTrace.log("summon-ui", "single result has no model; closing safely")
+        self:closeCallBack_()
+        return
+    end
     table.insert(self.buddhaModelTable_,buddhaModel)
     self:initSingleSummonUI_(buddhaModel)
 end
@@ -72,7 +102,7 @@ function SummonLayer:generateSummonTenNpcs_()
     
     for i=1,10 do
         local npcId = self.npcIdTable_[i]
-        local buddhaModel = DataUtils.getBuddhaModel(npcId)
+        local buddhaModel = loadSummonModel(npcId)
         table.insert(self.buddhaModelTable_,buddhaModel)
     end
 
@@ -198,9 +228,17 @@ function SummonLayer:initMultipleSummonUI_()
         self.isInProgress_ = true
         GameManager.IS_NEWFELLOW_CLOSED = false
         local index = self.index_
+		CompatTrace.log("summon-ui", string.format("index start=%d closed=%s", index, tostring(GameManager.IS_NEWFELLOW_CLOSED)))
 
         --读取model数据
         local buddhaModel = self.buddhaModelTable_[index]
+		if buddhaModel == nil then
+			CompatTrace.log("summon-ui", "index has nil model=" .. tostring(index) .. "; skipping")
+			self.index_ = self.index_ + 1
+			self.isInProgress_ = false
+			GameManager.IS_NEWFELLOW_CLOSED = true
+			return
+		end
         local buddhaId      = tonumber(buddhaModel.npcId_)
         local buddhaName    = buddhaModel.name_
         local buddhaIcon    = buddhaModel.icon_
@@ -294,6 +332,8 @@ function SummonLayer:initMultipleSummonUI_()
         else
             GameManager.IS_NEWFELLOW_CLOSED = true
         end
+		CompatTrace.log("summon-ui", string.format("index queued=%d new=%s closed=%s", index,
+			tostring(isNewBuddha), tostring(GameManager.IS_NEWFELLOW_CLOSED)))
     end
 end
 
@@ -331,10 +371,21 @@ function SummonLayer:newFellowAction_(idx)
     local essenceNum = self.essenceNumTable_[idx]
     if essenceNum == 0 then
         local buddhaModel = self.buddhaModelTable_[idx]
-        local layer = NewFellowLayer.new(buddhaModel,FROM_SUMMON)
-        self:addChild(layer,20)
-
-        DataUtils.setNewBuddhaCloudData( tonumber(buddhaModel.npcId_) )
+        CompatTrace.log("summon-ui", "new fellow start index=" .. tostring(idx) .. " npc=" .. tostring(buddhaModel and buddhaModel.npcId_))
+        local ok, err = xpcall(function()
+            local layer = NewFellowLayer.new(buddhaModel,FROM_SUMMON)
+            self:addChild(layer,20)
+            DataUtils.setNewBuddhaCloudData( tonumber(buddhaModel.npcId_) )
+        end, function(value)
+            return debug.traceback(tostring(value))
+        end)
+        if not ok then
+            CompatTrace.log("summon-ui", "new fellow FAILED index=" .. tostring(idx) .. "\n" .. tostring(err))
+            GameManager.IS_NEWFELLOW_CLOSED = true
+        end
+    end
+    if DataUtils.markResourceMutation ~= nil then
+        DataUtils.markResourceMutation("summon-result")
     end
 end
 

@@ -1,9 +1,14 @@
 
+local CompatTrace = import("utils.CompatTrace")
+
 local AlertUpdate = class("AlertUpdate", function()
     return display.newLayer()
 end)
 
 function AlertUpdate:ctor( url, filesize, isForce, isPreVersion, reachedVersion )
+
+    CompatTrace.log("update", string.format("dialog url=%s size=%s force=%s pre=%s reached=%s",
+        tostring(url), tostring(filesize), tostring(isForce), tostring(isPreVersion), tostring(reachedVersion)))
 
     self.url_ = url
     self.isPreVersion_ = isPreVersion
@@ -118,6 +123,8 @@ end
 function AlertUpdate:assetsManager()
 
     local function onError(errorCode)
+        CompatTrace.log("update", string.format("assets error code=%s url=%s timeUrl=%s",
+            tostring(errorCode), tostring(self.url_), "http://125.88.152.28/dbxy/0.html"))
         if errorCode == cc.ASSETSMANAGER_NO_NEW_VERSION then
             print("no new version")
         elseif errorCode == cc.ASSETSMANAGER_NETWORK then
@@ -126,12 +133,14 @@ function AlertUpdate:assetsManager()
     end
 
     local function onProgress( percent )
+        CompatTrace.log("update", string.format("assets progress=%s url=%s", tostring(percent), tostring(self.url_)))
         print("downloading %d ％",percent)
         self.label_:setString(string.format("%d％",percent))
         self.progress_:runAction(cc.ProgressTo:create(0,percent))
     end
 
     local function onSuccess()
+        CompatTrace.log("update", "assets success url=" .. tostring(self.url_))
         if self.isPreVersion_ then
             cc.UserDefault:getInstance():setBoolForKey("missed_armature_res_downloaded", true)
             GameManager.IS_ARMATURE_DOWNLOADED = true
@@ -158,6 +167,8 @@ function AlertUpdate:assetsManager()
     --将  assetsManager 内部版本号制空
     cc.UserDefault:getInstance():setStringForKey("current-version-codezd","")
     self.assetsManager = cc.AssetsManager:new(self.url_, "http://125.88.152.28/dbxy/0.html", GameManager.PATH_DLC)
+    CompatTrace.log("update", string.format("assets check start url=%s versionUrl=%s cache=%s",
+        tostring(self.url_), "http://125.88.152.28/dbxy/0.html", tostring(GameManager.PATH_DLC)))
     self.assetsManager:retain()
     self.assetsManager:setDelegate(onError, cc.ASSETSMANAGER_PROTOCOL_ERROR )
     self.assetsManager:setDelegate(onProgress, cc.ASSETSMANAGER_PROTOCOL_PROGRESS)

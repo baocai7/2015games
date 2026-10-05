@@ -437,6 +437,9 @@ function SummonScene:singleCallBack_()
 
                     --经验扣除
                     CloudData.EXP = CloudData.EXP - expCost
+                    if DataUtils.markResourceMutation ~= nil then
+                        DataUtils.markResourceMutation("summon-exp-single")
+                    end
                     if expCost == 0 then
                         self:updateUIAfterExpFree_()
                     end
@@ -488,6 +491,9 @@ function SummonScene:singleCallBack_()
 
                     --蟠桃扣除
                     CloudData.PEACH = CloudData.PEACH - peachCost
+                    if DataUtils.markResourceMutation ~= nil then
+                        DataUtils.markResourceMutation("summon-peach-single")
+                    end
                     if peachCost == 0 then
                         --倒计时刷新
                         print("NEXT_FREESUMMON_TIME_PEACH = "..CloudData.NEXT_FREESUMMON_TIME_PEACH)
@@ -556,6 +562,9 @@ function SummonScene:multipleCallBack_()
 
                     --经验扣除
                     CloudData.EXP = CloudData.EXP - expCost
+                    if DataUtils.markResourceMutation ~= nil then
+                        DataUtils.markResourceMutation("summon-exp-ten")
+                    end
 
                     --DataEye统计
                     if USE_DATAEYE then
@@ -598,6 +607,9 @@ function SummonScene:multipleCallBack_()
 
                     --蟠桃扣除
                     CloudData.PEACH = CloudData.PEACH - peachCost
+                    if DataUtils.markResourceMutation ~= nil then
+                        DataUtils.markResourceMutation("summon-peach-ten")
+                    end
 
                     --DataEye统计
                     if USE_DATAEYE then

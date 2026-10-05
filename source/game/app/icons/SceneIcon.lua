@@ -23,9 +23,14 @@ function SceneIcon:ctor(index)
 		:hide()
 		:addTo(self.icon_,1)
 
-	self:setTouchEnabled(true)
 	self:setContentSize(cc.size(self.icon_:getContentSize().width,self.icon_:getContentSize().height))
 	self:addChild(self.icon_)
+end
+
+function SceneIcon:addTouchListener(listener)
+	self.icon_:setTouchEnabled(true)
+	self.icon_:setTouchSwallowEnabled(true)
+	self.icon_:addNodeEventListener(cc.NODE_TOUCH_EVENT,listener)
 end
 
 --"new"标识提示

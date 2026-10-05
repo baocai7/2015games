@@ -1,5 +1,6 @@
 
 local TinyLoadingScene = {}
+local CompatTrace = import("utils.CompatTrace")
 TinyLoadingScene = class("TinyLoadingScene", function()
     return display.newScene("TinyLoadingScene")
 end)
@@ -28,7 +29,11 @@ function TinyLoadingScene:ctor( destination_scene , mode)
         self:initUI()
     end
 
-    self:addAndroidReturnButton_()
+    -- Do not create a UIPushButton on the loading scene.  The old empty
+    -- button only existed to receive the Android back key, but its Lua touch
+    -- listener can outlive this scene on older Cocos builds.  A later tap
+    -- then reaches a freed LuaEventNode and crashes in LuaTouchEventManager.
+    -- The loading screen must remain touch-inert while its scene is replaced.
 end
 
 function TinyLoadingScene:initUI()
@@ -95,12 +100,19 @@ end
 --
 function TinyLoadingScene:loadLogic()
     if self.destination_scene_ == "GAME_SCENE" then
-        -- change color to rgba 4444
-        cc.Texture2D:setDefaultAlphaPixelFormat( cc.TEXTURE2_D_PIXEL_FORMAT_RGB_A4444 )
-
-        -- start to load armature data after 2s...
+        -- Keep the original armature/atlas loading sequence.  The loader now
+        -- records every path and has a bounded completion fallback, so the
+        -- three gameplay UI constructors still receive their original data.
+        cc.Texture2D:setDefaultAlphaPixelFormat(cc.TEXTURE2_D_PIXEL_FORMAT_RGB_A4444)
         self:performWithDelay(function()
-            self:loadArmatureAsync()
+            local ok, err = xpcall(function()
+                self:loadArmatureAsync()
+            end, debug.traceback)
+            if not ok then
+                CompatTrace.log("loading", "loadArmatureAsync FAILED\n" .. tostring(err))
+                cc.UserDefault:getInstance():setStringForKey("compat_last_game_error", tostring(err))
+                self.labelLoading_:setString("资源加载失败")
+            end
         end,2)
     elseif self.destination_scene_ == "CHAPTER_SCENE" then
         self:performWithDelay(function()
@@ -123,23 +135,36 @@ end
 
 -- 异步加载骨骼动画
 function TinyLoadingScene:loadArmatureAsync()
-
-    -- Async回调方法
-    local function dataLoaded( percent )
-        if nil ~= self.labelLoading_ then
-            self.labelLoading_:setString(string.format("努力加载中...%d％",(30 + percent * 60)))
-            print("加载百分比:", percent)
-        end
-        if percent >= 1 then
-            self:loadAnimationAsync()
-        end
+    if self.armatureLoadStarted_ then
+        return
+    end
+    self.armatureLoadStarted_ = true
+    -- Stage 0 is only the map's "nothing selected" sentinel.  It is not a
+    -- valid normal battle and the original enterGameScene code had an empty
+    -- branch for it.  Normalize it before looking up stage assets.
+    if self.mode_ == "NORMAL" and (tonumber(GameManager.STAGE_NUM) or 0) <= 0 then
+        GameManager.STAGE_NUM = 1
+        print("[compat] normalized empty stage to 1 before loading")
     end
 
-    -- 先清理干净骨骼动画数据
+    -- Do not walk and mutate the global armature table here.  On the legacy
+    -- Android runtime that table can contain hundreds of entries; removing
+    -- entries while iterating it can block the render thread before the
+    -- loading timeout is even scheduled.  The manager safely reuses entries
+    -- that are already registered, and the path de-duplication below avoids
+    -- duplicate async requests for this stage.
     local manager = ccs.ArmatureDataManager:getInstance()
-    for k,v in pairs(manager:getArmatureDatas()) do
-        manager:removeArmatureFileInfo(string.format("animation/%s/%s.csb",k,k))
-        manager:removeArmatureFileInfo(string.format("armature/%s/%s.csb",k,k))
+
+    -- Each armature load has its own completion callback.  The old code
+    -- entered GameScene from every callback, so the first completed asset
+    -- could replace the scene while the remaining assets were still loading.
+    local armaturePaths = {}
+    local queuedPaths = {}
+    local function queueArmature(path)
+        if not queuedPaths[path] then
+            queuedPaths[path] = true
+            table.insert(armaturePaths, path)
+        end
     end
 
     -- monster armature
@@ -163,8 +188,7 @@ function TinyLoadingScene:loadArmatureAsync()
         if ( 0 ~= tonumber(monsterId) ) then
             local monsterModel = DataUtils.getMonsterModel(monsterId)
             print(monsterId .. " .. " .. monsterModel.hurtFrame_)
-            ccs.ArmatureDataManager:getInstance():addArmatureFileInfoAsync(string.format("armature/%s/%s.csb", monsterModel.hurtFrame_, monsterModel.hurtFrame_), dataLoaded)
-            print("load success")
+            queueArmature(string.format("armature/%s/%s.csb", monsterModel.hurtFrame_, monsterModel.hurtFrame_))
         end
     end
 
@@ -174,7 +198,7 @@ function TinyLoadingScene:loadArmatureAsync()
         for i, buddhaId in pairs(teamInfo) do
             if buddhaId ~= "" then
                 local buddhaModel = DataUtils.getBuddhaModel(tonumber(buddhaId))
-                ccs.ArmatureDataManager:getInstance():addArmatureFileInfoAsync(string.format("armature/%s/%s.csb", buddhaModel.hurtFrame_, buddhaModel.hurtFrame_), dataLoaded)
+                queueArmature(string.format("armature/%s/%s.csb", buddhaModel.hurtFrame_, buddhaModel.hurtFrame_))
             end
         end
     else
@@ -182,7 +206,7 @@ function TinyLoadingScene:loadArmatureAsync()
         local tempTeam = {53,52,2,23,1,31,27}
         for i = 1, 6 do
             local buddhaModel = DataUtils.getBuddhaModel(tempTeam[i])
-            ccs.ArmatureDataManager:getInstance():addArmatureFileInfoAsync(string.format("armature/%s/%s.csb", buddhaModel.hurtFrame_, buddhaModel.hurtFrame_), dataLoaded)
+            queueArmature(string.format("armature/%s/%s.csb", buddhaModel.hurtFrame_, buddhaModel.hurtFrame_))
         end
     end
 
@@ -192,61 +216,161 @@ function TinyLoadingScene:loadArmatureAsync()
     local level = towerBuddhaModel.wandPropertyLevelTotal_
     --print("level tower : "..level)
     if ( level < 30 ) then
-        ccs.ArmatureDataManager:getInstance():addArmatureFileInfoAsync("animation/shandiantexiao1/shandiantexiao1.csb", dataLoaded)
+        queueArmature("animation/shandiantexiao1/shandiantexiao1.csb")
     elseif( level < 55 ) then
-        ccs.ArmatureDataManager:getInstance():addArmatureFileInfoAsync("animation/shandiantexiao2/shandiantexiao2.csb", dataLoaded)
+        queueArmature("animation/shandiantexiao2/shandiantexiao2.csb")
     else
-        ccs.ArmatureDataManager:getInstance():addArmatureFileInfoAsync("animation/shandiantexiao3/shandiantexiao3.csb", dataLoaded)
+        queueArmature("animation/shandiantexiao3/shandiantexiao3.csb")
     end
+
+    local total = #armaturePaths
+    local completed = 0
+    local entered = false
+
+    local function enterAfterLoading()
+        if entered then
+            return
+        end
+        entered = true
+        if self.labelLoading_ ~= nil then
+            self.labelLoading_:setString("努力加载中...90％")
+        end
+        local ok, err = xpcall(function()
+            self:loadAnimationAsync()
+        end, debug.traceback)
+        if not ok then
+            CompatTrace.log("loading", "loadAnimationAsync/scene entry FAILED\n" .. tostring(err))
+            cc.UserDefault:getInstance():setStringForKey("compat_last_game_error", tostring(err))
+            if self.labelLoading_ ~= nil then self.labelLoading_:setString("资源初始化失败") end
+        end
+    end
+
+    -- Android's synchronous armature registration can block forever on a
+    -- malformed or already-cached CSB. Use the non-blocking API and keep a
+    -- bounded fallback so one optional animation can never strand the scene.
+    if total == 0 then
+        enterAfterLoading()
+        return
+    end
+
+    -- Register the timeout before starting the armature queue.  On this
+    -- legacy Android build addArmatureFileInfoAsync may spend a long time
+    -- registering a large batch and the old timeout was placed after the
+    -- queue, so it was never scheduled while the progress sat at 90%.
+    self:performWithDelay(function()
+        enterAfterLoading()
+    end, 5.0)
+
+    for _, path in ipairs(armaturePaths) do
+        local finished = false
+        CompatTrace.resource("armature-async", path)
+        CompatTrace.log("armature-async", "start path=" .. tostring(path))
+        local ok, err = xpcall(function()
+            manager:addArmatureFileInfoAsync(path, function(percent)
+                percent = tonumber(percent) or 0
+                if self.labelLoading_ ~= nil then
+                    local progress = math.min(1, (completed + percent) / total)
+                    self.labelLoading_:setString(string.format("努力加载中...%d％", (30 + progress * 60)))
+                end
+                if percent >= 1 and not finished then
+                    finished = true
+                    completed = completed + 1
+                    CompatTrace.log("armature-async", string.format("complete path=%s count=%d/%d", path, completed, total))
+                    if completed >= total then
+                        enterAfterLoading()
+                    end
+                end
+            end)
+        end, debug.traceback)
+        if not ok then
+            CompatTrace.log("armature-async", "FAILED path=" .. tostring(path) .. "\n" .. tostring(err))
+        end
+    end
+
+    -- Some Cocos Android builds load the file but never dispatch the final
+    -- progress callback. The resources remain registered in the manager, so
+    -- entering after this timeout is preferable to an infinite loading page.
 end
 function TinyLoadingScene:loadArmatureAsyncInfinite()
 
-    -- Async回调方法
-    local function dataLoaded( percent )
-        if nil ~= self.labelLoading_ then
-            self.labelLoading_:setString(string.format("努力加载中...%d％",(30 + percent * 60)))
-        end
-        if percent >= 1 then
-            self:loadAnimationAsync()
-        end
+    if self.infiniteArmatureLoadStarted_ then
+        return
     end
-    
-    -- 先清理干净骨骼动画数据
+    self.infiniteArmatureLoadStarted_ = true
+
     local manager = ccs.ArmatureDataManager:getInstance()
-    for k,v in pairs(manager:getArmatureDatas()) do
-        manager:removeArmatureFileInfo(string.format("animation/%s/%s.csb",k,k))
-        manager:removeArmatureFileInfo(string.format("armature/%s/%s.csb",k,k))
+    local paths = {}
+    local queued = {}
+    local function queue(path)
+        if not queued[path] then
+            queued[path] = true
+            table.insert(paths, path)
+        end
     end
 
-    -- 加载妖怪骨骼
+    -- Load each required armature once.  The old implementation called
+    -- loadAnimationAsync from every callback, which could replace the scene
+    -- repeatedly while the remaining infinite-mode assets were still pending.
     local infiniteStageModel = DataUtils.getInfiniteStageModel(CloudData.INFINITE_STAGE_PROGRESS)
     for k, v in pairs(infiniteStageModel.monsterIdsTotalTable_) do
-        if ( 0 ~= tonumber(k) ) then
+        if (0 ~= tonumber(k)) then
             local monsterModel = DataUtils.getInfiniteMonsterModel(k)
             print(k .. " .. " .. monsterModel.hurtFrame_)
-            ccs.ArmatureDataManager:getInstance():addArmatureFileInfoAsync(string.format("armature/%s/%s.csb", monsterModel.hurtFrame_, monsterModel.hurtFrame_), dataLoaded)
+            queue(string.format("armature/%s/%s.csb", monsterModel.hurtFrame_, monsterModel.hurtFrame_))
         end
     end
 
-    -- 加载我方兵种骨骼
     local teamInfo = DataUtils.getBuddhaTableOnTeam()
     for i, buddhaId in pairs(teamInfo) do
         if buddhaId ~= "" then
             local buddhaModel = DataUtils.getBuddhaModel(tonumber(buddhaId))
-            ccs.ArmatureDataManager:getInstance():addArmatureFileInfoAsync(string.format("armature/%s/%s.csb", buddhaModel.hurtFrame_, buddhaModel.hurtFrame_), dataLoaded)
+            queue(string.format("armature/%s/%s.csb", buddhaModel.hurtFrame_, buddhaModel.hurtFrame_))
         end
     end
-    
-    -- 照妖镜闪电
+
     local towerBuddhaModel = DataUtils.getTowerBuddhaModel()
-    local level = towerBuddhaModel.wandPropertyLevelTotal_
-    --print("level tower : "..level)
-    if ( level < 30 ) then
-        ccs.ArmatureDataManager:getInstance():addArmatureFileInfoAsync("animation/shandiantexiao1/shandiantexiao1.csb", dataLoaded)
-    elseif( level < 55 ) then
-        ccs.ArmatureDataManager:getInstance():addArmatureFileInfoAsync("animation/shandiantexiao2/shandiantexiao2.csb", dataLoaded)
+    local level = tonumber(towerBuddhaModel.wandPropertyLevelTotal_) or 1
+    if level < 30 then
+        queue("animation/shandiantexiao1/shandiantexiao1.csb")
+    elseif level < 55 then
+        queue("animation/shandiantexiao2/shandiantexiao2.csb")
     else
-        ccs.ArmatureDataManager:getInstance():addArmatureFileInfoAsync("animation/shandiantexiao3/shandiantexiao3.csb", dataLoaded)
+        queue("animation/shandiantexiao3/shandiantexiao3.csb")
+    end
+
+    local total = #paths
+    local completed = 0
+    local finished = {}
+    local entered = false
+    local function enterAfterLoading()
+        if entered then return end
+        entered = true
+        self:loadAnimationAsync()
+    end
+    if total == 0 then
+        enterAfterLoading()
+        return
+    end
+    self:performWithDelay(enterAfterLoading, 5.0)
+    for _, path in ipairs(paths) do
+        CompatTrace.resource("armature-async-infinite", path)
+        local ok, err = xpcall(function()
+            manager:addArmatureFileInfoAsync(path, function(percent)
+                percent = tonumber(percent) or 0
+                if self.labelLoading_ ~= nil then
+                    self.labelLoading_:setString(string.format("努力加载中...%d％", 30 + math.min(1, (completed + percent) / total) * 60))
+                end
+                if percent >= 1 and not finished[path] then
+                    finished[path] = true
+                    completed = completed + 1
+                    CompatTrace.log("armature-async-infinite", string.format("complete path=%s count=%d/%d", path, completed, total))
+                    if completed >= total then enterAfterLoading() end
+                end
+            end)
+        end, debug.traceback)
+        if not ok then
+            CompatTrace.log("armature-async-infinite", "FAILED path=" .. tostring(path) .. "\n" .. tostring(err))
+        end
     end
 end
 
@@ -284,24 +408,24 @@ function TinyLoadingScene:enterGameScene()
 
     -- restore color to rgba 8888
     cc.Texture2D:setDefaultAlphaPixelFormat( cc.TEXTURE2_D_PIXEL_FORMAT_RGB_A8888 )
+    CompatTrace.log("scene", string.format("enter destination=%s mode=%s stage=%s", tostring(self.destination_scene_), tostring(self.mode_), tostring(GameManager.STAGE_NUM)))
 
     if self.mode_ == "NORMAL" then
         --DataEye统计关卡
         if USE_DATAEYE then  
             DCLevels.begin(GameManager.STAGE_NUM .. "")               
         end
-        if GameManager.STAGE_NUM == 0 then
-            -- print("进入第0关")
-            -- display.replaceScene(require("scenes.GameScene0").new(self.mode_),'FADETR',1)
+        if (tonumber(GameManager.STAGE_NUM) or 0) <= 0 then
+            GameManager.STAGE_NUM = 1
+            print("[compat] normalized empty stage to 1 at scene entry")
+        end
+        local stageModel = DataUtils.getStageModel(GameManager.STAGE_NUM)
+        if 1 == tonumber(stageModel.isGrooveMode_) then
+            print(string.format("卡槽模式 第%d关",GameManager.STAGE_NUM))
+            display.replaceScene(require("scenes.GameSceneGroove").new(self.mode_),'FADETR',1)
         else
-            local stageModel = DataUtils.getStageModel(GameManager.STAGE_NUM)
-            if 1 == tonumber(stageModel.isGrooveMode_) then
-                print(string.format("卡槽模式 第%d关",GameManager.STAGE_NUM))
-                display.replaceScene(require("scenes.GameSceneGroove").new(self.mode_),'FADETR',1)
-            else
-                print(string.format("普通模式 第%d关",GameManager.STAGE_NUM))
-                display.replaceScene(require("scenes.GameScene").new(self.mode_),'FADETR',1)
-            end
+            print(string.format("普通模式 第%d关",GameManager.STAGE_NUM))
+            display.replaceScene(require("scenes.GameScene").new(self.mode_),'FADETR',1)
         end
 
     elseif self.mode_ == "CHALLENGE" then

@@ -3,6 +3,8 @@ require("config")
 require("cocos.init")
 require("framework.init")
 
+local CompatTrace = import("utils.CompatTrace")
+
 local MyApp = class("MyApp", cc.mvc.AppBase)
 
 function MyApp:ctor()
@@ -12,6 +14,8 @@ end
 
 
 function MyApp:run()
+
+    CompatTrace.install()
 
     -- 防止调试时出现引擎资源被释放的问题
     local shine = cc.Director:getInstance():getTextureCache():getTextureForKey("play_background")

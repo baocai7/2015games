@@ -27,7 +27,7 @@ function SpiritCounter:reInit()
         self:stopAction(self.schedule_selector_)
     end
 
-	local tangmonkLevel = GameManager.TANGMONK_LEVEL
+	local tangmonkLevel = tonumber(GameManager.TANGMONK_LEVEL) or 1
     -- 作弊限制
     if tangmonkLevel > 8 then
         tangmonkLevel = 1
@@ -35,34 +35,38 @@ function SpiritCounter:reInit()
 	
 	local towerBuddhaModel = DataUtils.getTowerBuddhaModel()
 	
-    local spiritStorageLimit = towerBuddhaModel.spiritStorageLimit_
+    local spiritStorageLimit = tonumber(towerBuddhaModel.spiritStorageLimit_) or 100
     
-    local spiritStorageLevel = DataUtils.getPropertyLevel(6)
+    local spiritStorageLevel = tonumber(DataUtils.getPropertyLevel(6)) or 1
+    if spiritStorageLevel < 1 then
+        spiritStorageLevel = 1
+    end
     
     self.maxSpirit_ = spiritStorageLimit + 50 * spiritStorageLevel * ( tangmonkLevel - 1 ) 
     
     -- todo 宝物生效
     local tm = DataUtils.getTreasureModel(3)
     if tm.isTreasureEffective_ then
-        self.maxSpirit_ = tonumber(self.maxSpirit_ * (1 + tm.effectIncreaseRate_ * 0.5))
+        self.maxSpirit_ = tonumber(self.maxSpirit_ * (1 + (tonumber(tm.effectIncreaseRate_) or 0) * 0.5)) or self.maxSpirit_
     end
     
     -- todo 防妖怪死亡时灵气超出上限
     
     -- 当前灵气值
 --    local currentSpirit = GameManager.CURRENT_SPIRIT
-    local currentSpirit = GameManager.getCurrentSpirit()
+    local currentSpirit = tonumber(GameManager.getCurrentSpirit()) or 0
     
     -- 更新文字标签
     self.spiritLabel_:setString(string.format("%d/%d",currentSpirit,self.maxSpirit_))
     
     -- 计算灵气产生速度
-    local growSpeed = towerBuddhaModel.spiritGrowSpeed_ * (1 - 0.05 * ( tangmonkLevel - 1 ))
+    local growSpeed = (tonumber(towerBuddhaModel.spiritGrowSpeed_) or 1) * (1 - 0.05 * ( tangmonkLevel - 1 ))
+    if growSpeed <= 0 then growSpeed = 1 end
     
     --todo 宝物生效
     local tm2 = DataUtils.getTreasureModel(2)
     if tm2.isTreasureEffective_ then
-        growSpeed = tonumber(growSpeed / (1 + tm2.effectIncreaseRate_ * 0.5))
+        growSpeed = tonumber(growSpeed / (1 + (tonumber(tm2.effectIncreaseRate_) or 0) * 0.5)) or growSpeed
     end
     
     -- 计算每0.1s增加值
@@ -77,7 +81,7 @@ end
 
 
 function SpiritCounter:updateSpirit()
-    local currSpirit = GameManager.getCurrentSpirit()
+    local currSpirit = tonumber(GameManager.getCurrentSpirit()) or 0
     if(currSpirit<self.maxSpirit_) then
         currSpirit = currSpirit+self.incPerSec_
         GameManager.setCurrentSpirit(currSpirit)

@@ -5,6 +5,8 @@
 FROM_CHAPTER   = 1
 FROM_SUMMON    = 2
 
+local CompatTrace = import("utils.CompatTrace")
+
 local NewFellowLayer = class("NewFellowLayer", function()
 	return display.newLayer()
 end)
@@ -36,6 +38,12 @@ function NewFellowLayer:ctor(buddhaModel,fromType)
 	self.icon_      = buddhaModel.icon_
 	self.quality_   = tonumber(buddhaModel.quality_) + 1	 
 	self.model_     = buddhaModel 
+	CompatTrace.log("summon-ui", string.format(
+		"new fellow ctor npc=%s name=%s icon=%s quality=%s level=%s hurtFrame=%s from=%s",
+		tostring(buddhaModel.npcId_), tostring(self.name_), tostring(self.icon_),
+		tostring(self.quality_), tostring(self.leval_), tostring(buddhaModel.hurtFrame_), tostring(self.fromType_)))
+	CompatTrace.resource("new-fellow-icon", self.icon_)
+	CompatTrace.resource("new-fellow-card", "new_fellow/intro.png")
 	
 	--添加遮罩层			
 	self.mask = display.newColorLayer(cc.c4b(0,0,0,150))
@@ -125,10 +133,23 @@ function NewFellowLayer:init()
 		:align(display.CENTER, self.bg_:getContentSize().width * 0.2, self.bg_:getContentSize().height * 0.55)
 		:addTo(self.bg_)
 		:scale(0)
+	CompatTrace.node("new-fellow-card", card)
 	local popupLayer = transition.sequence({
 		cc.ScaleTo:create(2.2, 0),
 		cc.ScaleTo:create(0.1, 1.0)})			
         card:runAction(popupLayer)
+	self:performWithDelay(function()
+		local scale = 0
+		pcall(function() scale = card:getScaleX() end)
+		CompatTrace.log("new-fellow-card", "reveal check scale=" .. tostring(scale))
+		if scale <= 0.01 then
+			-- Some Android 13 builds finish the legacy scale sequence at zero.
+			CompatTrace.log("new-fellow-card", "reveal stuck; forcing scale=1")
+			card:stopAllActions()
+			card:setScale(1.0)
+		end
+		CompatTrace.node("new-fellow-card", card)
+	end, 2.6)
 				
 	local iconFrame = display.newSprite("upgrade/q"..self.quality_..".png")
 		:scale(0.7)
@@ -138,6 +159,10 @@ function NewFellowLayer:init()
 	local icon = display.newSprite(self.icon_)
 		:align(display.CENTER, iconFrame:getContentSize().width * 0.5, iconFrame:getContentSize().height * 0.5)
 		:addTo(iconFrame)
+	CompatTrace.node("new-fellow-icon", icon)
+	if not CompatTrace.node("new-fellow-icon-frame", iconFrame) then
+		CompatTrace.log("new-fellow-icon", "icon frame has no drawable size")
+	end
 			
 	cc.ui.UILabel.new({text = self.name_,size = 24,font = GameManager.FONTNAME_TTF})
 		:align(display.CENTER,card:getContentSize().width * 0.52, card:getContentSize().height * 0.74)
@@ -150,6 +175,8 @@ function NewFellowLayer:init()
 	local newfellow = display.newSprite("new_fellow/"..self.quality_..".png")
 		:align(display.CENTER, card:getContentSize().width * 0.52, card:getContentSize().height * 0.47)
 		:addTo(card)
+	CompatTrace.resource("new-fellow-quality", "new_fellow/"..self.quality_..".png")
+	CompatTrace.node("new-fellow-quality", newfellow)
 	
 	--新伙伴属性	
 	tags = {"","扛得住","揍一群","跑得快","打得远","打的狠","还凑合"}
@@ -171,8 +198,18 @@ function NewFellowLayer:init()
         :align(display.CENTER,self.bg_:getContentSize().width * 0.5,self.bg_:getContentSize().height * 0.1)      
         :addTo(self.bg_)
         :scale(0.75)
+	CompatTrace.resource("new-fellow-confirm", "common_ui/confirm.png")
+	CompatTrace.node("new-fellow-confirm", con)
 		con:onButtonClicked(function()
-			self:confirmCallBack_()
+			CompatTrace.log("summon-ui", "confirm tapped from=" .. tostring(self.fromType_))
+			local ok, err = xpcall(function()
+				self:confirmCallBack_()
+			end, debug.traceback)
+			if not ok then
+				CompatTrace.log("summon-ui", "confirm FAILED\n" .. tostring(err))
+			else
+				CompatTrace.log("summon-ui", "confirm completed")
+			end
 		end)
 	--[[local share = cc.ui.UIPushButton.new({normal = "new_fellow/share.png",pressed = "new_fellow/share_h.png"})
         :align(display.CENTER,self.bg_:getContentSize().width * 0.58,self.bg_:getContentSize().height * 0.1)
@@ -205,18 +242,36 @@ function NewFellowLayer:newFellow1_()
 end
 
 function NewFellowLayer:newFellow2_()
+	CompatTrace.log("summon-ui", "new fellow animation 3 start hurtFrame=" .. tostring(self.model_.hurtFrame_))
 	-- 加载特效配置文件
 	display.addSpriteFrames("new_fellow/new_fellow3.plist", "new_fellow/new_fellow3.png")	
 
 	--添加骨骼动画
 	cc.Texture2D:setDefaultAlphaPixelFormat( cc.TEXTURE2_D_PIXEL_FORMAT_RGB_A4444 )
-    ccs.ArmatureDataManager:getInstance():addArmatureFileInfo(string.format("armature/%s/%s.csb",
-        self.model_.hurtFrame_,self.model_.hurtFrame_))
-    local xiaodou = ccs.Armature:create(self.model_.hurtFrame_)
-    xiaodou:setPosition(self.bg_:getContentSize().width * 0.5, self.bg_:getContentSize().height * 0.25)
-    xiaodou:getAnimation():playWithIndex(0)
-    self.bg_:addChild(xiaodou)
-    cc.Texture2D:setDefaultAlphaPixelFormat( cc.TEXTURE2_D_PIXEL_FORMAT_RGB_A8888 )
+	local armaturePath = string.format("armature/%s/%s.csb", self.model_.hurtFrame_, self.model_.hurtFrame_)
+	CompatTrace.resource("new-fellow-armature", armaturePath)
+	local armatureOk, xiaodou = xpcall(function()
+		ccs.ArmatureDataManager:getInstance():addArmatureFileInfo(armaturePath)
+		local value = ccs.Armature:create(self.model_.hurtFrame_)
+		if value ~= nil and value:getAnimation() ~= nil then
+			value:setPosition(self.bg_:getContentSize().width * 0.5, self.bg_:getContentSize().height * 0.25)
+			value:getAnimation():playWithIndex(0)
+			self.bg_:addChild(value)
+		end
+		return value
+	end, debug.traceback)
+	if armatureOk and xiaodou ~= nil then
+		CompatTrace.node("new-fellow-armature", xiaodou)
+	else
+		CompatTrace.log("new-fellow-armature", "load FAILED\n" .. tostring(xiaodou))
+		-- Keep the reveal usable when the optional CSB package is absent.
+		local fallback = display.newSprite(self.icon_)
+			:scale(2.0)
+			:align(display.CENTER, self.bg_:getContentSize().width * 0.5, self.bg_:getContentSize().height * 0.25)
+			:addTo(self.bg_)
+		CompatTrace.node("new-fellow-armature-fallback", fallback)
+	end
+	cc.Texture2D:setDefaultAlphaPixelFormat( cc.TEXTURE2_D_PIXEL_FORMAT_RGB_A8888 )
 	
 	--添加空精灵播放新伙伴出现动画3
 	local ani = display.newSprite()
@@ -241,7 +296,7 @@ end
 
 --弹窗关闭
 function NewFellowLayer:closeCallBack_()
-	
+	CompatTrace.log("summon-ui", "close animation start")
     local popupLayer = transition.sequence({cc.ScaleTo:create(0,1.0),
         cc.ScaleTo:create(0.1,1.1),
         cc.ScaleTo:create(0.2,0),cc.CallFunc:create(function()

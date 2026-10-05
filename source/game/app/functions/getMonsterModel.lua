@@ -91,44 +91,44 @@ function DataUtils.getMonsterModel( id , _towerBuddhaModel, _treasureModel6)
     local icon = monsterInfo:getData(_idRow,_iconColumn)
     local defaultLevel = monsterInfo:getData(_idRow,_levelColumn)
 
-    local value = monsterInfo:getData(_idRow,_valueColumn)
+    local value = tonumber(monsterInfo:getData(_idRow,_valueColumn)) or 1
     --升级唐僧属性加成
     local tbm = _towerBuddhaModel or DataUtils.getTowerBuddhaModel()
     --宝物属性加成
     local tm = _treasureModel6 or DataUtils.getTreasureModel(6)
     if tm.isTreasureEffective_ then
-        value = tonumber(value * (1 + tbm.spiritIncreaseParam_ + tm.effectIncreaseRate_ * 0.5))
+        value = value * (1 + (tonumber(tbm.spiritIncreaseParam_) or 0) + (tonumber(tm.effectIncreaseRate_) or 0) * 0.5)
     else
-        value = value * (1 + tbm.spiritIncreaseParam_)
+        value = value * (1 + (tonumber(tbm.spiritIncreaseParam_) or 0))
     end
 
-    local life = monsterInfo:getData(_idRow,_lifeColumn)
-    local attackParam = monsterInfo:getData(_idRow,_attackParamColumn)
-    local attackFrequency = monsterInfo:getData(_idRow,_attackFrequencyColumn)
-    local runSpeed = monsterInfo:getData(_idRow,_runSpeedColumn)
-    local attackDistance = monsterInfo:getData(_idRow,_attackDistanceColumn)
+    local life = tonumber(monsterInfo:getData(_idRow,_lifeColumn)) or 100
+    local attackParam = tonumber(monsterInfo:getData(_idRow,_attackParamColumn)) or 10
+    local attackFrequency = tonumber(monsterInfo:getData(_idRow,_attackFrequencyColumn)) or 1
+    local runSpeed = tonumber(monsterInfo:getData(_idRow,_runSpeedColumn)) or 1
+    local attackDistance = tonumber(monsterInfo:getData(_idRow,_attackDistanceColumn)) or 100
     local hasBulletAnim = monsterInfo:getData(_idRow,_hasBulletAnimColumn)
     local bulletAnimId = monsterInfo:getData(_idRow,_bulletAnimIdColumn)
-    local waitTime = monsterInfo:getData(_idRow,_waitTimeColumn)
+    local waitTime = tonumber(monsterInfo:getData(_idRow,_waitTimeColumn)) or 0
     local isAreaDamage = monsterInfo:getData(_idRow,_isAreaDamageColumn)
     local haveSpecialEffect = monsterInfo:getData(_idRow,_haveSpecialEffectColumn)
     local effectId = monsterInfo:getData(_idRow,_effectIdColumn)
-    local backParam = monsterInfo:getData(_idRow,_backParamColumn)
-    local backLength = monsterInfo:getData(_idRow,_backLengthColumn)
+    local backParam = tonumber(monsterInfo:getData(_idRow,_backParamColumn)) or 0.2
+    local backLength = tonumber(monsterInfo:getData(_idRow,_backLengthColumn)) or 0
     local isElite = monsterInfo:getData(_idRow,_isEliteColumn)
     local standFrame = monsterInfo:getData(_idRow,_standFrameColumn)
     local hurtFrame = monsterInfo:getData(_idRow,_hurtFrameColumn)
     local soundFile = monsterInfo:getData(_idRow,_soundFileColumn)
     local attackFrame = monsterInfo:getData(_idRow,_attackFrameColumn)
     local npcDesc = monsterInfo:getData(_idRow,_npcDescColumn)
-    local adaptScale = monsterInfo:getData(_idRow,_zoomMultipleColumn)
+    local adaptScale = tonumber(monsterInfo:getData(_idRow,_zoomMultipleColumn)) or 1
     local firstTurnUp = monsterInfo:getData(_idRow,_firTurnUpColumn)           --图鉴追加：第一次出现此怪物的关卡
     local manualPriority = monsterInfo:getData(_idRow,_manualPriorityColumn)   --图鉴排序优先级
-    local sizeInBattle = monsterInfo:getData(_idRow,_sizeInBattleColumn)
-    local attackTime = monsterInfo:getData(_idRow,_attackTimeColumn)
-    local quality = monsterInfo:getData(_idRow,_qualityColumn)
+    local sizeInBattle = tonumber(monsterInfo:getData(_idRow,_sizeInBattleColumn)) or 1
+    local attackTime = tonumber(monsterInfo:getData(_idRow,_attackTimeColumn)) or 0
+    local quality = tonumber(monsterInfo:getData(_idRow,_qualityColumn)) or 0
     local morphId = monsterInfo:getData(_idRow,_morphIdColumn)
-    local restrainType = monsterInfo:getData(_idRow,_restrainTypeColumn)
+    local restrainType = tonumber(monsterInfo:getData(_idRow,_restrainTypeColumn)) or 0
     local isBoss = monsterInfo:getData(_idRow,_isBossColumn)
 
     --生成MonsterModel

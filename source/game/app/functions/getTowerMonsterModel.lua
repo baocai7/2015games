@@ -10,6 +10,8 @@ local _intervalTimeColumn = nil      --col : 12
 --读取策略刷怪间隔时间
 local function getIntervalTimeInStrategy( strategyId )
 
+    strategyId = tostring(strategyId or "0")
+
     if ( strategyId == "0" ) then  --策略ID为0表示此时不需要任何策略，返回间隔时间 1
         return 1
     end
@@ -27,7 +29,7 @@ local function getIntervalTimeInStrategy( strategyId )
     --读出 strategy 对应的 interval Time
     local intervalTime = strategyInfo:getData(_strategyIdRow,_intervalTimeColumn)
 
-    return intervalTime
+    return tonumber(intervalTime) or 1
 end
 
 
@@ -38,6 +40,7 @@ local _strategyIdColumn = nil
 local function getTableMonsterIdInStrategy( strategyId )
 
     local monsterIDs = {}
+    strategyId = tostring(strategyId or "0")
 
     if ( strategyId == "0" ) then  -- 策略ID为0表示此时不需要任何策略，返回1个 monsterId 0
         monsterIDs[#monsterIDs + 1] = 0
@@ -56,7 +59,7 @@ local function getTableMonsterIdInStrategy( strategyId )
         local monsterIdColumn = strategyInfo:findIndexOfValueFromRow(1, monsterId)
         --读出 id
         local id = strategyInfo:getData(_strategyIdRow, monsterIdColumn)
-        if tonumber(id) > 0 then
+        if (tonumber(id) or 0) > 0 then
             table.insert(monsterIDs,id)
         end
     end
@@ -174,19 +177,19 @@ function DataUtils.getTowerMonsterModel( towerId , mode )
     local _towerIdRow = towerMonsterInfo:findIndexOfValueFromColumn(_towerIdColumn, towerId.."")
 
     --读出  towerId 对应行的所有数据
-    local towerId = towerMonsterInfo:getData(_towerIdRow,_towerIdColumn)
-    local towerType = towerMonsterInfo:getData(_towerIdRow,_typeColumn)
-    local strategyId1 = towerMonsterInfo:getData(_towerIdRow,_strategyId1Column)
-    local strategyId2 = towerMonsterInfo:getData(_towerIdRow,_strategyId2Column)
-    local strategyId3 = towerMonsterInfo:getData(_towerIdRow,_strategyId3Column)
-    local repeatStrategyId1 = towerMonsterInfo:getData(_towerIdRow,_repeatStrategyId1Column)
-    local repeatStrategyId2 = towerMonsterInfo:getData(_towerIdRow,_repeatStrategyId2Column)
-    local strategy_99 = towerMonsterInfo:getData(_towerIdRow,_strategy_99Column)
-    local strategy_50 = towerMonsterInfo:getData(_towerIdRow,_strategy_50Column)
-    local strategy_20 = towerMonsterInfo:getData(_towerIdRow,_strategy_20Column)
-    local life = towerMonsterInfo:getData(_towerIdRow,_lifeColumn)
-    local monsterNumLimit = towerMonsterInfo:getData(_towerIdRow,_monsterNumLimitColumn)
-    local cleanTime = towerMonsterInfo:getData(_towerIdRow,_cleanTime)
+    local towerId = towerMonsterInfo:getData(_towerIdRow,_towerIdColumn) or towerId
+    local towerType = tonumber(towerMonsterInfo:getData(_towerIdRow,_typeColumn)) or 1
+    local strategyId1 = tostring(towerMonsterInfo:getData(_towerIdRow,_strategyId1Column) or "0")
+    local strategyId2 = tostring(towerMonsterInfo:getData(_towerIdRow,_strategyId2Column) or "0")
+    local strategyId3 = tostring(towerMonsterInfo:getData(_towerIdRow,_strategyId3Column) or "0")
+    local repeatStrategyId1 = tostring(towerMonsterInfo:getData(_towerIdRow,_repeatStrategyId1Column) or "0")
+    local repeatStrategyId2 = tostring(towerMonsterInfo:getData(_towerIdRow,_repeatStrategyId2Column) or "0")
+    local strategy_99 = tostring(towerMonsterInfo:getData(_towerIdRow,_strategy_99Column) or "0")
+    local strategy_50 = tostring(towerMonsterInfo:getData(_towerIdRow,_strategy_50Column) or "0")
+    local strategy_20 = tostring(towerMonsterInfo:getData(_towerIdRow,_strategy_20Column) or "0")
+    local life = tonumber(towerMonsterInfo:getData(_towerIdRow,_lifeColumn)) or 1000
+    local monsterNumLimit = tonumber(towerMonsterInfo:getData(_towerIdRow,_monsterNumLimitColumn)) or 5
+    local cleanTime = tonumber(towerMonsterInfo:getData(_towerIdRow,_cleanTime)) or 0
     --local monsterIds = towerMonsterInfo:getData(_towerIdRow,_monsterIdsColumn)
 
     --生成 TowerMonsterModel

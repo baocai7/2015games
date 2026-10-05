@@ -46,3 +46,18 @@ layer.
 - Outer Lua entry: `source/assets/src/main.lua`
 - Game entry: `source/game/app/MyApp.lua`
 - Original server configuration: `source/assets/src/channelConfig.lua`
+
+## v2 local compatibility release
+
+The `v2` branch contains the latest playable client source and the local
+compatibility server used by the release APK. The client is configured for
+`192.168.31.225:18080`; start `local-server/server.py` on the Mac before
+launching the APK on the Android device.
+
+The spirit-cap fix keeps upgrade levels one-based. Legacy server saves with a
+zero tower-property level are migrated to level 1, so the battle HUD changes
+from `100` after the first Tang monk upgrade instead of remaining fixed.
+
+Release APK: `releases/v2/doubi-xiyou-v2.apk`
+
+SHA-256: `e198b4080ffabcd7566755ddfaeaa0ea7a817d7775b0fa480e52af9fd636ae9a`

@@ -49,7 +49,7 @@ function TowerMonster:initData(towerMonsterModel)
     self.times_ = 0
     self.indexInStrategy_ = 1
 
-    self.hpMax_ = self.model_.life_
+    self.hpMax_ = tonumber(self.model_.life_) or 1000
     self.hpCur_ = self.hpMax_
 
     self.interrupted_ = false
@@ -197,7 +197,7 @@ function TowerMonster:makeMonster()
     	return
     end
 
-    local monsterId = tonumber(self.curMonsterIdsTable_[self.indexInStrategy_])
+    local monsterId = tonumber(self.curMonsterIdsTable_[self.indexInStrategy_]) or 0
     print("monsterId : "..monsterId)
 
     if monsterId > 0 then
@@ -245,7 +245,7 @@ end
 function TowerMonster:makeMonsterSp()
     print("----------------------------")
 
-    local monsterId = tonumber(self.curMonsterIdsTableSp_[self.indexInStrategySp_])
+    local monsterId = tonumber(self.curMonsterIdsTableSp_[self.indexInStrategySp_]) or 0
     print("sp monsterId : "..monsterId)
     
     if monsterId > 0 then

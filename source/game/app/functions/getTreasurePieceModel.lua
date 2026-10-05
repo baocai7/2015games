@@ -17,6 +17,8 @@ end
 
 function DataUtils.getTreasurePieceModel( pieceId )
 
+    pieceId = tonumber(pieceId) or 0
+
     local treasurePieceInfo = DataRetainer.TREASURE_PIECE_INFO
 
     --读第1行，获得各属性所在的列index
@@ -27,19 +29,19 @@ function DataUtils.getTreasurePieceModel( pieceId )
     --查找 _treasurePieceId所在的行
     local _treasurePieceIdRow = treasurePieceInfo:findIndexOfValueFromColumn(_treasurePieceIdColumn, pieceId.."")
 
-    local datas = treasurePieceInfo:getDatas(_treasurePieceIdRow)
+    local datas = treasurePieceInfo:getDatas(_treasurePieceIdRow) or {}
     
     --读出 id 对应行的所有数据
     local treasurePieceId   = datas[_treasurePieceIdColumn] -- treasurePieceInfo:getData(_treasurePieceIdRow,_treasurePieceIdColumn)
     local treasurePieceName = datas[_treasurePieceNameColumn] -- treasurePieceInfo:getData(_treasurePieceIdRow,_treasurePieceNameColumn)
     local treasurePieceDesc = datas[_treasurePieceDescColumn] -- treasurePieceInfo:getData(_treasurePieceIdRow,_treasurePieceDescColumn)
 
-    local treasurePieceQuality = DataUtils.getTreasurePieceQuality(tonumber(treasurePieceId))
+    local treasurePieceQuality = tonumber(DataUtils.getTreasurePieceQuality(tonumber(treasurePieceId))) or 0
 
     --生成MonsterModel
     local treasurePieceModel = TreasurePieceModel.new()
     
-    treasurePieceModel.treasurePieceId_      = tonumber(treasurePieceId)
+    treasurePieceModel.treasurePieceId_      = tonumber(treasurePieceId) or pieceId
     treasurePieceModel.treasurePieceName_    = treasurePieceName
     treasurePieceModel.treasurePieceDesc_    = treasurePieceDesc
     treasurePieceModel.treasurePieceQuality_ = treasurePieceQuality

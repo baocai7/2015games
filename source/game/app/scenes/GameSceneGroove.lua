@@ -259,7 +259,7 @@ function GameSceneGroove:initTower( mode )
     self.towerBuddha_:setPosition(cc.p(x + self.towerDistance_,display.height * 0.22))
 
     -- 清场怪出场时间
-    self.cleanTime_ = tonumber(towerMonsterModel.cleanTime_)
+    self.cleanTime_ = tonumber(towerMonsterModel.cleanTime_) or 0
 
     Game.TOWER_MONSTER = self.towerMonster_
     Game.TOWER_BUDDHA = self.towerBuddha_

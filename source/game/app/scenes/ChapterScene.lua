@@ -83,7 +83,9 @@ function ChapterScene:ctor()
         self:updateChapterScene_()
     end, 0.1)
 
-    self:addAndroidReturnButton_()
+    -- Do not register the legacy empty UIPushButton here.  On the bundled
+    -- Cocos runtime its touch listener can survive scene replacement and
+    -- later dereference a freed LuaEventNode.
 end
 
 --初始化部分数据
@@ -148,7 +150,13 @@ function ChapterScene:initParamData_()
     end,0.1)
 
     --用户关卡进度
-    self.stageProgress_ = CloudData.STAGE_PROGRESS
+    self.stageProgress_ = tonumber(CloudData.STAGE_PROGRESS) or 0
+    -- Keep the shared progression value numeric.  The compatibility server
+    -- may serialize it as a JSON string, while this scene compares it with
+    -- numbers in several unlock branches.
+    CloudData.STAGE_PROGRESS = self.stageProgress_
+    CloudData.ENERGY = tonumber(CloudData.ENERGY) or 0
+    CloudData.MAX_ENERGY = tonumber(CloudData.MAX_ENERGY) or 0
 
     -- 返回章节界面此处置0
     GameManager.STAGE_NUM = 0
@@ -171,14 +179,12 @@ end
 
 --处理新手引导，用户功能解锁
 function ChapterScene:dealUserProgress()
-    if self.stageProgress_ == 0 then
-        --引导点击第一章的章节按钮
-        if not DataUtils.getGuideIsFirstPlayed("GUIDE_STEP_SELECT_CHAPTER") then
-            local guide = NoviceGuide.new(GUIDE_STEP_SELECT_CHAPTER)
-            self:addChild(guide,50)
-            DataUtils.setGuideIsFirstPlayed("GUIDE_STEP_SELECT_CHAPTER",true)
-        end
-    end
+    -- The compatibility server starts new accounts at stage 0.  The original
+    -- tutorial overlay assumes a live client-side progression flow and can
+    -- swallow the chapter tap before the chapter layer receives it.
+    -- The legacy chapter guide is a full-screen touch interceptor.  It is
+    -- unsuitable for the local server flow, where chapter one is already the
+    -- only available entry, so leave the map touchable for a new account.
 
     if self.stageProgress_ == 1 then
         if not DataUtils.getDialogueIsFirstPlayed("DIALOGUE_TIANJIANG_UNLOCK") then  --播放小天将出场的剧情
@@ -356,11 +362,14 @@ function ChapterScene:initCenterScrollMap()
     self.chapterIconsTable_ = {}
 
     --当前解锁到的章节序号
-    local chapterUnlockNum =  math.floor(CloudData.STAGE_PROGRESS / 10) + 1       --(floor:向下取整；ceil:向上取整)
+    local stageProgress = tonumber(CloudData.STAGE_PROGRESS) or 0
+    self.stageProgress_ = stageProgress
+    local chapterUnlockNum =  math.floor(stageProgress / 10) + 1       --(floor:向下取整；ceil:向上取整)
     --计数(自加，方便区别各章节序号)
     local chapterCount = 0
     --从csv配置文件读取章节的位置
     local chapterLocationTable = DataUtils.getChapterLocationTable()
+    local firstChapterPoint = nil
 
     for i = 1, 2 do
         local mapSprite = display.newSprite("chapter/map0"..i..".jpg")
@@ -379,10 +388,13 @@ function ChapterScene:initCenterScrollMap()
             chapterCount = chapterCount + 1
             --读取位置
             local chapterPoint = chapterLocationTable[j + (i - 1) * 3]
+            if chapterCount == 1 then
+                firstChapterPoint = chapterPoint
+            end
             --创建章节精灵
             local chapterIcon = ChapterIcon.new(1, chapterCount)
             if chapterCount <= chapterUnlockNum then      --已解锁章节
-                if (CloudData.STAGE_PROGRESS % 10 == 0) and (chapterCount == chapterUnlockNum) and (not DataUtils.getChapterIsUnlock(chapterCount)) then
+                if (stageProgress % 10 == 0) and (chapterCount == chapterUnlockNum) and (not DataUtils.getChapterIsUnlock(chapterCount)) then
                     chapterIcon = ChapterIcon.new(2,chapterCount)
                     --刚解锁该章节时播放解锁动画
                     self.lockPic_ = display.newSprite("chapter/lock_pic.png",chapterPoint.x + 10,chapterPoint.y):addTo(mapSprite,3)
@@ -410,19 +422,49 @@ function ChapterScene:initCenterScrollMap()
 
             chapterIcon:setPosition(chapterPoint.x,chapterPoint.y)
             mapSprite:addChild(chapterIcon,2)
-            chapterIcon:addNodeEventListener(cc.NODE_TOUCH_EVENT, function(event)
-                return self:onTouch(event.name,event.x,event.y)
+            local chapterNum_ = chapterCount
+            chapterIcon:addTouchListener(function(event)
+                -- Handle the icon's own touch immediately. The legacy parent
+                -- map listener uses stale world bounds on newer Cocos builds.
+                if event.name == "began" and (chapterIcon.isUnlock or
+                    (tonumber(self.stageProgress_) or 0) == 0 and chapterNum_ == 1) then
+                    self:touchChapterIcon(chapterNum_)
+                end
+                return true
             end)
             table.insert(self.chapterIconsTable_,chapterIcon)
+
         end
     end
 
-    if CloudData.STAGE_PROGRESS < 30 then
+    if stageProgress < 30 then
         self.mapNode_:setPosition(display.cx - self.mapSize_.width * 0.5 - 50,display.cy - self.mapSize_.height * 0.5 - 10)
     else
         self.mapNode_:setPosition(display.cx - self.mapSize_.width * 1.5 + 150,display.cy - self.mapSize_.height * 0.5 - 10)
     end
+    -- The touch dispatcher clips nodes to their content bounds. The original
+    -- map node had a zero-sized bound, so map taps were discarded on Android.
+    self.mapNode_:setContentSize(cc.size(self.mapSize_.width * 2,self.mapSize_.height))
     self:addChild(self.mapNode_,0)
+
+    -- The legacy touch dispatcher clips nested sprites against the map node's
+    -- bounds on this device.  Keep a top-level hit target for chapter one and
+    -- place it from the actual map transform so it remains aligned after the
+    -- initial map position is calculated.
+    if (tonumber(self.stageProgress_) or 0) == 0 and firstChapterPoint then
+        local worldPoint = self.mapNode_:convertToWorldSpace(cc.p(firstChapterPoint.x, firstChapterPoint.y))
+        local scenePoint = self:convertToNodeSpace(worldPoint)
+        local compatChapterButton = cc.ui.UIPushButton.new("common_ui/confirm.png")
+            :align(display.CENTER, scenePoint.x, scenePoint.y)
+            :onButtonClicked(function()
+                print("[compat] open chapter 1 via scene button")
+                self:touchChapterIcon(1)
+            end)
+            :scale(1.45)
+            :addTo(self,10)
+        compatChapterButton:setOpacity(0)
+    end
+
     self.mapNode_:setTouchEnabled(true)
 
     self.mapNode_:addNodeEventListener(cc.NODE_TOUCH_EVENT, function(event)
@@ -534,7 +576,7 @@ function ChapterScene:initBottomSceneEntrance()
     icon1:setVisible(false)
     icon1:setPosition(display.cx - display.height * 0.625,display.height * 0.1)
     self:addChild(icon1,2)
-    icon1:addNodeEventListener(cc.NODE_TOUCH_EVENT, function(event)
+    icon1:addTouchListener(function(event)
         return self:onTouch(event.name,event.x,event.y)
     end)
     table.insert(self.sceneIconsTable_,icon1)
@@ -546,7 +588,7 @@ function ChapterScene:initBottomSceneEntrance()
     icon2:setVisible(false)
     icon2:setPosition(display.cx - display.height * 0.375,display.height * 0.1)
     self:addChild(icon2,2)
-    icon2:addNodeEventListener(cc.NODE_TOUCH_EVENT, function(event)
+    icon2:addTouchListener(function(event)
         return self:onTouch(event.name,event.x,event.y)
     end)
     table.insert(self.sceneIconsTable_,icon2)
@@ -563,7 +605,7 @@ function ChapterScene:initBottomSceneEntrance()
     icon3:setVisible(false)
     icon3:setPosition(display.cx - display.height * 0.125,display.height * 0.1)
     self:addChild(icon3,2)
-    icon3:addNodeEventListener(cc.NODE_TOUCH_EVENT, function(event)
+    icon3:addTouchListener(function(event)
         return self:onTouch(event.name,event.x,event.y)
     end)
     table.insert(self.sceneIconsTable_,icon3)
@@ -577,7 +619,7 @@ function ChapterScene:initBottomSceneEntrance()
     icon4:setVisible(false)
     icon4:setPosition(display.cx + display.height * 0.125,display.height * 0.1)
     self:addChild(icon4,2)
-    icon4:addNodeEventListener(cc.NODE_TOUCH_EVENT, function(event)
+    icon4:addTouchListener(function(event)
         return self:onTouch(event.name,event.x,event.y)
     end)
     table.insert(self.sceneIconsTable_,icon4)
@@ -590,7 +632,7 @@ function ChapterScene:initBottomSceneEntrance()
     icon5:setVisible(false)
     icon5:setPosition(display.cx + display.height * 0.375,display.height * 0.1)
     self:addChild(icon5,2)
-    icon5:addNodeEventListener(cc.NODE_TOUCH_EVENT, function(event)
+    icon5:addTouchListener(function(event)
         return self:onTouch(event.name,event.x,event.y)
     end)
     table.insert(self.sceneIconsTable_,icon5)
@@ -603,7 +645,7 @@ function ChapterScene:initBottomSceneEntrance()
     icon6:setVisible(false)
     icon6:setPosition(display.cx + display.height * 0.625,display.height * 0.1)
     self:addChild(icon6,2)
-    icon6:addNodeEventListener(cc.NODE_TOUCH_EVENT, function(event)
+    icon6:addTouchListener(function(event)
         return self:onTouch(event.name,event.x,event.y)
     end)
     table.insert(self.sceneIconsTable_,icon6)
@@ -930,6 +972,7 @@ end
 
 --点击滚动地图上的章节图标
 function ChapterScene:touchChapterIcon(num)
+    print(string.format("[compat] open chapter %d",num))
     local chapterlayer = ChapterLayer.new(num)
     self:addChild(chapterlayer,20)
 end
@@ -1107,7 +1150,8 @@ function ChapterScene:onTouch(event,x,y)
         for j = 1, 8 do
             local chapterIcon = self.chapterIconsTable_[j]
             if math.abs(self.pointBegan_.x - point_ended.x) < 20 and math.abs(self.pointBegan_.y - point_ended.y) < 20
-                and chapterIcon.isUnlock
+                and (chapterIcon.isUnlock or
+                    ((tonumber(self.stageProgress_) or 0) == 0 and j == 1))
                 and cc.rectContainsPoint(chapterIcon:getMyBoundingBox(),point_ended) then
 
                 self:touchChapterIcon(j)

@@ -1,15 +1,15 @@
 
-CHANNEL = 4		-- 0 原始SMS 2 Anysdk 3 Kugou 4 UC
+CHANNEL = 0		-- local compatibility server account mode
 
 DEFAULT_VERSION = "1.1.7"
 
--- IP = "123.58.130.157:8080"  -- debug
-IP = "125.88.152.21"     -- release
+-- Local compatibility server used by this test build.
+IP = "192.168.31.225:18080"
 
 LITE = false
 
 USE_SMS_PAY = false
 
-USE_DATAEYE = true             --是否使用DataEye数据统计
+USE_DATAEYE = false
 
 CHANNEL_ID = 255  -- uc 

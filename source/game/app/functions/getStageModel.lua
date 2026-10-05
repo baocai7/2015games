@@ -40,31 +40,34 @@ function DataUtils.getStageModel( stageId )
     local _stageIdRow = stageInfo:findIndexOfValueFromColumn(_stageIdColumn, stageId.."")
 
     --读出 id 对应行的所有数据
-    local stageId = stageInfo:getData(_stageIdRow,_stageIdColumn)
-    local energyCost = stageInfo:getData(_stageIdRow,_energyCostColumn)
+    local stageId = tonumber(stageInfo:getData(_stageIdRow,_stageIdColumn)) or tonumber(stageId) or 1
+    local energyCost = tonumber(stageInfo:getData(_stageIdRow,_energyCostColumn)) or 0
     local expAward = stageInfo:getData(_stageIdRow,_expAwardColumn)
 
     --加成经验
     --升级唐僧的加成
     local tbm = DataUtils.getTowerBuddhaModel()
-    local addtionalExp = tonumber(expAward * tbm.expIncreaseParam_)
+    local expAwardNum = tonumber(expAward) or 0
+    local expIncreaseNum = tonumber(tbm.expIncreaseParam_) or 0
+    local addtionalExp = expAwardNum * expIncreaseNum
     --1宝物
     local tm = DataUtils.getTreasureModel(1)
     if tm.isTreasureEffective_ then
-        addtionalExp = tonumber(expAward * (tbm.expIncreaseParam_ + tm.effectIncreaseRate_))
+        local effectIncreaseNum = tonumber(tm.effectIncreaseRate_) or 0
+        addtionalExp = expAwardNum * (expIncreaseNum + effectIncreaseNum)
     end
 
 
     --local treasurePieceId = stageInfo:getData(_stageIdRow,_treasurePieceIdColumn)
-    local towerDistance = stageInfo:getData(_stageIdRow,_distanceColumn)
-    local monsterPieceId = stageInfo:getData(_stageIdRow,_monsterPieceIdColumn)
-    local maxRollTimes = stageInfo:getData(_stageIdRow,_maxRollTimesColumn)
-    local probability = stageInfo:getData(_stageIdRow,_probabilityColumn)
-    local advancedPieceId = stageInfo:getData(_stageIdRow,_advancedPieceIdColumn)
-    local advancedMaxRollTimes = stageInfo:getData(_stageIdRow,_advancedMaxRollTimesColumn)
-    local advancedProbability = stageInfo:getData(_stageIdRow,_advancedProbabilityColumn)
-    local isGrooveMode = stageInfo:getData(_stageIdRow,_isGrooveModeColumn)
-    local grooveModeInterval = stageInfo:getData(_stageIdRow,_grooveModeIntervalColumn)
+    local towerDistance = tonumber(stageInfo:getData(_stageIdRow,_distanceColumn)) or 1000
+    local monsterPieceId = tonumber(stageInfo:getData(_stageIdRow,_monsterPieceIdColumn)) or 0
+    local maxRollTimes = tonumber(stageInfo:getData(_stageIdRow,_maxRollTimesColumn)) or 0
+    local probability = tonumber(stageInfo:getData(_stageIdRow,_probabilityColumn)) or 0
+    local advancedPieceId = tonumber(stageInfo:getData(_stageIdRow,_advancedPieceIdColumn)) or 0
+    local advancedMaxRollTimes = tonumber(stageInfo:getData(_stageIdRow,_advancedMaxRollTimesColumn)) or 0
+    local advancedProbability = tonumber(stageInfo:getData(_stageIdRow,_advancedProbabilityColumn)) or 0
+    local isGrooveMode = tonumber(stageInfo:getData(_stageIdRow,_isGrooveModeColumn)) or 0
+    local grooveModeInterval = tonumber(stageInfo:getData(_stageIdRow,_grooveModeIntervalColumn)) or 0
 
     --生成MonsterModel
     local stageModel = StageModel.new()

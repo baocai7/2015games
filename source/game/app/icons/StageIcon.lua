@@ -14,8 +14,16 @@ function StageIcon:ctor(stageModel)
 	self.selectedIcon_:setVisible(false)
 	self.lockIcon_:setVisible(false)
 
-	self:setTouchEnabled(true)
 	self:setContentSize(cc.size(self.normalIcon_:getContentSize().width,self.normalIcon_:getContentSize().height))
+end
+
+function StageIcon:addTouchListener(listener)
+	local icons = {self.normalIcon_,self.selectedIcon_,self.lockIcon_}
+	for _,icon in ipairs(icons) do
+		icon:setTouchEnabled(true)
+		icon:setTouchSwallowEnabled(true)
+		icon:addNodeEventListener(cc.NODE_TOUCH_EVENT,listener)
+	end
 end
 
 function StageIcon:setNormal()

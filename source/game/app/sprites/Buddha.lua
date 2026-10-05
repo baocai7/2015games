@@ -1,5 +1,6 @@
 
 local Buddha = {}
+local CompatTrace = import("utils.CompatTrace")
 Buddha = class("Buddha", function()
     return display.newNode()
 end)
@@ -44,8 +45,8 @@ function Buddha:initData(buddhaModel)
 
     -- self.curHp_ = hp + hpAdd
     -- self.maxHp_ = hp + hpAdd
-    self.curHp_ = self.model_.life_
-    self.maxHp_ = self.model_.life_
+    self.curHp_ = tonumber(self.model_.life_) or 100
+    self.maxHp_ = tonumber(self.model_.life_) or 100
 
     self.lostHpAccum_ = 0
 
@@ -57,12 +58,15 @@ function Buddha:initData(buddhaModel)
 
     -- self.attack_ = attack + attackAdd
 
-    self.attack_ = self.model_.attack_
+    self.attack_ = tonumber(self.model_.attack_) or 10
 
     --todo 宝物attack加成
 
     -- attack freq
-    self.attackFrequency_ = self.model_.level_ * self.model_.attackFrequencyK_ + self.model_.attackFrequencyB_
+    self.attackFrequency_ = (tonumber(self.model_.level_) or 1) *
+        (tonumber(self.model_.attackFrequencyK_) or 0) +
+        (tonumber(self.model_.attackFrequencyB_) or 1)
+    if self.attackFrequency_ <= 0 then self.attackFrequency_ = 1 end
 
 end
 
@@ -76,16 +80,32 @@ function Buddha:initExtra(position)
     self.yOffset_ = position.y + (20 - self.zOrder_ * 10)
 
     --碰撞精灵区域
+    CompatTrace.resource("actor-sprite", self.model_.standFrame_)
     self.sprite_ = display.newSprite(self.model_.standFrame_):addTo(self)
     self.sprite_:setScale(0.4 * self.model_.sizeInBattle_)
+    CompatTrace.node("actor-sprite", self.sprite_)
 
-    --骨骼动画
-    self.armature_ = ccs.Armature:create(self.model_.hurtFrame_)
-    self.armature_:setPosition(cc.p(0,0))
-    self:addChild(self.armature_)
-    self.armature_:setScale(0.4 * self.model_.sizeInBattle_)
-    if "1" == self.model_.isRebel_ then
-        self.armature_:setScaleX(-1 * 0.4 * self.model_.sizeInBattle_)
+    -- The stage loader normally registers this armature before construction.
+    -- Keep the original animated actor when that succeeds, but leave the
+    -- standing sprite as a bounded fallback on devices that reject a CSB.
+    self.armature_ = nil
+    local armaturePath = string.format("armature/%s/%s.csb", self.model_.hurtFrame_, self.model_.hurtFrame_)
+    local ok, armature = xpcall(function()
+        return CompatTrace.createArmature(self.model_.hurtFrame_, armaturePath)
+    end, debug.traceback)
+    if ok and armature ~= nil then
+        self.armature_ = armature
+        self.armature_:setPosition(cc.p(0,0))
+        self:addChild(self.armature_)
+        self.armature_:setScale(0.4 * self.model_.sizeInBattle_)
+        self.armature_:setVisible(true)
+        if "1" == self.model_.isRebel_ then
+            self.armature_:setScaleX(-1 * 0.4 * self.model_.sizeInBattle_)
+        end
+        CompatTrace.node("actor-visible", self.armature_)
+    else
+        CompatTrace.log("actor-visible", "Buddha fallback=stand-sprite name=" .. tostring(self.model_.hurtFrame_) .. " error=" .. tostring(armature))
+        self.sprite_:setVisible(true)
     end
 
     -- 骨骼动画事件
@@ -109,7 +129,9 @@ function Buddha:initExtra(position)
             end
         end
     end
-    self.armature_:getAnimation():setMovementEventCallFunc(animationEvent)
+    if self.armature_ ~= nil then
+        self.armature_:getAnimation():setMovementEventCallFunc(animationEvent)
+    end
 
     --血条以剪刀石头布区分
     local restrainType = tonumber(self.model_.restrainType_)
@@ -279,6 +301,13 @@ function Buddha:attack()
         end
     end
 
+    -- The compatibility path uses standing sprites instead of armatures, so
+    -- there is no animation-complete callback to release the fight lock.
+    if self.armature_ == nil then
+        self.isInFight_ = false
+        self.curArmatureState_ = "STAND"
+    end
+
 end
 
 --石头剪刀布的克制系统
@@ -321,6 +350,10 @@ end
 
 function Buddha:attackTower()
     Game.TOWER_MONSTER:underAttack(self.attack_)
+    if self.armature_ == nil then
+        self.isInFight_ = false
+        self.curArmatureState_ = "STAND"
+    end
 end
 
 
@@ -376,13 +409,15 @@ end
 
 function Buddha:hurtEffect()
 
+    local effectTarget = self.armature_ or self.sprite_
+
     -- 变色
     if not self.isInTint_ then
         self.isInTint_ = true
         local tint = cc.TintTo:create(0.0,243,83,7)
         local tintBack = cc.TintTo:create(0.0,255,255,255)
         local dt = cc.DelayTime:create(0.4)
-        self.armature_:runAction(transition.sequence({tint,dt,tintBack,cc.CallFunc:create(function()
+        effectTarget:runAction(transition.sequence({tint,dt,tintBack,cc.CallFunc:create(function()
             self.isInTint_ = false
         end)}))
     end
@@ -392,7 +427,7 @@ function Buddha:hurtEffect()
         self.isInShake_ = true
         local m1 = cc.MoveBy:create(0.1,cc.p(5,0))
         local m2 = cc.MoveBy:create(0.1,cc.p(-5,0))
-        self.armature_:runAction(transition.sequence({m1,m2,m1,m2,cc.CallFunc:create(function()
+        effectTarget:runAction(transition.sequence({m1,m2,m1,m2,cc.CallFunc:create(function()
             self.isInShake_ = false
         end)}))
     end
@@ -409,7 +444,11 @@ end
 
 function Buddha:dead()
 
-    self.armature_:setVisible(false)
+    if self.armature_ ~= nil then
+        self.armature_:setVisible(false)
+    else
+        self.sprite_:setVisible(false)
+    end
     if GameManager.SOUND_SWITCH_ON then
         audio.playSound(string.format("sounds/sfx_siwang2.%s",GameManager.POSTFIX))
     end
@@ -444,6 +483,11 @@ function Buddha:dead()
 end
 
 function Buddha:changeArmatureStateTo( state )
+
+    if self.armature_ == nil then
+        self.curArmatureState_ = state
+        return
+    end
 
     if state == "STAND" then
         if self.curArmatureState_ ~= "STAND" then

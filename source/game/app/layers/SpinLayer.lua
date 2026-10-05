@@ -3,6 +3,7 @@
 --
 
 local AlertConnection   = import("customs.AlertConnection")
+local CompatTrace       = import("utils.CompatTrace")
 
 local SpinLayer = class("SpinLayer", function ()
     return display.newLayer()
@@ -47,6 +48,8 @@ function SpinLayer:initData_()
     end
 
     self.isSpecial_ = CloudData.DRAW_ACTIVITY_STATUS
+    CompatTrace.log("lottery-ui", string.format("init drawNum=%s cost=%s peach=%s activity=%s",
+        tostring(self.drawNum_), tostring(self.drawCost_), tostring(CloudData.PEACH), tostring(self.isSpecial_)))
 end
 
 function SpinLayer:initUI_()
@@ -276,6 +279,8 @@ end
 function SpinLayer:startCallBack_()
     --屏蔽按钮点击
     self.startBtn_:setButtonEnabled(false)
+    CompatTrace.log("lottery-ui", string.format("start drawNum=%s cost=%s peach=%s",
+        tostring(CloudData.DRAW_NUM), tostring(self.drawCost_), tostring(CloudData.PEACH)))
 
     if CloudData.DRAW_NUM < 4 then
         if CloudData.PEACH >= self.drawCost_ then
@@ -297,6 +302,8 @@ function SpinLayer:startCallBack_()
                     print("critNum_ = ···"..self.critNum_)
                     print("itemId_ = ···"..self.itemId_)
                     print("awardNum_ = ···"..self.awardNum_)
+                    CompatTrace.log("lottery-ui", string.format("apply reward id=%s crit=%s item=%s num=%s",
+                        tostring(self.awardId_), tostring(self.critNum_), tostring(self.itemId_), tostring(self.awardNum_)))
 
                     if self.drawCost_ > 0 then
                         --DataEye统计
@@ -343,6 +350,10 @@ function SpinLayer:startCallBack_()
                     end
 
                     --圆盘动画
+                    if DataUtils.markResourceMutation ~= nil then
+                        DataUtils.markResourceMutation("lottery-reward")
+                    end
+
                     self.disk_:stopAction(actionId)
                     self.disk_:setRotation(0)
 

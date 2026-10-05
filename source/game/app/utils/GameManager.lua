@@ -43,8 +43,11 @@ GameManager.resetSpiritIndex = resetSpiritIndex
 
 -- 获取灵气值
 local function getCurrentSpirit()
-    local currentSpirit = GameManager.CURRENT_SPIRIT_A[GameManager.CURRENT_SPIRIT_INDEX] *
-        GameManager.CURRENT_SPIRIT_FACTOR + GameManager.CURRENT_SPIRIT_B[GameManager.CURRENT_SPIRIT_INDEX]
+    local factor = tonumber(GameManager.CURRENT_SPIRIT_FACTOR) or 1
+    local index = tonumber(GameManager.CURRENT_SPIRIT_INDEX) or 1
+    local a = tonumber(GameManager.CURRENT_SPIRIT_A[index]) or 0
+    local b = tonumber(GameManager.CURRENT_SPIRIT_B[index]) or 0
+    local currentSpirit = a * factor + b
 
     return -currentSpirit
 end
@@ -66,6 +69,7 @@ end
 
 -- 设置灵气值
 local function setCurrentSpirit(count)
+    count = tonumber(count) or 0
     setCheatValue()
     
     GameManager.CURRENT_SPIRIT = count -- 迷惑作弊玩家
@@ -79,7 +83,7 @@ GameManager.setCurrentSpirit = setCurrentSpirit
 
 -- 增加灵气值
 local function addCurrentSpirit(num)
-    setCurrentSpirit(getCurrentSpirit()+num)
+    setCurrentSpirit(getCurrentSpirit() + (tonumber(num) or 0))
 end
 GameManager.addCurrentSpirit = addCurrentSpirit
 
@@ -185,7 +189,7 @@ end
 GameManager.IS_ARMATURE_DOWNLOADED = false
 
 -- 消息服IP
-GameManager.MSG_SERVER_IP = "125.88.152.19"
+GameManager.MSG_SERVER_IP = GameManager.ACCOUNT_SERVER_IP
 
 -- 游戏内交易 产品号 PVE实时战斗用
 GameManager.PRODUCT_RELIVE = 20 -- 复活
@@ -205,8 +209,9 @@ GameManager.SHOW_NOTICE     = true  -- 用户公告开关（缺省为显示公�
 GameManager.ANIM_POSTFIX = ".csb"
 
 --初始化玩家服务器分区IP
---GameManager.IP = "125.88.152.21"    --正式服
-GameManager.IP = "123.58.130.157:8080"  -- 测试服
+-- Use the channel-configured account server until the selected region
+-- response supplies its own ip/port in LoginScene.
+GameManager.IP = IP or "192.168.31.225:18080"
 
 -- PC端测试的账号和密码
 GameManager.USER_NAME = "hoo001"

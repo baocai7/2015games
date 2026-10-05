@@ -140,10 +140,10 @@ function CardIcon:ctor( type, position )
         self.spiritFrame_ = display.newSprite("gamescene/spirit_icon.png",0,-45):addTo(self,3)
         self.spiritFrame_:setScale(0.9)
         --制造该兵种所消耗灵气
-        self.spiritCostNum_ = tonumber(self.model_.costValue_)
+        self.spiritCostNum_ = tonumber(self.model_.costValue_) or 40
         --灵气数值标签
         self.spiritCostLabel_ = cc.ui.UILabel.new({
-            UILabelType = 2,text = string.format(self.spiritCostNum_),size = 22,color = display.COLOR_WHITE,font = GameManager.FONTNAME_TTF})
+            UILabelType = 2,text = string.format("%d", self.spiritCostNum_),size = 22,color = display.COLOR_WHITE,font = GameManager.FONTNAME_TTF})
             :align(display.CENTER,self.spiritFrame_:getContentSize().width * 0.6,self.spiritFrame_:getContentSize().height * 0.28)
             :addTo(self.spiritFrame_)
         --监测灵气值得计时器
@@ -232,7 +232,7 @@ end
 --兵种卡监测灵气方法
 function CardIcon:updateSpirit()
 
-    local currentSpirit = GameManager.getCurrentSpirit()
+    local currentSpirit = tonumber(GameManager.getCurrentSpirit()) or 0
     if not self.isSpawnInCoolDown_ and currentSpirit >= self.spiritCostNum_ then
         --冷却完成 and 有足够灵气制造兵种
         self.shadow_:setVisible(false)
@@ -257,7 +257,7 @@ function CardIcon:onPressed()
     
             --扣除灵气操作
 --            GameManager.CURRENT_SPIRIT = GameManager.CURRENT_SPIRIT - self.spiritCostNum_
-            local currentSpirit = GameManager.getCurrentSpirit()
+            local currentSpirit = tonumber(GameManager.getCurrentSpirit()) or 0
             GameManager.setCurrentSpirit(currentSpirit - self.spiritCostNum_)
             
             --制造兵种
@@ -272,7 +272,7 @@ function CardIcon:onPressed()
     elseif TYPE_CARD_SPIRIT == self.TYPE_ then
         
 --        GameManager.CURRENT_SPIRIT = GameManager.CURRENT_SPIRIT + self.spiritAdd_
-        local currentSpirit = GameManager.getCurrentSpirit()
+        local currentSpirit = tonumber(GameManager.getCurrentSpirit()) or 0
         GameManager.setCurrentSpirit(currentSpirit + self.spiritAdd_)
         --移除自己
         table.removebyvalue(Game.CARD_TABLE, self, false)

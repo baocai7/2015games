@@ -4,49 +4,83 @@ local WarResultLayer           = import("layers.WarResultLayer")
 local CommonResultLayer        = import("layers.CommonResultLayer")
 local ReliveLayer              = import("layers.ReliveLayer")
 local InfiniteModeResultLayer  = import("layers.InfiniteModeResultLayer")
+local CompatTrace              = import("utils.CompatTrace")
 
 local TowerBuddha = {}
 TowerBuddha = class("TowerBuddha", function()
     return display.newNode()
 end)
 
+local function makeTowerFallback(path)
+    local sprite = nil
+    local ok = xpcall(function()
+        if cc.FileUtils:getInstance():isFileExist(path) then
+            sprite = display.newSprite(path)
+        end
+    end, debug.traceback)
+    if not ok or sprite == nil then
+        sprite = display.newNode()
+        sprite:setContentSize(cc.size(240, 240))
+    end
+    CompatTrace.log("tower-armature", "using fallback sprite=" .. tostring(path))
+    return sprite
+end
+
 function TowerBuddha:ctor(towerBuddhaModel)
 
     self.model_ = towerBuddhaModel
 
     --塔相关数据
-    self.hpMax_         = tonumber(self.model_.life_)
-    self.hpCur_         = tonumber(self.model_.life_)
-    self.hpShield_      = tonumber(self.model_.life_)
-    self.towerLevel_    = towerBuddhaModel.towerPropertyLevelTotal_
-    self.wandLevel_     = towerBuddhaModel.wandPropertyLevelTotal_
+    local baseLife = tonumber(self.model_.life_) or 1000
+    self.hpMax_         = baseLife
+    self.hpCur_         = baseLife
+    self.hpShield_      = baseLife
+    self.towerLevel_    = tonumber(towerBuddhaModel.towerPropertyLevelTotal_) or 1
+    self.wandLevel_     = tonumber(towerBuddhaModel.wandPropertyLevelTotal_) or 1
 
-    -- 加载特效(降妖杖的特效)
+    -- 加载特效(降妖杖的特效)，保留原版构造时机和图集路径。
+    CompatTrace.log("ui", "TowerBuddha ctor: loading wand effect atlases")
     display.addSpriteFrames("animation/wand_light_tx.plist","animation/wand_light_tx.png")
     display.addSpriteFrames("animation/wand_tx.plist","animation/wand_tx.png")
 
-    -- 加载防御塔骨骼资源
+    local function loadTowerArmature(path, name)
+        CompatTrace.resource("tower-armature", path)
+        local ok, value = xpcall(function()
+            ccs.ArmatureDataManager:getInstance():addArmatureFileInfo(path)
+            return ccs.Armature:create(name)
+        end, debug.traceback)
+        if not ok then
+            CompatTrace.log("tower-armature", string.format("FAILED path=%s name=%s\n%s", path, name, tostring(value)))
+            return nil
+        end
+        CompatTrace.log("tower-armature", string.format("created path=%s name=%s object=%s", path, name, tostring(value)))
+        return value
+    end
+
+    -- 加载防御塔骨骼资源（原版分支保留）
     local barPosRatio  = 0          -- 血条的位置调整系数
     local wandPosRatio = 0          -- 降妖杖的位置调整系数
     if self.towerLevel_ <= 9 then
-        ccs.ArmatureDataManager:getInstance():addArmatureFileInfo("armature/tower_armature1/tower_armature1.csb")
-        self.towerArmature_ = ccs.Armature:create("tower_armature1")
+        self.towerArmature_ = loadTowerArmature("armature/tower_armature1/tower_armature1.csb", "tower_armature1")
+        if self.towerArmature_ == nil then self.towerArmature_ = makeTowerFallback("upgrade/tower/tower1.png") end
         barPosRatio = 1.0
         wandPosRatio = -60
     elseif self.towerLevel_ <= 19 then
-        ccs.ArmatureDataManager:getInstance():addArmatureFileInfo("armature/tower_armature2/tower_armature2.csb")
-        self.towerArmature_ = ccs.Armature:create("tower_armature2")
+        self.towerArmature_ = loadTowerArmature("armature/tower_armature2/tower_armature2.csb", "tower_armature2")
+        if self.towerArmature_ == nil then self.towerArmature_ = makeTowerFallback("upgrade/tower/tower2.png") end
         barPosRatio = 0.9
         wandPosRatio = -78
     else
-        ccs.ArmatureDataManager:getInstance():addArmatureFileInfo("armature/tower_armature3/tower_armature3.csb")
-        self.towerArmature_ = ccs.Armature:create("tower_armature3")
+        self.towerArmature_ = loadTowerArmature("armature/tower_armature3/tower_armature3.csb", "tower_armature3")
+        if self.towerArmature_ == nil then self.towerArmature_ = makeTowerFallback("upgrade/tower/tower3.png") end
         barPosRatio = 0.85
         wandPosRatio = -85
     end
 
     -- 防御塔(骨骼)
-    self.towerArmature_:getAnimation():playWithIndex(0)
+    if self.towerArmature_.getAnimation ~= nil then
+        self.towerArmature_:getAnimation():playWithIndex(0)
+    end
     self.towerArmature_:setAnchorPoint(0.5,0)
     self.towerArmature_:setScale(0.4)
     self:addChild(self.towerArmature_)
@@ -76,7 +110,9 @@ function TowerBuddha:ctor(towerBuddhaModel)
             end
         end
     end
-    self.towerArmature_:getAnimation():setMovementEventCallFunc(animationEvent)
+    if self.towerArmature_.getAnimation ~= nil then
+        self.towerArmature_:getAnimation():setMovementEventCallFunc(animationEvent)
+    end
 
     --血量进度条
     self.barBg_ = display.newSprite("gamescene/bar_bg_tower_b.png",0,
@@ -123,12 +159,19 @@ function TowerBuddha:ctor(towerBuddhaModel)
     end
     
     --道具 金钟罩
-    self.shield_ = display.newSprite("#zhong1.png"):addTo(self)
+    self.shield_ = display.newSprite("#zhong1.png")
+    if self.shield_ == nil then
+        CompatTrace.log("tower-shield", "atlas frame zhong1.png unavailable; using static fallback")
+        self.shield_ = makeTowerFallback("upgrade/tower/tower1.png")
+    end
+    self.shield_:addTo(self)
     self.shield_:setAnchorPoint(cc.p(0.5,0))
     self.shield_:setScale(0.4)
     local frames = display.newFrames("zhong%d.png", 1, 4)
     local animation = display.newAnimation(frames, 0.15)
-    self.shield_:playAnimationForever(animation)
+    if self.shield_.playAnimationForever ~= nil then
+        self.shield_:playAnimationForever(animation)
+    end
     self.shield_:setVisible(false)
     --金钟罩血量进度条
     local barBg = display.newSprite("gamescene/bar_bg_tower_b.png",self.shield_:getContentSize().width/2,self.shield_:getContentSize().height * 1.05)
@@ -144,6 +187,9 @@ end
 
 --防御塔的骨骼状态的变化
 function TowerBuddha:changeArmatureStateTo( state )
+    if self.towerArmature_ == nil or self.towerArmature_.getAnimation == nil then
+        return
+    end
     if state == "IDLE1" then
         if self.curArmatureState_ ~= "IDLE" then
             self.curArmatureState_ = "IDLE"
@@ -267,7 +313,7 @@ function TowerBuddha:dead()
                 Game.SKILL_ITEM_ICON[3]:cast2_Alt()
 
                 -- 恢复满血状态
-                self.hpCur_    = tonumber(self.model_.life_)
+                self.hpCur_    = tonumber(self.model_.life_) or self.hpMax_
                 self.towerBloodLabel_:setString(string.format("%d/%d",self.hpCur_,self.hpCur_))
                 self.progressTimer_:setPercentage(100)
                 self:changeArmatureStateTo("IDLE1")
@@ -392,7 +438,7 @@ end
 -- 开启金钟罩
 function TowerBuddha:openShield()
     self.isShieldOn_ = true
-    self.hpShield_ = tonumber(self.model_.life_)
+    self.hpShield_ = tonumber(self.model_.life_) or self.hpMax_
     self.shield_:setVisible(true)
 end
 

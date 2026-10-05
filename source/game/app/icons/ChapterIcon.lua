@@ -19,9 +19,14 @@ function ChapterIcon:ctor(index,chapterNum)
 		self.isUnlock = false
 	end
 
-	--self:setTouchEnabled(true)   --注意：此处不能开启点击（父节点已开启）
 	self:setContentSize(cc.size(self.icon:getContentSize().width,self.icon:getContentSize().height))
 	self:addChild(self.icon)
+end
+
+function ChapterIcon:addTouchListener(listener)
+	self.icon:setTouchEnabled(true)
+	self.icon:setTouchSwallowEnabled(true)
+	self.icon:addNodeEventListener(cc.NODE_TOUCH_EVENT,listener)
 end
 
 function ChapterIcon:getMyBoundingBox()

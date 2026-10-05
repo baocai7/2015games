@@ -482,6 +482,9 @@ function UpgradeBuddhaLayer:upgradeCallBack_()
                     CloudData.EXP = CloudData.EXP - costExp
                     CloudData.NPC_INFO[npcId].level    = CloudData.NPC_INFO[npcId].level + 1
                     CloudData.NPC_INFO[npcId].isActive = 0
+                    if DataUtils.markResourceMutation ~= nil then
+                        DataUtils.markResourceMutation("buddha-evolution")
+                    end
                     --CloudData create advanced buddha & active
                     --兵种状态更新(变为高级形态)
                     DataUtils.setNewAdvancedBuddhaCloudData( advancedBuddhaId )
@@ -542,6 +545,9 @@ function UpgradeBuddhaLayer:upgradeCallBack_()
                     --数据更新
                     CloudData.EXP = CloudData.EXP - costExp
                     CloudData.NPC_INFO[npcId].level = CloudData.NPC_INFO[npcId].level + 1
+                    if DataUtils.markResourceMutation ~= nil then
+                        DataUtils.markResourceMutation("buddha-upgrade")
+                    end
                     --重新获取model
                     local buddhaModel_ = DataUtils.getBuddhaModel(npcId)
                     --更新table
@@ -572,6 +578,9 @@ function UpgradeBuddhaLayer:addtionalLevelCallBack_()
             local costEssence = self.currBuddhaModel_.essenceCost_
             CloudData.ESSENCE = CloudData.ESSENCE - costEssence
             CloudData.NPC_INFO[npcId].addlevel = CloudData.NPC_INFO[npcId].addlevel + 1
+            if DataUtils.markResourceMutation ~= nil then
+                DataUtils.markResourceMutation("buddha-breach")
+            end
             --重新获取model
             local buddhaModel_ = DataUtils.getBuddhaModel(npcId)
             --更新table

@@ -31,6 +31,8 @@ local _intervalTimeColumn = nil      --col : 12
 -- 读取策略刷怪间隔时间
 local function getIntervalTimeInStrategy( strategyId )
 
+    strategyId = tonumber(strategyId) or 0
+
     if ( strategyId == 0 ) then  --策略ID为0表示此时不需要任何策略，返回间隔时间 1
         return 1
     end
@@ -48,7 +50,7 @@ local function getIntervalTimeInStrategy( strategyId )
     --读出 strategy 对应的 interval Time
     local intervalTime = strategyInfo:getData(_strategyIdRow,_intervalTimeColumn)
 
-    return intervalTime
+    return tonumber(intervalTime) or 1
 end
 
 -- 缓存findIndexOfValueFromRow结果 【第一次读取时存储】
@@ -56,6 +58,7 @@ local _strategyIdColumn = nil
 -- 读取策略包含怪物Id Table
 local function getTableMonsterIdInStrategy( strategyId )
     local monsterIDs = {}
+    strategyId = tonumber(strategyId) or 0
 
     if ( strategyId == 0 ) then  -- 策略ID为0表示此时不需要任何策略，返回1个 monsterId 0
         monsterIDs[#monsterIDs + 1] = 0
@@ -74,7 +77,7 @@ local function getTableMonsterIdInStrategy( strategyId )
         local monsterIdColumn = strategyInfo:findIndexOfValueFromRow(1, monsterId)
         --读出 id
         local id = strategyInfo:getData(_strategyIdRow, monsterIdColumn)
-        if tonumber(id) > 0 then
+        if (tonumber(id) or 0) > 0 then
             table.insert(monsterIDs,id)
         end
     end
@@ -138,7 +141,7 @@ function DataUtils.getMonsterWaveModel( id )
     local _idRow = monsterWaveInfo:findIndexOfValueFromColumn(_waveId, id.."")
     
     -- 获取所在行的所有数据（PS:虽然data已经是复数形式了，加个s，只为标记）
-    local datas = monsterWaveInfo:getDatas(_idRow)
+    local datas = monsterWaveInfo:getDatas(_idRow) or {}
 
     --读出 id 对应行的所有数据
     local waveId           = datas[_waveId] 
@@ -156,15 +159,15 @@ function DataUtils.getMonsterWaveModel( id )
     --生成InfiniteStageModel
     local monsterWaveModel = MonsterWaveModel.new()
     monsterWaveModel.waveId_           = tonumber(waveId)               -- 波次Id
-    monsterWaveModel.strategyId1_      = tonumber(strategyId1)          -- 策略1
-    monsterWaveModel.strategyId2_      = tonumber(strategyId2)          -- 策略2
-    monsterWaveModel.strategyId3_      = tonumber(strategyId3)          -- 策略3
-    monsterWaveModel.strategyId4_      = tonumber(strategyId4)          -- 策略4
-    monsterWaveModel.strategyId5_      = tonumber(strategyId5)          -- 策略5
-    monsterWaveModel.strategyId6_      = tonumber(strategyId6)          -- 策略6
-    monsterWaveModel.strategyId7_      = tonumber(strategyId7)          -- 策略7
-    monsterWaveModel.monsterNumLimit_  = tonumber(monsterNumLimit)      -- 场上妖怪数量上限
-    monsterWaveModel.waveTime_         = tonumber(waveTime)             -- 当前波次的持续时间
+    monsterWaveModel.strategyId1_      = tonumber(strategyId1) or 0     -- 策略1
+    monsterWaveModel.strategyId2_      = tonumber(strategyId2) or 0     -- 策略2
+    monsterWaveModel.strategyId3_      = tonumber(strategyId3) or 0     -- 策略3
+    monsterWaveModel.strategyId4_      = tonumber(strategyId4) or 0     -- 策略4
+    monsterWaveModel.strategyId5_      = tonumber(strategyId5) or 0     -- 策略5
+    monsterWaveModel.strategyId6_      = tonumber(strategyId6) or 0     -- 策略6
+    monsterWaveModel.strategyId7_      = tonumber(strategyId7) or 0     -- 策略7
+    monsterWaveModel.monsterNumLimit_  = tonumber(monsterNumLimit) or 5  -- 场上妖怪数量上限
+    monsterWaveModel.waveTime_         = tonumber(waveTime) or 60        -- 当前波次的持续时间
     -- monsterWaveModel.totalIdsTable_    = totalIdsTable
 
     monsterWaveModel.monsterIdsTable1_      = getTableMonsterIdInStrategy( monsterWaveModel.strategyId1_ )  

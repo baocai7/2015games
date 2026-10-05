@@ -28,6 +28,9 @@ function DataUtils.getTowerBuddhaModel()
     	spiritGrowSpeedLv = 1
     end
     local spiritStorageLv = DataUtils.getPropertyLevel(6)
+    if spiritStorageLv < 1 then
+        spiritStorageLv = 1
+    end
     if spiritStorageLv > 20 then
     	spiritStorageLv = 20
     end
@@ -92,11 +95,11 @@ function DataUtils.getTowerBuddhaModel()
 	local spiritGrowSpeed = upgradePropertyInfo:getData(_spiritGrowSpeedRow,_spiritGrowSpeedColumn)
 	local spiritStorage = upgradePropertyInfo:getData(_spiritStorageRow,_spiritStorageColumn)
 
-	local life = upgradePropertyInfo:getData(_lifeRow,_lifeColumn)
+    local life = tonumber(upgradePropertyInfo:getData(_lifeRow,_lifeColumn)) or 1000
 	--宝物加成
 	local tm = DataUtils.getTreasureModel(7)
     if tm.isTreasureEffective_ then
-        life = tonumber(life * (1 + tm.effectIncreaseRate_ * 0.5))
+        life = life * (1 + (tonumber(tm.effectIncreaseRate_) or 0) * 0.5)
     end
 
 	local cdTimeDecrease = upgradePropertyInfo:getData(_cdTimeDecreaseRow,_cdTimeDecreaseColumn)
@@ -105,16 +108,16 @@ function DataUtils.getTowerBuddhaModel()
 
     -- 返回对象
     local towerBuddhaModel = TowerBuddhaModel.new()
-    towerBuddhaModel.attack_ = attack
+    towerBuddhaModel.attack_ = tonumber(attack) or 10
     towerBuddhaModel.life_ = life
-    towerBuddhaModel.rechargeTime_ = rechargeTime
-    towerBuddhaModel.range_ = range
-    towerBuddhaModel.spiritGrowSpeed_ = spiritGrowSpeed
-    towerBuddhaModel.spiritStorageLimit_ = spiritStorage
-    towerBuddhaModel.expIncreaseParam_ = expIncrease
-    towerBuddhaModel.cdTimeDecreaseParam_ = cdTimeDecrease
-    towerBuddhaModel.spiritIncreaseParam_ = spiritIncrease
-    towerBuddhaModel.energyStorageBasic_ = energyStorageBasic
+    towerBuddhaModel.rechargeTime_ = tonumber(rechargeTime) or 1
+    towerBuddhaModel.range_ = tonumber(range) or 300
+    towerBuddhaModel.spiritGrowSpeed_ = tonumber(spiritGrowSpeed) or 1
+    towerBuddhaModel.spiritStorageLimit_ = tonumber(spiritStorage) or 100
+    towerBuddhaModel.expIncreaseParam_ = tonumber(expIncrease) or 0
+    towerBuddhaModel.cdTimeDecreaseParam_ = tonumber(cdTimeDecrease) or 0
+    towerBuddhaModel.spiritIncreaseParam_ = tonumber(spiritIncrease) or 0
+    towerBuddhaModel.energyStorageBasic_ = tonumber(energyStorageBasic) or 0
     towerBuddhaModel.towerPropertyLevelTotal_ = towerPropertyLevelTotal
     towerBuddhaModel.wandPropertyLevelTotal_  = wandPropertyLevelTotal
     

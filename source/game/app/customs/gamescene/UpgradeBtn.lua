@@ -2,6 +2,7 @@
 -- GameScene 中 左下角唐僧升级按钮
 
 local UpgradeBtn = {} 
+local CompatTrace = import("utils.CompatTrace")
 UpgradeBtn = class("UpgradeBtn", function()
     return display.newNode()
 end)
@@ -32,9 +33,10 @@ function UpgradeBtn:init()
         end
     end)
     
-    --动画缓存
+    -- 动画缓存（原版构造时机和图集路径保留）
+    CompatTrace.log("ui", "UpgradeBtn ctor: loading upgrade_spirit atlas")
     display.addSpriteFrames("animation/upgrade_spirit.plist", "animation/upgrade_spirit.png")
-    
+
     -- 图形
     self.figureSprite_ = display.newSprite("#upgrade_spirit1.png",-9,0):addTo(self)
     self.graySprite_ = display.newSprite("gamescene/gray_upgrade_spirit.png",-9,0):addTo(self,1)
@@ -48,8 +50,8 @@ function UpgradeBtn:init()
     self.labelLevel_:setScale(0.8)
     
     -- 灵气消耗标签 : 40 80 160...
-    local levelSpiritGrowSpeed = DataUtils.getPropertyLevel(5)
-    self.spiritCostBasic_ = DataUtils.getSpiritCostBasic(levelSpiritGrowSpeed)
+    local levelSpiritGrowSpeed = tonumber(DataUtils.getPropertyLevel(5)) or 1
+    self.spiritCostBasic_ = tonumber(DataUtils.getSpiritCostBasic(levelSpiritGrowSpeed)) or 40
     self.labelSpirit_ = cc.ui.UILabel.new({
         UILabelType = 1,text = string.format("%d",self.spiritCostBasic_),font = "fonts/whiteNum.fnt"})
         :align(display.CENTER, 25,-25)
@@ -70,7 +72,7 @@ end
 function UpgradeBtn:update()
     
     if GameManager.TANGMONK_LEVEL < 8 then
-        local currentSpirit = GameManager.getCurrentSpirit()
+        local currentSpirit = tonumber(GameManager.getCurrentSpirit()) or 0
         if ( currentSpirit >= GameManager.TANGMONK_LEVEL * self.spiritCostBasic_ ) then
             if not self.isBlinkAnimationInPlay_ then
                 self.isBlinkAnimationInPlay_ = true
@@ -96,14 +98,14 @@ function UpgradeBtn:upgrade()
 
     if ( GameManager.TANGMONK_LEVEL < 8) then
 
-        local currentSpirit = GameManager.getCurrentSpirit()
+        local currentSpirit = tonumber(GameManager.getCurrentSpirit()) or 0
         if ( currentSpirit >= GameManager.TANGMONK_LEVEL * self.spiritCostBasic_ ) then
             if GameManager.SOUND_SWITCH_ON then
 				audio.playSound(string.format("sounds/sfx_lq_upgrade.%s",GameManager.POSTFIX))
 			end
 			
 --            GameManager.CURRENT_SPIRIT = GameManager.CURRENT_SPIRIT - GameManager.TANGMONK_LEVEL * self.spiritCostBasic_
-            local currentSpirit = GameManager.getCurrentSpirit()
+            local currentSpirit = tonumber(GameManager.getCurrentSpirit()) or 0
             GameManager.setCurrentSpirit(currentSpirit - GameManager.TANGMONK_LEVEL * self.spiritCostBasic_)
 
             GameManager.TANGMONK_LEVEL = GameManager.TANGMONK_LEVEL + 1

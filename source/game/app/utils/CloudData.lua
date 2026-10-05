@@ -22,6 +22,10 @@ CloudData.SWEEP = 0
 CloudData.GINSENG_FRUIT = 0
 CloudData.ACTIVITY_COINS = 0        -- 活动关卡奖励的代币
 
+-- 登录 playerInfoNew 完整解析并恢复本地快照后才允许写入快照。
+-- 防止启动阶段的默认 0 覆盖已经保存的账号数据。
+CloudData.PLAYER_DATA_READY = false
+
 -- 关卡活动相关
 CloudData.ACTIVITY_STAGE_STATUS = 0         -- 当前是否有活动关卡（0：没有；1：有）
 CloudData.ACTIVITY_STAGE_INFO_TABLE = {}    -- 活动关卡信息

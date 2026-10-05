@@ -118,7 +118,11 @@ end
 
 --取指定行指定列的 值
 function CSVParser:getData(row,column)
-    return self.tab_xy[row][column]
+    local dataRow = self.tab_xy[row]
+    if dataRow == nil or column == nil or column < 1 then
+        return nil
+    end
+    return dataRow[column]
 end
 
 -- 取指定行

@@ -13,6 +13,7 @@ local _attribNamePathColumn   = nil
 local _treasureInfoColumns    = nil
 
 function DataUtils.getTreasureModel( pieceId )
+    pieceId = tonumber(pieceId) or 0
     local treasureInfo = DataRetainer.TREASURE_INFO
 
     --读第1行，获得各属性所在的列index
@@ -26,7 +27,7 @@ function DataUtils.getTreasureModel( pieceId )
     --查找 _treasurePieceId所在的行
     local _treasureIdRow = treasureInfo:findIndexOfValueFromColumn(_treasureIdColumn, pieceId.."")
 
-    local datas = treasureInfo:getDatas(_treasureIdRow)
+    local datas = treasureInfo:getDatas(_treasureIdRow) or {}
     
     --读出 id 对应行的所有数据
     local treasureId       = datas[_treasureIdColumn] -- treasureInfo:getData(_treasureIdRow,_treasureIdColumn)
@@ -54,7 +55,7 @@ function DataUtils.getTreasureModel( pieceId )
         local treasurePieceId = treasureInfo:getData(_treasureIdRow,_treasurePieceIdColumn)
 
         local treasurePieceModel   = DataUtils.getTreasurePieceModel(treasurePieceId)
-        local treasurePieceQuality = tonumber(treasurePieceModel.treasurePieceQuality_) 
+        local treasurePieceQuality = tonumber(treasurePieceModel.treasurePieceQuality_) or 0
 
         sumTreasurePieceQuality = sumTreasurePieceQuality + treasurePieceQuality
 
