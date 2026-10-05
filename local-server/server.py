@@ -581,6 +581,14 @@ class Handler(BaseHTTPRequestHandler):
             self.success({"npcs": results}, time=now())
             return
 
+        if path == "/order/specialcardstatus":
+            # The legacy recharge screen expects six numeric card states.
+            # Returning an empty object makes its constructor report a
+            # connection failure before the local unlimited-peach shortcut
+            # can be used.
+            self.success([0, 0, 0, 0, 0, 0])
+            return
+
         if path in {"/order/add", "/order/add2", "/order/addApple"}:
             product_id = self.to_int(params.get("productId"), 0)
             base_id = product_id - 20 if 21 <= product_id <= 26 else product_id
