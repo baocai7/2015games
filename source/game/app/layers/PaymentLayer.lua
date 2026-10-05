@@ -24,6 +24,14 @@ TAG_PAY_CONNECTION_LAYER = 1002
 function PaymentLayer:ctor()
     paymentLayer = self
 
+    -- Local test mode must not initialize the retired payment connection.
+    -- Keep the original payment UI and callbacks intact for normal builds.
+    if GameManager.LOCAL_UNLIMITED_PEACH then
+        local toast = WSToast.new("蟠桃无限，无需充值")
+        display.getRunningScene():addChild(toast, 200)
+        return
+    end
+
     --添加遮罩层
     display.newColorLayer(cc.c4b(0,0,0,150))
         :addTo(self,-1)
