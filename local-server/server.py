@@ -63,6 +63,8 @@ PAYMENT_PRODUCTS = {
     6: (300, 6000),
 }
 
+UNLIMITED_PEACH_AMOUNT = 999_999_999
+
 LOG_FILE = Path(__file__).with_name("compat-server.log")
 _LOG_LOCK = threading.Lock()
 
@@ -251,6 +253,7 @@ class CompatibilityServer(ThreadingHTTPServer):
         advertised_host: str,
         port: int,
         test_payments: bool = False,
+        unlimited_peach: bool = False,
     ):
         super().__init__(address, handler)
         self.store = store
@@ -259,6 +262,7 @@ class CompatibilityServer(ThreadingHTTPServer):
         self.orders: dict[str, dict] = {}
         self.order_lock = threading.RLock()
         self.test_payments = test_payments
+        self.unlimited_peach = unlimited_peach
 
     def region(self) -> dict:
         return {
@@ -360,6 +364,11 @@ class Handler(BaseHTTPRequestHandler):
             return
 
         row, player = self.server.store.player_for(params)
+
+        if self.server.unlimited_peach:
+            player["peachNum"] = UNLIMITED_PEACH_AMOUNT
+            self.server.store.save(row, player)
+            audit("unlimited_peach", uid=row["uid"], amount=UNLIMITED_PEACH_AMOUNT)
 
         if path == "/account/playerInfoNew":
             player["uid"] = row["uid"]
@@ -756,16 +765,24 @@ def main() -> None:
         action="store_true",
         help="local QA only: mark local test orders paid; never use for production",
     )
+    parser.add_argument(
+        "--unlimited-peach",
+        action="store_true",
+        help="local QA only: replenish every authenticated account with unlimited peaches",
+    )
     args = parser.parse_args()
 
     server = CompatibilityServer(
         (args.bind, args.port), Handler, Store(args.database), args.host, args.port,
         test_payments=args.test_payments,
+        unlimited_peach=args.unlimited_peach,
     )
     print(f"Doubi compatibility server: http://{args.host}:{args.port}")
     print(f"Database: {args.database.resolve()}")
     print(f"Local test payments: {'enabled' if args.test_payments else 'disabled'}")
-    audit("server_start", host=args.host, port=args.port, test_payments=args.test_payments)
+    print(f"Unlimited peaches: {'enabled' if args.unlimited_peach else 'disabled'}")
+    audit("server_start", host=args.host, port=args.port, test_payments=args.test_payments,
+          unlimited_peach=args.unlimited_peach)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

@@ -9,6 +9,10 @@ Start it before opening the patched APK:
 python3 server.py --host 192.168.31.225 --port 18080
 ```
 
+For local testing without payment, add `--test-payments --unlimited-peach`.
+The latter replenishes authenticated accounts to `999999999` peaches on every
+request and is intentionally a local-only development switch.
+
 Requests and lottery/payment results are appended to `compat-server.log`.
 For local QA only, `python3 server.py --test-payments` makes locally created
 orders report paid; this is a test switch and does not represent real payment.
