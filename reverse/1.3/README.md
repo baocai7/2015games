@@ -22,6 +22,40 @@ names, but Lua entries are protected with ZipCrypto. The APK's runtime loads
 the JSON configuration. The archive is therefore preserved unchanged rather
 than represented as incomplete or fabricated plaintext source.
 
+### Native loader trace
+
+Static analysis of `libcocos2dlua-armeabi.so` confirms this load path:
+
+1. `LuaManager::runLuaHome()` schedules the Lua loading task.
+2. `LoadLuaTask::runOnWorkThread()` copies the bundled ZIP to its work path.
+3. It constructs a password argument and calls
+   `FileIO::uncompressWithPassword(std::string, std::string)`.
+4. The uncompressor iterates archive entries and calls
+   `unzOpenCurrentFilePassword()` for encrypted entries.
+5. When the task completes, `LuaManager::onTaskFinished()` starts the Lua
+   engine at the configured `src/main.lua` entry point.
+
+Relevant ARM Thumb function addresses in this APK's `libcocos2dlua.so`:
+
+| Function | Address |
+| --- | ---: |
+| `FileIO::uncompressWithPassword` | `0x00294438` |
+| `LoadLuaTask::runOnWorkThread` | `0x002947b0` |
+| `LuaManager::runLuaHome` | `0x00294b2c` |
+| `LuaManager::onTaskFinished` | `0x00294bd4` |
+| `LuaManager::init` | `0x00294cec` |
+
+The password is assembled in native code and is not exposed as a plain string
+by the usual string scan. The known `dywl523613713` value belongs to the older
+Doubi Xiyou XXTEA-protected assets and does not unlock this 1.3 archive.
+Extracting the original Lua text still requires recovering this APK's exact
+ZipCrypto password or observing it at runtime. `lua/src.zip` is complete but
+encrypted; `android-smali/` and native symbols are analysis artifacts, not a
+substitute for the original Lua source.
+
+The source archive has 875 entries, including directory entries. Use
+`unzip -Z1 lua/src.zip` to inspect its file tree without decrypting contents.
+
 ## Reproduce the extraction
 
 ```sh
