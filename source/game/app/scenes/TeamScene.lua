@@ -10,6 +10,7 @@ local NoviceGuide     = import("utils.NoviceGuide")
 local AlertConnection = import("customs.AlertConnection")
 local WSToast         = import("utils.WSToast")
 local AlertUpdate     = import("customs.AlertUpdate")
+local CompatTrace     = import("utils.CompatTrace")
 
 local TeamScene = class("TeamScene", function()
     return display.newScene("TeamScene")
@@ -440,7 +441,8 @@ function TeamScene:returnCallBack_()
             --print("-------buddhaId_: ------"..buddhaId)
             --若本地没有队伍成员的骨骼动画,则强制下载
             local buddhaModel = DataUtils.getBuddhaModel(buddhaId)           
-            if not resDownLoaded and table.indexof(GameManager.RES_MISSED_ARMATURE, buddhaModel.hurtFrame_) then               
+            if not resDownLoaded and table.indexof(GameManager.RES_MISSED_ARMATURE, buddhaModel.hurtFrame_)
+                and not CompatTrace.canUseActorFallback(buddhaModel) then
                 local al = AlertUpdate.new(GameManager.URL_MISSED_ARMATURE,5.8,"FORCE",true)
                 self:addChild(al,100)
                 return
@@ -486,7 +488,8 @@ function TeamScene:returnCallBack_No1_()
             --print("-------buddhaId_: ------"..buddhaId)
             --若本地没有队伍成员的骨骼动画,则强制下载
             local buddhaModel = DataUtils.getBuddhaModel(buddhaId)           
-            if not resDownLoaded and table.indexof(GameManager.RES_MISSED_ARMATURE, buddhaModel.hurtFrame_) then               
+            if not resDownLoaded and table.indexof(GameManager.RES_MISSED_ARMATURE, buddhaModel.hurtFrame_)
+                and not CompatTrace.canUseActorFallback(buddhaModel) then
                 local al = AlertUpdate.new(GameManager.URL_MISSED_ARMATURE,5.8,"FORCE",true)
                 self:addChild(al,100)
                 return

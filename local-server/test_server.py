@@ -103,6 +103,32 @@ class ServerTest(unittest.TestCase):
         self.assertEqual(order["peach"], 50)
         self.assertEqual(self.post("/order/status", {**auth, "orderId": order["orderId"]})["data"], 0)
 
+    def test_sweep_returns_complete_reward_shape_and_persists(self):
+        registered = self.post("/user/quickregister", {"channel": "255"})["data"]
+        login = self.post("/user/login", registered)["data"]
+        auth = {"uid": str(login["user"]["uid"]), "token": login["user"]["token"], "regionId": "1"}
+        before = self.post("/account/playerInfoNew", auth)["data"]
+        result = self.post("/stage/sweep5", {**auth, "stageId": "0"})
+        data = result["data"]
+        self.assertEqual(result["errorCode"], 0)
+        self.assertEqual(data["exp"], 500)
+        self.assertEqual(data["peach"], 5)
+        self.assertEqual(data["sweepNum"], before["sweepNum"] - 5)
+        self.assertEqual(data["monster"]["npcId"], 0)
+        after = self.post("/account/playerInfoNew", auth)["data"]
+        self.assertEqual(after["expNum"], before["expNum"] + 500)
+        self.assertEqual(after["peachNum"], before["peachNum"] + 5)
+
+    def test_sweep_rejects_when_tickets_are_exhausted(self):
+        registered = self.post("/user/quickregister", {"channel": "255"})["data"]
+        login = self.post("/user/login", registered)["data"]
+        auth = {"uid": str(login["user"]["uid"]), "token": login["user"]["token"], "regionId": "1"}
+        # 50 single sweeps consume the default allowance.
+        for _ in range(50):
+            self.assertEqual(self.post("/stage/sweep", {**auth, "stageId": "0"})["errorCode"], 0)
+        denied = self.post("/stage/sweep", {**auth, "stageId": "0"})
+        self.assertEqual(denied["errorCode"], 1001)
+
 
 if __name__ == "__main__":
     unittest.main()

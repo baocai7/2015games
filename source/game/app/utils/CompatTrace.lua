@@ -37,6 +37,23 @@ function CompatTrace.resource(tag, path)
     CompatTrace.log(tag, string.format("path=%s exists=%s check_ok=%s", stringify(path), tostring(exists), tostring(ok)))
 end
 
+-- Missing optional CSB files can still use the original static battle sprite.
+-- Keep the normal download/registration path intact; this only tells callers
+-- whether it is safe to continue without blocking the team screen.
+function CompatTrace.canUseActorFallback(model)
+    if model == nil then
+        CompatTrace.log("actor-fallback", "model=<nil>")
+        return false
+    end
+    local path = model.standFrame_
+    local ok, exists = pcall(function()
+        return cc.FileUtils:getInstance():isFileExist(path)
+    end)
+    CompatTrace.log("actor-fallback", string.format("npc=%s stand=%s exists=%s check_ok=%s",
+        stringify(model.npcId_), stringify(path), tostring(exists), tostring(ok)))
+    return ok and exists == true
+end
+
 function CompatTrace.node(tag, node)
     if node == nil then
         CompatTrace.log(tag, "node=<nil>")

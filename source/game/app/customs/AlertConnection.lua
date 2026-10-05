@@ -2484,32 +2484,50 @@ end
 
 -- 扫荡
 function AlertConnection:sweep()
+    CompatTrace.log("sweep", string.format("request start kind=single uid=%s stage=%s url=http://%s/stage/sweep",
+        tostring(CloudData.UID), tostring(self.stageId_), tostring(GameManager.IP)))
     local function onRequestFinished(event)
         local ok = (event.name == "completed")
         local request = event.request
         if not ok then
+            CompatTrace.log("sweep", "request failed kind=single event=" .. tostring(event.name))
             print("connecting...")   return
         end
         local code = request:getResponseStatusCode()
         if code ~= 200 then
+            CompatTrace.log("sweep", "unexpected status kind=single code=" .. tostring(code))
             print("err http 500")    return
         end
 
         --请求成功
-        --print( request:getResponseString() )
-        local jsonTable = json.decode(request:getResponseString())
+        local response = request:getResponseString()
+        CompatTrace.log("sweep", "response kind=single " .. tostring(response))
+        local decodeOk, jsonTable = xpcall(function() return json.decode(response) end, debug.traceback)
+        if not decodeOk or type(jsonTable) ~= "table" or type(jsonTable.data) ~= "table" then
+            CompatTrace.log("sweep", "invalid response kind=single error=" .. tostring(jsonTable))
+            return
+        end
+        local monster = type(jsonTable.data.monster) == "table" and jsonTable.data.monster or {}
+        local exp = tonumber(jsonTable.data.exp)
+        local peach = tonumber(jsonTable.data.peach)
+        local sweepNum = tonumber(jsonTable.data.sweepNum)
+        if exp == nil or peach == nil or sweepNum == nil then
+            CompatTrace.log("sweep", string.format("missing fields kind=single exp=%s peach=%s sweepNum=%s",
+                tostring(jsonTable.data.exp), tostring(jsonTable.data.peach), tostring(jsonTable.data.sweepNum)))
+            return
+        end
         dump(jsonTable)
 
-        Game.EXP_ADD = jsonTable.data.exp
-        Game.PEACH_ADD = jsonTable.data.peach
-        Game.TREASURE_PIECE_QUALITY = jsonTable.data.treasure
-        Game.MONSTER_PIECE_ID_TABLE = {jsonTable.data.monster.npcId, jsonTable.data.monster.advanceNpcId}
-        Game.MONSTER_PIECE_NUM_TABLE = {jsonTable.data.monster.npcNum, jsonTable.data.monster.advanceNpcNum}
+        Game.EXP_ADD = exp
+        Game.PEACH_ADD = peach
+        Game.TREASURE_PIECE_QUALITY = tonumber(jsonTable.data.treasure) or 0
+        Game.MONSTER_PIECE_ID_TABLE = {tonumber(monster.npcId) or 0, tonumber(monster.advanceNpcId) or 0}
+        Game.MONSTER_PIECE_NUM_TABLE = {tonumber(monster.npcNum) or 0, tonumber(monster.advanceNpcNum) or 0}
 
 
         CloudData.EXP = CloudData.EXP + Game.EXP_ADD
         CloudData.PEACH = CloudData.PEACH + Game.PEACH_ADD
-        CloudData.SWEEP = jsonTable.data.sweepNum
+        CloudData.SWEEP = sweepNum
 
         --DataEye统计蟠桃产出
         if USE_DATAEYE then  
@@ -2518,15 +2536,17 @@ function AlertConnection:sweep()
         if 0 ~= Game.TREASURE_PIECE_QUALITY then
             CloudData.TREASURE_PIECE_INFO[self.stageId_] = Game.TREASURE_PIECE_QUALITY
         end
-        if jsonTable.data.monster.npcId ~= 0 then
-            CloudData.MONSTER_PIECE_INFO[jsonTable.data.monster.npcId] = CloudData.MONSTER_PIECE_INFO[jsonTable.data.monster.npcId] + jsonTable.data.monster.npcNum
+        if (tonumber(monster.npcId) or 0) ~= 0 then
+            CloudData.MONSTER_PIECE_INFO[monster.npcId] = (CloudData.MONSTER_PIECE_INFO[monster.npcId] or 0) + (tonumber(monster.npcNum) or 0)
         end
-        if jsonTable.data.monster.advanceNpcId ~= 0 then
-            CloudData.MONSTER_PIECE_INFO[jsonTable.data.monster.advanceNpcId] = CloudData.MONSTER_PIECE_INFO[jsonTable.data.monster.advanceNpcId] + jsonTable.data.monster.advanceNpcNum
+        if (tonumber(monster.advanceNpcId) or 0) ~= 0 then
+            CloudData.MONSTER_PIECE_INFO[monster.advanceNpcId] = (CloudData.MONSTER_PIECE_INFO[monster.advanceNpcId] or 0) + (tonumber(monster.advanceNpcNum) or 0)
         end
         if DataUtils.markResourceMutation ~= nil then
             DataUtils.markResourceMutation("stage-sweep")
         end
+        CompatTrace.log("sweep", string.format("applied kind=single exp=%s peach=%s remaining=%s",
+            tostring(exp), tostring(peach), tostring(sweepNum)))
         self.isConnectionSucceed_ = true
     end
 
@@ -2545,32 +2565,50 @@ end
 
 -- 扫荡5次
 function AlertConnection:sweep5()
+    CompatTrace.log("sweep", string.format("request start kind=five uid=%s stage=%s url=http://%s/stage/sweep5",
+        tostring(CloudData.UID), tostring(self.stageId_), tostring(GameManager.IP)))
     local function onRequestFinished(event)
         local ok = (event.name == "completed")
         local request = event.request
         if not ok then
+            CompatTrace.log("sweep", "request failed kind=five event=" .. tostring(event.name))
             print("connecting...")   return
         end
         local code = request:getResponseStatusCode()
         if code ~= 200 then
+            CompatTrace.log("sweep", "unexpected status kind=five code=" .. tostring(code))
             print("err http 500")    return
         end
 
         --请求成功
-        --print( request:getResponseString() )
-        local jsonTable = json.decode(request:getResponseString())
+        local response = request:getResponseString()
+        CompatTrace.log("sweep", "response kind=five " .. tostring(response))
+        local decodeOk, jsonTable = xpcall(function() return json.decode(response) end, debug.traceback)
+        if not decodeOk or type(jsonTable) ~= "table" or type(jsonTable.data) ~= "table" then
+            CompatTrace.log("sweep", "invalid response kind=five error=" .. tostring(jsonTable))
+            return
+        end
+        local monster = type(jsonTable.data.monster) == "table" and jsonTable.data.monster or {}
+        local exp = tonumber(jsonTable.data.exp)
+        local peach = tonumber(jsonTable.data.peach)
+        local sweepNum = tonumber(jsonTable.data.sweepNum)
+        if exp == nil or peach == nil or sweepNum == nil then
+            CompatTrace.log("sweep", string.format("missing fields kind=five exp=%s peach=%s sweepNum=%s",
+                tostring(jsonTable.data.exp), tostring(jsonTable.data.peach), tostring(jsonTable.data.sweepNum)))
+            return
+        end
         dump(jsonTable)
 
-        Game.EXP_ADD = jsonTable.data.exp
-        Game.PEACH_ADD = jsonTable.data.peach
-        Game.TREASURE_PIECE_QUALITY = jsonTable.data.treasure
-        Game.MONSTER_PIECE_ID_TABLE = {jsonTable.data.monster.npcId, jsonTable.data.monster.advanceNpcId}
-        Game.MONSTER_PIECE_NUM_TABLE = {jsonTable.data.monster.npcNum, jsonTable.data.monster.advanceNpcNum}
+        Game.EXP_ADD = exp
+        Game.PEACH_ADD = peach
+        Game.TREASURE_PIECE_QUALITY = tonumber(jsonTable.data.treasure) or 0
+        Game.MONSTER_PIECE_ID_TABLE = {tonumber(monster.npcId) or 0, tonumber(monster.advanceNpcId) or 0}
+        Game.MONSTER_PIECE_NUM_TABLE = {tonumber(monster.npcNum) or 0, tonumber(monster.advanceNpcNum) or 0}
 
 
         CloudData.EXP = CloudData.EXP + Game.EXP_ADD
         CloudData.PEACH = CloudData.PEACH + Game.PEACH_ADD
-        CloudData.SWEEP = jsonTable.data.sweepNum
+        CloudData.SWEEP = sweepNum
         --DataEye统计蟠桃产出
         if USE_DATAEYE then  
             DCCoin.gain("sweep5", "peach", Game.PEACH_ADD, CloudData.PEACH)              
@@ -2579,15 +2617,17 @@ function AlertConnection:sweep5()
         if 0 ~= Game.TREASURE_PIECE_QUALITY then
             CloudData.TREASURE_PIECE_INFO[self.stageId_] = Game.TREASURE_PIECE_QUALITY
         end
-        if jsonTable.data.monster.npcId ~= 0 then
-            CloudData.MONSTER_PIECE_INFO[jsonTable.data.monster.npcId] = CloudData.MONSTER_PIECE_INFO[jsonTable.data.monster.npcId] + jsonTable.data.monster.npcNum
+        if (tonumber(monster.npcId) or 0) ~= 0 then
+            CloudData.MONSTER_PIECE_INFO[monster.npcId] = (CloudData.MONSTER_PIECE_INFO[monster.npcId] or 0) + (tonumber(monster.npcNum) or 0)
         end
-        if jsonTable.data.monster.advanceNpcId ~= 0 then
-            CloudData.MONSTER_PIECE_INFO[jsonTable.data.monster.advanceNpcId] = CloudData.MONSTER_PIECE_INFO[jsonTable.data.monster.advanceNpcId] + jsonTable.data.monster.advanceNpcNum
+        if (tonumber(monster.advanceNpcId) or 0) ~= 0 then
+            CloudData.MONSTER_PIECE_INFO[monster.advanceNpcId] = (CloudData.MONSTER_PIECE_INFO[monster.advanceNpcId] or 0) + (tonumber(monster.advanceNpcNum) or 0)
         end
         if DataUtils.markResourceMutation ~= nil then
             DataUtils.markResourceMutation("stage-sweep5")
         end
+        CompatTrace.log("sweep", string.format("applied kind=five exp=%s peach=%s remaining=%s",
+            tostring(exp), tostring(peach), tostring(sweepNum)))
         self.isConnectionSucceed_ = true
     end
 

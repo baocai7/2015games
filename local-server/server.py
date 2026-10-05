@@ -406,6 +406,48 @@ class Handler(BaseHTTPRequestHandler):
             )
             return
 
+        if path in {"/stage/sweep", "/stage/sweep5"}:
+            # The legacy client reads every field below immediately after the
+            # request completes. Returning the generic empty success payload
+            # makes Lua add nil to EXP/PEACH and looks like a network failure.
+            requested = 5 if path.endswith("sweep5") else 1
+            available = max(0, self.to_int(player.get("sweepNum"), 0))
+            if available < requested:
+                audit("sweep_rejected", uid=row["uid"], path=path,
+                      requested=requested, available=available)
+                self.send_json({
+                    "errorCode": 1001,
+                    "errorMsg": "扫荡券不足",
+                    "data": {"sweepNum": available},
+                })
+                return
+
+            stage_id = self.to_int(params.get("stageId"), 0)
+            exp_reward = 100 * requested
+            peach_reward = 1 * requested
+            player["sweepNum"] = available - requested
+            player["expNum"] += exp_reward
+            player["peachNum"] += peach_reward
+            player["reachStageId"] = max(player.get("reachStageId", 0), stage_id + 1)
+            self.server.store.save(row, player)
+            data = {
+                "exp": exp_reward,
+                "peach": peach_reward,
+                "sweepNum": player["sweepNum"],
+                "treasure": 0,
+                "monster": {
+                    "npcId": 0,
+                    "npcNum": 0,
+                    "advanceNpcId": 0,
+                    "advanceNpcNum": 0,
+                },
+            }
+            audit("sweep", uid=row["uid"], path=path, stage=stage_id,
+                  count=requested, exp=exp_reward, peach=peach_reward,
+                  remaining=player["sweepNum"])
+            self.success(data, time=now())
+            return
+
         if path == "/stage/pass":
             stage_id = self.to_int(params.get("stageId"), 0)
             won = self.to_int(params.get("success"), 0) == 1
