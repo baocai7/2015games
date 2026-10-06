@@ -1,9 +1,16 @@
 # Xiaoxiao Xiyou OL 1.3
 
-The APK is kept locally at `xiaoxiao-xiyou-ol-1.3.apk` for installation. GitHub
-rejects this file because it is 124.34 MB, above the repository's 100 MB single
-file limit, so it is intentionally ignored by Git. The reverse-engineered
-payload and APK metadata are tracked under `reverse/1.3/`.
+The complete APK is split into five tracked parts because GitHub rejects a
+single 124.34 MB file. Each part is below the 100 MB limit. The original APK
+is also kept locally at `xiaoxiao-xiyou-ol-1.3.apk` for installation.
+
+Rebuild the APK in this directory with:
+
+```sh
+cat xiaoxiao-xiyou-ol-1.3.apk.part-* > xiaoxiao-xiyou-ol-1.3.apk
+```
+
+Then verify the SHA-256 below before installing.
 
 SHA-256:
 
