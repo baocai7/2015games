@@ -11,6 +11,7 @@ tmp/
 build/
 dist/
 out/
+releases/1.3/*.apk
 *.log
 *.tmp
 *.swp
@@ -19,4 +20,3 @@ out/
 .pytest_cache/
 __pycache__/
 .ruby-version
-
