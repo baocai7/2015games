@@ -1,0 +1,10 @@
+local CURRENT_MODULE_NAME = (...)
+DataEye = DateEye or {}
+DataEye.PACKAGE_NAME = string.sub(CURRENT_MODULE_NAME, 1, -6)
+DYAnalyzeHelper = require(DataEye.PACKAGE_NAME .. ".DYAnalyzeHelper")
+DataEye.DC_GuideLine = 1
+DataEye.DC_MainLine = 2
+DataEye.DC_BranchLine = 3
+DataEye.DC_Daily = 4
+DataEye.DC_Activity = 5
+DataEye.DC_Other = 6

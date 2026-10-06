@@ -1,0 +1,220 @@
+local M = {}
+M.IS_GUEST = false
+M.TOKEN = ""
+M.SIGN = ""
+M.TEMP_TOKEN = ""
+M.BIND_PHONE = nil
+M.GOT_PHONE_AWARD = 0
+M.DELTA_TIME = 0
+M.HAS_ENERGY = true
+M.ESSENCE = 0
+M.ENERGY = 0
+M.MAX_ENERGY = 0
+M.EXP = 0
+M.PEACH = 0
+M.FEAT = 0
+M.LIANYUBI = 0
+M.GINSEN_BUY_TIME = 0
+M.USER_LEVEL = 1
+M.MAIN_STAGE_PROGRESS = 0
+M.ELITE_STAGE_PROGRESS = 0
+M.CHAPTER_INFO_TABLE = {}
+M.WAR_RESULT_TABLE = {}
+M.SWEEP = 0
+M.GINSENG_FRUIT = 0
+M.ACTIVITY_COINS = 0
+M.MINING_NUM = 0
+M.ACTIVITY_STAGE_STATUS = 0
+M.ACTIVITY_STAGE_INFO_TABLE = {}
+M.ACTIVITY_COINS_ADD_NUM = 0
+M.ACTIVITY_SHOP_INFO_TABLE = {}
+M.SIGN_ACCUMULATION = 0
+M.RECHARGE_ACCUMULATION = 0
+M.PEACH_USED_ACCUMULATION = 0
+M.EXP_BOUGHT_ACCUMULATION = 0
+M.LOSE_GAME_ACCUMULATION = 0
+M.SHARE_ACCUMULATION = 0
+M.INFINITE_MAX_STAGE = 1
+M.INFINITE_MAX_WAVE = 0
+M.INFINITE_CUR_STAGE = 1
+M.INFINITE_MAX_RESET_TIMES = 1
+M.INFINITE_CUR_RESET_TIMES = 1
+M.CHANGE_NICKNAME_ERRORCODE = 0
+M.CHANGE_NICKNAME_ERRORMSG = ""
+M.USER_NAME = ""
+M.SCROLL_MSG = {}
+M.SYSTEM_MSG_LOG = {}
+M.TIME_SERVER = 0
+M.NEXT_FREESUMMON_TIME_EXP = 0
+M.NEXT_FREESUMMON_TIME_PEACH = 0
+M.FREE_SUMMON_NUM_EXP = 0
+M.EXP_SINGLE_COST = 0
+M.EXP_CONTINUE_COST = 0
+M.PEACH_SINGLE_COST = 0
+M.PEACH_CONTINUE_COST = 0
+M.CREATE_TIME_SECONDS = 0
+M.TEAM_UNLOCKGRID_NUM = 3
+M.NPC_INFO = {}
+M.NPC_INFO = DYUtils.protectedTable(M.NPC_INFO)
+M.TREASURE_PIECE_INFO = {}
+M.MONSTER_PIECE_INFO = {}
+M.UPGRADE_PROPERTY_INFO = {}
+M.SKILL_ITEM_INFO = {}
+M.DAILY_TASK_INFO = {}
+M.ACHIEVEMENT_INFO = {}
+M.STAGE_TASK_INFO = {}
+M.STAGE_TASK_SUB_INFO = {
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+}
+M.CHAPTER_TASK_INFO = {
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+}
+M.GUIDE_INFO = {}
+M.URL_UPDATE = ""
+M.PATH_DLC = ""
+M.MISSED_ARMATURE_RES = {}
+M.SUMMON_RESULT_NPCID_TABLE = {}
+M.SUMMON_RESULT_ESSENCE_TABLE = {}
+M.CHAPTER_UNLOCK_ANIMATION_PLAYED = {
+  1,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+}
+M.SCENE_UNLOCK_ANIMATION_PLAYED = {
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+}
+M.TREASURE_UNLOCK_ANIMATION_PLAYED = {
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+}
+M.IS_TREASURE_EFFECTIVE = {
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+}
+M.ERR_CODE = 0
+M.OPENNING_COMIC_PLAYED = 0
+M.NOTICE_SHOWED = false
+M.CUR_DATE = 20150401
+M.CHART_TABLE = {}
+M.CHART_MYRANK = 9999999
+M.CHART_REFRESH_INTERVAL = 60000
+M.CHECK_ACCOUNT_ONLY = false
+M.USER_SERVER_ID = 0
+M.USER_SERVER_INFO = {}
+M.GOT_ROLE = 0
+M.REGIONS = nil
+M.SERVERS_TABLE = {}
+M.ACCOUNT_ID = 0
+
+local function savePVPEnemyInfo(pvpInfo)
+  if not pvpInfo then
+    DDERROR("PVP info with error data ")
+    return
+  end
+  CloudData.ENEMY_CIMELIA_INFO = {
+    atkCimelia = pvpInfo.attackCimelia,
+    defCimelia = pvpInfo.defenseCimelia
+  }
+  CloudData.ENEMY_TREASURE_INFO = {}
+  CloudData.ENEMY_NPC_INFO = {}
+  CloudData.ENEMY_EQUIPMENTS = pvpInfo.equipmentMap or {}
+  for k, v in pairs(pvpInfo.treasureList) do
+    CloudData.ENEMY_TREASURE_INFO[v.treasureId] = v.quality
+  end
+  for k, v in pairs(pvpInfo.buddhaList) do
+    CloudData.ENEMY_NPC_INFO[tostring(v.id)] = {
+      level = v.level,
+      id = v.id,
+      status = v.status,
+      star = v.star,
+      realStar = v.star,
+      skills = v.skills,
+      realLevel = v.real_level,
+      arousals = v.arousals,
+      equipments = v.equipments
+    }
+  end
+end
+
+M.savePVPEnemyInfo = savePVPEnemyInfo
+M.SHOP_TOTAL_INFO = {}
+M.VIP_LEVEL = 0
+M.PEACH_BUY_COUNT = 0
+M.PAYMENT_INFO_TABLE = {}
+M.VIP_PACKAGE_STATUS_INFO = {}
+M.PURGATORY_BOSS_LEFT_HP = 0
+M.PVP_INFO = {}
+M.PVP_RANK = 0
+M.PVP_RECORD = 0
+M.MAX_PVP_LOG_TIME = 0
+M.IS_SIGNED_TODAY = 1
+M.FIRST_RECHARGE_STATE = 0
+M.SHOW_DUNGEON_PASS_ANI = -1
+M.UPDATE_NICK_COST = 0
+M.CHAT_NEW_LIST = {}
+M.FRIENDS_LIST = {}
+M.NEW_FRIEND_APPLY = 0
+M.NEW_MAIL = 0
+M.MYSTERY_SHOP_NEW = 0
+M.DUNGEON_MAIN_BOX_NUM = {}
+M.DUNGEON_ELITE_BOX_NUM = {}
+M.DUNGEON_BOX_INFO = {}
+M.FRIEND_ADD_TAG = true
+M.FRIEND_PK_TAG = true
+M.CHAT_CD = 30
+M.FRIEND_LIST_REFRESH = 10
+M.PK_ACTIVE_TIME = 60
+M.NEW_PK_APPLY = false
+M.NEW_PK_TIME = 0
+M.SEND_PK_TIME = 0
+M.PK_APPLY_INFO = {}
+M.SHIELDINGWORDS = nil
+M.BabelInfo = {}
+M.BabelRank = {}
+M.BabelLog = {}
+M.LAST_BATTLE_RESULT = {}
+M.MY_CLAN_RANK = {}
+M.GAME_ITEM_INFO = {}
+M.IS_NEW_UNION_CHAT = false
+M.TEST_TRAVEL_TYPE = nil
+M.AGGRESS_BOSS_LEFT_HP = 0
+M.NEW_AGGRESS = 0
+return M

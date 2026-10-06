@@ -1,0 +1,78 @@
+local M = {
+  {
+    "npcID",
+    "MaxStar",
+    "piecetype",
+    "UPpara1",
+    "UPpara2",
+    "UPpara3",
+    "UPpara4",
+    "UPpara5",
+    "skill1",
+    "skill2",
+    "skill3",
+    "skill4",
+    "skill5"
+  },
+  {
+    "112",
+    "3",
+    "1",
+    "40",
+    "100",
+    "200",
+    "280",
+    "400",
+    "0",
+    "3",
+    "4",
+    "0",
+    "0"
+  },
+  {
+    "113",
+    "3",
+    "2",
+    "35",
+    "80",
+    "150",
+    "220",
+    "320",
+    "0",
+    "2",
+    "5",
+    "0",
+    "0"
+  },
+  {
+    "114",
+    "3",
+    "1",
+    "50",
+    "200",
+    "400",
+    "550",
+    "800",
+    "0",
+    "4",
+    "1",
+    "0",
+    "0"
+  },
+  index = {
+    npcID = 1,
+    MaxStar = 2,
+    piecetype = 3,
+    UPpara1 = 4,
+    UPpara2 = 5,
+    UPpara3 = 6,
+    UPpara4 = 7,
+    UPpara5 = 8,
+    skill1 = 9,
+    skill2 = 10,
+    skill3 = 11,
+    skill4 = 12,
+    skill5 = 13
+  }
+}
+return M
