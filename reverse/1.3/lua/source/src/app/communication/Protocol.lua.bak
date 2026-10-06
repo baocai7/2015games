@@ -1,0 +1,191 @@
+--
+-- Author: Sam
+-- Date: 2015-11-09 16:45:54
+--
+
+local M = {}
+
+M.PID_LOGIN 		      = 1001 --- [REQUEST]    uid + server_id
+M.PID_LOGIN_OK            = 1002 --- [RESPONSE]   pvp_data
+M.PID_READY 		      = 1003 --- [REQUEST]  
+M.PID_CANCEL_READY        = 1004 --- [REQUEST]  
+M.PID_FIGHT			      = 1005 --- [RESPONSE]   fight_data + fight_seed
+M.PID_FIGHT_READY         = 1006 --- [REQUEST]
+M.PID_UPDATE_TICK         = 1007 --- [RESPONSE]   event_list
+M.PID_COMMIT_RESULT       = 1008 --- [REQUEST]    is_win(1:win,0:lose)
+M.PID_FIGHT_RESULT        = 1009 --- [RESPONSE]   pvp_data
+M.PID_GIVE_UP             = 1010 --- [REQUEST]
+M.PID_COMMIT_BUDDHA 	  = 1011 --- [REQUEST]    buddha_id
+M.PID_COMMIT_CIMELIA  	  = 1012 --- [REQUEST]    cimelia_type("atk","def")
+M.PID_COMMIT_CHAT   	  = 1013 --- [REQUEST]    chat_id
+M.PID_UPGRADE_SPIRIT      = 1014 --- [REQUEST]  
+M.PID_RETRANS_MISSION     = 1015 --- [REQUEST]    
+M.PID_CACHE_MSG_LIST      = 1016 --- [RESPONSE]  
+M.PID_UPDATE_TEAM         = 1017 --- [REQUEST]    common_team
+M.PID_CANCEL_READY_OK     = 1018 --- [RESPONSE]   
+M.PID_REQUEST_LOST        = 1019 --- [REQUEST]    "msg lost , request the cached msg"    
+M.PID_KEEP_ALIVE     	  = 1020 --- [RESPONSE]   
+M.PID_RECONNECT 	      = 1021 --- [REQUEST]   "uid+token"
+M.PID_KICKED_OFF 	      = 1022 --- [REQUEST]   "uid+token"
+M.PID_PVP_INIT_DATA       = 1023 --- [RESPONSE]  "uid+mid"
+M.PID_RESET_DATA		  = 1024 --- [RESPONSE]	 "clear cached msg, and reset sid"
+
+M.PID_REQ_MATCH_STATUS    = 1025 --- [REQUEST]	 
+M.PID_GET_MATCH_STATUS    = 1026 --- [RESPONSE]	 "is_open"
+
+M.PID_REQ_COMPETE_STATUS    = 1030 --- [REQUEST]
+M.PID_GET_COMPETE_STATUS    = 1031 --- [RESPONSE] "is_open"
+M.PID_ENTER_COMPETE         = 1032 --- [REQUEST]
+M.PID_LEAVE_COMPETE         = 1033 --- [REQUEST]
+M.PID_REFRESH_COMPETE_DATA  = 1034 --- [RESPONSE]
+M.PID_COMPETE_ALERT         = 1035 --- [RESPONSE]
+M.PID_AUTO_ADVANCED         = 1036 --- [RESPONSE]
+
+M.PID_SEND_CHAT_WORLD     = 2001 --- [REQUEST+RESPONSE]   "uid+mid+content"
+M.PID_SEND_CHAT_GOSSIP    = 2002 --- [REQUEST+RESPONSE]   "uid+mid+content+receiver"
+M.PID_GET_FRIEND_LIST       = 2010 --- [RESPONSE]   "uid+mid"
+M.PID_GET_FRIEND_APPLY_LIST	= 2011 --- [RESPONSE]   "uid+mid"
+M.PID_FRIEND_RECOMMEND      = 2012 --- [RESPONSE]   "uid+mid"
+M.PID_FRIEND_PK_APPLY       = 2013 --- [RESPONSE]   "uid+mid+receiver"
+M.PID_FRIEND_PK_CANCEL		= 2014 --- [RESPONSE]   "uid+mid"
+M.PID_FRIEND_PK_RECEIVE     = 2015 --- [RESPONSE]   "uid+mid"
+M.PID_FRIEND_PK_REFUSE		= 2016 --- [RESPONSE]   "uid+mid"
+M.PID_FRIEND_PK_CALL        = 2017 --- [RESPONSE]   "uid+mid"
+M.PID_STATUS_CHECK       	= 2018 --- [RESPONSE]   "uid+mid"
+M.PID_FRIEND_TO_ADD       	= 2019 --- [REQUEST+RESPONSE]   "uid+mid+receiver"
+M.PID_FRIEND_ADD_AGREE      = 2020 --- [REQUEST+RESPONSE]   "uid+mid+receiver"
+M.PID_FRIEND_DELETE       	= 2021 --- [REQUEST+RESPONSE]   "uid+mid+receiver"
+M.PID_FRIEND_ADD_REFUSE     = 2022 --- [REQUEST+RESPONSE]   "uid+mid+receiver"
+
+-- M.PID_INIT_FRIENDS 			= 2023 --[REQUEST+RESPONSE] "uid+mid"
+-- M.PID_SEARCH_FRIEND 		= 2024 --[REQUEST+RESPONSE] "uid+mid+friendUid"
+-- M.PID_SEND_ENERGY 			= 2025 --[REQUEST+RESPONSE] "uid+mid+friendUid"
+-- M.PID_GET_ENERGY 			= 2026 --[REQUEST+RESPONSE] "uid+mid+friendUid"
+-- M.PID_GET_FRIEND_MSG 		= 2027 --[RESPONSE]
+-- M.PID_GET_RENCENT_LIST 		= 2028 --[REQUEST+RESPONSE] "uid+mid"
+-- M.PID_ADD_RENCENT 			= 2029 --[REQUEST+RESPONSE] "uid+mid+friendUid"
+
+----------- 仙府相关接口
+-- 仙府申请与创建
+M.PID_REQ_UNION_LIST    = 1078    --- [REQUEST]
+M.PID_GET_UNION_LIST    = 1079    --- [RESPONSE]
+M.PID_REQ_UNION_ID      = 1080    --- [REQUEST]                                检测是否有仙府
+M.PID_GET_UNION_ID      = 1081    --- [RESPONSE] 
+M.PID_REQ_CREATE_UNION  = 1052    --- [REQUEST]     "name"
+M.PID_GET_CREATE_UNION  = 1053    --- [RESPONSE]
+M.PID_REQ_APPLY_UNION   = 1054    --- [REQUEST]     "clan_id"
+M.PID_GET_APPLY_UNION   = 1055    --- [RESPONSE]
+M.PID_REQ_APPLY_CANCEL  = 1056    --- [REQUEST]     "clan_id"
+M.PID_GET_APPLY_CANCEL  = 1057    --- [RESPONSE]
+M.PID_REQ_APPLY_ONEKEY  = 1058    --- [REQUEST]     "clan_list"
+M.PID_GET_APPLY_ONEKEY  = 1059    --- [RESPONSE]
+
+-- 仙府基础功能
+M.PID_REQ_UNION_INFO       = 1050    --- [REQUEST]                                获取仙府数据
+M.PID_GET_UNION_INFO       = 1051    --- [RESPONSE]
+M.PID_REQ_CONSTRUCT        = 1060    --- [REQUEST]      "type"                    祭祀  
+M.PID_GET_CONSTRUCT        = 1061    --- [RESPONSE]
+M.PID_REQ_DEAL_APPLY       = 1062    --- [REQUEST]      "target_id + is_passed "  处理申请 
+M.PID_GET_DEAL_APPLY       = 1063    --- [RESPONSE]
+M.PID_REQ_MODIFY_NOTICE    = 1064    --- [REQUEST]      "content"                 修改公告
+M.PID_GET_MODIFY_NOTICE    = 1065    --- [RESPONSE]
+M.PID_REQ_EXPEL_MEMBER     = 1066    --- [REQUEST]                                踢出仙府成员
+M.PID_GET_EXPEL_MEMBER     = 1067    --- [RESPONSE]
+M.PID_REQ_APPOINT_MEMBER   = 1068    --- [REQUEST]                                任命职位
+M.PID_GET_APPOINT_MEMBER   = 1069    --- [RESPONSE]
+M.PID_REQ_ABDICATE_LEADER  = 1070    --- [REQUEST]                                转让仙尊
+M.PID_GET_ABDICATE_LEADER  = 1071    --- [RESPONSE]
+M.PID_REQ_RESIGN_MANAGER   = 1072    --- [REQUEST]                                长老辞职
+M.PID_GET_RESIGN_MANAGER   = 1073    --- [RESPONSE]
+M.PID_REQ_CONSTRUCT_REWARD = 1074    --- [REQUEST]                                领取祭祀奖励
+M.PID_GET_CONSTRUCT_REWARD = 1075    --- [RESPONSE]
+M.PID_REQ_QUIT_UNION       = 1076    --- [REQUEST]                                退出仙府
+M.PID_GET_QUIT_UNION       = 1077    --- [RESPONSE]
+M.PID_REQ_DISBAND_UNION    = 1082    --- [REQUEST]                                解散仙府
+M.PID_GET_DISBAND_UNION    = 1083    --- [RESPONSE]
+
+-- 仙府商店
+M.PID_REQ_CLAN_SHOP_DATA   = 1084    --- [REQUEST]                                获取仙府商店数据
+M.PID_GET_CLAN_SHOP_DATA   = 1085    --- [RESPONSE]                              
+M.PID_REQ_BUY_CLAN_SHOP    = 1086    --- [REQUEST]                                购买仙府商店物品
+M.PID_GET_BUY_CLAN_SHOP    = 1087    --- [RESPONSE]                               
+M.PID_REQ_USE_CLAN_GIFT    = 1088    --- [REQUEST]                                使用仙缘礼包
+M.PID_GET_USE_CLAN_GIFT    = 1089    --- [RESPONSE]
+
+-- 守护兽
+M.PID_CLAN_BOSS_GET_DATA		= 1100 		--获取仙府守护兽数据  无参数
+M.PID_CLAN_BOSS_GET_DATA_RES	= 1101 		--获取仙府守护兽数据
+M.PID_FEED_CLAN_BOSS			= 1102		--喂养守护兽  boss_id,item_id,item_count
+M.PID_FEED_CLAN_BOSS_RES		= 1103		--喂养守护兽
+M.PID_OPEN_CLAN_BOSS			= 1104		--开启守护兽  boss_id	
+M.PID_OPEN_CLAN_BOSS_RES		= 1105		--开启守护兽	
+M.PID_RESET_CLAN_BOSS			= 1106		--重置守护兽  boss_id
+M.PID_RESET_CLAN_BOSS_RES		= 1107		--重置守护兽
+M.PID_TRAIN_CLAN_BOSS			= 1108		--训练守护兽  boss_id, damage
+M.PID_TRAIN_CLAN_BOSS_RES	    = 1109		--训练守护兽
+M.PID_ACTIVATE_CLAN_BOSS		= 1110		--激活boss    boss_id	
+M.PID_ACTIVATE_CLAN_BOSS_RES	= 1111		--激活boss	
+
+-- 仙府战
+M.PID_GET_CLAN_COMPETE_DATA     	 = 1200             -- 仙府战初始化数据
+M.PID_GET_CLAN_COMPETE_DATA_RES 	 = 1201
+M.PID_GET_CUR_COMPETE_DATA      	 = 1202             -- 仙府战当前数据
+M.PID_GET_CUR_COMPETE_DATA_RES  	 = 1203
+M.PID_CLAN_COMPETE_SIGN_UP      	 = 1204             -- 报名仙府战
+M.PID_CLAN_COMPETE_SIGN_UP_RES  	 = 1205             
+M.PID_SET_CLAN_COMPETE_TEAM     	 = 1206             -- 保存队伍
+M.PID_SET_CLAN_COMPETE_TEAM_RES 	 = 1207
+M.PID_RECOVER_IMMEDIATLY        	 = 1208             -- 立即复活
+M.PID_RECOVER_IMMEDIATLY_RES    	 = 1209
+M.PID_CLAN_COMPETE_FIGHT_READY  	 = 1210             -- 开始匹配
+M.PID_CLAN_COMPETE_FIGHT_READY_RES	 = 1211         	-- 匹配结果
+M.PID_CLAN_COMPETE_CANCLE_READY 	 = 1212             -- 取消匹配
+M.PID_CLAN_COMPETE_CANCLE_READY_RES  = 1213         
+M.PID_CLAN_COMPETE_FIGHT        	 = 1215             -- 普通战斗
+M.PID_CLAN_COMPETE_FIGHT_RESULT 	 = 1216             -- 普通战斗结果
+M.PID_CLAN_COMPETE_BOSS_FIGHT   	 = 1217             -- BOSS战斗
+M.PID_CLAN_COMPETE_BOSS_FIGHT_RESULT = 1218        		-- BOSS战斗结果
+M.PID_CLAN_COMPETE_FIGHT_SHOW_INFO   = 1219				-- 积分
+M.PID_LEAVE_COMPETE_WAIT_PANEL     	 = 1230          	-- 离开准备匹配界面    
+M.PID_CLAN_COMPETE_BOSS_SYNC       	 = 1231          	-- 接受消息刷新
+
+M.PID_REQ_CLAN_LOG_LIST   			 = 1220    --- [REQUEST]    获取仙府战斗实况
+M.PID_GET_CLAN_LOG_LIST   			 = 1221    --- [RESPONSE]                              
+M.PID_LEAVE_LOG_PANEL    			 = 1222    --- [REQUEST]    关闭仙府战斗实况面板
+M.PID_GET_CLAN_NEW_LOG    			 = 1223    --- [RESPONSE]   新的仙府战斗实况消息 
+M.PID_REQ_CLAN_RANK_ATTACK   		 = 1224    --- [REQUEST]    获取仙府战斗进攻榜
+M.PID_GET_CLAN_RANK_ATTACK  		 = 1225    --- [RESPONSE] 
+M.PID_REQ_CLAN_RANK_GUARD   		 = 1226    --- [REQUEST]    获取仙府战斗防守榜
+M.PID_GET_CLAN_RANK_GUARD   		 = 1227    --- [RESPONSE]  
+M.PID_REQ_CLAN_ALLOCATE_BOX   		 = 1228    --- [REQUEST]    分配仙府战利品
+M.PID_GET_CLAN_ALLOCATE_BOX   		 = 1229    --- [RESPONSE]  
+
+-- 聊天
+M.PID_REQ_CHAT_MSG_LIST         = 2050      --- [REQUEST]                                       请求聊天列表
+M.PID_GET_CHAT_MSG_LIST         = 2051      --- [RESPONSE]           
+M.PID_REQ_SEND_CHAT_MSG         = 2052      --- [REQUEST]        "content,channel,receiver"     发送消息
+M.PID_GET_CHAT_MSG              = 2053      --- [RESPONSE]                                      实时获取聊天消息
+
+--------------
+M.PID_GET_FRIEND_MSG 			= 2054      --- [RESPONSE] 
+M.PID_SEND_FRIEND_MSG 			= 2055      --- [REQUEST+RESPONSE] 
+M.PID_REQ_OFFLINE_MSG 			= 2056      --- [REQUEST] 
+M.PID_GET_OFFLINE_MSG 			= 2057      --- [RESPONSE] 
+M.PID_SEEK_PLAYER 				= 2058      --- [REQUEST+RESPONSE] -- "uid,player"
+M.PID_SEEK_PLAYERS 				= 2059      --- [REQUEST+RESPONSE]  -- "uid,uids" ;
+--------------
+
+-- 封神战bug调试
+M.PID_BUG_TEST = 1037
+
+-- event_list : eventID
+M.EVENT_CREATE_BUDDHA     = 201
+M.EVENT_CREATE_MONSTER    = 202
+M.EVENT_CIMELIA_BUDDHA    = 203
+M.EVENT_CIMELIA_MONSTER   = 204
+M.EVENT_CHAT              = 205
+M.EVENT_BUDDHA_SPIRIT     = 206
+M.EVENT_ENEMY_SPIRIT      = 207
+M.EVENT_FIRST_ATTACK      = 208
+
+return M

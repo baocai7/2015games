@@ -1,0 +1,342 @@
+
+local LayerCompeteAlert = require("app.pvponline.LayerCompeteAlert")
+
+local DYClass = "SocketHandler"
+
+local M = class(DYClass)
+
+local TAG_EVENT_LOGIN_OK        = "tag_event_login_ok_h"
+local TAG_CACHE_CHAT_MSG        = "tag_cache_chat_msg_h"
+local TAG_FRIENDS_PK_APPLY      = "tag_friends_pk_apply_h"
+
+function M:ctor()
+    app:addEventListener(cc.mvc.AppBase.APP_ENTER_BACKGROUND_EVENT, function(event)
+        if SocketAIMgr then
+            SocketAIMgr:logout()
+            GameManager.IS_FIRST_LOGIN = true
+            GameManager.IS_CHAT_LOGIN_OK = false
+        end
+    end, app.TAG_EVENT_BACKGROUND)
+    app:addEventListener(cc.mvc.AppBase.APP_ENTER_FOREGROUND_EVENT, function(event)
+        SocketChatMgr   = require("app.communication.SocketAIMgr").new(CloudData.USER_SERVER_INFO.interIp, CloudData.USER_SERVER_INFO.interPort) 
+        SocketAIMgr     = SocketChatMgr
+        self:connectScocekChat()
+    end, app.TAG_EVENT_FOREGROUND)
+end
+function M:connectScocekChat()
+    if GameManager.IS_FIRST_LOGIN and not GameManager.IS_CHAT_LOGIN_OK then 
+        local function tFuncEvent(event)
+            if event.name == SocketChatMgr.EVENT_LOGIN_OK then
+                DDLOG("==================== LOGIN_OK")
+                dump(event.param,"event login : ",5)
+
+                CloudData.FRIENDS_LIST = {}
+                local info = event.param.data
+                DataUtils.getOrderFriendList(info)  
+
+                -- 所在仙府ID
+                CloudData.UNION_ID = event.param.clan_data.clan_id
+                -- 仙府守护兽等级
+                CloudData.UNION_BOSS_LEVEL = event.param.clan_data.boss_level
+
+                -- 移除监听
+                SocketChatMgr:removeEventListenersByTag(TAG_EVENT_LOGIN_OK)
+
+                -- 可能是重新启动游戏, 导致上次的接收失败, 此时应忽略其后所有的处理逻辑
+                -- if not self or not self.updateMsg then
+                --     return
+                -- end
+                if not(self and self.class and self.class.__cname == DYClass) then
+                    return
+                end
+
+                GameManager.IS_FIRST_LOGIN = false
+                GameManager.IS_CHAT_LOGIN_OK = true
+
+                self:updateMsg()     
+                self:receivePkApply()
+                self:friendApplyListener()
+                self:friendMsgListener()
+                self:cancelPkApply()
+                -- self:newFriendListener()
+                self:addFriendDelListener()
+                self:addOfflineMsgListener()
+                self:competeAlert()
+
+                -- 如果在封神战场景，则重新载入此场景（后台退出监听会丢失）
+                local currScene = display.getRunningScene()
+                if currScene.class and currScene.class.__cname == "LayerCompeteInfo" then
+                    display.replaceScene(require("app.pvponline.LayerCompeteInfo").new())
+                end
+            end   
+        end
+
+        SocketChatMgr:addEventListener(SocketChatMgr.EVENT_LOGIN_OK, tFuncEvent, TAG_EVENT_LOGIN_OK)
+        SocketChatMgr:login()
+    end    
+end
+
+-- 接收聊天消息
+function M:updateMsg()
+    local function tFuncEvent(event)
+        if event.name == SocketAIMgr.EVENT_GET_CHAT_MSG then
+            dump(event.param,"msg update : ")
+           
+            -- 聊天消息更新
+            CloudData.CHAT_MSG_UPDATE = event.param
+
+            -- 私聊消息存储（本地）
+            if 4 == CloudData.CHAT_MSG_UPDATE.channel then
+                -- 私聊消息是否已读
+                if tonumber(GameManager.CHAT_TARGET) == 0 then
+                    GameManager.NEW_CHAT_RECEIVER[tostring(event.param.uid)] = 1
+                    CloudData.IS_NEW_PRIVATE_CHAT = true
+
+                    -- 新消息提醒
+                    if GameManager.CHAT_BTN and not GameManager.CHAT_BTN.newMark:isVisible() then GameManager.CHAT_BTN.newMark:show() end
+
+                elseif tonumber(GameManager.CHAT_TARGET) ~= event.param.uid then
+                    GameManager.NEW_CHAT_RECEIVER[tostring(event.param.uid)] = 1
+                end
+                local str     = string.format(DY_KEY.kPrivateChatMsg,tostring(CloudData.USER_SERVER_ID),tostring(event.param.uid),tostring(CloudData.UID))
+                local value1  = DYStat.getValueStr(str,"")
+                local msgInfo = json.decode(value1) or {}
+                table.insert(msgInfo,CloudData.CHAT_MSG_UPDATE)
+
+                -- 最多存储15条
+                if #msgInfo > 20 then table.remove(msgInfo,1) end
+                local value2 = json.encode(msgInfo)
+                DYStat.setValueStr(str,value2)
+            end
+
+            -- 仙府消息
+            if 2 == CloudData.CHAT_MSG_UPDATE.channel then
+                CloudData.IS_NEW_UNION_CHAT = true
+                -- 新消息提醒
+                if GameManager.CHAT_BTN and not GameManager.CHAT_BTN.newMark:isVisible() then GameManager.CHAT_BTN.newMark:show() end
+            end
+
+            DYNotification.postNotification(DY_KEY.kUpdateChatMsg)
+        end   
+    end
+    SocketAIMgr:addEventListener(SocketAIMgr.EVENT_GET_CHAT_MSG, tFuncEvent, SocketEventTag.TAG_GET_CHAT_MSG)
+end
+
+-- 接收切磋邀请
+function M:receivePkApply()
+    local function tFuncEvent(event)
+        if event.name == SocketChatMgr.EVENT_FRIEND_PK_CALL then
+            -- 好友列表
+            dump(event.param)
+            local errorCode = tonumber(event.param.errorCode) or 1 --0:发送成功1:发送失败
+            if errorCode ~= 0 then 
+                local errorMsg = event.param.errorMsg or "UNKNOWN"
+                local t = WSToast.new(errorMsg)
+                display.getRunningScene():addChild(t, 250)
+                return
+            end
+            CloudData.PK_APPLY_INFO = event.param
+            CloudData.NEW_PK_APPLY  = true
+            CloudData.NEW_PK_TIME   = os.time()
+            local target = display.getRunningScene().mPkBubble
+            if target then 
+                target:updatePos()
+            end
+        end   
+    end
+    SocketChatMgr:addEventListener(SocketChatMgr.EVENT_FRIEND_PK_CALL, tFuncEvent, TAG_FRIENDS_PK_APPLY)
+end
+
+-- 接收切磋邀请
+function M:cancelPkApply()
+    local function tFuncEvent(event)
+        if event.name == SocketChatMgr.EVENT_CANCEL_PK_APPLY then
+            -- 好友列表
+            dump(event.param)
+            local errorCode = tonumber(event.param.errorCode) or 0 --0:发送成功1:发送失败
+            if errorCode ~= 0 then 
+                local errorMsg = event.param.errorMsg or "UNKNOWN"
+                local t = WSToast.new(errorMsg)
+                display.getRunningScene():addChild(t, 250)
+                return
+            end
+
+            DYNotification.postNotification(DY_KEY.kPkApplyCancel)
+
+            CloudData.NEW_PK_APPLY  = false
+            local target = display.getRunningScene().mPkBubble
+            if target then 
+                target:updatePos()
+            end
+        end   
+    end
+    SocketChatMgr:addEventListener(SocketChatMgr.EVENT_CANCEL_PK_APPLY, tFuncEvent, SocketEventTag.TAG_FRIEND_PK_CANCEL)
+end
+
+-- 争霸赛消息提醒
+function M:competeAlert()
+    local function tFuncEvent(event)
+        if event.name == SocketAIMgr.EVENT_COMPETE_ALERT then
+            DDLOG(" ================ COMPETE_ALERT !!!!!!!")
+
+            if not GameManager.IS_ON_COMPETING then
+                LayerCompeteAlert.new(event.param.left_time):addTo(display.getRunningScene(),1000)
+            end
+        end   
+    end
+    SocketAIMgr:addEventListener(SocketAIMgr.EVENT_COMPETE_ALERT, tFuncEvent, SocketEventTag.TAG_COMPETE_ALERT)
+end
+
+-- 
+function M:friendApplyListener()  
+    local function tFuncEvent(event)
+        -- 好友列表
+        dump(event)
+
+        local sender = checknumber(event.sender)
+        local errorCode = checknumber(event.errorCode)
+
+        if not(self and self.class and self.class.__cname == "ChapterScene") then
+            if errorCode == 0 and checknumber(CloudData.UID) ~= sender then 
+                CloudData.NEW_FRIEND_APPLY = 1
+                DYNotification.postNotification(DY_KEY.kFriendAddApply)
+            end
+        elseif errorCode ~= 0 then
+            local msg = event.errorMsg or "UNKNOWN"
+            local toast = WSToast.new(msg, 2)
+            display.getRunningScene():addChild(toast,20)
+        elseif checknumber(CloudData.UID) == sender then 
+            local msg = DYLang.getString("S1231", "")
+            local toast = WSToast.new(msg, 2)
+            display.getRunningScene():addChild(toast,20)
+        else 
+            CloudData.NEW_FRIEND_APPLY = 1
+            DYNotification.postNotification(DY_KEY.kFriendAddApply)
+            if self.mRightBtnTable then 
+                local friendIcon = self.mRightBtnTable[1]
+                if friendIcon and friendIcon.newMark then 
+                    friendIcon.newMark:show()
+                end
+                local bottomNew = self.mBottomNew
+                if bottomNew then 
+                    bottomNew:show()
+                end
+            end
+        end
+    end
+    -- SocketChatMgr:addEventListener(SocketChatMgr.EVENT_FRIEND_TO_ADD, tFuncEvent, SocketEventTag.TAG_FRIEND_TO_ADD)
+
+    SocketChatMgr:addRequestListener(2019, tFuncEvent)
+end
+
+-- 
+function M:friendMsgListener()  
+    local function tFuncEvent(event)
+        -- 好友列表
+        dump(event)
+        
+        -- local sender = checknumber(event.sender)
+        -- local errorCode = checknumber(event.errorCode)
+
+        -- if event.data and event.data.uid then 
+        --     local uid = checkstring(event.data.uid)
+        --     CloudData.CHAT_NEW_LIST[uid] = 1
+
+        --     local str = string.format(DY_KEY.kPrivateChatMsg,tostring(CloudData.USER_SERVER_ID),
+        --         uid,tostring(CloudData.UID))
+        --     local value1  = DYStat.getValueStr(str,"")
+        --     local msgInfo = json.decode(value1) or {}
+        --     table.insert(msgInfo, event.data)
+
+        --     if #msgInfo > Const.FRIEND_CHAT_MAX then table.remove(msgInfo,1) end
+        --     DYStat.setValueStr(str, json.encode(msgInfo))
+
+        --     DYNotification.postNotification(DY_KEY.kFriendMsg)
+        -- end
+
+        -- if not(self and self.class and self.class.__cname == "ChapterScene") then
+        --     if errorCode == 0 and checknumber(CloudData.UID) ~= sender then 
+        --         CloudData.NEW_FRIEND_APPLY = 1
+        --     end
+        -- elseif errorCode ~= 0 then
+        --     local msg = event.errorMsg or "UNKNOWN"
+        --     local toast = WSToast.new(msg, 2)
+        --     display.getRunningScene():addChild(toast,20)
+        -- end
+    end
+
+    -- SocketChatMgr:addRequestListener(2051, tFuncEvent)
+    SocketChatMgr:addRequestListener(2055, tFuncEvent)
+end
+
+-- 有新的好友
+function M:newFriendListener()  
+    -- local function tFuncEvent(event)
+    --     if event.name == SocketChatMgr.EVENT_FRIEND_ADD_AGREE then
+    --         -- 好友列表
+    --         dump(event.param)
+
+    --         local errorCode = tonumber(event.param.errorCode) or 0
+    --         if errorCode ~= 0 then
+    --             local msg = event.param.errorMsg or "UNKNOWN"
+    --             local toast = WSToast.new(msg, 2)
+    --             display.getRunningScene():addChild(toast,20)
+    --         else 
+    --             table.insert(CloudData.FRIENDS_LIST, 1, event.param.data)
+    --             DYNotification.postNotification(DY_KEY.kFriendAddAgree, event.param)
+    --         end 
+    --     end   
+    -- end
+    -- SocketChatMgr:addEventListener(SocketChatMgr.EVENT_FRIEND_ADD_AGREE, tFuncEvent, SocketEventTag.TAG_FRIEND_ADD_AGREE)
+end
+
+-- 接收好友变动消息
+function M:addFriendDelListener()
+    local function tFuncEvent(event)
+        dump(event)
+
+        local errorCode = checknumber(event.errorCode)
+        if not(self and self.class and self.class.__cname == DYClass) then
+            return
+        elseif errorCode ~= 0 then
+            local msg = event.errorMsg or "UNKNOWN"
+            local toast = WSToast.new(msg, 2)
+            self:addChild(toast,20)
+            return
+        else 
+            local str   = string.format(DY_KEY.kPrivateChatMsg, tostring(CloudData.USER_SERVER_ID),tostring(event.sender),tostring(CloudData.UID))            
+            DYStat.setValueStr(str,"")
+
+            DYNotification.postNotification(DY_KEY.kFriendDelete, checknumber(event.sender))
+        end       
+    end
+    SocketChatMgr:addRequestListener(2021, tFuncEvent)
+end
+
+-- 接收离线消息
+function M:addOfflineMsgListener()
+    local function tFuncEvent(event)
+        dump(event)
+
+        local errorCode = checknumber(event.errorCode)
+        if not(self and self.class and self.class.__cname == DYClass) then
+            print("nil class : " .. DYClass)
+            return
+        else 
+            local content = event.contents or {}
+            local users = event.users or {}
+            -- local str   = string.format(DY_KEY.kPrivateChatMsg, 
+            --     tostring(CloudData.USER_SERVER_ID),
+            --     tostring(event.sender),tostring(CloudData.UID))            
+            -- DYStat.setValueStr(str,"")
+
+            -- DYNotification.postNotification(DY_KEY.kFriendDelete, checknumber(event.sender))
+        end       
+    end
+    -- SocketChatMgr:addRequestListener(2021, tFuncEvent)
+
+    SocketChatMgr:regOnceRequest(2056,2057,{uid = CloudData.UID},
+        function(event) tFuncEvent(event) end)
+end
+
+return M

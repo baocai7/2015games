@@ -17,10 +17,20 @@ from the supplied APK:
 ## Lua source status
 
 The archive contains 875 entries and exposes the full source tree and file
-names, but Lua entries are protected with ZipCrypto. The APK's runtime loads
-`src/main.lua` from that archive using a native password that is not present in
-the JSON configuration. The archive is therefore preserved unchanged rather
-than represented as incomplete or fabricated plaintext source.
+names. Its Lua entries are protected with ZipCrypto. The password recovered
+from the native library is:
+
+```text
+523613713%@#^!#&!#
+```
+
+The archive has been decrypted into `lua/source/`. It contains 786 files,
+including 762 Lua files, plus the bundled CSV/XML/PLIST/SAM/PNG assets. The
+Lua files are Lua 5.1 compiled bytecode (`\x1bLuaQ`), not the original
+development-time text scripts. This is a complete, runnable script payload,
+but it cannot preserve source comments or guarantee the original variable
+layout. A Lua 5.1 bytecode decompiler is required to produce approximate
+readable Lua listings.
 
 ### Native loader trace
 
@@ -45,13 +55,12 @@ Relevant ARM Thumb function addresses in this APK's `libcocos2dlua.so`:
 | `LuaManager::onTaskFinished` | `0x00294bd4` |
 | `LuaManager::init` | `0x00294cec` |
 
-The password is assembled in native code and is not exposed as a plain string
-by the usual string scan. The known `dywl523613713` value belongs to the older
+The password is embedded in the native library as the printable sequence
+`523613713%@#^!#&!#`. The known `dywl523613713` value belongs to the older
 Doubi Xiyou XXTEA-protected assets and does not unlock this 1.3 archive.
-Extracting the original Lua text still requires recovering this APK's exact
-ZipCrypto password or observing it at runtime. `lua/src.zip` is complete but
-encrypted; `android-smali/` and native symbols are analysis artifacts, not a
-substitute for the original Lua source.
+`lua/src.zip` is retained byte-for-byte and `lua/source/` is the verified
+decrypted payload; `android-smali/` and native symbols remain analysis
+artifacts rather than substitutes for original C++ source.
 
 The source archive has 875 entries, including directory entries. Use
 `unzip -Z1 lua/src.zip` to inspect its file tree without decrypting contents.
@@ -60,6 +69,7 @@ The source archive has 875 entries, including directory entries. Use
 
 ```sh
 unzip -p releases/1.3/xiaoxiao-xiyou-ol-1.3.apk assets/src.zip > reverse/1.3/lua/src.zip
+unzip -P '523613713%@#^!#&!#' reverse/1.3/lua/src.zip -d reverse/1.3/lua/source
 java -jar /private/tmp/apktool.jar d -f releases/1.3/xiaoxiao-xiyou-ol-1.3.apk -o /private/tmp/xiaoxiao-apktool-1.3
 ```
 
