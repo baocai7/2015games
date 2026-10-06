@@ -132,4 +132,15 @@ DYUtils.download(data[i].picUrl, DYUtils.cachePath(), false, "", callback)
 3. 若服务端不可用，将缺失的 40 组 `armature/<name>1/<name>1.csb`、PLIST、PNG 从合法资源包补入本地 hotfix 目录，再验证第一关和召唤伙伴。
 4. 对每次 `ccs.Armature:create(name)` 记录名称和失败回调，避免把资源错误表现成场景切换或闪退。
 
+## 当前运行时验证
+
+在 2026-10-06 对源码声明的两个地址做了连接测试：
+
+```text
+http://125.88.152.25/dbxy/lite_p.zip       -> connection timed out
+http://125.88.152.25/dbxy/online_res.zip   -> connection timed out
+```
+
+工作区、当前 1.3.2 APK、仓库中的其他 APK 和已有临时资源包中，也没有找到上述 40 组骨骼的完整替代文件。因此目前不能把这项问题标记为“已离线解决”。要实现玩家进入后不再遇到资源弹窗或缺图，必须先取得与 1.3.2 匹配的资源包并在启动阶段预置/校验；仅屏蔽更新弹窗或把缺失角色映射到其他角色，会改变原版体验且不能恢复原资源。
+
 本报告没有修改 APK、资源或 Lua 逻辑，只记录审计结果。
