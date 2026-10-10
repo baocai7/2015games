@@ -11,6 +11,11 @@
 | `patches/` | 每个功能修改的补丁说明、目标文件、验证记录 |
 | `tests/` | 静态检查、接口回归和资源完整性检查记录 |
 | `module-map.md` | 全部源码模块和文件数量索引 |
+| `APK-CONTENTS.md` | APK 原始条目、资源类型和二进制清单 |
+| `DIRECTORY-GUIDE.md` | 逆向目录逐层说明和文件职责 |
+| `REVERSE-COVERAGE.md` | 已读取范围、反编译边界和剩余风险 |
+| `FILE-INDEX.md` / `lua-file-index.tsv` | 762 个 Lua 文件的逐文件路径、模块和用途索引 |
+| `APK-ENTRY-INDEX.md` / `apk-entry-index.tsv` | APK 全部 4,712 条路径级内容索引 |
 | `entrypoints.md` | 启动、登录、选关、战斗、召唤、抽奖、支付、资源加载主链路 |
 | `data-network.md` | 数据模型、HTTP/TCP 入口和服务端依赖 |
 | `resource-audit.md` | APK 内置资源、缺失骨骼和远程更新路径审计 |
